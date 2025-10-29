@@ -56,6 +56,8 @@ S-412 defines attributes as either simple or complex in line with the S-100 GFM.
 
 ===== Simple attributes
 
+**Add as appropriate **
+
 S-412 uses three types of simple attributes; they are listed in the following Table:
 
 [cols="a,a",options="headers"]
