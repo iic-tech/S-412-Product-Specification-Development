@@ -1,0 +1,32 @@
+
+[.preface]
+== Document History
+
+Changes to this Specification are coordinated by WMO/IOC Joint Technical Commission for Oceanography and Marine Meteorology (JCOMM). New editions will be made available via the IHO web site. 
+
+[%unnumbered]
+[cols="a,a,a,a",options="headers"]
+|===
+|Version Number |Date |Approved By |Purpose
+
+|1.0.0
+|2 February 2014
+|Alexander Benke
+|Initial edition of S-411
+
+|1.1.0
+|15 June 2014
+|Jürgen Holfort
+|Clarifications based on ETSI Meeting 2014 and new color for 10/10.
+
+|1.2.0
+|01 January 2025
+|IIC technologies
+|Initial version created using metanorma
+
+|1.2.1
+|13 March 2025
+|IIC Technologies
+|Updated following reviews with WMO
+
+|===

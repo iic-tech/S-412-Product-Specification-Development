@@ -1,0 +1,35 @@
+
+[[sec-coordinate-reference-systems-crs]]
+== Coordinate Reference Systems (CRS)
+
+=== Introduction
+
+For exchange of ice data WGS84 (EPSG:4326) must be used
+
+[[horizontal-crs]]
+=== Horizontal Coordinate Reference System
+
+[[tab-411-coordinate-reference-systems-epsg-codes]]
+.S-411 Coordinate Reference Systems (EPSG Codes)
+[cols="2"]
+|===
+h|EPSG Code h|Coordinate Reference System
+|4326 |WGS84
+2+|The full reference to EPSG can be found at link:https://epsg.org/[https://epsg.org].
+|===
+
+
+*Horizontal Coordinate Reference System*:: EPSG: 4326
+*Projection*:: NONE (_although use of projected coordinates in datasets for future editions will be considered_)
+*Temporal reference system*:: Gregorian Calendar
+*Coordinate Reference System registry*:: link:https://epsg.org/[EPSG Geodetic Parameter Dataset]
+*Date type (according to <<iso-19115-1>>)*:: 002 - publication
+*Responsible party*:: Technical Commission for Oceanography and Marine Meteorology (JCOMM)
+*URL*:: https://wmo.int//
+
+
+=== Vertical Coordinate Reference System
+In this product there are no direct vertical coordinates which require the use of a vertical coordinate reference system.
+
+=== Temporal reference system
+The temporal reference system is the Gregorian calendar for date and UTC for time. Time is measured by reference to Calendar dates and Clock time in accordance with <<iso-8601,clause=5.4.4>>. A date-time variable will have the following 16-character format: _yyyymmddThhmmssZ_.
