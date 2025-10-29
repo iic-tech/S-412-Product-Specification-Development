@@ -4,7 +4,7 @@
 
 === Format Specification
 
-At the moment there is only one type of dataset supported. This is GML encoded ice feature collections according to S-100 Part 10b.
+At the moment there is only one type of dataset supported. This is GML encoded feature collections according to S-100 Part 10b.
 
 === Introduction
 

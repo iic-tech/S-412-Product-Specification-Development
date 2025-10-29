@@ -34,7 +34,7 @@ The S-412 Feature Catalogue describes the feature types, attributes and attribut
 
 The S-412 Feature Catalogue is available as an XML document which conforms to the S-100 XML Feature Catalogue Schema and can be downloaded from the IHO website (https://registry.iho.int/). S-412 Annex A – Data Classification and Encoding Guide, constitutes a human readable interpretation of the Feature Catalogue along with information on how features should be encoded.
 
-The feature Catalogue for Ice Information contains only geographic and meta features. The ice features which can be used in ECDIS are defined within the ICE domain of the IHO Registry.
+The feature Catalogue contains only geographic and meta features. The  features which can be used in ECDIS are defined within the WMO domain of the IHO Registry.
 
 ==== Feature types
 
@@ -42,7 +42,7 @@ Feature types contain descriptive attributes that characterize real-world entiti
 
 ==== Geographic
 
-Geographic (geo) feature types carry the descriptive characteristics of a real-world entity (a location or place on the surface of the Earth). In the context of Ice Information products, this comprises most of the features (with the exception of DataCoverage) and represents those features with a real-world existence.
+Geographic (geo) feature types carry the descriptive characteristics of a real-world entity (a location or place on the surface of the Earth). In the context of Information products, this comprises most of the features (with the exception of DataCoverage) and represents those features with a real-world existence.
 
 ==== Meta
 

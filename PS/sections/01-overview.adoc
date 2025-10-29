@@ -36,7 +36,6 @@
 GML OpenGIS®:: _Geography Markup Language (GML) Encoding Standard_ (Version 3.2.1)
 S-97:: _IHO Guidelines for Creating S-100 Product Specifications_, Edition 1.1.0, June 2020.
 S-100:: _IHO Universal Hydrographic Data Model_, Edition 5.2.0, June 2024
-WMO-No. 574:: _Sea-ice Information and Services_, 2024 edition
 
 ==== Informative
 ISO 19101:: _Geographic Information – Reference Model_, 2003
@@ -50,7 +49,6 @@ ISO 19115-3:: _Geographic information - Metadata - Part 3: XML Schema implementa
 ISO 19117:: _Geographic Information – Portrayal_, 2012
 ISO 19131:: _Geographic Information – Data Product Specifications_, 2008
 ISO 19139-1:: _Geographic information - XML schema implementation - Part 1: Encoding rules_ - 2019
-MANICE:: _Manual of Standard Procedures for Observing and Reporting Ice Conditions_, Meteorological Service of Canada, 2005
 
 === Terms, definitions and abbreviations
 
@@ -187,7 +185,6 @@ CRS::  Coordinate Reference System
 ECDIS:: Electronic Chart Display and Information System
 ENC:: Electronic Navigational Chart
 EPSG:: European Petroleum Survey Group
-ETSI:: Expert Team on Sea Ice
 GML:: Geography Markup Language
 IHO:: International Hydrographic Organization
 ISO:: International Organization for Standardization
@@ -198,27 +195,27 @@ XML:: eXtensible Markup Language
 
 === General data product description
 
-*Title*:: Ice Information Product Specification.
+*Title*:: Wind and Weather Warning Product Specification.
 
-*Abstract*:: Ice Information for ship navigation
+*Abstract*:: IWind and Weather Warning
 
 *Acronym*:: S-411
 
-*Content*:: Ice features as vector data
+*Content*:: Wind and Weather Warnings as vector data
 
 *Spatial Extent*::
 
-*Description*: Areas specific to navigation in ice covered regions. +
+*Description*: Areas specific to navigation. +
 *East Bounding Longitude*: 180° +
 *West Bounding Longitude*: -180° +
 *North Bounding Latitude*: 90° +
 *South Bounding Latitude*: -90°
 
-*Purpose*:: Navigation in ice covered regions
+*Purpose*:: Navigation
 
 === Product Specification metadata
 
-*Title*:: Ice Information Product Specification
+*Title*:: Wind and Weather Warnings Product Specification
 *S-100 Version*:: 5.2.0
 *S-411 Version*:: 2.0.0
 *Date*:: 31 December 2025

@@ -4,7 +4,7 @@
 
 === Introduction
 
-This clause describes encoding rules for S-100 base ice datasets. For the encoding of ice datasets GML 3.2.1 is used as per <<iho-s100,part=10b>>.
+This clause describes encoding rules for S-100 base datasets. For the encoding of datasets GML 3.2.1 is used as per <<iho-s100,part=10b>>.
 
 === Encoding Rules
 

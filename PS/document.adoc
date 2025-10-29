@@ -1,4 +1,4 @@
-= Ice Information Product Specification
+= Wind and Weather Warning Product Specification
 :series: S
 :docnumber: 412
 :doctype: standard

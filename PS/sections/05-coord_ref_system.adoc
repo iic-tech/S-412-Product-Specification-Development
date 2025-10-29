@@ -4,7 +4,7 @@
 
 === Introduction
 
-For exchange of ice data WGS84 (EPSG:4326) must be used
+For exchange of data WGS84 (EPSG:4326) must be used
 
 [[horizontal-crs]]
 === Horizontal Coordinate Reference System

@@ -13,7 +13,7 @@ The S100 metadata are for describing the structure of Exchange Catalogue
 
 ==== ISO 19139 Metadata
 
-For the description of ice data following metadata are necessary:
+For the description of data following metadata are necessary:
 
 
 [cols="a,a,a",options="header"]
@@ -324,7 +324,7 @@ CI_RoleCode element contains two attributes:
 
 |===
 
-The dateStamp should be used for the publication date (just day using gco:date or including the time using gco:datetime). The date and time where the ice chart is considered valid should be given in identificationinfo (see 10.1.1.6). Classic operational ice charts should have a time stamp within the temporal extent given in identificationinfo, a dateStamp preceding the temporal extent denotes a prognosis chart, a dateStamp that is more recent then the temporal extent denotes an historic reanalysis or a climatological chart.
+The dateStamp should be used for the publication date (just day using gco:date or including the time using gco:datetime). The date and time where the chart is considered valid should be given in identificationinfo (see 10.1.1.6). Operational charts should have a time stamp within the temporal extent given in identificationinfo, a dateStamp preceding the temporal extent denotes a prognosis chart, a dateStamp that is more recent then the temporal extent denotes an historic reanalysis or a climatological chart.
 
 [source,xml]
 ----
@@ -496,7 +496,6 @@ The dateStamp should be used for the publication date (just day using gco:date o
     <gmd:citation>
       <gmd:CI_Citation>
         <gmd:title>
-          <gco:CharacterString>IceArea25022013.shp</gco:CharacterString>
         </gmd:title>
         <gmd:date>
           <gmd:CI_Date>
@@ -512,7 +511,6 @@ codeList="http://www.isotc211.org/2005/resources/Codelist/ML_gmxCodelists.xml#CI
     </gmd:CI_Citation>
   </gmd:citation>
   <gmd:abstract>
-    <gco:CharacterString>Ice Chart for Baltic sea</gco:CharacterString>
   </gmd:abstract>
   <gmd:language>
     <gmd:LanguageCode
@@ -905,7 +903,7 @@ S-412 uses S100_ProductSpecification without modification, but with additional r
 |*1*
 |CharacterString
 |The name in the GI Registry should be used for this field. +
-*For S-412, this name is "Ice Information" (as of 25 June 2024).*
+*For S-412, this name is "" (as of 25 June 2024).*
 
 |Attribute
 |version
