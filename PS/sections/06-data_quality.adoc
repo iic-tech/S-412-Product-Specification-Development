@@ -1,13 +1,6 @@
 
 [[sec-data-quality]]
 == Data Quality
-As ice charts are done for different purposes (from weekly overview to tactical charts and further to model forecasts) data quality can differ.
-
-Differences can also be found between ice charts of the same region and same nominal date resulting from different issuing agencies or also from different forecasts models.
-
-Further information can be found in the WMO publication 574.
-
-A fuller review of data quality requirements for S-411 may be carried out in the future. The headings within this section reflect those within other IHO product specifications and, following such a review, will either be populated or deleted as appropriate.
 
 === Completeness
 
@@ -18,25 +11,13 @@ A fuller review of data quality requirements for S-411 may be carried out in the
 === Logical consistency
 
 ==== Conceptual consistency
-Conceptual Consistency is applicable for S-411 and follows the guidelines from <<iho-s100,part=1>>.
 
-Data Producers must verify that the dataset conforms to the S-100 General Feature Model.
-
-If the dataset conforms to the S-100 General Feature Model, the dataset PASSES this test.
 
 ==== Domain consistency
-Domain consistency is applicable for S-411 and follows the guidelines from <<iho-s100,part=5>>.
 
-Data Producers must verify that the dataset conforms to the S-411 Feature Catalogue and to <<annex-data-classification-and-encoding-guide>>.
-
-If the dataset conforms to the S-411 Feature Catalogue and to <<annex-data-classification-and-encoding-guide>>, the dataset PASSES this test.
 
 ==== Format consistency
-Format Consistency is applicable for S-411 and follows the guidelines from <<iho-s100,part=10c>>.
 
-Data Producers must verify that the dataset conforms to <<sec-data-product-format-encoding>> of this Product Specification.
-
-If the dataset conforms to <<sec-data-product-format-encoding>>, the dataset PASSES this test.
 
 === Positional accuracy
 

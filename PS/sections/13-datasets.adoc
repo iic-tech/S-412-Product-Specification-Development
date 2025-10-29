@@ -8,7 +8,7 @@ A dataset is a grouping of features, attributes, geometry and metadata which com
 
 === Dataset Rules
 
-In order to facilitate the efficient processing of S-411 data the geographic coverage of a given *maximum display* scale may be split into multiple datasets.
+In order to facilitate the efficient processing of S-412 data the geographic coverage of a given *maximum display* scale may be split into multiple datasets.
 
 The discovery metadata of a dataset must list all the *Data Coverage* features contained within that dataset and their assigned scale attributions.
 
@@ -32,9 +32,9 @@ When the system’s viewing scale is smaller than the value indicated by *minimu
 
 == Geometry
 
-=== S-411 Geometry
+=== S-412 Geometry
 
-S-411 Ice Information features are encoded as vector entities which conform to S-100 geometry configuration level 3a (S-100 clause 7-4.3).
+S-412 features are encoded as vector entities which conform to S-100 geometry configuration level 3a (S-100 clause 7-4.3).
 
 Level 3a is described by the following constraints:
 

@@ -1,13 +1,13 @@
 = Ice Information Product Specification
 :series: S
-:docnumber: 411
+:docnumber: 412
 :doctype: standard
-:edition: 1.2.1
+:edition: 2.0.0
 :language: en
-:published-date: 2025-03-01-31
+:published-date: 2025-01-31
 :copyright-year: 2025
-:committee: WMO- JCOMM
-:workgroup: ETSI
+:committee: WMO
+:workgroup: XXXX
 :toclevels: 3
 :mn-document-class: iho
 :mn-output-extensions: html,doc,pdf

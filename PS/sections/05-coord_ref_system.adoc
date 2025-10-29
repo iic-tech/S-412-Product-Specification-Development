@@ -9,8 +9,8 @@ For exchange of ice data WGS84 (EPSG:4326) must be used
 [[horizontal-crs]]
 === Horizontal Coordinate Reference System
 
-[[tab-411-coordinate-reference-systems-epsg-codes]]
-.S-411 Coordinate Reference Systems (EPSG Codes)
+[[tab-412-coordinate-reference-systems-epsg-codes]]
+.S-412 Coordinate Reference Systems (EPSG Codes)
 [cols="2"]
 |===
 h|EPSG Code h|Coordinate Reference System

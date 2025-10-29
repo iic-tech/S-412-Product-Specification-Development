@@ -3,7 +3,7 @@
 
 This product specification defines only one general scope which applies to all its sections.
 
-*Scope Identification*:: JCOMM S-411 dataset
+*Scope Identification*:: S-412 dataset
 *Hierarchical Lelvel*:: MD_ScopeCode -005
 *Hierarchical Level Name*:: Dataset
 
