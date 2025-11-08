@@ -5,13 +5,45 @@
 Changes to this Specification are coordinated by WMO/IOC Joint Technical Commission for Oceanography and Marine Meteorology (JCOMM). New editions will be made available via the IHO web site. 
 
 [%unnumbered]
+[[tab-document-history]]
+.Document History
 [cols="a,a,a,a",options="headers"]
 |===
 |Version Number |Date |Approved By |Purpose
 
+|0.0.1
+|13 August 2013
+|J. Powell
+|Initial Draft.
+
+|0.0.2
+|2 December 2013
+|C. Schultz
+|Updated draft for review by ETMSS.
+
+|0.0.3
+|3 June 2015
+|J. Powell
+|Updated to latest version of S-100.
+
+|0.0.4
+|25 September 2017
+|J. Phillips, G. Seroka
+|Added data product format information, including GML encoding, expanded sections on the feature model, definitions, references and application schema.
+
+|0.1.0
+|10 December 2018
+|J. Phillips
+|Updated multiple sections updated including new scope, DCEG and FC.
+
+|0.1.1
+|30 April 2025
+|T. Cervone-Richards, D. Spindler, S. Stevenson, S. Williamson
+|Updated multiple sections updated including new scope, DCEG and FC.
+
 |2.0.0
 |25 October 2025
 |IIC Technologies
-|Initial Population of document skeleton
+|Initial Population of document skeleton.
 
 |===
