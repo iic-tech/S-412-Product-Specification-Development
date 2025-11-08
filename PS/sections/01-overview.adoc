@@ -2,13 +2,146 @@
 [[sec-overview]]
 == Overview
 === Introduction
+This document has been produced by the National Oceanic and Atmospheric Administration (NOAA) National Weather Service (NWS) Ocean Prediction Center (OPC) on behalf of the Joint World Meteorological Organization – Intergovernmental Oceanographic Commission (WMO-IOC) Technical Commission for Oceanography and Marine Meteorology (JCOMM), now WMO Commission for Weather, Climate, Hydrological, Marine, and Related Environmental Services and Applications (SERCOM), and the Worldwide Met-Ocean Information and Warning Service (WWMIWS) to define a data product that can be used as a Nautical Publication Information Overlay (NPIO) within electronic charting systems (ECS), including Electronic Chart Display and Information Systems (ECDIS). It has been developed within the framework specification defined by the International Hydrographic Organization (IHO) S-100 Universal Hydrographic Data Model and the International Standards Organization (ISO) 19100 series of standards. This product specification, S-412, is primarily intended for encoding maritime weather and wave warnings. These warnings include polygon portrayals of different hazardous weather conditions forecasted during the warning period to enhance situational awareness, route planning, and route monitoring.
 
+=== Information
+This product specification, S-412, is a vector graphic product specification that is primarily intended for encoding information on meteorological and oceanographic warnings that are used by mariners for route-planning, hazard avoidance, and risk mitigation. S-412 defines meteorological and oceanographic features, attributes, and relationships, as well as their mapping to a dataset.
 
 === Scope
+This document is maintained by the World Meteorological Organization (WMO) and describes an IHO S-100 compliant product specification for meteorological and oceanographic datasets, which will primarily act as an overlay for S-101 Electronic Navigational Charts on an S-100 based ECS, including ECDIS, in order to provide the maritime community with greater situational awareness. It specifies the content, structure, and metadata needed for creating a fully compliant Marine Weather Warnings dataset that will be compatible with an S-100 capable electronic navigation system. This product specification includes the content model, encoding guides, feature catalogue, portrayal catalogue, metadata, and example datasets.
 
+In addition to acting as an overlay for S-101 Electronic Navigation Charts, this product specification outlines the capacity to interoperate with other S-100 compliant product specifications in accordance with the IHO S-98 Interoperability Specification.
+
+This product specification does not include recommended changes to or requirements for services by National Meteorological Services.
 
 [bibliography]
 === References
+
+==== Normative References
+* NOAA National Weather Service Glossary (https://forecast.weather.gov/glossary.php)
+
+* National Weather Service Instruction 10-315, Marine Weather Message, 2020 Edition
+
+* National Weather Service Instruction 10-303, Marine and Coastal Services Standards and Guidelines, 2022 Edition
+
+* National Weather Service Instruction 10-604, Tropical Cyclone Names and Definitions, 2021 Edition
+
+* National Weather Service Instruction 10-811, Enroute Forecasts and Advisories, 2022 Edition
+
+* National Weather Service Policy Directive 10-6, Tropical Cyclone Weather Services Program, 2020 Edition
+
+* S-32, IHO Hydrographic Dictionary, 2023 Edition
+
+* S-53 Joint IHO/IMO/WMO Manual on Maritime Safety Information (MSI), January 2016 Edition
+
+* S-98 Interoperability Specification, 2022 Edition
+
+* S-100 IHO Universal Hydrographic Data Model, 2024 Edition
+
+* S-101 IHO Electronic Navigation Chart Product Specification, 2024 Edition
+
+* WMO 8 Guide to Meteorological Instruments and Methods of Observation, 2023 Edition
+
+* WMO 182 International Meteorological Vocabulary, 1992 Edition
+
+* WMO 306 Manual on Codes, 2024 Edition
+
+* WMO 386 Manual on the Global Telecommunication System, 2020 Edition
+
+* WMO 471 Guide to Marine Meteorological Services, 2024 Edition
+
+* WMO 485 Manual on the Global Data-processing and Forecasting System, 2023 Edition
+
+* WMO 558 Manual on Marine Meteorological Services, 2024 Edition
+
+* WMO 702 Guide to Wave Analysis and Forecasting, 2020 Edition
+
+* WMO/TD 850, 1998 Edition
+
+* Global Maritime Distress and Safety System, GMDSS (weather.gov)
+
+* IHO Geospatial Information Registry
+
+* ISO 8601. 2004. Data elements and interchange formats – Information interchange – Representation of dates and times. 2004.
+
+* ISO 3166-1. 2020. Country Codes. 2020.
+
+* ISO 639-2/T. 1998. Language Codes. 1998.
+
+* ISO/TS 19103. 2024. Geographic information – Conceptual schema language. 2024.
+
+* ISO 19111. 2019. Geographic Information – Spatial referencing by coordinates. 2019.
+
+* ISO 19115. 2003. Geographic Information – Metadata. 2003.
+
+* ISO 19115-1. 2014. Geographic information - Metadata - Part 1: Fundamentals. 2014
+
+* ISO 19115-2.2019. Geographic Information – Metadata – Part 2: Extension for imagery and gridded data. 2019.
+
+* ISO/TS 19123. 2005. Geographic information – Schema for coverage geometry and functions. 2005.
+
+* ISO/TS 19123-1. 2023. Geographic information – Schema for coverage geometry and functions. Part 1: Fundamentals. 2023.
+
+* ISO 19129. 2009. Geographic information – Imagery, gridded and coverage data framework. 2009.
+
+* ISO 19131. 2022. Geographic information – Data product specifications. 2022.
+
+* ISO 19136:2007. Geographic Information – Geographic Markup Language (GML). 2007.
+
+* ISO 19136-1:2020. Geographic Information – Geographic Markup Language (GML). Part 1: Fundamentals. 2020.
+
+* ISO/IEC 19501. 2005. Information technology – Unified Modeling Language (UML) Version 1.4.2. 2005
+
+==== Informative References
+* IMO A27/Res. 1051, IMO/WMO Worldwide Met-Ocean Information and Warning Service, 2011 Edition
+
+* ISO 19101:2002. Geographic information – Reference model. 2002.
+
+* ISO 19101-1:2014. Geographic information – Reference model. Part 1: Fundamentals. 2014.
+
+* ISO 19103: 2024. Geographic information – Conceptual schema language – 2024.
+
+* ISO 19105: 2022. Geographic information – Conformance and testing. 2022.
+
+* ISO 19107:2019. Geographic information – Spatial schema. 2019.
+
+* ISO 19108:2002. Geographic information – Temporal schema. 2002.
+
+* ISO 19109:2015. Geographic information – Rules for application schema. 2015.
+
+* ISO 19110: 2016. Geographic information – Methodology for feature cataloguing. 2016.
+
+* ISO 19113: 2005. Geographic information – Quality principles. 2005
+
+* ISO 19116: 2019. Geographic information – Positioning services. 2019.
+
+* ISO 19117:2012. Geographic information – Portrayal. 2012
+
+* ISO 19118: 2011. Geographic information – Encoding. 2011.
+
+* ISO 19128:2005. Geographic information – Web Map Server interface. 2005
+
+* 19132: 2007. Geographic information – Location-based services – Reference model. 2007.
+
+* ISO 19133:2005. Geographic information – Location-based services – Tracking and navigation. 2005.
+
+* ISO 19138:2006. Geographic information – Data quality measures. 2006.
+
+* ISO 19142:2010. Geographic information – Web Feature Service. 2010
+
+* ISO 19144-1:2009. Geographic information – Classification systems – Part 1: Classification system structure. 2009.
+
+* ISO 19145:2013. Geographic information – Registry of representations of geographic point location. 2013.
+
+* ISO 19153:2014. Geographic information – Geospatial Digital Rights Management Reference Model (GeoDRM RM) 1). 2014.
+
+* ISO 19156:2023. Geographic information – Observations and measurements. 2011.
+
+* ISO 19157:2023. Geographic information – Data quality. 2013.
+
+* ISO/TS 19158:2012. Geographic information – Quality assurance of data supply. 2010.
+
+
 [bibliography]
 === References
 * [[[iho-s100,IHO S-100 5.2.0]]]
@@ -62,96 +195,146 @@ Within this document:
 
 
 ==== Terms and definitions
+The S-100 framework is based on the ISO 19100 series of geographic standards. The terms and definitions provided here are used to standardise the relevant nomenclature found within that framework, whenever possible. Additional definitions specific to S-412 are provided in this section as well. Features, attributes and associations that may be realised in an S-412 compliant dataset are defined in Annex A, B and C.
+
+*Abstract Class*
+An object class which cannot be instantiated, or is designated in an information model as not allowed  to be instantiated [ISO 19107].
+
+NOTE:: subclasses of an abstract class may be either abstract or non-abstract.
+
+*Aggregation*
+
+Special form of association that specifies a whole-part relationship between the aggregate (whole)  and a component part (see composition) [ISO 19103] 
+
+*Application*
+
+Manipulation and processing of data in support of user requirements [ISO 19101-1:2014]
 
 *Application Schema*
 
-Conceptual schema for data required by one or more applications.
+Conceptual schema for data required by one or more applications [ISO 19101].
+
+*Association*
+
+Semantic relationship between two or more classifiers that specifies connections among their instances [ISO 19101].
+
+NOTE:: a binary association is an association among exactly two classifiers (including the possibility of an association from a classifier to itself).
 
 *Attribute*
 
-(1) Named property of an entity.
+Named property of an entity [ISO/IEC 2382-17:1999].
 
 NOTE:: Describes a geometrical, thematic, or other characteristic of an entity.
 
-(2) Feature within a classifier that describes a range of values that instances of the classifier may hold.
+_(2) Feature within a classifier that describes a range of values that instances of the classifier may hold._
 
-NOTE:: An attribute is semantically equivalent to a composition association; however, the intent and usage is normally different.
+_NOTE:: An attribute is semantically equivalent to a composition association; however, the intent and usage is normally different._
 
-NOTE:: “Feature” used in this definition is the UML meaning of the term.
+_NOTE:: “Feature” used in this definition is the UML meaning of the term._
 
-*Boundary*
+*_Boundary_*
 
-Set that represents the limit of an entity.
+_Set that represents the limit of an entity._
 
-NOTE:: Boundary is most commonly used in the context of geometry, where the set is a collection of points or a collection of objects that represent those points.
+_NOTE:: Boundary is most commonly used in the context of geometry, where the set is a collection of points or a collection of objects that represent those points._
+
+*Cartesian Coordinate System*
+
+Coordinate system which gives the position of points relative to n mutually perpendicular axes. [ISO 19111]
+
+*Class*
+
+Description of a set of objects that share the same attributes, operations, methods, relationships, and semantics [ISO/TS 19103:2005].
+
+NOTE:: a class represents a concept within the system being modelled. Depending on the kind of model, the concept may be real-world (for an analysis model), or it may also contain algorithmic and computer implementation concepts (for a design model). A classifier is a generalisation of class that includes other class-like elements, such as data type, actor and component.
+
+*Code List*
+
+Value domain including a code for a permissible value [ISO 19136].
 
 *Coordinate*
 
-One of a sequence of _n_ numbers designating the position of a *point* in N-dimensional space.
+One of a sequence of _n_ numbers designating the position of a *point* in N-dimensional space [ISO 19111].
 
-NOTE:: In a *coordinate reference system*, the coordinate numbers are qualified by units.
+NOTE:: In a *coordinate reference system*, the coordinate numbers are qualified by units [ISO 19107, ISO 19111].
 
 *Coordinate Reference System*
 
-*Coordinate* system which is related to an object by a datum.
+A coordinate system that is related to the real world by a datum [ISO 19111].
+
+NOTE:: for geodetic and vertical datums, it will be related to the Earth.
+
+*Coverage*
+
+Feature that acts as a function to return values from its range for any direction position within its spatial, temporal, or spatiotemporal domain [ISO 19123:2005].
+
+Example: Examples include a raster image, polygon overlay, or digital elevation matrix type.
+
+*Coverage Geometry*
+
+Configuration of the domain of a coverage described in terms of coordinates [ISO 19123].
 
 *Curve*
 
-1-dimensional geometric primitive, representing the continuous image of a line.
+1-dimensional geometric primitive, representing the continuous image of a line[ISO 19107].
 
 NOTE:: The boundary of a curve is the set of points at either end of the curve. If the curve is a cycle, the two ends are identical, and the curve (if topologically closed) is considered to not have a boundary. The first point is called the start point, and the last is the end point. Connectivity of the curve is guaranteed by the "continuous image of a line" clause. A topological theorem states that a continuous image of a connected set is connected.
 
-*Data Quality*
+*Data Product*
 
-A set of elements describing aspects of quality, including a measure of quality, an evaluation procedure, a quality result, and a scope.
+A dataset or dataset series that conforms to a data product specification [ISO 19131].
+
+*Data Set*
+
+Identifiable collection of data [ISO 19115].
+
+NOTE:: a dataset may be a smaller grouping of data which, though limited by some constraint such as spatial extent or feature type, is located physically within a larger dataset. Theoretically, a dataset may be as small as a single feature or feature attribute contained within a larger dataset. A hardcopy map or chart may be considered a dataset.
+
+*_Data Quality_*
+
+_A set of elements describing aspects of quality, including a measure of quality, an evaluation procedure, a quality result, and a scope._
 
 *Data Type*
 
-Specification of a value domain with operations allowed on values in this domain.
+Specification of a value domain with operations allowed on values in this domain [ISO/TS 19103:2005].
 
-NOTE:: Data types include primitive predefined types and user-definable types.
+Example: Integer, Real, Boolean, String, Date
 
-NOTE:: A data type is identified by a term, for example Integer.
+_NOTE:: Data types include primitive predefined types and user-definable types._
 
-*Dataset*
+_NOTE:: A data type is identified by a term, for example Integer._
 
-An identifiable collection of data.
+*_Datum_*
 
-NOTE:: A dataset may be a smaller grouping of data which, though limited by some constraint such as spatial extent or feature type, is located physically within a larger dataset. Theoretically, a dataset may be as small as a single feature contained within a larger dataset. A hardcopy map or chart may be considered a dataset.
+_Parameter or set of parameters that define the position of the origin, the scale, and the orientation of a *coordinate* system._
 
-*Datum*
-
-Parameter or set of parameters that define the position of the origin, the scale, and the orientation of a *coordinate* system.
-
-*ECDIS*
+*_ECDIS_*
 
 A navigation information system which with adequate back-up arrangements can be accepted as complying with the up-to-date chart required by regulations V/19 and V/27 of the 1974 SOLAS Convention, as amended, by displaying selected information from a System Electronic Navigational Chart (System Database) with positional information from navigation sensors to assist the Mariner in route planning and route monitoring, and if required display additional navigation-related information.
 
-*Enumeration*
+*_Enumeration_*
 
-A fixed list of valid identifiers of named literal values. Attributes of an enumerated type may only take values from this list.
-
-*Feature*
-
-Abstraction of real-world phenomena.
-
-NOTE:: A feature may occur as a type or an instance. Feature type or feature instance should be used when only one is meant.
+_A fixed list of valid identifiers of named literal values. Attributes of an enumerated type may only take values from this list._
 
 *Feature*
 
-Abstraction of real world phenomena.
+Abstraction of real-world phenomena [ISO 19101:2003].
 
-NOTE:: A feature may occur as a type or an instance. Feature type or feature instance should be used when only one is meant.
+Example: The phenomenon truck may be classified with other similar phenomena into a feature type named automobile.
+
+_NOTE:: A feature may occur as a type or an instance. Feature type or feature instance should be used when only one is meant._
 
 *Feature Attribute*
 
-Characteristic of a *feature*.
+Characteristic of a *feature* [ISO 19101].
 
 NOTE:: A feature attribute type has a name, a data type, and a domain associated to it. A feature attribute instance has an attribute value taken from the value domain of the feature attribute type.
 
+Example: A feature attribute named ‘colour’ may have an attribute value ‘green’ which belongs to the data type ‘text’.
+
 *Feature Catalogue*
 
-A catalogue containing definitions and descriptions of the *feature* types, *feature attributes* occurring in one or more sets of geographic data.
+A catalogue containing definitions and descriptions of the *feature* types, *feature attributes* and occurring in one or more sets of geographic data [ISO 19110].
 
 *Geometric Primitive*
 
