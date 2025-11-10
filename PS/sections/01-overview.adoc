@@ -204,7 +204,7 @@ NOTE:: subclasses of an abstract class may be either abstract or non-abstract.
 
 *Aggregation*
 
-Special form of association that specifies a whole-part relationship between the aggregate (whole)  and a component part (see composition) [ISO 19103] 
+Special form of association that specifies a whole-part relationship between the aggregate (whole) and a component part (see composition) [ISO 19103]
 
 *Application*
 
@@ -218,13 +218,13 @@ Conceptual schema for data required by one or more applications [ISO 19101].
 
 Semantic relationship between two or more classifiers that specifies connections among their instances [ISO 19101].
 
-NOTE:: a binary association is an association among exactly two classifiers (including the possibility of an association from a classifier to itself).
+NOTE:: A binary association is an association among exactly two classifiers (including the possibility of an association from a classifier to itself).
 
 *Attribute*
 
 Named property of an entity [ISO/IEC 2382-17:1999].
 
-NOTE:: Describes a geometrical, thematic, or other characteristic of an entity.
+NOTE:: Describes a geometrical, topological, thematic, or other characteristic of an entity.
 
 _(2) Feature within a classifier that describes a range of values that instances of the classifier may hold._
 
@@ -288,7 +288,7 @@ A dataset or dataset series that conforms to a data product specification [ISO 1
 
 Identifiable collection of data [ISO 19115].
 
-NOTE:: a dataset may be a smaller grouping of data which, though limited by some constraint such as spatial extent or feature type, is located physically within a larger dataset. Theoretically, a dataset may be as small as a single feature or feature attribute contained within a larger dataset. A hardcopy map or chart may be considered a dataset.
+NOTE:: A dataset may be a smaller grouping of data which, though limited by some constraint such as spatial extent or feature type, is located physically within a larger dataset. Theoretically, a dataset may be as small as a single feature or feature attribute contained within a larger dataset. A hardcopy map or chart may be considered a dataset.
 
 *_Data Quality_*
 
@@ -311,6 +311,10 @@ _Parameter or set of parameters that define the position of the origin, the scal
 *_ECDIS_*
 
 A navigation information system which with adequate back-up arrangements can be accepted as complying with the up-to-date chart required by regulations V/19 and V/27 of the 1974 SOLAS Convention, as amended, by displaying selected information from a System Electronic Navigational Chart (System Database) with positional information from navigation sensors to assist the Mariner in route planning and route monitoring, and if required display additional navigation-related information.
+
+*Direct Position*
+
+Position described by a single set of coordinates within a coordinate reference system [ISO 19107].
 
 *_Enumeration_*
 
@@ -336,77 +340,275 @@ Example: A feature attribute named ‘colour’ may have an attribute value ‘g
 
 A catalogue containing definitions and descriptions of the *feature* types, *feature attributes* and occurring in one or more sets of geographic data [ISO 19110].
 
-*Geometric Primitive*
+*Feature Portrayal Function*
 
-Geometric object representing a single, connected, homogeneous element of geometry.
+Function that maps a geographic feature to a symbol [ISO 19117:2012 (E), 4.10].
 
-NOTE:: Geometric primitives are non-decomposed objects that present information about geometric configuration. They include points, curves and surfaces.
+*Function*
+Rule that associates each element from a domain (source, or domain of the function) to a unique element in another domain (target, co-domain, or range) [ISO 19107].
+
+NOTE:: The range is defined by another domain.
+
+*Geometric Object*
+
+Spatial object representing a set of direction positions [ISO 19107].
+
+NOTE:: A geometric object consists of a geometric primitive, a collection of geometric primitives, or a geometric complex treated as a single entity. A geometric object may be the spatial characteristics of an object such as a feature or a significant part of a feature.
+
+*_Geometric Primitive_*
+
+_Geometric object representing a single, connected, homogeneous element of geometry._
+
+_NOTE:: Geometric primitives are non-decomposed objects that present information about geometric configuration. They include points, curves and surfaces._
+
+*Generalisation*
+
+Taxonomic relationship between a more general element and a more specific element [ISO 19103].
+
+NOTE:: The more specific element is fully consistent with the more general element and contains additional information. An instance of the more specific element may be used where the more general element is allowed.
+
+*Inheritance*
+
+Mechanism by which more specific elements incorporate structure and behavior of more general elements related by behavior [ISO 19103].
+
+*Map Projection*
+
+Coordinate conversion from an ellipsoidal coordinate system to a plane [ISO 19111].
+
+*Maritime Zone*
+
+Zones recognized under international law include internal waters, the territorial sea, the contiguous zone, the exclusive economic zone (EEZ), the continental shelf, the high seas, and the Area [NOAA] Maritime Zones and Boundaries | National Oceanic and Atmospheric Administration (noaa.gov).
+
+*Metadata*
+Data about data [ISO 19115:2005].
+
+*METAREA*
+
+METAREA is the acronym for METeorological AREA. It means a geographical sea area established for the purpose of co-ordinating the broadcast of marine meteorological information. The term METAREA followed by a roman numeral may be used to identify a particular sea area. [WMO List of METAREAS].
 
 *Multiplicity*
 
-Specification of the number of possible occurrences of a property, or the number of allowable elements that may participate in a given relationship.
+Specification of the number of possible occurrences of a property, or the number of allowable elements that may participate in a given relationship [ISO 19103].
 
-EXAMPLES: 1..* (one to many); 1 (exactly one); 0..1 (zero or one)
+EXAMPLES: 1..* (one to many); 1 (exactly one); 0..1 (zero or one).
 
-*Point*
+*Numerical Model*
 
-0-dimensional geometric primitive, representing a position.
+Computer simulations of the atmosphere and/or ocean that use an analysis of the current weather as a starting point to project the future state and provide the foundation of the weather forecasts. [Adapted from NOAA (https://www.weather.gov/rah/virtualtourforecast)].
 
-NOTE:: The boundary of a point is the empty set.
+*Object*
+
+Entity with a well-defined boundary and identity that encapsulates state and behavior.
+Note: State is represented by attributes and relationships, behavior is represented by operations, methods, and state machines. An object is an instance of a class. [S-100].
+
+*_Point_*
+
+_0-dimensional geometric primitive, representing a position._
+
+_NOTE:: The boundary of a point is the empty set._
+
+*Portrayal*
+
+Presentation of information to humans [ISO 19117].
+
+NOTE:: within the scope of this International Standard portrayal is restricted to the portrayal of geographic information. [S-100].
 
 *Portrayal Catalogue*
 
 Collection of defined portrayals for a feature catalogue.
 
-NOTE:: Content of a portrayal catalogue includes portrayal functions, symbols, and portrayal context.
+NOTE:: Content of a portrayal catalogue includes portrayal functions, symbols, and portrayal context [ISO 19117:2012 (E), 4.21].
+
+*Portrayal Function*
+
+Function that maps geographic features to symbols.
+
+NOTE:: Portrayal functions can also include parameters and other computations that are not dependent on geographic feature properties. [ISO 19117:2012 (E), 4.23].
+
+*Portrayal Rule*
+
+Specific type of portrayal function expressed in a declarative language.
+
+NOTE:: A declarative language is rule-based and includes decision and branching statements. [ISO 19117:2012 (E), 4.25].
+
+*Range <Coverage>*
+
+Set of values associated by a function with the elements of the spatiotemporal domain of a coverage. [ISO 19123].
+
+*Realization*
+
+Relationship between a specification and its implementation [ISO 19103].
+
+*Record*
+
+Finite, named collection of related items (objects or values) [ISO 19107].
+
+NOTE:: Logically, a record is a set of pairs <name, item>.
+
+*Register*
+
+Set of files containing identifiers assigned to items with descriptions of the associated items [ISO 19135].
+
+NOTE:: Descriptions may consist of many types of information, including names, definitions and codes.
+
+*Register Manager*
+
+Organization to which management of a register has been delegated by the register owner. [ISO 19135].
+
+NOTE:: In the case of an IHO Register, the Register Manager performs the functions of the registration authority specified in the IHO Directives.
+
+*Register Owner*
+
+Organization that establishes a register [S-100].
+
+*Registry*
+
+Information system on which a register is maintained. [ISO 19135].
+
+*Schema*
+Formal description of a model [S-100].
+
+*Sea Surface*
+
+A two-dimensional (in the horizontal plane) field representing the air-sea interface, with high frequency fluctuations such as wind waves and swell, but not astronomical tides, filtered out. [S-111].
+
+Example: sea surface, river surface, and lake surface.
+
+NOTE:: This implies marine water, lakes, waterways, navigation rivers, etc.
+
+*Significant Wave Height*
+
+The average trough-to-crest height of the highest one third of the wave heights (sea and swell) occurring in a particular time period [WMO Glossary].
+
+*Spatial Reference*
+
+Description of position in the real world [S-100].
+
+*Start Point*
+
+First point of a curve. [ISO 19107].
+
+*Submitting Organization*
+
+Organization authorized by a register owner to propose changes to the content of a register. [ISO 19135].
+
+*Surface (Geometry)*
+
+2-dimensional geometric primitive, representing the continuous image of a region of a plane [ISO 19107].
+
+NOTE:: The boundary of a surface is the set of oriented, closed curves that delineate the limits of the surface.
+
+*Symbol*
+
+Portrayal primitive such as line styles, patterns, text and point symbol graphics defined in SVG. [S-100].
+
+*Type*
+
+Stereotype of class that is used to specify a domain of instances (objects) together with the operations applicable to the objects.
+
+NOTE:: A type may have attributes and associations [S-100].
+
+*Unit*
+
+Defined quantity in which dimensioned parameters are expressed. [S-100].
+
+*Value*
+
+Element of a type domain [ISO/TS 19103:2005].
+NOTE 1:: A value may be considered a possible state of an object within a class or type (domain).
+
+NOTE 2:: A data value is an instance of a data type, a value without identity.
 
 ==== Abbreviations
 This Product Specification adopts the following convention for presentation purposes:
 
-BSH:: Bundesamt für Seeschifffahrt und Hydrographie (Germany)
 CRS::  Coordinate Reference System
+DCEG::  Data Classification and Encoding Guide
 ECDIS:: Electronic Chart Display and Information System
-ENC:: Electronic Navigational Chart
-EPSG:: European Petroleum Survey Group
+ECS:: 	Electronic Chart System (Non SOLAS) 
+ENC::  Electronic Navigational Chart
+EPSG::  European Petroleum Survey Group
+ETSI::	Expert Team on Sea Ice
+ET-MS::  Expert Team on Maritime Safety
+FCD::		Feature Concept Dictionary
+FDIS::  Final Draft International Standard
+GFM::		General Feature Model
+GI::  Registry	Geospatial Information Registry
+GMDSS:: 	Global Maritime Distress and Safety System
 GML:: Geography Markup Language
+HDF5::		Hierarchical Data Format (HDF5 is the fifth release)
+ICC::  International Color Consortium 
 IHO:: International Hydrographic Organization
+IMO::		International Maritime Organization
+IOC::		Intergovernmental Oceanographic Commission
 ISO:: International Organization for Standardization
 JCOMM:: Joint Technical Commission for Oceanography and Marine Meteorology
-UTF-8:: Unicode Transformation Format-8
-WMO:: World Meteorological Organization
-XML:: eXtensible Markup Language
+METAREA::  METeorological AREA
+MSI::  Maritime Safety Information
+NetCDF:: 	Network Common Data Form
+OEM::		Original Equipment Manufacturer 
+S-100WG:: 	S-100 Working Group
+SC-MMO::  Standing Committee on Marine Meteorological and Oceanographic Services 
+SERCOM::  Commission for Weather, Climate, Hydrological, Marine, and Related Environmental Services and Applications
+SOLAS::		International Convention for Safety of Life at Sea
+SVG::		Scalable Vector Graphics
+UML::		Unified Modeling Language
+URI::		Uniform Resource Identifier
+URL::		Universal Resource Locator
+UTC::		Coordinated Universal Time
+UTF-8::  Unicode Transformation Format-8
+WMO::  World Meteorological Organization
+WWMIWS::	Worldwide Met-Ocean Information and Warning Service
+WXO::		Weather Overlay
+XLink::		XML Linking Language
+XMI::		XML Metamodel Interchange
+XML::		Extensible Mark-up Language
+XSD::		World Wide Web Consortium XML Schema Definition
+XSL::		eXtensible Stylesheet Language
 
-=== General data product description
+=== Marine Weather Warnings Data Product Description
 
-*Title*:: Wind and Weather Warning Product Specification.
+*Title*:: S-412 Marine Weather Warnings.
 
-*Abstract*:: IWind and Weather Warning
+*Abstract*:: This data product describes real-world weather and oceanographic warnings created from authoritative maritime weather analysis and forecast data products. These S-100-compliant weather warnings will be used by mariners for route-planning and hazard mitigation.
 
-*Acronym*:: S-411
+*Acronym*:: S-412
 
-*Content*:: Wind and Weather Warnings as vector data
+*Content*:: The Product Specification defines all requirements to which Marine Weather Warnings data products must conform. Specifically it defines the data product content in terms of features and attributes within the feature catalogue. The display of polygons is defined by the features and rule sets contained in the portrayal catalogue. The Data Classification and Encoding Guide (DCEG) provide guidance on how data product content must be captured.
 
 *Spatial Extent*::
 
-*Description*: Areas specific to navigation. +
+*Description*: Maritime zones and terrestrial locations within proximity of navigable waters. +
 *East Bounding Longitude*: 180° +
 *West Bounding Longitude*: -180° +
 *North Bounding Latitude*: 90° +
 *South Bounding Latitude*: -90°
 
 *Purpose*:: Navigation
+The purpose of a Marine Weather Warnings dataset is to enhance the situational awareness and decision-making capacity of a mariner, as well as warn mariners of adverse, hazardous, dangerous, or extreme conditions that may pose a threat to life or property.
+
+An S-412 product can be used as an overlay for electronic navigational charts within shipboard or shore side navigation systems or as a standalone product within an appropriate geographic information system display.
 
 === Product Specification metadata
 
-*Title*:: Wind and Weather Warnings Product Specification
+*Title*:: S-412 Marine Weather Warnings Product Specification
 *S-100 Version*:: 5.2.0
-*S-411 Version*:: 2.0.0
+*S-412 Version*:: 2.0.0
 *Date*:: 31 December 2025
-*Language*:: English (optional additional)
+*Language*:: English _(optional additional)_
 *Classification*:: Unclassified
-*Contact*::
-*Identifier*::
-*Maintenance*:: Changes to this product specification are coordinated by JCOMM ETSI. +
+*Contact*::  World Meteorological Organization +
+7bis, avenue de la Paix +
+Case postale 2300 +
+CH -1211 Geneva 2 +
+Switzerland
+Telephone: +41 (0) 22 730 84 03 +
+Email: mailto:publications@wmo.int[] +
+
+*URL*:: link:http://www.wmo.int/[www.wmo.int]
+
+*Identifier*::  S-412 +
+*Maintenance*::  Any version both new and old  of this product specification can be found in the IHO GI Registry. When a new version of the product spec is ready for approval it must follow through several bodies of the WMO; including: ET-MS and SC-MMO while keeping WWMIWS aware of changes for METAREAS. Once approved by the WMO, the WMO’s Domain Control Body Member will submit the document to IHO for approval into the GI Registry. +
 --
 World Meteorological Organization (WMO) +
 7 bis, avenue de la Paix +
@@ -419,13 +621,13 @@ Email: mailto:publications@wmo.int[] +
 *Identifier*:: S-412
 *Maintenance*:: Changes to the Product Specification S-412 are coordinated by the JCOMM, and must be made available via the IHO web site.
 
-=== WMO Product Specification Maintenance
+=== Product Specification Maintenance
 
 ==== Introduction
-Changes to S-412 will be released by the WMO as a New Edition, revision, or clarification.
+Changes to this product specification are coordinated by the WMO Commission for Weather, Climate, Hydrological, Marine, and Related Environmental Services and Applications (SERCOM), Standing Committee on Marine Meteorological and Oceanographic Services (SC-MMO), and WorldWide Met-ocean Information and Warning Service (WWMIWS). Changes to the Marine Weather Warnings will be released by the WWMIWS as a new edition, revision, or clarification. Requests for specific changes to this product specification should be coordinated through the most convenient National Meteorological Service or directly to WWMIWS.
 
 ==== New Edition
-_New Editions_ of S-412 introduce significant changes. _New Editions_ enable new concepts, such as the ability to support new functions or applications, or the introduction of new constructs or data types. _New Editions_ are likely to have a significant impact on either existing users or future users of S-122. All cumulative _revisions_ and _clarifications_ must be included with the release of approved New Editions.
+_New Editions_ of S-412 introduce significant changes. _New Editions_ enable new concepts, such as the ability to support new functions or applications, or the introduction of new constructs or data types. _New Editions_ are likely to have a significant impact on either existing users or future users of S-412. All cumulative _revisions_ and _clarifications_ must be included with the release of approved New Editions.
 
 ==== Revision
 _Revisions_ are defined as substantive semantic changes to S-412. Typically, _revisions_ will change S-412 to correct factual errors; introduce necessary changes that have become evident as a result of practical experience or changing circumstances. A _revision_ must not be classified as a clarification. Revisions could have an impact on either existing users or future users of S-412. All cumulative _clarifications_ must be included with the release of approved _revisions_.
@@ -435,10 +637,9 @@ Changes in a revision are minor and ensure backward compatibility with the previ
 In most cases a new feature or portrayal catalogue will result in a _revision_ of S-412.
 
 ==== Clarification
-_Clarifications_ are non-substantive changes to S-122. Typically, _clarifications_: remove ambiguity; correct grammatical and spelling errors; amend or update cross references; insert improved graphics in spelling, punctuation and grammar. A _clarification_ must not cause any substantive semantic change to S-412.
+_Clarifications_ are non-substantive changes to S-412. Typically, _clarifications_: remove ambiguity; correct grammatical and spelling errors; amend or update cross references; insert improved graphics in spelling, punctuation and grammar. A _clarification_ must not cause any substantive semantic change to S-412.
 
 Changes in a _clarification_ are minor and ensure backward compatibility with the previous versions within the same Edition. Within the same Edition, a dataset of one clarification version could always be processed with a later version of the Feature and Portrayal Catalogues, and a Portrayal Catalogue can always rely on earlier versions of the Feature Catalogue.
-
 
 ==== Version Numbers
 The associated version control numbering to identify changes (n) to S-412 must be as follows:
