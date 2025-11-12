@@ -1,2 +1,4 @@
 
 == Data Capture and Classification
+
+S-412 datasets may be derived from data that has been analysed by a forecaster or numerical weather prediction model output. The data is then translated into text and/or graphical format, reorganised, converted into the compliant format, and/or otherwise processed in order to be made into a usable data format.
