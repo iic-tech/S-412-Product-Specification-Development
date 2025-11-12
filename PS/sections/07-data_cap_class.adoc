@@ -2,3 +2,26 @@
 == Data Capture and Classification
 
 S-412 datasets may be derived from data that has been analysed by a forecaster or numerical weather prediction model output. The data is then translated into text and/or graphical format, reorganised, converted into the compliant format, and/or otherwise processed in order to be made into a usable data format.
+
+=== Data Sources
+
+Data sources can vary across METAREAs, however, primarily comes from three sources: observations, meteorological and oceanographic forecast models, or derived products from weather models with input from a trained forecaster. Data must be produced and quality controlled by a national authority.
+
+=== Production Process
+
+Nearly all meteorological and oceanographic information from a forecasting agency will need to be reformatted to meet the standards of this Product Specification. This means (a) populating the appropriate metadata and (b) reorganising the data in accordance with the GML and DCEG requirements of this standard.
+
+==== Metadata
+
+
+==== Meteorological and Oceanographic Data
+
+Marine weather warning data must be reformatted to be compliant with this standard. S-412 warning polygons primarily contain a list of coordinate points and time attributes. Coordinate points for a warning polygon should be in decimal degrees. More information about coordinate systems is discussed in section 10.2. Additionally, time, if provided in local time, must be converted to UTC.
+
+Descriptions of the nature of warning polygons use the following units of measurement:
+
+●	Wind is given in knots (kt); +
+●	Wave Height is given in metres (m); +
+●	Ice accumulation is given in centimetres per hour (cm/hr); +
+●	Distance is given in nautical miles (nm); +
+●	Latitudes and Longitudes are given in decimal degrees up to 7 decimal numbers.
