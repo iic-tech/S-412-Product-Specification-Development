@@ -2,13 +2,28 @@
 [[sec-data-quality]]
 == Data Quality
 
+Datasets conforming to S-412 should always be created with the best available source information. Weather service providers recognized by the WMO shall be the distributor of datasets for each respective METAREA. All Marine Weather Warning information covering winds, waves, ice accretion, thunderstorms, and restricted visibility should be complete and in compliance with this Product Specification. The quality of the information can be verified with the text provided in the GMDSS.
+
+Marine Weather Warning information is assumed to be of high quality and guaranteed by the processes employed by data providers. Quality of S-412 products depends on the combined quality of many inputs including observed, mathematically-predicted, or model-driven weather data. 
+S-412 products must be validated with the S-412 specific validation checks prior to release by the data producer. The data producer must review the check results and address any issues to ensure sufficient quality of the data products. The checks are a mixture of data format validation, conformance to standards, completeness and logical consistency. These validation checks are listed in Annex F.
+
 === Completeness
+
+Completeness is defined as the presence and absence of features, their attributes and relationships. It consists of two data quality elements: +
+*	Commission – excess data present in a dataset;
+*	Omission – data absent from a dataset.
 
 ==== Commission
 
 ==== Omission
 
 === Logical consistency
+
+Logical Consistency is defined as the degree of adherence to logical rules of data structure, attribution and relationships (data structure can be conceptual, logical or physical). A series of logical consistency checks for S-412 can be found in Annex F - Validation Checks. It consists of four data quality elements: +
+●  Conceptual consistency – adherence to rules of the conceptual schema; +
+●  Domain consistency – adherence of values to the value domains; +
+●  Format consistency – degree to which data is stored in accordance with the physical structure of the dataset; +
+●  Topological consistency – correctness of the explicitly encoded topological characteristics of a dataset. +
 
 ==== Conceptual consistency
 
@@ -21,9 +36,34 @@
 
 === Positional accuracy
 
-=== Temporal accuracy
+The forecasting process is a combination of using observation data (vessel, buoy, or station reports, remotely sensed data from scatterometers, altimeters, satellite imagery, etc) alongside various weather and wave computer model datasets. These models rely on atmospheric and oceanographic physics and mathematics to predict future conditions. A forecaster uses observations and model data to analyse and predict the conditions for a geographic area. The positional accuracy of features will vary depending on the forecaster’s confidence in the correlation of these models and the conditions reported in observations.
+
+The quality of each model will depend on the quality, timeliness, and spatial coverage of the input data (observations), as well as the mathematical and physical techniques of the model. These can be found in model technical reports.
+
+Positional Accuracy is defined as the accuracy of the position of features within a spatial reference system. It consists of three data quality elements:
+●	Absolute or external accuracy – closeness of reported coordinate values to values accepted as or being true; +
+●	Relative or internal accuracy – closeness of the relative positions of features in a dataset to their respective relative positions accepted as or being true; +
+●	Gridded data positional accuracy – closeness of gridded data spatial position values to values accepted as or being true.
+
+=== Temporal accuracy _Quality?_
+
+The S-412 datasets consist of predicted and forecasted data. Because such, data quality will be highly dependent on the timestamp of each feature and the dataset development process (forecast confidence).
+
+Traditionally, mariners have used meteorological and oceanographic products to ascertain conditions for a specific time. This can include conditions at times in the future, which may be updated as time approaches this future time. Within S-412, various time attributes exist for a forecasting agency to replicate these expectations. These attributes are for when a feature is issued, when a mariner can expect the data to be updated next, when the data is valid and the application of a time range if needed. The utilisation of these attributes will be dependent on a weather forecasting agency’s policies and will directly affect the timeliness of a dataset.
+
+Temporal Quality is defined as the quality of the temporal attributes and the temporal relationships of features. It consists of three Data Quality Elements:
+
+●	Accuracy of a time measurement - closeness of reported time measurements to values accepted as or known to be true; +
+●	Temporal consistency – correctness of the order of events; +
+●	Temporal validity – validity of data with respect to time.
 
 === Thematic accuracy
+
+Thematic Accuracy is defined as the accuracy of quantitative attributes and the correctness of nonquantitative attributes and of the classifications of features and their relationships. It consists of three Data Quality Elements:
+
+●	Classification correctness – comparison of the classes assigned to features or their attributes to a Universe of Discourse (for example ground truth or reference data); +
+●	Non-quantitative attribute correctness – measure of whether a non-quantitative attribute is correct or incorrect; +
+●	Quantitative attribute accuracy – closeness of the value of a quantitative attribute to a value accepted as or known to be true.
 
 ==== Thematic classification correctness
 
