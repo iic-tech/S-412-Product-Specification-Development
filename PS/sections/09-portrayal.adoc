@@ -2,8 +2,63 @@
 [[sec-portrayal]]
 == Portrayal
 
-=== Rules
+=== Introduction
 
-=== Symbols
+S-412 portrayal is intended to contribute to the safe operation of an S-100 based system by:
 
-==== Polygon Features
+●	Ensuring base and supplementary levels of display for S-412 data; standards of symbols, colours and their standardised assignment to features; scale limitations of data presentation; +
+●	Ensuring the display is clear and unambiguous; +
+●	Establishing an accepted pattern presentation that becomes familiar to mariners and so can be recognized instantly without confusion; +
+●	Utilising the S-100 portrayal model to ensure interoperability.
+
+S-412 portrayal is covered by the portrayal model as defined in S-100. This model reflects how the portrayal catalogue is defined for use in systems. The portrayal catalogue defines symbology and the portrayal rules for each feature attribute combination contained in the feature catalogue.
+
+< < Statement about the types of data allowed in GML format (points, lines, polygons) > > 
+
+=== Polygon Features
+
+< < Under development – will include information about polygon features with examples of their portrayal, to include initiating portrayal rules, day/night/dusk colour palettes, orientation > >
+
+NOTE:: Polygon portrayals may be included in surface portrayals. In Annex E, the GML encoding for surface features shows a warning polygon example. So may not need a separate section for polygon portrayals.
+
+==== Temporal Rules
+
+< < Temporal rules > > 
+
+==== Transparency Rules
+
+< < Transparency rules > >
+
+==== Interoperability
+
+< < Interoperability statements > >
+
+==== Portrayal Catalogue
+
+< < Under development – once completed, XML will be provided > > 
+The portrayal catalogue contains the mechanisms for the system to portray information found in S-412 datasets. The portrayal catalogue contains the following types of mechanisms and structures:
+●	Product Input Schema
+●	Set of portrayal rules
+●	Set of drawing instructions
+●	Set of symbols, line styles and colours
+The portrayal catalogue model is defined in S-100 Part 9. The S-412 Portrayal catalogue is provided in Annex G and will be available in an XML document which conforms to the S-100 XML Portrayal catalogue Schema. It is structured as follows:
+
+Root ---- (contains the catalogue named “portrayal_catalogue.xml”)
+  
+Pixmaps (contains XML files describing pixmaps)
+
+ColorProfiles (contains XML files with colour profiles and CSS2 style sheets)
+
+Symbols (contains SVG files with symbols)
+
+LineStyles (contains XML files with line styles)
+
+AreaFills (contains XML files area fills)
+
+Fonts (contains TrueType font files)
+
+Rules (contains XSLT files with templates)
+
+==== Lua vs XSLT Portrayal
+
+< < Under development > > 
