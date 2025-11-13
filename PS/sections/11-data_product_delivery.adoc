@@ -2,40 +2,160 @@
 [[sec-data-product-delivery]]
 == Data Product Delivery
 
-=== Format Specification
-
-At the moment there is only one type of dataset supported. This is GML encoded feature collections according to S-100 Part 10b.
-
 === Introduction
+
+This section specifies the encoding and delivery mechanisms for an S-412 Marine Weather Warnings Overlay product from a data provider to the end user. Data which conforms to this product specification must be delivered by means of an exchange set.
+
+The method of transfer will be primarily web-based, including ftp or direct push/pull dissemination methods. Due to the cost of transmitting data via the Internet, every effort should be made to limit exchange set file sizes below 10 MB before compression and updating frequency. Compressed files should use the Zip compression scheme.
+
+Updated data files typically means issuing or reissuing a new forecast or issuing new warnings, including emergency messages that impact the safety of life at sea. Together, these may occur several times per day. Due to the information containing potentially lifesaving information, ECS’ to include ECDIS, should check for new data continuously.
 
 === Exchange Set
 
+The S-100 Exchange Set is a container that combines all the elements needed for the exchange of S-100 data. S-412 datasets are grouped into exchange sets. Each exchange set consists of one or more datasets with an associated XML metadata file and a single Exchange catalogue XML file containing the product list and the discovery metadata. It may also include one or more support files.
+
+Static or auxiliary files, such as the feature and portrayal catalogues, SVG files, and additional supporting XML files for alarms and indications, and for interoperability should not be included in these exchange sets unless these files have been updated.
+
+*Units of Delivery:*  Exchange Set
+
+*Transfer Size:*  10 MB compressed
+
+*Medium Name:*  Digital data delivery
+
+==== Exchange Set Naming
+
+The name of the exchange set must contain the character string ‘S412’ to identify the data as containing the correct information. It must have the following structure, with S412 indicating the dataset, XXXX the metarea, and CC the 2-letter country code:
+
+_S412_XXXX_CC_FileInformation_ExchangeSet_
+
+Example: _S412_XII_US_11052018NorthAtlanticForecast_ExchangeSet_
+
+It is recommended to compress the exchange set folder using zip:
+
+_S412_XII_US_11052018NorthAtlanticForecast_ExchangeSet.zip_
+
 === Exchange Catalogue
+
+< < Will include figure showing Exchange Set/Exchange catalogue/Dataset/Support file formats > >
+
+Each exchange set has a single exchange catalogue which contains the discovery metadata for each dataset and references to any support files. The exchange catalogue acts as the table of contents for the exchange set. The catalogue file of the exchange set must be named S412ed1.CAT; no other file in the exchange set may have the same name.
+
+_The Exchange Catalogue acts as the table of contents for the Exchange Set. The Catalogue file of the Exchange Set must be named CATALOG.XML. No other file in the Exchange Set may be named CATALOG.XML. The contents of the Exchange Catalogue are described in <<sec-metadata>>._
 
 ==== Exchange Catalogue Naming
 
+=== Mandatory Elements
+
+The following are required elements within an exchange set:
+
+●	Marine Weather Warning datasets – GML encoding of features/attributes and their associated geometry and metadata;
+
+●	Exchange catalogue – the XML encoded representation of exchange set catalogue features [discovery metadata];
+
+=== Optional Elements
+
+●	Supplementary files – These are contained within the exchange set as files and the mapping from the name included within the dataset and the physical location on the media is defined within the Exchange catalogue. An example of a supplementary file could be an image.
+
+●	S-412 Feature catalogue – If it is necessary to deliver the latest feature catalogue to the end user it may be done using the S-412 exchange set mechanism for datasets.
+
+●	S-412 Portrayal catalogue - If it is necessary to deliver the latest portrayal catalogue to the end user it may be done using the S-412 exchange set mechanism for datasets.
+
+=== Dataset
+
+==== Datasets
+
+One type of dataset file may be produced and contained within an exchange set: 
+
+●	New dataset: Each new edition of a data set must follow the format defined in 11.6.2 and replace a previously loaded dataset within an ECS. If multiple files exist on a charting system, the system shall have the capacity to verify the most recent file is loaded and visualised for the end user.
+
+●	Update dataset: In some situations an update dataset will be required. This may occur if issuing an entirely new dataset is not appropriate. The GML update format should be whole-object replacements with an updated issuedDateTime attribution. If a significant number of objects or portions of the dataset needs updating, a dataset should follow the guidelines of a new dataset.
+
+●	Re-issue: In the event that a dataset must be reissued, it will be re-issued following the guidelines of a new dataset.
+
 ==== Dataset size
+
+< < Exact data size restrictions and recommendations will be determined during testing > >
+
+Datasets may be as large as necessary, provided that the entire exchange set before compression does not exceed 10MB.
 
 ==== Dataset file naming
 Dataset naming must follow a standard pattern to give implementers greater predictability of incoming datasets (see <<iho-s100,part=17,clause=4.3>>). S-412 dataset naming conventions must follow these rules and no further restrictions are made in this product specification.
 
 *412YYYYØØØØØØØØØØØØ.GML*::
-412::: the first 3 characters identify the dataset as an S-412 dataset (mandatory).
-YYYY::: the fourth to seventh characters identify the producer code according to the Producer Code Register.
-ØØØØ::: the eighth to the maximum nineteenth characters are optional and may be used in any way by the producer to provide the unique file name. The following characters are allowed in the dataset name: A to Z, 0 to 9 and the special character _ (underscore).
+412::: the first 3 characters identify the dataset as an S-412 dataset (mandatory); +
+YYYY::: the fourth to seventh characters identify the producer code according to the Producer Code Register; +
+ØØØØ::: the eighth to the maximum nineteenth characters are optional and may be used in any way by the producer to provide the unique file name. The following characters are allowed in the dataset name: A to Z, 0 to 9 and the special character _ (underscore); +
 GML::: denotes a GML file (according to <<iho-s100,part=10b>>).
 
-=== Exchange Set
+_The following is present in current S-412 PS:_
 
+_### is an identifier that represents either a new dataset (000), a re-issued dataset (999) or an updated dataset (001-998)._
+
+_Note: ### are placed befor .GML_
+
+==== New Datasets and Cancellations
+
+< < This section defines the sequencing of Marine Weather Warnings datasets for New Editions. > > 
 
 === Support Files
 No support files are included in any of the S-412 features currently. If they are supported in the future then their specification and delivery will be added to this section.
 
-=== Exchange Catalogue
-The Exchange Catalogue acts as the table of contents for the Exchange Set. The Catalogue file of the Exchange Set must be named CATALOG.XML. No other file in the Exchange Set may be named CATALOG.XML. The contents of the Exchange Catalogue are described in <<sec-metadata>>.
+Data set support files offer supplementary information that can be included in an S-412 exchange set.
+
+File Types	 Extensions	Comment 	XML	Additional Language Information
+
+==== Support File Naming
+
+< < This information is provided as a placeholder for now. OEM input is needed before a determination can be made. > >
+
+Support file names are subject to the same naming rules as dataset file names (clause 11.6.3), except that the extension is determined by the support file format.
+
+All support files must have unique universal file identifiers. The file identifier of support information should not be used to describe the physical content of the file. The support file metadata that accompanies the file will inform the user of the name and purpose of the file. 
+
+Supporting files will be named according to the following convention:
+
+S412CCXXXXXXXXXX.TTT
+
+S-412 indicates which product specification data the file supports, CC is 2-letter country code of the data producer, XXXXXXXXXX is a unique file name defined by the data producer with a maximum character limitation of 10 characters, and TTT is the type of file (file extension,i.e.: XML).
+
+===== Names of language packs
+
+If a language pack created by a data Producer for the S-412 Feature Catalogue is included, it must have the standard 7-character “412CCCC” prefix and the same base name as the standard IHO-issued Feature Catalogue with the 3-letter ISO 639-2/T language code suffixed. The language codes must be exactly those in the S-100 codelist for languages (S100_MD_LanguageCode, which can be found in the S-100 Schema distribution). The file extension must be “.XML”.
+
+NOTE:: A language pack issued by the IHO for the IHO Feature Catalogue will use the IHO Producer Code.
+
+==== Support File Management
+
+When a support file is created or issued it must carry a timestamp that indicates when it was issued and for when it is valid. These values are contained in the Support File Metadata as defined in clause 12.1.2 and must not change while the file is still current.
+
+The type of support file is indicated in the “purpose” field of the discovery metadata. Support files carrying the “deletion” flag may be removed from the ECDIS. When a feature pointing to a text, picture or application file is deleted or updated so that it no longer references the file, the ECDIS software must check to see whether any other feature referenced the same file, before that file is deleted.
+
+Support files should be stored in a separate folder within the exchange set. Each support file must be used only once in an exchange set.
 
 === Data integrity and encryption
+
 <<iho-s100,part=15>> defines the algorithms for compression, encrypting and digitally signing datasets based on the S-100 Data Model. Use of encryption is optional. Digital Signatures are mandatory for all datasets.
+
+==== Weather Overlay Data Integrity Measures
+
+There is a need for a mechanism within the S-412 data to ensure it has not changed during transmission/delivery. The mechanism chosen for this assurance is a Digital Signature as defined by S-100 Parts 15 and 17. File integrity checks are based on the Digital Signature Algorithm (DSA) as defined in the Federal Information Processing Standard FIPS 186-4. All files in the exchange set shall be digitally signed.
+
+==== Producer Identity and Authentication
+
+A producing agency will need a certified identity, verifiable by the IHO. S-100 Part 15 describes how to define a public/private keypair specific to the producer and how a data producer or distributor is able to have their identity (as embodied in the public / private keypair) certified by the IHO acting as the data protection scheme administrator.
+
+==== Digital Signatures and Metadata
+
+In addition to the metadata included for each dataset file and its digital signature, an exchange set must also provide a public key for every dataset data producer included within the exchange set. The public key is termed “public” because its existence is not kept confidential. Each producer’s public key is included in a “publicKeys” field within the exchange set. These keys are referred to by the digital signature.
+
+Authentication is done in two stages:
+
+1. Verifying that the public key information included in the exchange set validates correctly against the IHO’s root level certificate 
+2. Verifying that the exchange set S-412 data has not changed and the file based digital signatures are valid against the producer’s public key. The root certificate certifying IHO’s identity should be held externally on the implementing system and is not part of the dataset metadata.
+
+==== Data Encryption
+
+Dataset files may or may not be encrypted. If encrypted, the encryption method defined in S-100 Part 15 must be applied. then it must be provided only by the mechanisms provided in IHO S-100 Part 15.
 
 ==== Use of compression
 The data producer decides if compression will be used on the S-412 product files (GML). It is expected that a hydrographic office will make a policy decision and that all the S-412 datasets from the producer will be either compressed or uncompressed.
@@ -46,3 +166,10 @@ It is recommended to compress all the dataset files. The ZIP compression method 
 Digital signatures must be used on all files included in a S-412 compliant Exchange Set to meet the requirements of IMO resolution MSC.428(98) to reduce cyber security risks among users, especially when used in navigations systems at sea. The recommended signature method is defined in <<iho-s100,part=15>>.
 
 The digital signature information is encoded in the corresponding discovery block in the exchange catalogue for each file included in the Exchange Set as defined in <<iho-s100,part=17>>.
+
+=== Dataset Loading and Unloading
+
+S-412 datasets are typically intended to be overlays to S-101 ENC and displayed with S-101 ENC data in the background. Systems that support the display of S-412 datasets should provide the user with simple functions to turn the display of S-412 datasets on and off.
+
+Optionally, S-412 datasets can be viewed as overlays to a combination of S-101 ENC and S-102 (Bathymetric Surface) datasets, with S-413 (Marine Weather and Wave Conditions) and S-414 (Marine Weather Observations) datasets incorporated where applicable. The same requirements to allow the user to easily toggle the S-412 dataset on/off persist.
+
