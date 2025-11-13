@@ -4,13 +4,71 @@
 
 === Introduction
 
-This clause describes encoding rules for S-100 base datasets. For the encoding of datasets GML 3.2.1 is used as per <<iho-s100,part=10b>>.
+This clause specifies the encoding for Marine Weather Warning datasets. The principal encoding is the Open Geospatial Consortium (OGC), Geography Markup Language (GML) format as profiled by the S-100 GML schema in Part 10b of S-100. See Annex E – Data Product format (encoding) for a complete description and examples of the data records, fields and subfields defined in GML encoding.
 
-=== Encoding Rules
+The XML Schema for the S-412 GML application schema is available at the GI Registry (http://registry.iho.int). Feature instances must validate against the schema and conform to all other requirements specified in this data product specification including all constraints not captured in the XML Schema document.
 
-==== Longitude / Latitude
+=== Encoding of Latitude and Longitude
 
-* Longitude and latitude must be encoded in decimal degrees, e.g.: 12.567 56.765
-* Number of decimals is not specified.
+==== GML Latitude and Longitude
 
-=== Encoding Examples
+_Longitude and latitude must be encoded in decimal degrees, e.g.: 12.567 56.765_
+
+_Number of decimals is not specified._
+
+In S-412 GML files, latitude and longitude must be encoded in decimal degrees, e.g. for a:multiple point feature:
+
+^<gml:posList>24.700001 9.95 24.48 15.23 26.629999 22.02</gml:posList>^
+
+As modern GIS clients will likely be “axis-aware”, the order of the latitude/longitude pairs matters and should be latitude first, longitude second (YX), as in the examples above. To indicate the WGS84 horizontal coordinate reference system for the YX latitude/longitude pairs, in the GML file use:
+
+^srsName=”urn:ogc:def:crs:epsg::4326”^
+
+Also, the order of latitude-longitude pairs matters in a multiple point feature. For a curve feature, this order shall be listed in a west to east (W->E) order, as in westernmost point first and easternmost point last, or increasingly positive longitude values (see multiple point feature example above). For a surface feature, this order shall be listed in a clockwise order. Numeric Attribute Encoding.
+
+Floating point or integer attribute values must not be padded by non-significant zeros. 
+
+=== Text Attribute Values
+
+Character strings must be encoded using the character set defined in ISO 10646-1, in Unicode Transformation Format-8 (UTF-8). A BOM (byte order mark) must not be used.
+
+=== Temporal Attribute Encoding
+
+Times must be in UTC and follow the following 25-character format: yyyymmddThhmmss (ISO 8601).
+
+=== Mandatory Attribute Values
+
+There are five reasons why attribute values may be considered mandatory: +
+●	They determine whether a feature is in the display base; +
+●	Certain features make no logical sense without specific attributes; +
+●	Some attributes are necessary to determine which symbol is to be displayed; +
+●	Certain attributes are used to verify data quality; +
+●	Some attributes are required for safety of navigation.
+
+All mandatory attributes are identified in the Feature catalogue and summarised in the Data Classification and Encoding Guides provided in Annex A. 
+
+=== Missing or Unknown Attribute Values
+
+Missing or unknown values are not permitted in S-412. Mandatory attributes must contain meaningful data.
+
+=== Encoding Datasets Across 180° Longitude
+
+Datasets must not cross the 180° meridian of longitude.
+
+=== Structure of Dataset Files
+
+< < A description of the order of data objects in each dataset > >
+
+10.9	Object Identifiers
+
+< < MRN guidance is being developed by the S-100 WG. Once completed, this section will contain guidance for completing an MRN similar to urn:mrn:WMO:S412. > >
+
+< < Additional guidance needed about the use of gml:id for objects and geometries. > >
+
+=== Data Scale
+
+< < Data may be scale independent. This will be determined during testing. > >
+
+=== Message Filtering Along Routes
+
+< < Statement regarding systems ability to filter information along a route by date, time, and conditions > >
