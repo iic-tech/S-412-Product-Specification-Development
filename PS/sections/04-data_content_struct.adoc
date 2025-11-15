@@ -64,7 +64,7 @@ The realisation of a Wind Warning concept is provided in Figure 2. In this figur
 
 [[fig-Wind-Warning-Feature]]
 .Wind Warning Feature
-image::../images/figure-Wind-Warning-Feature.png[UML diagram depicting the S-412 Wind Warning Feature with its attributes and associations.]
+image::../images/figure-wind-warning-feature.png[UML diagram depicting the S-412 Wind Warning Feature with its attributes and associations.]
 
 ==== Feature Relationship
 
@@ -82,7 +82,7 @@ Figure 3 shows the realisation of the dataProvider information type in S-412.
 
 [[fig-Data-Provider-Information-Type]]
 .Data Provider Information Type
-image::../images/figure-Data-Provider-Information-Type.png[UML diagram depicting the S-412 Data Provider Information Type.]
+image::../images/figure-data-provider-information-type.png[UML diagram depicting the S-412 Data Provider Information Type.]
 
 ==== Attributes
 
@@ -124,7 +124,7 @@ Simple attributes for the Wind Warning feature type are shown in Figure 2 and th
 
 [[fig-S-412-Enumerated-Attributes]]
 .S-412 Enumerated Attributes
-image::../images/figure-S-412-Enumerated-Attributes.png[UML diagram depicting the S-412 Enumerated Attributes.]
+image::../images/figure-s412-enumerated-attributes.png[UML diagram depicting the S-412 Enumerated Attributes.]
 
 ===== Code Lists
 
@@ -136,7 +136,7 @@ Complex attributes are aggregations of other attributes that are either simple o
 
 [[fig-S-412-Complex-Attributes]]
 .S-412 Complex Attributes
-image::../images/figure-S-412-Complex-Attributes.png[UML diagram depicting the S-412 Complex Attributes.]
+image::../images/figure-s412-complex-attributes.png[UML diagram depicting the S-412 Complex Attributes.]
 
 ==== Associations
 
@@ -146,7 +146,7 @@ Figure 7 shows an example of the association between the WeatherWarning feature 
 
 [[fig-S-412-Data-Provider-Association]]
 .S-412 Data Provider Association
-image::../images/figure-S-412-Data-Provider-Association.png[UML diagram depicting the S-412 data Provider Association between a Weather Warning and a Data Provider.]
+image::../images/figure-s412-data-provider-association.png[UML diagram depicting the S-412 data Provider Association between a Weather Warning and a Data Provider.]
 
 Figure 6 shows the real world relationship between a weather warning and its supplemental information for where it came from. A complete list of associations and roles used in S-412 can be found in Annex A.
 
@@ -196,7 +196,7 @@ Every time attribute is associated with the abstract WeatherWarning feature type
 
 [[fig-Time-Attributes-weatherWarning]]
 .S-412 weatherWarning Time Attributes
-image::../images/figure-weatherWarning-Time-Attributes.png[UML diagram depicting the S-412 Time attributes associated with weatherWarnings.]
+image::../images/figure-time-attributes-associated-with-weather-warning.png[UML diagram depicting the S-412 Time attributes associated with weatherWarnings.]
 
 ==== Multiple datasets
 
@@ -224,7 +224,7 @@ Level 3a is described by the following constraints:
 
 [[fig-Level-3a-Geometric-Rules]]
 .Level3a Geometric Rules
-image::../images/figure-Level-3a-Geometric-Rules.png[UML diagram depicting the Level 3a Geometric Rules.]
+image::../images/figure-level-3a-geometric-rules.png[UML diagram depicting the Level 3a Geometric Rules.]
 
 S-412 further constraints Level 3a with the following:
 *	Coincident linear geometry must be avoided when there is a dependency between features. 
