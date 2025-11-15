@@ -12,8 +12,8 @@ The Marine Weather Warnings Overlay is a feature-based product that contains met
 
 S-412 conforms to the General Feature Model (GFM) outlined in S-100 Part 3 and is realised in Figure 1. The GFM is the conceptual model for feature and information types.
 
-[[fig-S-412-General-Feature-Model]]
-.S-412 general Feature Model
+[[fig-general-feature-model]]
+.S-412 General Feature Model
 image::../images/figure-general-feature-model.png[UML diagram depicting the S-412 General Feature Model]
 
 *The complete application schema is expressed in UML and is provided in Annex A.*
