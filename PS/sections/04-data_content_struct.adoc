@@ -14,7 +14,7 @@ S-412 conforms to the General Feature Model (GFM) outlined in S-100 Part 3 and i
 
 [[fig-S-412-General-Feature-Model]]
 .S-412 general Feature Model
-image::../images/figure-s412-general-feature-model.png[UML diagram depicting the S-412 General Feature Model]
+image::../images/figure-general-feature-model.png[UML diagram depicting the S-412 General Feature Model]
 
 *The complete application schema is expressed in UML and is provided in Annex A.*
 
