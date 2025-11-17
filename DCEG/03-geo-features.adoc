@@ -1,0 +1,22 @@
+
+[[sec-geo-features]]
+== Geo Features
+
+=== Convergent Boundary
+
+[width="100%",cols="5,5,5,1,1"]
+|===
+
+5+|[.underline]#IHO Definition:# *CONVERGENT BOUNDARY*. The interface or transition zone between air masses of similar densities (temperature, humidity).
+5+|[.underline]#*S-101 Geo Feature:# Convergent Boundary*
+5+|[.underline]#*Primitives:# Curve*
+
+|*S-412 Attribute* |*alias* |*Allowable Encoding Value* |*Type |Multiplicity*
+
+|Date Time range
+|
+|
+|C
+|1,1
+
+|===
