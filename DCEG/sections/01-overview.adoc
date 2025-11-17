@@ -1,0 +1,13 @@
+
+[[sec-overview]]
+== Overview
+
+=== Preface
+
+The “Data Classification and Encoding Guide” has been developed to provide consistent, standardized instructions for encoding S-411 data.
+
+The purpose of the Data Classification and Encoding Guide is to facilitate S-411 encoding to meet JCOMM — ETSI standards for the proper display of Ice Information in an ECDIS. The document describes how to encode ice information considered relevant to be displayed on an ECDIS. The content
+of an Ice Information product is at the discretion of the producing authority provided that the conventions described within this document are followed. A “producing authority” is a Hydrographic Office (HO) or an organization authorized by a government, HO or other relevant government institution to produce Ice
+Information product.
+
+The entire S-411 Standard, including the S-411 ENC Product Specification, is available at the following web site, https://iho.int/.
