@@ -1,3 +1,0 @@
-== Attributes and Enumerates Descriptions
-
-include::attributes/iceAccretionRate.adoc[]
