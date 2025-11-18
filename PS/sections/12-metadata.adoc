@@ -26,11 +26,11 @@ The discovery metadata classes have numerous attributes which enable important i
 
 [[fig-metadata-overview]]
 .S-412 Metadata Overview
-image::../images/figure-metadata-overview.png[UML diagram showing an overview of the S-412 Metadata]
+image::../images/figure-metadata_overview.png[UML diagram showing an overview of the S-412 Metadata]
 
 [[fig-metadata-details]]
 .S-412 Metadata Details
-image::../images/figure-S-412-metadata-details.png[UML diagram showing the detailled S-412 Metadata]
+image::../images/figure-metadata_details.png[UML diagram showing the detailled S-412 Metadata]
 
 NOTE 1:: Types with CI_, EX_, and MD_ prefixes are from packages defined in ISO 19115-1 and 19115-3 and adapted by S-100. Types with S100_ prefix are from packages defined in S-100.
 
