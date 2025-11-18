@@ -62,7 +62,7 @@ Feature types may be associated to other feature types or to information types.
 
 The realisation of a Wind Warning concept is provided in Figure 2. In this figure, Wind Warning is represented by a UML diagram. The diagram shows the Wind Warning feature’s inheritance from the abstract Weather Warning feature and its connection to various complex and simple attributes. The windWarningThreshold attribute is used to determine the category and portrayal colour of Wind Warning polygons based on wind speeds. The optional beaufortForce attribute is used to indicate more specific wind speed bins that the feature represents, based on the Beaufort Wind Scale. The dateTimeRange attribute provides the start and end times that are valid for the Wind Warning. The weatherWarningNumber attribute provides an identification number to track warnings issued with each new dataset. The optional weatherWarningMessage attribute provides a short message with added context or information about a Weather Warning.
 
-[[fig-Wind-Warning-Feature]]
+[[fig-wind-warning-feature]]
 .Wind Warning Feature
 image::../images/figure-wind-warning-feature.png[UML diagram depicting the S-412 Wind Warning Feature with its attributes and associations.]
 
@@ -80,7 +80,7 @@ Information types define identifiable pieces of information in a dataset that ca
 
 Figure 3 shows the realisation of the dataProvider information type in S-412.
 
-[[fig-Data-Provider-Information-Type]]
+[[fig-data-provider-information-type]]
 .Data Provider Information Type
 image::../images/figure-data-provider-information-type.png[UML diagram depicting the S-412 Data Provider Information Type.]
 
@@ -122,7 +122,7 @@ Example: 19850412T101530
 
 Simple attributes for the Wind Warning feature type are shown in Figure 2 and the dataProvider information type in Figure 3. Each attribute type is listed next to their camel case encoding value. Enumerated attributes are referenced by their defined data type and values are listed. Enumerated attributes, represented in UML are shown in Figure 4. The complete list of all attributes and their properties approved for use in S-412 are provided in Annex A.
 
-[[fig-S-412-Enumerated-Attributes]]
+[[fig-s412-enumerated-attributes]]
 .S-412 Enumerated Attributes
 image::../images/figure-s412-enumerated-attributes.png[UML diagram depicting the S-412 Enumerated Attributes.]
 
@@ -134,7 +134,7 @@ Within S-100, codelist types may be used for open enumerations whose membership 
 
 Complex attributes are aggregations of other attributes that are either simple or complex. The aggregation is defined by means of attribute bindings. Figure 5 shows the complex attribute dateTimeRange utilised by many features, including the Wind Warning feature type shown in Figure 2. This attribute is an aggregation of 2 simple dateTime attributes. A full list of complex attributes approved for use in an S-412 dataset are defined in Annex A as well as represented in UML in Figure 6.
 
-[[fig-S-412-Complex-Attributes]]
+[[fig-s412-complex-attributes]]
 .S-412 Complex Attributes
 image::../images/figure-s412-complex-attributes.png[UML diagram depicting the S-412 Complex Attributes.]
 
@@ -144,7 +144,7 @@ Associations are used to describe a relationship between instances of one featur
 
 Figure 7 shows an example of the association between the WeatherWarning feature type and the DataProvider information type called DataProviderAssociation. The real world relationship between these concepts is that a weather warning has additional information about the service(s) issuing the warning.
 
-[[fig-S-412-Data-Provider-Association]]
+[[fig-s412-data-provider-association]]
 .S-412 Data Provider Association
 image::../images/figure-s412-data-provider-association.png[UML diagram depicting the S-412 data Provider Association between a Weather Warning and a Data Provider.]
 
@@ -194,7 +194,7 @@ Three other simple dateTime attributes (issuedDateTime, nextUpdateDateTime, and 
 
 Every time attribute is associated with the abstract WeatherWarning feature type. These attributes are inherited by all sub-types of WeatherWarning (windWarning, significantWaveHeightWarning, iceAccretionWarning, restrictedVisibilityWarning, and thunderstormWarning). This is demonstrated in Figure 7.
 
-[[fig-Time-Attributes-weatherWarning]]
+[[fig-time-attributes-associated-with-weather-warning]]
 .S-412 weatherWarning Time Attributes
 image::../images/figure-time-attributes-associated-with-weather-warning.png[UML diagram depicting the S-412 Time attributes associated with weatherWarnings.]
 
@@ -222,7 +222,7 @@ Level 3a is described by the following constraints:
 *	In the case of areas with holes, all internal boundaries must be completely contained within the external boundary and the internal boundaries must not intersect each other or the external boundary. Internal boundaries may touch tangentially (i.e. at one point). See Figure 9.
 *	The outer boundary of a surface must be in a clockwise direction (surface to the right of the curve) and the curve orientation positive. The inner boundary of a surface must be in a counter-clockwise direction (surface to the right of the curve) and the curve orientation negative. See Figure 9.
 
-[[fig-Level-3a-Geometric-Rules]]
+[[fig-level-3a-geometric-rules]]
 .Level3a Geometric Rules
 image::../images/figure-level-3a-geometric-rules.png[UML diagram depicting the Level 3a Geometric Rules.]
 
