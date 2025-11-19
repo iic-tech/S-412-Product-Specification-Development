@@ -24,13 +24,13 @@ More detailed information for the classes is depicted in Figure 11 and details a
 
 The discovery metadata classes have numerous attributes which enable important information about the datasets and accompanying support files to be examined without the need to process the data, e.g. decrypt, decompress, load etc. Other catalogues can be included in the exchange set in support of the datasets such as feature and portrayal catalogues. The attribute “purpose” of the support file metadata provides a mechanism to update support files.
 
-[[fig-Metadata-Overview]]
+[[fig-metadata-overview]]
 .S-412 Metadata Overview
-image::../images/figure-S-412-Metadata-Overview.png[UML diagram showing an overview of the S-412 Metadata]
+image::../images/figure-metadata_overview.png[UML diagram showing an overview of the S-412 Metadata]
 
-[[fig-Metadata-Details]]
+[[fig-metadata-details]]
 .S-412 Metadata Details
-image::../images/figure-S-412-Metadata-Details.png[UML diagram showing the detailled S-412 Metadata]
+image::../images/figure-metadata_details.png[UML diagram showing the detailled S-412 Metadata]
 
 NOTE 1:: Types with CI_, EX_, and MD_ prefixes are from packages defined in ISO 19115-1 and 19115-3 and adapted by S-100. Types with S100_ prefix are from packages defined in S-100.
 
