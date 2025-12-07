@@ -41,9 +41,14 @@ Changes to this Specification are coordinated by WMO/IOC Joint Technical Commiss
 |T. Cervone-Richards, D. Spindler, S. Stevenson, S. Williamson
 |Updated multiple sections updated including new scope, DCEG and FC.
 
-|2.0.0
+|1.0.1
 |25 October 2025
 |IIC Technologies
 |Initial Population of document skeleton.
+
+|1.0.2
+|9 December 2025
+|IIC Technologies
+|Review of the PS by IIC Technologies.
 
 |===
