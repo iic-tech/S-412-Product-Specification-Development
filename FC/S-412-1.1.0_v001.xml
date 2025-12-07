@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<S100_FC_FeatureCatalogue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://www.iho.int/S100FC/5.2 https://schemas.s100dev.net/schemas/S100/5.2.0/S100FC/20231214/S100FC.xsd"
- xmlns="http://www.iho.int/S100FC/5.2" xmlns:ns2="http://www.iho.int/S100CI/5.0"
- xmlns:ns4="http://www.iho.int/S100CD/5.0" xmlns:ns3="http://www.iho.int/S100Base/5.0">
+<S100_FC_FeatureCatalogue xmlns="http://www.iho.int/S100FC/5.2" xmlns:ns2="http://www.iho.int/S100CI/5.0" xmlns:ns3="http://www.iho.int/S100Base/5.0" xmlns:ns4="http://www.iho.int/S100CD/5.0">
     <name>S-412</name>
     <scope>global</scope>
     <fieldOfApplication>none</fieldOfApplication>
@@ -32,7 +29,7 @@
     <S100_FC_SimpleAttributes>
         <S100_FC_SimpleAttribute>
             <name>beaufortForce</name>
-            <definition></definition>
+            <definition>beaufortForce</definition>
             <code>beaufortForce</code>
             <alias></alias>
             <valueType>enumeration</valueType>
@@ -125,7 +122,7 @@
         </S100_FC_SimpleAttribute>
         <S100_FC_SimpleAttribute>
             <name>metareaName</name>
-            <definition></definition>
+            <definition>metareaName</definition>
             <code>metareaName</code>
             <alias></alias>
             <valueType>enumeration</valueType>
@@ -239,7 +236,7 @@
         </S100_FC_SimpleAttribute>
         <S100_FC_SimpleAttribute>
             <name>significantWaveHeightWarningThreshold</name>
-            <definition></definition>
+            <definition>significantWaveHeightWarningThreshold</definition>
             <code>significantWaveHeightWarningThreshold</code>
             <alias></alias>
             <valueType>enumeration</valueType>
@@ -440,6 +437,7 @@
             <name>contactInformation</name>
             <definition>No definition set for contactInformation</definition>
             <code>contactInformation</code>
+            <alias></alias>
             <subAttributeBinding sequential="false">
                 <multiplicity>
                     <ns3:lower>1</ns3:lower>
@@ -480,6 +478,7 @@
             <name>fixedDateRange</name>
             <definition>No definition set for fixedDateRange</definition>
             <code>fixedDateRange</code>
+            <alias></alias>
             <subAttributeBinding sequential="false">
                 <multiplicity>
                     <ns3:lower>1</ns3:lower>
@@ -499,6 +498,7 @@
             <name>information</name>
             <definition>No definition set for information</definition>
             <code>information</code>
+            <alias></alias>
             <subAttributeBinding sequential="false">
                 <multiplicity>
                     <ns3:lower>0</ns3:lower>
@@ -518,6 +518,7 @@
             <name>issuingService</name>
             <definition>No definition set for issuingService</definition>
             <code>issuingService</code>
+            <alias></alias>
             <subAttributeBinding sequential="false">
                 <multiplicity>
                     <ns3:lower>1</ns3:lower>
@@ -544,6 +545,7 @@
             <name>issuingServiceName</name>
             <definition>No definition set for issuingServiceName</definition>
             <code>issuingServiceName</code>
+            <alias></alias>
             <subAttributeBinding sequential="false">
                 <multiplicity>
                     <ns3:lower>1</ns3:lower>
@@ -556,6 +558,7 @@
             <name>maximumWindSpeed</name>
             <definition>No definition set for maximumWindSpeed</definition>
             <code>maximumWindSpeed</code>
+            <alias></alias>
             <subAttributeBinding sequential="false">
                 <multiplicity>
                     <ns3:lower>1</ns3:lower>
@@ -568,6 +571,7 @@
             <name>weatherWarningMessage</name>
             <definition>No definition set for weatherWarningMessage</definition>
             <code>weatherWarningMessage</code>
+            <alias></alias>
             <subAttributeBinding sequential="false">
                 <multiplicity>
                     <ns3:lower>1</ns3:lower>
@@ -580,6 +584,7 @@
             <name>preparationService</name>
             <definition>No definition set for preparationService</definition>
             <code>preparationService</code>
+            <alias></alias>
             <subAttributeBinding sequential="false">
                 <multiplicity>
                     <ns3:lower>1</ns3:lower>
@@ -608,12 +613,12 @@
             <code>dataProviderInformation</code>
         </S100_FC_Role>
     </S100_FC_Roles>
-
     <S100_FC_InformationTypes>
         <S100_FC_InformationType>
             <name>DataProvider</name>
             <definition>No definition set for DataProvider</definition>
             <code>DataProvider</code>
+            <alias></alias>
             <attributeBinding sequential="false">
                 <multiplicity>
                     <ns3:lower>1</ns3:lower>
@@ -638,63 +643,11 @@
         </S100_FC_InformationType>
     </S100_FC_InformationTypes>
     <S100_FC_FeatureTypes>
-        <S100_FC_FeatureType isAbstract="false">
-            <name>IceAccretionWarning</name>
-            <definition>No definition set for IceAccretionWarning</definition>
-            <code>IceAccretionWarning</code>
-            <attributeBinding sequential="false">
-                <multiplicity>
-                    <ns3:lower>1</ns3:lower>
-                    <ns3:upper infinite="false">1</ns3:upper>
-                </multiplicity>
-                <attribute ref="iceAccretionRate"/>
-            </attributeBinding>
-            <attributeBinding sequential="false">
-                <multiplicity>
-                    <ns3:lower>0</ns3:lower>
-                    <ns3:upper infinite="false">1</ns3:upper>
-                </multiplicity>
-                <attribute ref="sourceOfIcing"/>
-            </attributeBinding>
-            <superType>WeatherWarning</superType>
-            <featureUseType>geographic</featureUseType>
-            <permittedPrimitives>surface</permittedPrimitives>
-        </S100_FC_FeatureType>
-        <S100_FC_FeatureType isAbstract="false">
-            <name>RestrictedVisibilityWarning</name>
-            <definition>No definition set for RestrictedVisibilityWarning</definition>
-            <code>RestrictedVisibilityWarning</code>
-            <superType>WeatherWarning</superType>
-            <featureUseType>geographic</featureUseType>
-            <permittedPrimitives>surface</permittedPrimitives>
-        </S100_FC_FeatureType>
-        <S100_FC_FeatureType isAbstract="false">
-            <name>SignificantWaveHeightWarning</name>
-            <definition>No definition set for SignificantWaveHeightWarning</definition>
-            <code>SignificantWaveHeightWarning</code>
-            <attributeBinding sequential="false">
-                <multiplicity>
-                    <ns3:lower>1</ns3:lower>
-                    <ns3:upper infinite="false">1</ns3:upper>
-                </multiplicity>
-                <attribute ref="significantWaveHeightWarningThreshold"/>
-            </attributeBinding>
-            <superType>WeatherWarning</superType>
-            <featureUseType>geographic</featureUseType>
-            <permittedPrimitives>surface</permittedPrimitives>
-        </S100_FC_FeatureType>
-        <S100_FC_FeatureType isAbstract="false">
-            <name>ThunderstormWarning</name>
-            <definition>No definition set for ThunderstormWarning</definition>
-            <code>ThunderstormWarning</code>
-            <superType>WeatherWarning</superType>
-            <featureUseType>geographic</featureUseType>
-            <permittedPrimitives>surface</permittedPrimitives>
-        </S100_FC_FeatureType>
         <S100_FC_FeatureType isAbstract="true">
             <name>WeatherWarning</name>
             <definition>No definition set for WeatherWarning</definition>
             <code>WeatherWarning</code>
+            <alias></alias>
             <attributeBinding sequential="false">
                 <multiplicity>
                     <ns3:lower>1</ns3:lower>
@@ -748,9 +701,67 @@
             <permittedPrimitives>surface</permittedPrimitives>
         </S100_FC_FeatureType>
         <S100_FC_FeatureType isAbstract="false">
+            <name>IceAccretionWarning</name>
+            <definition>No definition set for IceAccretionWarning</definition>
+            <code>IceAccretionWarning</code>
+            <alias></alias>
+            <attributeBinding sequential="false">
+                <multiplicity>
+                    <ns3:lower>1</ns3:lower>
+                    <ns3:upper infinite="false">1</ns3:upper>
+                </multiplicity>
+                <attribute ref="iceAccretionRate"/>
+            </attributeBinding>
+            <attributeBinding sequential="false">
+                <multiplicity>
+                    <ns3:lower>0</ns3:lower>
+                    <ns3:upper infinite="false">1</ns3:upper>
+                </multiplicity>
+                <attribute ref="sourceOfIcing"/>
+            </attributeBinding>
+            <superType>WeatherWarning</superType>
+            <featureUseType>geographic</featureUseType>
+            <permittedPrimitives>surface</permittedPrimitives>
+        </S100_FC_FeatureType>
+        <S100_FC_FeatureType isAbstract="false">
+            <name>RestrictedVisibilityWarning</name>
+            <definition>No definition set for RestrictedVisibilityWarning</definition>
+            <code>RestrictedVisibilityWarning</code>
+            <alias></alias>
+            <superType>WeatherWarning</superType>
+            <featureUseType>geographic</featureUseType>
+            <permittedPrimitives>surface</permittedPrimitives>
+        </S100_FC_FeatureType>
+        <S100_FC_FeatureType isAbstract="false">
+            <name>SignificantWaveHeightWarning</name>
+            <definition>No definition set for SignificantWaveHeightWarning</definition>
+            <code>SignificantWaveHeightWarning</code>
+            <alias></alias>
+            <attributeBinding sequential="false">
+                <multiplicity>
+                    <ns3:lower>1</ns3:lower>
+                    <ns3:upper infinite="false">1</ns3:upper>
+                </multiplicity>
+                <attribute ref="significantWaveHeightWarningThreshold"/>
+            </attributeBinding>
+            <superType>WeatherWarning</superType>
+            <featureUseType>geographic</featureUseType>
+            <permittedPrimitives>surface</permittedPrimitives>
+        </S100_FC_FeatureType>
+        <S100_FC_FeatureType isAbstract="false">
+            <name>ThunderstormWarning</name>
+            <definition>No definition set for ThunderstormWarning</definition>
+            <code>ThunderstormWarning</code>
+            <alias></alias>
+            <superType>WeatherWarning</superType>
+            <featureUseType>geographic</featureUseType>
+            <permittedPrimitives>surface</permittedPrimitives>
+        </S100_FC_FeatureType>
+        <S100_FC_FeatureType isAbstract="false">
             <name>WindWarning</name>
             <definition>No definition set for WindWarning</definition>
             <code>WindWarning</code>
+            <alias></alias>
             <attributeBinding sequential="false">
                 <multiplicity>
                     <ns3:lower>1</ns3:lower>
