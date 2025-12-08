@@ -5,14 +5,14 @@
 Datasets conforming to S-412 should always be created with the best available source information. Weather service providers recognized by the WMO shall be the distributor of datasets for each respective METAREA. All Marine Weather Warning information covering winds, waves, ice accretion, thunderstorms, and restricted visibility should be complete and in compliance with this Product Specification. The quality of the information can be verified with the text provided in the GMDSS.
 
 Marine Weather Warning information is assumed to be of high quality and guaranteed by the processes employed by data providers. Quality of S-412 products depends on the combined quality of many inputs including observed, mathematically-predicted, or model-driven weather data. 
-S-412 products must be validated with the S-412 specific validation checks prior to release by the data producer. The data producer must review the check results and address any issues to ensure sufficient quality of the data products. The checks are a mixture of data format validation, conformance to standards, completeness and logical consistency. These validation checks are listed in [start_review1]Annex F[end_review1].
+S-412 products must be validated with the S-412 specific validation checks prior to release by the data producer. The data producer must review the check results and address any issues to ensure sufficient quality of the data products. The checks are a mixture of data format validation, conformance to standards, completeness and logical consistency. These validation checks are listed in [[start_review1]]Annex F[[end_review1]].
 
-[reviewer=IIC,date=2025-12-07,from=start_review1,to=end_review1]
+[reviewer="IIC",date=2025-12-07,from=start_review1,to=end_review1]
 ****
 Annex reference TBC.
 ****
 
-=== [start_review2]Completeness[end_review2]
+=== [[start_review2]Completeness[end_review2]]
 
 Completeness is defined as the presence and absence of features, their attributes and relationships. It consists of two data quality elements: +
 
@@ -20,14 +20,14 @@ Completeness is defined as the presence and absence of features, their attribute
 
 *	 Omission: data absent from a dataset.
 
-[reviewer=IIC,date=2025-12-07,from=start_review1,to=end_review1]
+[reviewer="IIC",date=2025-12-07,from=start_review2,to=end_review2]
 ****
 There are no explanations on how the concepts of Commission and Ommission are processed if the S-412 PS.
 ****
 
-=== [start_review3]Logical consistency[end_review3]
+=== [[start_review3]]Logical consistency[[end_review3]]
 
-[reviewer=IIC,date=2025-12-07,from=start_review3,to=end_review3]
+[reviewer="IIC",date=2025-12-07,from=start_review3,to=end_review3]
 ****
 *Logical concistency* has a more restricted meaning in S-158. Suggest replacing by *Standard consistency*.
 ****
@@ -56,9 +56,9 @@ Positional Accuracy is defined as the accuracy of the position of features withi
 
 * 	Gridded data positional accuracy: closeness of gridded data spatial position values to values accepted as or being true.
 
-=== Temporal [start_review4]Quality[end_review4]
+=== Temporal [[start_review4]Quality[end_review4]]
 
-[reviewer=IIC,date=2025-12-07,from=start_review4,to=end_review4]
+[reviewer="IIC",date=2025-12-07,from=start_review4,to=end_review4]
 ****
 Accuracy?.
 ****
