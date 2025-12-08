@@ -12,7 +12,7 @@ S-412 products must be validated with the S-412 specific validation checks prior
 Annex reference TBC.
 ****
 
-=== [[s6_start_review2]Completeness[s6_end_review2]]
+=== [[s6_start_review2]]Completeness[[s6_end_review2]]
 
 Completeness is defined as the presence and absence of features, their attributes and relationships. It consists of two data quality elements: +
 
@@ -56,7 +56,7 @@ Positional Accuracy is defined as the accuracy of the position of features withi
 
 * 	Gridded data positional accuracy: closeness of gridded data spatial position values to values accepted as or being true.
 
-=== Temporal [[s6_start_review4]]Quality[s6_end_review4]]
+=== Temporal [[s6_start_review4]]Quality[[s6_end_review4]]
 
 [reviewer="IIC",date=2025-12-07,from=s6_start_review4,to=s6_end_review4]
 ****
