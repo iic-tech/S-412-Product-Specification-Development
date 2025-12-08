@@ -193,8 +193,8 @@ Some definitions are slighty different to the ones in S-411, S-100, etc.).
 
 The S-100 framework is based on the ISO 19100 series of geographic standards. The terms and definitions provided here are used to standardise the relevant nomenclature found within that framework, whenever possible. Additional definitions specific to S-412 are provided in this section as well. Features, attributes and associations that may be realised in an S-412 compliant dataset are defined in [[s1_start_review6]]Annex A, B and C.[[s1_end_review6]]
 
-=== [[s1_start_review6]]References[[s1_end_review6]]
-[reviewer="IIC",date=2025-12-04,from=s1_start_review6,to=s1_end_review6]
+=== [[s1_start_review7]]References[[s1_end_review7]]
+[reviewer="IIC",date=2025-12-04,from=s1_start_review7,to=s1_end_review7]
 ****
 References to Annexes to be confirmed.
 ****
