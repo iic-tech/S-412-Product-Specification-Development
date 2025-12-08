@@ -16,8 +16,8 @@ This product specification does not include recommended changes to or requiremen
 
 [bibliography]
 
-=== [[start_review1]]References[[end_review1]]
-[reviewer="IIC",date=2025-12-04,from=start_review1,to=end_review1]
+=== [[s1_start_review1]]References[[s1_end_review1]]
+[reviewer="IIC",date=2025-12-04,from=s1_start_review1,to=s1_end_review1]
 ****
 Suggest to conduct a global review of the references for harmonization and concistency with ISO 690. At this stage, references from S-411 have been added in their original form for comparison.
 ****
@@ -184,17 +184,17 @@ Within this document:
 * "`Should`" indicates an optional requirement, that is the recommended process to be followed, but is not mandatory.
 * "`May`" means "`allowed to`" or "`could possibly`" and is not mandatory.
 
-==== [[start_review2]]Terms and definitions [[end_review2]]
-[reviewer="IIC",date=2025-12-04,from=start_review2,to=end_review2]
+==== [[s1_start_review2]]Terms and definitions [[s1_end_review2]]
+[reviewer="IIC",date=2025-12-04,from=s1_start_review2,to=s1_end_review2]
 ****
 Definitions in italic have been added from S-411 PS, S-100, etc. They seem useful in S-411 PS. TBC.
 Some definitions are slighty different to the ones in S-411, S-100, etc.).
 ****
 
-The S-100 framework is based on the ISO 19100 series of geographic standards. The terms and definitions provided here are used to standardise the relevant nomenclature found within that framework, whenever possible. Additional definitions specific to S-412 are provided in this section as well. Features, attributes and associations that may be realised in an S-412 compliant dataset are defined in [start_review3]Annex A, B and C.[end_review3]
+The S-100 framework is based on the ISO 19100 series of geographic standards. The terms and definitions provided here are used to standardise the relevant nomenclature found within that framework, whenever possible. Additional definitions specific to S-412 are provided in this section as well. Features, attributes and associations that may be realised in an S-412 compliant dataset are defined in [s1_start_review3]Annex A, B and C.[s1_end_review3]
 
-=== [[start_review3]]References[[end_review3]]
-[reviewer="IIC",date=2025-12-04,from=start_review1,to=end_review1]
+=== [[s1_start_review3]]References[[s1_end_review3]]
+[reviewer="IIC",date=2025-12-04,from=s1_start_review1,to=s1_end_review1]
 ****
 References to Annexes to be confirmed.
 ****
@@ -342,16 +342,16 @@ Example: A feature attribute named ‘colour’ may have an attribute value ‘g
 
 A catalogue containing definitions and descriptions of the *feature* types, *feature attributes* and occurring in one or more sets of geographic data [ISO 19110].
 
-[[start_review4]] *Feature Portrayal Function*[[end_review4]]
-[reviewer="IIC",date=2025-12-04,from=start_review4,to=end_review4]
+[[s1_start_review4]] *Feature Portrayal Function*[[s1_end_review4]]
+[reviewer="IIC",date=2025-12-04,from=s1_start_review4,to=s1_end_review4]
 ****
 Not sure this definition is valid for S-100 PS series.
 ****
 
 Function that maps a geographic feature to a symbol [ISO 19117:2012 (E), 4.10].
 
-[[start_review5]]*Function*[[end_review5]]
-[reviewer="IIC",date=2025-12-04,from=start_review5,to=end_review5]
+[[s1_start_review5]]*Function*[[s1_end_review5]]
+[reviewer="IIC",date=2025-12-04,from=s1_start_review5,to=s1_end_review5]
 ****
 Not sure this definition is valid for S-100 PS series.
 ****

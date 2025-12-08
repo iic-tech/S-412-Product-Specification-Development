@@ -73,13 +73,13 @@ Feature types are the basic level of classification in the Feature Catalogue, an
 .S-412 Features
 image::../images/figure-s412-features.png[UML diagram depicting the S-412 Features]
 
-===== [[start_review1]]Meta Features[[end_review1]]
+===== [[s4_start_review1]]Meta Features[[s4_end_review1]]
 
 Meta Features contain information about other features within a data set. Information defined by Meta Features override the default metadata values defined by the dataset descriptive records.
 
 S-412 provides a single meta-feature, DataCoverage. DataCoverage is for describing areas in the dataset that are populated with data. The dataset may include multiple DataCoverage features to describe different contiguous (i.e. non-overlapping) areas.
 
-[reviewer="IIC",date=2025-12-05,from=start_review1,to=end_review1]
+[reviewer="IIC",date=2025-12-05,from=s4_start_review1,to=s4_end_review1]
 ****
 If DataCoverage Meta Feature is not used in S-412, suggest replacing the text by: "_S-412 does not make use of any Meta Feature_".
 ****
@@ -90,9 +90,9 @@ Geographic (geo) feature types form the principal content in S-412 and are fully
 
 feature types may be associated to other feature types or to Information Types.
 
-As an example, the realisation of a Wind Warning concept is provided by an UML diagram in Figure 2. The diagram shows the Wind Warning feature’s inheritance from the abstract Weather Warning feature and its connection to various complex and simple attributes. The windWarningThreshold attribute is used to determine the category and [[start_review2]]portrayal[[end_review2]] colour of Wind Warning polygons based on wind speeds. The optional beaufortForce attribute is used to indicate more specific wind speed bins that the feature represents, based on the Beaufort Wind Scale. The dateTimeRange attribute provides the start and end times that are valid for the Wind Warning. The weatherWarningNumber attribute provides an identification number to track warnings issued with each new dataset. The optional weatherWarningMessage attribute provides a short message with added context or information about a Weather Warning.
+As an example, the realisation of a Wind Warning concept is provided by an UML diagram in Figure 2. The diagram shows the Wind Warning feature’s inheritance from the abstract Weather Warning feature and its connection to various complex and simple attributes. The windWarningThreshold attribute is used to determine the category and [[s4_start_review2]]portrayal[[s4_end_review2]] colour of Wind Warning polygons based on wind speeds. The optional beaufortForce attribute is used to indicate more specific wind speed bins that the feature represents, based on the Beaufort Wind Scale. The dateTimeRange attribute provides the start and end times that are valid for the Wind Warning. The weatherWarningNumber attribute provides an identification number to track warnings issued with each new dataset. The optional weatherWarningMessage attribute provides a short message with added context or information about a Weather Warning.
 
-[reviewer="IIC",date=2025-12-05,from=start_review2,to=end_review2]
+[reviewer="IIC",date=2025-12-05,from=s4_start_review2,to=s4_end_review2]
 ****
 The colour is determined by the Portrayal Catalogue (based on the attribute value).
 ****
@@ -123,11 +123,11 @@ A Composition Association is a strong aggregation, where the containee object ca
 
 Attributes define the characteristics of a Feature or Information Type. Attribute Types can be either complex or simple. Simple attributes carry the value itself, and complex attributes are aggregations of other simple and/or complex attributes that create a hierarchical data structure to describe a feature. Unlike Information Types, an attribute instance belongs to one and only one Feature or Information Type.
 
-===== [[start_review3]]Simple attributes[[end_review3]]
+===== [[s4_start_review3]]Simple attributes[[s4_end_review3]]
 
 The following table lists the types of simple attributes used in S-412.
 
-[reviewer="IIC",date=2025-12-04,from=start_review3,to=end_review3]
+[reviewer="IIC",date=2025-12-04,from=s4_start_review3,to=s4_end_review3]
 ****
 TBC that attributes of type real and integer are used in S-412
 ****
