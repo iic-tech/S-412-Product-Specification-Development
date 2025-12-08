@@ -6,12 +6,19 @@
 
 S-412 portrayal is intended to contribute to the safe operation of an S-100 based system by:
 
-●	Ensuring base and supplementary levels of display for S-412 data; standards of symbols, colours and their standardised assignment to features; scale limitations of data presentation; +
-●	Ensuring the display is clear and unambiguous; +
-●	Establishing an accepted pattern presentation that becomes familiar to mariners and so can be recognized instantly without confusion; +
-●	Utilising the S-100 portrayal model to ensure interoperability.
+* 	Ensuring base and supplementary levels of display for S-412 data; standards of symbols, colours and their standardised assignment to features; scale limitations of data presentation;
 
-S-412 portrayal is covered by the portrayal model as defined in S-100. This model reflects how the portrayal catalogue is defined for use in systems. The portrayal catalogue defines symbology and the portrayal rules for each feature attribute combination contained in the feature catalogue.
+* 	Ensuring the display is clear and unambiguous;
+
+* 	Establishing an accepted pattern presentation that becomes familiar to mariners and so can be recognized instantly without confusion;
+
+* 	Utilising the S-100 portrayal model to ensure interoperability.
+
+S-412 portrayal is covered by the portrayal model as defined in S-100. This model reflects how the Portrayal Catalogue is defined for use in systems. The Portrayal Catalogue defines symbology and the portrayal rules for each feature attribute combination contained in the Feature Catalogue.
+
+S-412 uses the portrayal process defined in S-100 Part 9A.
+
+Items included in an S-412 Portrayal Catalogue must be registered in the IHO Geospatial Information (GI) Registry.
 
 < < Statement about the types of data allowed in GML format (points, lines, polygons) > > 
 
@@ -37,10 +44,15 @@ NOTE:: Polygon portrayals may be included in surface portrayals. In Annex E, the
 
 < < Under development – once completed, XML will be provided > > 
 The portrayal catalogue contains the mechanisms for the system to portray information found in S-412 datasets. The portrayal catalogue contains the following types of mechanisms and structures:
-●	Product Input Schema
-●	Set of portrayal rules
-●	Set of drawing instructions
-●	Set of symbols, line styles and colours
+
+* 	Product Input Schema
+
+* 	Set of portrayal rules
+
+* 	Set of drawing instructions
+
+* 	Set of symbols, line styles and colours
+
 The portrayal catalogue model is defined in S-100 Part 9. The S-412 Portrayal catalogue is provided in Annex G and will be available in an XML document which conforms to the S-100 XML Portrayal catalogue Schema. It is structured as follows:
 
 Root ---- (contains the catalogue named “portrayal_catalogue.xml”)
