@@ -13,7 +13,7 @@ Changes to this Specification are coordinated by WMO/IOC Joint Technical Commiss
 
 |0.0.1
 |13 August 2013
-|J. Powell
+|Julia Powell
 |Initial Draft.
 
 |0.0.2
@@ -23,7 +23,7 @@ Changes to this Specification are coordinated by WMO/IOC Joint Technical Commiss
 
 |0.0.3
 |3 June 2015
-|J. Powell
+|Julia Powell
 |Updated to latest version of S-100.
 
 |0.0.4
@@ -46,9 +46,9 @@ Changes to this Specification are coordinated by WMO/IOC Joint Technical Commiss
 |IIC Technologies
 |Initial Population of document skeleton.
 
-|1.0.2
+|1.1.0
 |9 December 2025
 |IIC Technologies
-|Review of the PS by IIC Technologies.
+|Review and alignment of the PS with the Feature Catalogue.
 
 |===
