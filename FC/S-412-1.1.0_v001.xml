@@ -1,791 +1,791 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<S100_FC_FeatureCatalogue xmlns="http://www.iho.int/S100FC/5.2" xmlns:ns2="http://www.iho.int/S100CI/5.0" xmlns:ns3="http://www.iho.int/S100Base/5.0" xmlns:ns4="http://www.iho.int/S100CD/5.0">
-    <name>S-412</name>
-    <scope>global</scope>
-    <fieldOfApplication>none</fieldOfApplication>
-    <versionNumber>1.1.9</versionNumber>
-    <versionDate>2025-11-30Z</versionDate>
-    <productId>S-412</productId>
-    <producer>
-        <ns2:role>author</ns2:role>
-        <ns2:party>
-            <ns2:CI_Organisation>
-                <ns2:name>None</ns2:name>
-                <ns2:contactInfo>
-                    <ns2:address>
-                        <ns2:city>Frome</ns2:city>
-                        <ns2:administrativeArea>Somerset</ns2:administrativeArea>
-                        <ns2:country>UK</ns2:country>
-                        <ns2:electronicMailAddress>jp@jpsworldoffun.com</ns2:electronicMailAddress>
-                    </ns2:address>
-                    <ns2:onlineResource>
-                        <ns2:linkage>www.iictechnologies.com</ns2:linkage>
-                    </ns2:onlineResource>
-                </ns2:contactInfo>
-            </ns2:CI_Organisation>
-        </ns2:party>
-    </producer>
-    <classification>unclassified</classification>
-    <S100_FC_SimpleAttributes>
-        <S100_FC_SimpleAttribute>
-            <name>beaufortForce</name>
-            <definition>beaufortForce</definition>
-            <code>beaufortForce</code>
-            <alias></alias>
-            <valueType>enumeration</valueType>
-            <listedValues>
-                <listedValue>
-                    <label>calm</label>
-                    <definition>calm</definition>
-                    <code>99</code>
-                </listedValue>
-                <listedValue>
-                    <label>light air</label>
-                    <definition>light air</definition>
-                    <code>1</code>
-                </listedValue>
-                <listedValue>
-                    <label>ligth breeze</label>
-                    <definition>ligth breeze</definition>
-                    <code>2</code>
-                </listedValue>
-                <listedValue>
-                    <label>gentle breeze</label>
-                    <definition>gentle breeze</definition>
-                    <code>3</code>
-                </listedValue>
-                <listedValue>
-                    <label>moderate breeze</label>
-                    <definition>moderate breeze</definition>
-                    <code>4</code>
-                </listedValue>
-                <listedValue>
-                    <label>fresh breeze</label>
-                    <definition>fresh breeze</definition>
-                    <code>5</code>
-                </listedValue>
-                <listedValue>
-                    <label>strong breeze</label>
-                    <definition>strong breeze</definition>
-                    <code>6</code>
-                </listedValue>
-                <listedValue>
-                    <label>near gale</label>
-                    <definition>near gale</definition>
-                    <code>7</code>
-                </listedValue>
-                <listedValue>
-                    <label>gale</label>
-                    <definition>gale</definition>
-                    <code>8</code>
-                </listedValue>
-                <listedValue>
-                    <label>strong glae</label>
-                    <definition>strong glae</definition>
-                    <code>9</code>
-                </listedValue>
-                <listedValue>
-                    <label>storm</label>
-                    <definition>storm</definition>
-                    <code>10</code>
-                </listedValue>
-                <listedValue>
-                    <label>violent storm</label>
-                    <definition>violent storm</definition>
-                    <code>11</code>
-                </listedValue>
-                <listedValue>
-                    <label>hurricane</label>
-                    <definition>hurricane</definition>
-                    <code>12</code>
-                </listedValue>
-            </listedValues>
-        </S100_FC_SimpleAttribute>
-        <S100_FC_SimpleAttribute>
-            <name>iceAccretionRate</name>
-            <definition></definition>
-            <code>iceAccretionRate</code>
-            <alias></alias>
-            <valueType>enumeration</valueType>
-            <listedValues>
-                <listedValue>
-                    <label>moderateIcing</label>
-                    <definition>moderateIcing</definition>
-                    <code>1</code>
-                </listedValue>
-                <listedValue>
-                    <label>severeIcing</label>
-                    <definition>severeIcing</definition>
-                    <code>2</code>
-                </listedValue>
-            </listedValues>
-        </S100_FC_SimpleAttribute>
-        <S100_FC_SimpleAttribute>
-            <name>metareaName</name>
-            <definition>metareaName</definition>
-            <code>metareaName</code>
-            <alias></alias>
-            <valueType>enumeration</valueType>
-            <listedValues>
-                <listedValue>
-                    <label>METAREA I</label>
-                    <definition>METAREA I</definition>
-                    <code>1</code>
-                </listedValue>
-                <listedValue>
-                    <label>METAREA II</label>
-                    <definition>METAREA II</definition>
-                    <code>2</code>
-                </listedValue>
-                <listedValue>
-                    <label>METAREA III</label>
-                    <definition>METAREA III</definition>
-                    <code>3</code>
-                </listedValue>
-                <listedValue>
-                    <label>METAREA IV</label>
-                    <definition>METAREA IV</definition>
-                    <code>4</code>
-                </listedValue>
-                <listedValue>
-                    <label>METAREA V</label>
-                    <definition>METAREA V</definition>
-                    <code>5</code>
-                </listedValue>
-                <listedValue>
-                    <label>METAREA VI</label>
-                    <definition>METAREA VI</definition>
-                    <code>6</code>
-                </listedValue>
-                <listedValue>
-                    <label>METAREA VII</label>
-                    <definition>METAREA VII</definition>
-                    <code>7</code>
-                </listedValue>
-                <listedValue>
-                    <label>METAREA VIII</label>
-                    <definition>METAREA VIII</definition>
-                    <code>8</code>
-                </listedValue>
-                <listedValue>
-                    <label>METAREA IX</label>
-                    <definition>METAREA IX</definition>
-                    <code>9</code>
-                </listedValue>
-                <listedValue>
-                    <label>METAREA X</label>
-                    <definition>METAREA X</definition>
-                    <code>10</code>
-                </listedValue>
-                <listedValue>
-                    <label>METAREA XI</label>
-                    <definition>METAREA XI</definition>
-                    <code>11</code>
-                </listedValue>
-                <listedValue>
-                    <label>METAREA XII</label>
-                    <definition>METAREA XII</definition>
-                    <code>12</code>
-                </listedValue>
-                <listedValue>
-                    <label>METAREA XIII</label>
-                    <definition>METAREA XIII</definition>
-                    <code>13</code>
-                </listedValue>
-                <listedValue>
-                    <label>METAREA XIV</label>
-                    <definition>METAREA XIV</definition>
-                    <code>14</code>
-                </listedValue>
-                <listedValue>
-                    <label>METAREA XV</label>
-                    <definition>METAREA XV</definition>
-                    <code>15</code>
-                </listedValue>
-                <listedValue>
-                    <label>METAREA XVI</label>
-                    <definition>METAREA XVI</definition>
-                    <code>16</code>
-                </listedValue>
-                <listedValue>
-                    <label>METAREA XVII</label>
-                    <definition>METAREA XVII</definition>
-                    <code>17</code>
-                </listedValue>
-                <listedValue>
-                    <label>METAREA XVIII</label>
-                    <definition>METAREA XVIII</definition>
-                    <code>18</code>
-                </listedValue>
-                <listedValue>
-                    <label>METAREA XIX</label>
-                    <definition>METAREA XIX</definition>
-                    <code>19</code>
-                </listedValue>
-                <listedValue>
-                    <label>METAREA XX</label>
-                    <definition>METAREA XX</definition>
-                    <code>20</code>
-                </listedValue>
-                <listedValue>
-                    <label>METAREA XXI</label>
-                    <definition>METAREA XXI</definition>
-                    <code>21</code>
-                </listedValue>
-            </listedValues>
-        </S100_FC_SimpleAttribute>
-        <S100_FC_SimpleAttribute>
-            <name>significantWaveHeightWarningThreshold</name>
-            <definition>significantWaveHeightWarningThreshold</definition>
-            <code>significantWaveHeightWarningThreshold</code>
-            <alias></alias>
-            <valueType>enumeration</valueType>
-            <listedValues>
-                <listedValue>
-                    <label>two and a half to four metres</label>
-                    <definition>two and a half to four metres</definition>
-                    <code>1</code>
-                </listedValue>
-                <listedValue>
-                    <label>four to six metres</label>
-                    <definition>four to six metres</definition>
-                    <code>2</code>
-                </listedValue>
-                <listedValue>
-                    <label>six to nine metres</label>
-                    <definition>six to nine metres</definition>
-                    <code>3</code>
-                </listedValue>
-                <listedValue>
-                    <label>nine to fourteen metres</label>
-                    <definition>nine to fourteen metres</definition>
-                    <code>4</code>
-                </listedValue>
-                <listedValue>
-                    <label>greater than fourteen metres</label>
-                    <definition>greater than fourteen metres</definition>
-                    <code>5</code>
-                </listedValue>
-            </listedValues>
-        </S100_FC_SimpleAttribute>
-        <S100_FC_SimpleAttribute>
-            <name>text</name>
-            <definition>text</definition>
-            <code>text</code>
-            <alias></alias>
-            <valueType>text</valueType>
-        </S100_FC_SimpleAttribute>
-        <S100_FC_SimpleAttribute>
-            <name>language</name>
-            <definition>language</definition>
-            <code>language</code>
-            <alias></alias>
-            <valueType>text</valueType>
-        </S100_FC_SimpleAttribute>
-        <S100_FC_SimpleAttribute>
-            <name>agencyName</name>
-            <definition>agencyName</definition>
-            <code>agencyName</code>
-            <alias></alias>
-            <valueType>text</valueType>
-        </S100_FC_SimpleAttribute>
-        <S100_FC_SimpleAttribute>
-            <name>mailingAddress</name>
-            <definition>mailingAddress</definition>
-            <code>mailingAddress</code>
-            <alias></alias>
-            <valueType>text</valueType>
-        </S100_FC_SimpleAttribute>
-        <S100_FC_SimpleAttribute>
-            <name>telephoneNumber</name>
-            <definition>telephoneNumber</definition>
-            <code>telephoneNumber</code>
-            <alias></alias>
-            <valueType>text</valueType>
-        </S100_FC_SimpleAttribute>
-        <S100_FC_SimpleAttribute>
-            <name>emailAddress</name>
-            <definition>emailAddress</definition>
-            <code>emailAddress</code>
-            <alias></alias>
-            <valueType>text</valueType>
-        </S100_FC_SimpleAttribute>
-        <S100_FC_SimpleAttribute>
-            <name>webAddress</name>
-            <definition>webAddress</definition>
-            <code>webAddress</code>
-            <alias></alias>
-            <valueType>text</valueType>
-        </S100_FC_SimpleAttribute>
-        <S100_FC_SimpleAttribute>
-            <name>countryName</name>
-            <definition>countryName</definition>
-            <code>countryName</code>
-            <alias></alias>
-            <valueType>text</valueType>
-        </S100_FC_SimpleAttribute>
-        <S100_FC_SimpleAttribute>
-            <name>dateStart</name>
-            <definition>dateStart</definition>
-            <code>dateStart</code>
-            <alias></alias>
-            <valueType>dateTime</valueType>
-        </S100_FC_SimpleAttribute>
-        <S100_FC_SimpleAttribute>
-            <name>dateEnd</name>
-            <definition>dateEnd</definition>
-            <code>dateEnd</code>
-            <alias></alias>
-            <valueType>dateTime</valueType>
-        </S100_FC_SimpleAttribute>
-        <S100_FC_SimpleAttribute>
-            <name>issueDate</name>
-            <definition>issueDate</definition>
-            <code>issueDate</code>
-            <alias></alias>
-            <valueType>dateTime</valueType>
-        </S100_FC_SimpleAttribute>
-        <S100_FC_SimpleAttribute>
-            <name>weatherWarningNumber</name>
-            <definition>weatherWarningNumber</definition>
-            <code>weatherWarningNumber</code>
-            <alias></alias>
-            <valueType>text</valueType>
-        </S100_FC_SimpleAttribute>
-        <S100_FC_SimpleAttribute>
-            <name>cancellationDate</name>
-            <definition>cancellationDate</definition>
-            <code>cancellationDate</code>
-            <alias></alias>
-            <valueType>dateTime</valueType>
-        </S100_FC_SimpleAttribute>
-        <S100_FC_SimpleAttribute>
-            <name>nextUpdateDateTime</name>
-            <definition>nextUpdateDateTime</definition>
-            <code>nextUpdateDateTime</code>
-            <alias></alias>
-            <valueType>dateTime</valueType>
-        </S100_FC_SimpleAttribute>
-        <S100_FC_SimpleAttribute>
-            <name>interoperabilityIdentifier</name>
-            <definition>interoperabilityIdentifier</definition>
-            <code>interoperabilityIdentifier</code>
-            <alias></alias>
-            <valueType>text</valueType>
-        </S100_FC_SimpleAttribute>
-        <S100_FC_SimpleAttribute>
-            <name>sourceOfIcing</name>
-            <definition></definition>
-            <code>sourceOfIcing</code>
-            <alias></alias>
-            <valueType>enumeration</valueType>
-            <listedValues>
-                <listedValue>
-                    <label>freezingSpray</label>
-                    <definition>freezingSpray</definition>
-                    <code>1</code>
-                </listedValue>
-                <listedValue>
-                    <label>freezingRain</label>
-                    <definition>freezingRain</definition>
-                    <code>2</code>
-                </listedValue>
-                <listedValue>
-                    <label>freezingFog</label>
-                    <definition>freezingFog</definition>
-                    <code>3</code>
-                </listedValue>
-                <listedValue>
-                    <label>otherIcingSource</label>
-                    <definition>otherIcingSource</definition>
-                    <code>4</code>
-                </listedValue>
-            </listedValues>
-        </S100_FC_SimpleAttribute>
-        <S100_FC_SimpleAttribute>
-            <name>windWarningThreshold</name>
-            <definition></definition>
-            <code>windWarningThreshold</code>
-            <alias></alias>
-            <valueType>enumeration</valueType>
-            <listedValues>
-                <listedValue>
-                    <label>near gale force</label>
-                    <definition>near gale force</definition>
-                    <code>1</code>
-                </listedValue>
-                <listedValue>
-                    <label>gale force</label>
-                    <definition>gale force</definition>
-                    <code>2</code>
-                </listedValue>
-                <listedValue>
-                    <label>storm force</label>
-                    <definition>storm force</definition>
-                    <code>3</code>
-                </listedValue>
-                <listedValue>
-                    <label>hurricane force</label>
-                    <definition>hurricane force</definition>
-                    <code>4</code>
-                </listedValue>
-            </listedValues>
-        </S100_FC_SimpleAttribute>
-    </S100_FC_SimpleAttributes>
-    <S100_FC_ComplexAttributes>
-        <S100_FC_ComplexAttribute>
-            <name>contactInformation</name>
-            <definition>No definition set for contactInformation</definition>
-            <code>contactInformation</code>
-            <alias></alias>
-            <subAttributeBinding sequential="false">
-                <multiplicity>
-                    <ns3:lower>1</ns3:lower>
-                    <ns3:upper infinite="false">1</ns3:upper>
-                </multiplicity>
-                <attribute ref="agencyName"/>
-            </subAttributeBinding>
-            <subAttributeBinding sequential="false">
-                <multiplicity>
-                    <ns3:lower>0</ns3:lower>
-                    <ns3:upper infinite="false">1</ns3:upper>
-                </multiplicity>
-                <attribute ref="mailingAddress"/>
-            </subAttributeBinding>
-            <subAttributeBinding sequential="false">
-                <multiplicity>
-                    <ns3:lower>0</ns3:lower>
-                    <ns3:upper infinite="false">1</ns3:upper>
-                </multiplicity>
-                <attribute ref="telephoneNumber"/>
-            </subAttributeBinding>
-            <subAttributeBinding sequential="false">
-                <multiplicity>
-                    <ns3:lower>0</ns3:lower>
-                    <ns3:upper infinite="false">1</ns3:upper>
-                </multiplicity>
-                <attribute ref="emailAddress"/>
-            </subAttributeBinding>
-            <subAttributeBinding sequential="false">
-                <multiplicity>
-                    <ns3:lower>0</ns3:lower>
-                    <ns3:upper infinite="false">1</ns3:upper>
-                </multiplicity>
-                <attribute ref="webAddress"/>
-            </subAttributeBinding>
-        </S100_FC_ComplexAttribute>
-        <S100_FC_ComplexAttribute>
-            <name>fixedDateRange</name>
-            <definition>No definition set for fixedDateRange</definition>
-            <code>fixedDateRange</code>
-            <alias></alias>
-            <subAttributeBinding sequential="false">
-                <multiplicity>
-                    <ns3:lower>1</ns3:lower>
-                    <ns3:upper infinite="false">1</ns3:upper>
-                </multiplicity>
-                <attribute ref="dateStart"/>
-            </subAttributeBinding>
-            <subAttributeBinding sequential="false">
-                <multiplicity>
-                    <ns3:lower>1</ns3:lower>
-                    <ns3:upper infinite="false">1</ns3:upper>
-                </multiplicity>
-                <attribute ref="dateEnd"/>
-            </subAttributeBinding>
-        </S100_FC_ComplexAttribute>
-        <S100_FC_ComplexAttribute>
-            <name>information</name>
-            <definition>No definition set for information</definition>
-            <code>information</code>
-            <alias></alias>
-            <subAttributeBinding sequential="false">
-                <multiplicity>
-                    <ns3:lower>0</ns3:lower>
-                    <ns3:upper infinite="false">1</ns3:upper>
-                </multiplicity>
-                <attribute ref="language"/>
-            </subAttributeBinding>
-            <subAttributeBinding sequential="false">
-                <multiplicity>
-                    <ns3:lower>0</ns3:lower>
-                    <ns3:upper infinite="false">1</ns3:upper>
-                </multiplicity>
-                <attribute ref="text"/>
-            </subAttributeBinding>
-        </S100_FC_ComplexAttribute>
-        <S100_FC_ComplexAttribute>
-            <name>issuingService</name>
-            <definition>No definition set for issuingService</definition>
-            <code>issuingService</code>
-            <alias></alias>
-            <subAttributeBinding sequential="false">
-                <multiplicity>
-                    <ns3:lower>1</ns3:lower>
-                    <ns3:upper infinite="false">1</ns3:upper>
-                </multiplicity>
-                <attribute ref="metareaName"/>
-            </subAttributeBinding>
-            <subAttributeBinding sequential="false">
-                <multiplicity>
-                    <ns3:lower>0</ns3:lower>
-                    <ns3:upper infinite="false">1</ns3:upper>
-                </multiplicity>
-                <attribute ref="countryName"/>
-            </subAttributeBinding>
-            <subAttributeBinding sequential="false">
-                <multiplicity>
-                    <ns3:lower>1</ns3:lower>
-                    <ns3:upper infinite="false">1</ns3:upper>
-                </multiplicity>
-                <attribute ref="issuingServiceName"/>
-            </subAttributeBinding>
-        </S100_FC_ComplexAttribute>
-        <S100_FC_ComplexAttribute>
-            <name>issuingServiceName</name>
-            <definition>No definition set for issuingServiceName</definition>
-            <code>issuingServiceName</code>
-            <alias></alias>
-            <subAttributeBinding sequential="false">
-                <multiplicity>
-                    <ns3:lower>1</ns3:lower>
-                    <ns3:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
-                </multiplicity>
-                <attribute ref="information"/>
-            </subAttributeBinding>
-        </S100_FC_ComplexAttribute>
-        <S100_FC_ComplexAttribute>
-            <name>maximumWindSpeed</name>
-            <definition>No definition set for maximumWindSpeed</definition>
-            <code>maximumWindSpeed</code>
-            <alias></alias>
-            <subAttributeBinding sequential="false">
-                <multiplicity>
-                    <ns3:lower>1</ns3:lower>
-                    <ns3:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
-                </multiplicity>
-                <attribute ref="information"/>
-            </subAttributeBinding>
-        </S100_FC_ComplexAttribute>
-        <S100_FC_ComplexAttribute>
-            <name>weatherWarningMessage</name>
-            <definition>No definition set for weatherWarningMessage</definition>
-            <code>weatherWarningMessage</code>
-            <alias></alias>
-            <subAttributeBinding sequential="false">
-                <multiplicity>
-                    <ns3:lower>1</ns3:lower>
-                    <ns3:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
-                </multiplicity>
-                <attribute ref="information"/>
-            </subAttributeBinding>
-        </S100_FC_ComplexAttribute>
-        <S100_FC_ComplexAttribute>
-            <name>preparationService</name>
-            <definition>No definition set for preparationService</definition>
-            <code>preparationService</code>
-            <alias></alias>
-            <subAttributeBinding sequential="false">
-                <multiplicity>
-                    <ns3:lower>1</ns3:lower>
-                    <ns3:upper infinite="false">1</ns3:upper>
-                </multiplicity>
-                <attribute ref="issuingServiceName"/>
-            </subAttributeBinding>
-            <subAttributeBinding sequential="false">
-                <multiplicity>
-                    <ns3:lower>0</ns3:lower>
-                    <ns3:upper infinite="false">1</ns3:upper>
-                </multiplicity>
-                <attribute ref="countryName"/>
-            </subAttributeBinding>
-        </S100_FC_ComplexAttribute>
-    </S100_FC_ComplexAttributes>
-    <S100_FC_Roles>
-        <S100_FC_Role>
-            <name>informationProvidedFor</name>
-            <definition>informationProvidedFor</definition>
-            <code>informationProvidedFor</code>
-        </S100_FC_Role>
-        <S100_FC_Role>
-            <name>dataProviderInformation</name>
-            <definition>dataProviderInformation</definition>
-            <code>dataProviderInformation</code>
-        </S100_FC_Role>
-    </S100_FC_Roles>
-    <S100_FC_InformationTypes>
-        <S100_FC_InformationType>
-            <name>DataProvider</name>
-            <definition>No definition set for DataProvider</definition>
-            <code>DataProvider</code>
-            <alias></alias>
-            <attributeBinding sequential="false">
-                <multiplicity>
-                    <ns3:lower>1</ns3:lower>
-                    <ns3:upper infinite="false">1</ns3:upper>
-                </multiplicity>
-                <attribute ref="issuingService"/>
-            </attributeBinding>
-            <attributeBinding sequential="false">
-                <multiplicity>
-                    <ns3:lower>1</ns3:lower>
-                    <ns3:upper infinite="false">1</ns3:upper>
-                </multiplicity>
-                <attribute ref="contactInformation"/>
-            </attributeBinding>
-            <attributeBinding sequential="false">
-                <multiplicity>
-                    <ns3:lower>1</ns3:lower>
-                    <ns3:upper infinite="false">1</ns3:upper>
-                </multiplicity>
-                <attribute ref="preparationService"/>
-            </attributeBinding>
-        </S100_FC_InformationType>
-    </S100_FC_InformationTypes>
-    <S100_FC_FeatureTypes>
-        <S100_FC_FeatureType isAbstract="true">
-            <name>WeatherWarning</name>
-            <definition>No definition set for WeatherWarning</definition>
-            <code>WeatherWarning</code>
-            <alias></alias>
-            <attributeBinding sequential="false">
-                <multiplicity>
-                    <ns3:lower>1</ns3:lower>
-                    <ns3:upper infinite="false">1</ns3:upper>
-                </multiplicity>
-                <attribute ref="fixedDateRange"/>
-            </attributeBinding>
-            <attributeBinding sequential="false">
-                <multiplicity>
-                    <ns3:lower>0</ns3:lower>
-                    <ns3:upper infinite="false">1</ns3:upper>
-                </multiplicity>
-                <attribute ref="weatherWarningMessage"/>
-            </attributeBinding>
-            <attributeBinding sequential="false">
-                <multiplicity>
-                    <ns3:lower>1</ns3:lower>
-                    <ns3:upper infinite="false">1</ns3:upper>
-                </multiplicity>
-                <attribute ref="issueDate"/>
-            </attributeBinding>
-            <attributeBinding sequential="false">
-                <multiplicity>
-                    <ns3:lower>1</ns3:lower>
-                    <ns3:upper infinite="false">1</ns3:upper>
-                </multiplicity>
-                <attribute ref="weatherWarningNumber"/>
-            </attributeBinding>
-            <attributeBinding sequential="false">
-                <multiplicity>
-                    <ns3:lower>1</ns3:lower>
-                    <ns3:upper infinite="false">1</ns3:upper>
-                </multiplicity>
-                <attribute ref="cancellationDate"/>
-            </attributeBinding>
-            <attributeBinding sequential="false">
-                <multiplicity>
-                    <ns3:lower>1</ns3:lower>
-                    <ns3:upper infinite="false">1</ns3:upper>
-                </multiplicity>
-                <attribute ref="nextUpdateDateTime"/>
-            </attributeBinding>
-            <attributeBinding sequential="false">
-                <multiplicity>
-                    <ns3:lower>1</ns3:lower>
-                    <ns3:upper infinite="false">1</ns3:upper>
-                </multiplicity>
-                <attribute ref="interoperabilityIdentifier"/>
-            </attributeBinding>
-            <featureUseType>geographic</featureUseType>
-            <permittedPrimitives>surface</permittedPrimitives>
-        </S100_FC_FeatureType>
-        <S100_FC_FeatureType isAbstract="false">
-            <name>IceAccretionWarning</name>
-            <definition>No definition set for IceAccretionWarning</definition>
-            <code>IceAccretionWarning</code>
-            <alias></alias>
-            <attributeBinding sequential="false">
-                <multiplicity>
-                    <ns3:lower>1</ns3:lower>
-                    <ns3:upper infinite="false">1</ns3:upper>
-                </multiplicity>
-                <attribute ref="iceAccretionRate"/>
-            </attributeBinding>
-            <attributeBinding sequential="false">
-                <multiplicity>
-                    <ns3:lower>0</ns3:lower>
-                    <ns3:upper infinite="false">1</ns3:upper>
-                </multiplicity>
-                <attribute ref="sourceOfIcing"/>
-            </attributeBinding>
-            <superType>WeatherWarning</superType>
-            <featureUseType>geographic</featureUseType>
-            <permittedPrimitives>surface</permittedPrimitives>
-        </S100_FC_FeatureType>
-        <S100_FC_FeatureType isAbstract="false">
-            <name>RestrictedVisibilityWarning</name>
-            <definition>No definition set for RestrictedVisibilityWarning</definition>
-            <code>RestrictedVisibilityWarning</code>
-            <alias></alias>
-            <superType>WeatherWarning</superType>
-            <featureUseType>geographic</featureUseType>
-            <permittedPrimitives>surface</permittedPrimitives>
-        </S100_FC_FeatureType>
-        <S100_FC_FeatureType isAbstract="false">
-            <name>SignificantWaveHeightWarning</name>
-            <definition>No definition set for SignificantWaveHeightWarning</definition>
-            <code>SignificantWaveHeightWarning</code>
-            <alias></alias>
-            <attributeBinding sequential="false">
-                <multiplicity>
-                    <ns3:lower>1</ns3:lower>
-                    <ns3:upper infinite="false">1</ns3:upper>
-                </multiplicity>
-                <attribute ref="significantWaveHeightWarningThreshold"/>
-            </attributeBinding>
-            <superType>WeatherWarning</superType>
-            <featureUseType>geographic</featureUseType>
-            <permittedPrimitives>surface</permittedPrimitives>
-        </S100_FC_FeatureType>
-        <S100_FC_FeatureType isAbstract="false">
-            <name>ThunderstormWarning</name>
-            <definition>No definition set for ThunderstormWarning</definition>
-            <code>ThunderstormWarning</code>
-            <alias></alias>
-            <superType>WeatherWarning</superType>
-            <featureUseType>geographic</featureUseType>
-            <permittedPrimitives>surface</permittedPrimitives>
-        </S100_FC_FeatureType>
-        <S100_FC_FeatureType isAbstract="false">
-            <name>WindWarning</name>
-            <definition>No definition set for WindWarning</definition>
-            <code>WindWarning</code>
-            <alias></alias>
-            <attributeBinding sequential="false">
-                <multiplicity>
-                    <ns3:lower>1</ns3:lower>
-                    <ns3:upper infinite="false">1</ns3:upper>
-                </multiplicity>
-                <attribute ref="windWarningThreshold"/>
-            </attributeBinding>
-            <attributeBinding sequential="false">
-                <multiplicity>
-                    <ns3:lower>0</ns3:lower>
-                    <ns3:upper infinite="false">1</ns3:upper>
-                </multiplicity>
-                <attribute ref="beaufortForce"/>
-            </attributeBinding>
-            <attributeBinding sequential="false">
-                <multiplicity>
-                    <ns3:lower>1</ns3:lower>
-                    <ns3:upper infinite="false">1</ns3:upper>
-                </multiplicity>
-                <attribute ref="maximumWindSpeed"/>
-            </attributeBinding>
-            <superType>WeatherWarning</superType>
-            <featureUseType>geographic</featureUseType>
-            <permittedPrimitives>surface</permittedPrimitives>
-        </S100_FC_FeatureType>
-    </S100_FC_FeatureTypes>
-</S100_FC_FeatureCatalogue>
+<S100FC:S100_FC_FeatureCatalogue xmlns:S100CI="http://www.iho.int/S100CI/5.0" xmlns:S100Base="http://www.iho.int/S100Base/5.0" xmlns:S100CD="http://www.iho.int/S100CD/5.0" xmlns:S100FC="http://www.iho.int/S100FC/5.2">
+    <S100FC:name>S-412</S100FC:name>
+    <S100FC:scope>global</S100FC:scope>
+    <S100FC:fieldOfApplication>none</S100FC:fieldOfApplication>
+    <S100FC:versionNumber>1.1.9</S100FC:versionNumber>
+    <S100FC:versionDate>2025-11-30Z</S100FC:versionDate>
+    <S100FC:productId>S-412</S100FC:productId>
+    <S100FC:producer>
+        <S100CI:role>author</S100CI:role>
+        <S100CI:party>
+            <S100CI:CI_Organisation>
+                <S100CI:name>None</S100CI:name>
+                <S100CI:contactInfo>
+                    <S100CI:address>
+                        <S100CI:city>Frome</S100CI:city>
+                        <S100CI:administrativeArea>Somerset</S100CI:administrativeArea>
+                        <S100CI:country>UK</S100CI:country>
+                        <S100CI:electronicMailAddress>jp@jpsworldoffun.com</S100CI:electronicMailAddress>
+                    </S100CI:address>
+                    <S100CI:onlineResource>
+                        <S100CI:linkage>www.iictechnologies.com</S100CI:linkage>
+                    </S100CI:onlineResource>
+                </S100CI:contactInfo>
+            </S100CI:CI_Organisation>
+        </S100CI:party>
+    </S100FC:producer>
+    <S100FC:classification>unclassified</S100FC:classification>
+    <S100FC:S100_FC_SimpleAttributes>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>beaufortForce</S100FC:name>
+            <S100FC:definition>beaufortForce</S100FC:definition>
+            <S100FC:code>beaufortForce</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>enumeration</S100FC:valueType>
+            <S100FC:listedValues>
+                <S100FC:listedValue>
+                    <S100FC:label>calm</S100FC:label>
+                    <S100FC:definition>calm</S100FC:definition>
+                    <S100FC:code>99</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>light air</S100FC:label>
+                    <S100FC:definition>light air</S100FC:definition>
+                    <S100FC:code>1</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>ligth breeze</S100FC:label>
+                    <S100FC:definition>ligth breeze</S100FC:definition>
+                    <S100FC:code>2</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>gentle breeze</S100FC:label>
+                    <S100FC:definition>gentle breeze</S100FC:definition>
+                    <S100FC:code>3</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>moderate breeze</S100FC:label>
+                    <S100FC:definition>moderate breeze</S100FC:definition>
+                    <S100FC:code>4</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>fresh breeze</S100FC:label>
+                    <S100FC:definition>fresh breeze</S100FC:definition>
+                    <S100FC:code>5</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>strong breeze</S100FC:label>
+                    <S100FC:definition>strong breeze</S100FC:definition>
+                    <S100FC:code>6</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>near gale</S100FC:label>
+                    <S100FC:definition>near gale</S100FC:definition>
+                    <S100FC:code>7</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>gale</S100FC:label>
+                    <S100FC:definition>gale</S100FC:definition>
+                    <S100FC:code>8</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>strong glae</S100FC:label>
+                    <S100FC:definition>strong glae</S100FC:definition>
+                    <S100FC:code>9</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>storm</S100FC:label>
+                    <S100FC:definition>storm</S100FC:definition>
+                    <S100FC:code>10</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>violent storm</S100FC:label>
+                    <S100FC:definition>violent storm</S100FC:definition>
+                    <S100FC:code>11</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>hurricane</S100FC:label>
+                    <S100FC:definition>hurricane</S100FC:definition>
+                    <S100FC:code>12</S100FC:code>
+                </S100FC:listedValue>
+            </S100FC:listedValues>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>iceAccretionRate</S100FC:name>
+            <S100FC:definition>iceAccretionRate</S100FC:definition>
+            <S100FC:code>iceAccretionRate</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>enumeration</S100FC:valueType>
+            <S100FC:listedValues>
+                <S100FC:listedValue>
+                    <S100FC:label>moderateIcing</S100FC:label>
+                    <S100FC:definition>moderateIcing</S100FC:definition>
+                    <S100FC:code>1</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>severeIcing</S100FC:label>
+                    <S100FC:definition>severeIcing</S100FC:definition>
+                    <S100FC:code>2</S100FC:code>
+                </S100FC:listedValue>
+            </S100FC:listedValues>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>metareaName</S100FC:name>
+            <S100FC:definition>metareaName</S100FC:definition>
+            <S100FC:code>metareaName</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>enumeration</S100FC:valueType>
+            <S100FC:listedValues>
+                <S100FC:listedValue>
+                    <S100FC:label>METAREA I</S100FC:label>
+                    <S100FC:definition>METAREA I</S100FC:definition>
+                    <S100FC:code>1</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>METAREA II</S100FC:label>
+                    <S100FC:definition>METAREA II</S100FC:definition>
+                    <S100FC:code>2</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>METAREA III</S100FC:label>
+                    <S100FC:definition>METAREA III</S100FC:definition>
+                    <S100FC:code>3</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>METAREA IV</S100FC:label>
+                    <S100FC:definition>METAREA IV</S100FC:definition>
+                    <S100FC:code>4</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>METAREA V</S100FC:label>
+                    <S100FC:definition>METAREA V</S100FC:definition>
+                    <S100FC:code>5</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>METAREA VI</S100FC:label>
+                    <S100FC:definition>METAREA VI</S100FC:definition>
+                    <S100FC:code>6</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>METAREA VII</S100FC:label>
+                    <S100FC:definition>METAREA VII</S100FC:definition>
+                    <S100FC:code>7</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>METAREA VIII</S100FC:label>
+                    <S100FC:definition>METAREA VIII</S100FC:definition>
+                    <S100FC:code>8</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>METAREA IX</S100FC:label>
+                    <S100FC:definition>METAREA IX</S100FC:definition>
+                    <S100FC:code>9</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>METAREA X</S100FC:label>
+                    <S100FC:definition>METAREA X</S100FC:definition>
+                    <S100FC:code>10</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>METAREA XI</S100FC:label>
+                    <S100FC:definition>METAREA XI</S100FC:definition>
+                    <S100FC:code>11</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>METAREA XII</S100FC:label>
+                    <S100FC:definition>METAREA XII</S100FC:definition>
+                    <S100FC:code>12</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>METAREA XIII</S100FC:label>
+                    <S100FC:definition>METAREA XIII</S100FC:definition>
+                    <S100FC:code>13</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>METAREA XIV</S100FC:label>
+                    <S100FC:definition>METAREA XIV</S100FC:definition>
+                    <S100FC:code>14</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>METAREA XV</S100FC:label>
+                    <S100FC:definition>METAREA XV</S100FC:definition>
+                    <S100FC:code>15</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>METAREA XVI</S100FC:label>
+                    <S100FC:definition>METAREA XVI</S100FC:definition>
+                    <S100FC:code>16</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>METAREA XVII</S100FC:label>
+                    <S100FC:definition>METAREA XVII</S100FC:definition>
+                    <S100FC:code>17</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>METAREA XVIII</S100FC:label>
+                    <S100FC:definition>METAREA XVIII</S100FC:definition>
+                    <S100FC:code>18</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>METAREA XIX</S100FC:label>
+                    <S100FC:definition>METAREA XIX</S100FC:definition>
+                    <S100FC:code>19</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>METAREA XX</S100FC:label>
+                    <S100FC:definition>METAREA XX</S100FC:definition>
+                    <S100FC:code>20</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>METAREA XXI</S100FC:label>
+                    <S100FC:definition>METAREA XXI</S100FC:definition>
+                    <S100FC:code>21</S100FC:code>
+                </S100FC:listedValue>
+            </S100FC:listedValues>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>significantWaveHeightWarningThreshold</S100FC:name>
+            <S100FC:definition>significantWaveHeightWarningThreshold</S100FC:definition>
+            <S100FC:code>significantWaveHeightWarningThreshold</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>enumeration</S100FC:valueType>
+            <S100FC:listedValues>
+                <S100FC:listedValue>
+                    <S100FC:label>two and a half to four metres</S100FC:label>
+                    <S100FC:definition>two and a half to four metres</S100FC:definition>
+                    <S100FC:code>1</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>four to six metres</S100FC:label>
+                    <S100FC:definition>four to six metres</S100FC:definition>
+                    <S100FC:code>2</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>six to nine metres</S100FC:label>
+                    <S100FC:definition>six to nine metres</S100FC:definition>
+                    <S100FC:code>3</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>nine to fourteen metres</S100FC:label>
+                    <S100FC:definition>nine to fourteen metres</S100FC:definition>
+                    <S100FC:code>4</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>greater than fourteen metres</S100FC:label>
+                    <S100FC:definition>greater than fourteen metres</S100FC:definition>
+                    <S100FC:code>5</S100FC:code>
+                </S100FC:listedValue>
+            </S100FC:listedValues>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>text</S100FC:name>
+            <S100FC:definition>text</S100FC:definition>
+            <S100FC:code>text</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>text</S100FC:valueType>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>language</S100FC:name>
+            <S100FC:definition>language</S100FC:definition>
+            <S100FC:code>language</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>text</S100FC:valueType>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>agencyName</S100FC:name>
+            <S100FC:definition>agencyName</S100FC:definition>
+            <S100FC:code>agencyName</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>text</S100FC:valueType>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>mailingAddress</S100FC:name>
+            <S100FC:definition>mailingAddress</S100FC:definition>
+            <S100FC:code>mailingAddress</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>text</S100FC:valueType>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>telephoneNumber</S100FC:name>
+            <S100FC:definition>telephoneNumber</S100FC:definition>
+            <S100FC:code>telephoneNumber</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>text</S100FC:valueType>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>emailAddress</S100FC:name>
+            <S100FC:definition>emailAddress</S100FC:definition>
+            <S100FC:code>emailAddress</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>text</S100FC:valueType>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>webAddress</S100FC:name>
+            <S100FC:definition>webAddress</S100FC:definition>
+            <S100FC:code>webAddress</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>text</S100FC:valueType>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>countryName</S100FC:name>
+            <S100FC:definition>countryName</S100FC:definition>
+            <S100FC:code>countryName</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>text</S100FC:valueType>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>dateStart</S100FC:name>
+            <S100FC:definition>dateStart</S100FC:definition>
+            <S100FC:code>dateStart</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>dateTime</S100FC:valueType>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>dateEnd</S100FC:name>
+            <S100FC:definition>dateEnd</S100FC:definition>
+            <S100FC:code>dateEnd</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>dateTime</S100FC:valueType>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>issueDate</S100FC:name>
+            <S100FC:definition>issueDate</S100FC:definition>
+            <S100FC:code>issueDate</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>dateTime</S100FC:valueType>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>weatherWarningNumber</S100FC:name>
+            <S100FC:definition>weatherWarningNumber</S100FC:definition>
+            <S100FC:code>weatherWarningNumber</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>text</S100FC:valueType>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>cancellationDate</S100FC:name>
+            <S100FC:definition>cancellationDate</S100FC:definition>
+            <S100FC:code>cancellationDate</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>dateTime</S100FC:valueType>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>nextUpdateDateTime</S100FC:name>
+            <S100FC:definition>nextUpdateDateTime</S100FC:definition>
+            <S100FC:code>nextUpdateDateTime</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>dateTime</S100FC:valueType>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>interoperabilityIdentifier</S100FC:name>
+            <S100FC:definition>interoperabilityIdentifier</S100FC:definition>
+            <S100FC:code>interoperabilityIdentifier</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>text</S100FC:valueType>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>sourceOfIcing</S100FC:name>
+            <S100FC:definition></S100FC:definition>
+            <S100FC:code>sourceOfIcing</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>enumeration</S100FC:valueType>
+            <S100FC:listedValues>
+                <S100FC:listedValue>
+                    <S100FC:label>freezingSpray</S100FC:label>
+                    <S100FC:definition>freezingSpray</S100FC:definition>
+                    <S100FC:code>1</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>freezingRain</S100FC:label>
+                    <S100FC:definition>freezingRain</S100FC:definition>
+                    <S100FC:code>2</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>freezingFog</S100FC:label>
+                    <S100FC:definition>freezingFog</S100FC:definition>
+                    <S100FC:code>3</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>otherIcingSource</S100FC:label>
+                    <S100FC:definition>otherIcingSource</S100FC:definition>
+                    <S100FC:code>4</S100FC:code>
+                </S100FC:listedValue>
+            </S100FC:listedValues>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>windWarningThreshold</S100FC:name>
+            <S100FC:definition></S100FC:definition>
+            <S100FC:code>windWarningThreshold</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>enumeration</S100FC:valueType>
+            <S100FC:listedValues>
+                <S100FC:listedValue>
+                    <S100FC:label>near gale force</S100FC:label>
+                    <S100FC:definition>near gale force</S100FC:definition>
+                    <S100FC:code>1</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>gale force</S100FC:label>
+                    <S100FC:definition>gale force</S100FC:definition>
+                    <S100FC:code>2</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>storm force</S100FC:label>
+                    <S100FC:definition>storm force</S100FC:definition>
+                    <S100FC:code>3</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>hurricane force</S100FC:label>
+                    <S100FC:definition>hurricane force</S100FC:definition>
+                    <S100FC:code>4</S100FC:code>
+                </S100FC:listedValue>
+            </S100FC:listedValues>
+        </S100FC:S100_FC_SimpleAttribute>
+    </S100FC:S100_FC_SimpleAttributes>
+    <S100FC:S100_FC_ComplexAttributes>
+        <S100FC:S100_FC_ComplexAttribute>
+            <S100FC:name>contactInformation</S100FC:name>
+            <S100FC:definition>No definition set for contactInformation</S100FC:definition>
+            <S100FC:code>contactInformation</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:subAttributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="agencyName"/>
+            </S100FC:subAttributeBinding>
+            <S100FC:subAttributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>0</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="mailingAddress"/>
+            </S100FC:subAttributeBinding>
+            <S100FC:subAttributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>0</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="telephoneNumber"/>
+            </S100FC:subAttributeBinding>
+            <S100FC:subAttributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>0</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="emailAddress"/>
+            </S100FC:subAttributeBinding>
+            <S100FC:subAttributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>0</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="webAddress"/>
+            </S100FC:subAttributeBinding>
+        </S100FC:S100_FC_ComplexAttribute>
+        <S100FC:S100_FC_ComplexAttribute>
+            <S100FC:name>fixedDateRange</S100FC:name>
+            <S100FC:definition>No definition set for fixedDateRange</S100FC:definition>
+            <S100FC:code>fixedDateRange</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:subAttributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="dateStart"/>
+            </S100FC:subAttributeBinding>
+            <S100FC:subAttributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="dateEnd"/>
+            </S100FC:subAttributeBinding>
+        </S100FC:S100_FC_ComplexAttribute>
+        <S100FC:S100_FC_ComplexAttribute>
+            <S100FC:name>information</S100FC:name>
+            <S100FC:definition>No definition set for information</S100FC:definition>
+            <S100FC:code>information</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:subAttributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>0</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="language"/>
+            </S100FC:subAttributeBinding>
+            <S100FC:subAttributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>0</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="text"/>
+            </S100FC:subAttributeBinding>
+        </S100FC:S100_FC_ComplexAttribute>
+        <S100FC:S100_FC_ComplexAttribute>
+            <S100FC:name>issuingService</S100FC:name>
+            <S100FC:definition>No definition set for issuingService</S100FC:definition>
+            <S100FC:code>issuingService</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:subAttributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="metareaName"/>
+            </S100FC:subAttributeBinding>
+            <S100FC:subAttributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>0</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="countryName"/>
+            </S100FC:subAttributeBinding>
+            <S100FC:subAttributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="issuingServiceName"/>
+            </S100FC:subAttributeBinding>
+        </S100FC:S100_FC_ComplexAttribute>
+        <S100FC:S100_FC_ComplexAttribute>
+            <S100FC:name>issuingServiceName</S100FC:name>
+            <S100FC:definition>No definition set for issuingServiceName</S100FC:definition>
+            <S100FC:code>issuingServiceName</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:subAttributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="information"/>
+            </S100FC:subAttributeBinding>
+        </S100FC:S100_FC_ComplexAttribute>
+        <S100FC:S100_FC_ComplexAttribute>
+            <S100FC:name>maximumWindSpeed</S100FC:name>
+            <S100FC:definition>No definition set for maximumWindSpeed</S100FC:definition>
+            <S100FC:code>maximumWindSpeed</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:subAttributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="information"/>
+            </S100FC:subAttributeBinding>
+        </S100FC:S100_FC_ComplexAttribute>
+        <S100FC:S100_FC_ComplexAttribute>
+            <S100FC:name>weatherWarningMessage</S100FC:name>
+            <S100FC:definition>No definition set for weatherWarningMessage</S100FC:definition>
+            <S100FC:code>weatherWarningMessage</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:subAttributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="information"/>
+            </S100FC:subAttributeBinding>
+        </S100FC:S100_FC_ComplexAttribute>
+        <S100FC:S100_FC_ComplexAttribute>
+            <S100FC:name>preparationService</S100FC:name>
+            <S100FC:definition>No definition set for preparationService</S100FC:definition>
+            <S100FC:code>preparationService</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:subAttributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="issuingServiceName"/>
+            </S100FC:subAttributeBinding>
+            <S100FC:subAttributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>0</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="countryName"/>
+            </S100FC:subAttributeBinding>
+        </S100FC:S100_FC_ComplexAttribute>
+    </S100FC:S100_FC_ComplexAttributes>
+    <S100FC:S100_FC_Roles>
+        <S100FC:S100_FC_Role>
+            <S100FC:name>informationProvidedFor</S100FC:name>
+            <S100FC:definition>informationProvidedFor</S100FC:definition>
+            <S100FC:code>informationProvidedFor</S100FC:code>
+        </S100FC:S100_FC_Role>
+        <S100FC:S100_FC_Role>
+            <S100FC:name>dataProviderInformation</S100FC:name>
+            <S100FC:definition>dataProviderInformation</S100FC:definition>
+            <S100FC:code>dataProviderInformation</S100FC:code>
+        </S100FC:S100_FC_Role>
+    </S100FC:S100_FC_Roles>
+    <S100FC:S100_FC_InformationTypes>
+        <S100FC:S100_FC_InformationType>
+            <S100FC:name>DataProvider</S100FC:name>
+            <S100FC:definition>No definition set for DataProvider</S100FC:definition>
+            <S100FC:code>DataProvider</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:attributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="issuingService"/>
+            </S100FC:attributeBinding>
+            <S100FC:attributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="contactInformation"/>
+            </S100FC:attributeBinding>
+            <S100FC:attributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="preparationService"/>
+            </S100FC:attributeBinding>
+        </S100FC:S100_FC_InformationType>
+    </S100FC:S100_FC_InformationTypes>
+    <S100FC:S100_FC_FeatureTypes>
+        <S100FC:S100_FC_FeatureType isAbstract="true">
+            <S100FC:name>WeatherWarning</S100FC:name>
+            <S100FC:definition>No definition set for WeatherWarning</S100FC:definition>
+            <S100FC:code>WeatherWarning</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:attributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="fixedDateRange"/>
+            </S100FC:attributeBinding>
+            <S100FC:attributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>0</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="weatherWarningMessage"/>
+            </S100FC:attributeBinding>
+            <S100FC:attributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="issueDate"/>
+            </S100FC:attributeBinding>
+            <S100FC:attributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="weatherWarningNumber"/>
+            </S100FC:attributeBinding>
+            <S100FC:attributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="cancellationDate"/>
+            </S100FC:attributeBinding>
+            <S100FC:attributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="nextUpdateDateTime"/>
+            </S100FC:attributeBinding>
+            <S100FC:attributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="interoperabilityIdentifier"/>
+            </S100FC:attributeBinding>
+            <S100FC:featureUseType>geographic</S100FC:featureUseType>
+            <S100FC:permittedPrimitives>surface</S100FC:permittedPrimitives>
+        </S100FC:S100_FC_FeatureType>
+        <S100FC:S100_FC_FeatureType isAbstract="false">
+            <S100FC:name>IceAccretionWarning</S100FC:name>
+            <S100FC:definition>No definition set for IceAccretionWarning</S100FC:definition>
+            <S100FC:code>IceAccretionWarning</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:attributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="iceAccretionRate"/>
+            </S100FC:attributeBinding>
+            <S100FC:attributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>0</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="sourceOfIcing"/>
+            </S100FC:attributeBinding>
+            <S100FC:superType>WeatherWarning</S100FC:superType>
+            <S100FC:featureUseType>geographic</S100FC:featureUseType>
+            <S100FC:permittedPrimitives>surface</S100FC:permittedPrimitives>
+        </S100FC:S100_FC_FeatureType>
+        <S100FC:S100_FC_FeatureType isAbstract="false">
+            <S100FC:name>RestrictedVisibilityWarning</S100FC:name>
+            <S100FC:definition>No definition set for RestrictedVisibilityWarning</S100FC:definition>
+            <S100FC:code>RestrictedVisibilityWarning</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:superType>WeatherWarning</S100FC:superType>
+            <S100FC:featureUseType>geographic</S100FC:featureUseType>
+            <S100FC:permittedPrimitives>surface</S100FC:permittedPrimitives>
+        </S100FC:S100_FC_FeatureType>
+        <S100FC:S100_FC_FeatureType isAbstract="false">
+            <S100FC:name>SignificantWaveHeightWarning</S100FC:name>
+            <S100FC:definition>No definition set for SignificantWaveHeightWarning</S100FC:definition>
+            <S100FC:code>SignificantWaveHeightWarning</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:attributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="significantWaveHeightWarningThreshold"/>
+            </S100FC:attributeBinding>
+            <S100FC:superType>WeatherWarning</S100FC:superType>
+            <S100FC:featureUseType>geographic</S100FC:featureUseType>
+            <S100FC:permittedPrimitives>surface</S100FC:permittedPrimitives>
+        </S100FC:S100_FC_FeatureType>
+        <S100FC:S100_FC_FeatureType isAbstract="false">
+            <S100FC:name>ThunderstormWarning</S100FC:name>
+            <S100FC:definition>No definition set for ThunderstormWarning</S100FC:definition>
+            <S100FC:code>ThunderstormWarning</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:superType>WeatherWarning</S100FC:superType>
+            <S100FC:featureUseType>geographic</S100FC:featureUseType>
+            <S100FC:permittedPrimitives>surface</S100FC:permittedPrimitives>
+        </S100FC:S100_FC_FeatureType>
+        <S100FC:S100_FC_FeatureType isAbstract="false">
+            <S100FC:name>WindWarning</S100FC:name>
+            <S100FC:definition>No definition set for WindWarning</S100FC:definition>
+            <S100FC:code>WindWarning</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:attributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="windWarningThreshold"/>
+            </S100FC:attributeBinding>
+            <S100FC:attributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>0</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="beaufortForce"/>
+            </S100FC:attributeBinding>
+            <S100FC:attributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="maximumWindSpeed"/>
+            </S100FC:attributeBinding>
+            <S100FC:superType>WeatherWarning</S100FC:superType>
+            <S100FC:featureUseType>geographic</S100FC:featureUseType>
+            <S100FC:permittedPrimitives>surface</S100FC:permittedPrimitives>
+        </S100FC:S100_FC_FeatureType>
+    </S100FC:S100_FC_FeatureTypes>
+</S100FC:S100_FC_FeatureCatalogue>
