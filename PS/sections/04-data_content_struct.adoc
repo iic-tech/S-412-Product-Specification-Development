@@ -164,7 +164,7 @@ Simple attributes for the Wind Warning feature type are shown in Figure 2 and th
 
 [[fig-s412-enumerated-attributes]]
 .S-412 Enumerated Attributes
-image::../images/figure-s412-enumerated-attributes.png[UML diagram depicting the S-412 Enumerated Attributes.]
+image::../images/S-412 Enumerations.png[UML diagram depicting the S-412 Enumerated Attributes.]
 
 ===== Code Lists
 
