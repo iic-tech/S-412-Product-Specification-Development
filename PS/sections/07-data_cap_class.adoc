@@ -31,9 +31,9 @@ Descriptions of the nature of warning polygons use the following units of measur
 
 * 	Distance is given in nautical miles (NM);
 
-* 	Latitudes and Longitudes are given in decimal degrees [start_review1]up to [end_review1]7 decimal numbers.
+* 	Latitudes and Longitudes are given in decimal degrees [[start_review1]]up to [[end_review1]]7 decimal numbers.
 
-[reviewer=IIC,date=2025-12-07,from=start_review1,to=end_review1]
+[reviewer="IIC",date=2025-12-07,from=start_review1,to=end_review1]
 ****
 Is it 3up to 7 decimal numbers", or "with 7 decimal numbers?. TBC
 ****
