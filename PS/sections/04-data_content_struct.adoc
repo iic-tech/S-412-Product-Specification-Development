@@ -67,7 +67,11 @@ Definitions of each feature type, information type, attribute, including enumera
 
 ==== Feature Types
 
-feature types are the basic level of classification in the Feature Catalogue, and are used in S-412 to represent warnings of atmospheric and oceanographic phenomena.
+Feature types are the basic level of classification in the Feature Catalogue, and are used in S-412 to represent warnings of atmospheric and oceanographic phenomena.
+
+[[fig-s412-features]]
+.S-412 Features
+image::../images/figure-s412-features.png[UML diagram depicting the S-412 Features]
 
 ===== [start_review1]Meta Features[end_review1]
 
