@@ -99,7 +99,7 @@ The colour is determined by the Portrayal Catalogue (based on the attribute valu
 
 [[fig-wind-warning-feature]]
 .Wind Warning Feature
-image::../images/figure-wind-warning-feature.png[UML diagram depicting the S-412 Wind Warning Feature with its attributes and associations.]
+image::../images/S-412-Wind Warning.png[UML diagram depicting the S-412 Wind Warning Feature with its attributes and associations.]
 
 ==== Information Types
 
@@ -109,7 +109,7 @@ Figure 3 shows the realisation of the single Information Type used in S-412: *Da
 
 [[fig-data-provider-information-type]]
 .Data Provider Information Type
-image::../images/figure-data-provider-information-type.png[UML diagram depicting the S-412 Data Provider Information Type.]
+image::../images/S-412 Information Types.png[UML diagram depicting the S-412 Data Provider Information Type.]
 
 ==== Feature Relationship
 
