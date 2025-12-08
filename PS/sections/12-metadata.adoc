@@ -3,19 +3,14 @@
 == Metadata
 
 === Introduction
-_There are two kinds of metadata to prepare:_
-
-*_ ISO 19139 Metadata_ +
-_This kind of metadata implementation can be read by broad range of software._
-
-*_ S100 Metadata_ +
-_The S100 metadata are for describing the structure of Exchange Catalogue_
 
 This clause defines the mandatory and optional metadata needed for Marine Weather Warnings Datasets and exchange sets.
 
 For information exchange, there are several categories of metadata required: metadata about the overall exchange catalogue, metadata about each of the datasets contained in the catalogue, and metadata about the support files that make up the package.
 
-The metadata may be repeated in a national language by including an optional and additional instance of the dataset discovery metadata per language other than the mandatory English language instance. If metadata in additional languages to English is provided, each support file will also need to be described in that language and referenced from the appropriate language metadata. English metadata should not reference metadata in another language and vice versa.
+#The metadata may be repeated in a national language by including an optional and additional instance of the dataset discovery metadata per language other than the mandatory English language instance. If metadata in additional languages to English is provided, each support file will also need to be described in that language and referenced from the appropriate language metadata. English metadata should not reference metadata in another language and vice versa.#
+
+#_Use of additional language TBC_#
 
 The overall structure of metadata in S-412 exchange sets is the same as in S-100, and is depicted in Figure 10. Metadata in exchange sets consists of discovery metadata for the datasets and support files in the exchange set (classes S100_DatasetDiscoveryMetadata and S100_SupportFileDiscoveryMetadata), metadata in ISO 19115-1 format for datasets, and metadata about any feature, portrayal, or interoperability catalogues which are in the exchange set (S100_catalogueMetadata).
 
@@ -40,37 +35,38 @@ NOTE 2:: When a dataset is terminated, the purpose metadata field is set to 3 (t
 
 S-412 uses the following tables as detailed in S-100 Part 17, Clause 17-4.5, without modification:
 
-●	S100_ExchangeCatalogue +
-●	S100_ExchangeCatalogueIdentifier +
-●	S100_CataloguePointofContact +
-●	S100_DatasetDiscoveryMetadata +
-●	S100_NavigationPurpose +
-●	S100_DataCoverage +
-●	S100_Purpose +
-●	S100_TemporalExtent +
-●	S100_EncodingFormat +
-●	S100_ProductSpecification +
-●	S100_CompliancyCategory +
-●	S100_ProtectionScheme +
-●	S100_SupportFileDiscoveryMetadata +
-●	S100_SupportFileFormat +
-●	S100_SupportFileRevisionStatus +
-●	S100_SupportFileSpecification +
-●	S100_ResourcePurpose +
-●	S100_CatalogueDiscoveryMetadata +
-●	S100_CatalogueScope +
-●	MD_MaintenanceFrequencyCode +
-●	CI_DataTypeCode +
-●	PT_Locale
+* 	S100_ExchangeCatalogue +
+* 	S100_ExchangeCatalogueIdentifier +
+* 	S100_CataloguePointofContact +
+* 	S100_DatasetDiscoveryMetadata +
+* 	S100_NavigationPurpose +
+* 	S100_DataCoverage +
+* 	S100_Purpose +
+* 	S100_TemporalExtent +
+* 	S100_EncodingFormat +
+* 	S100_ProductSpecification +
+* 	S100_CompliancyCategory +
+* 	S100_ProtectionScheme +
+* 	S100_SupportFileDiscoveryMetadata +
+* 	S100_SupportFileFormat +
+* 	S100_SupportFileRevisionStatus +
+* 	S100_SupportFileSpecification +
+* 	S100_ResourcePurpose +
+* 	S100_CatalogueDiscoveryMetadata +
+* 	S100_CatalogueScope +
+* 	MD_MaintenanceFrequencyCode +
+* 	CI_DataTypeCode +
+* 	PT_Locale
 
-The S-124 metadata description is a subset of the metadata described in S-100 Part 17, which is a profile of the ISO 19115 standard. The S-124 metadata model restricts the S-100 metadata model to its core elements; S100_ExchangeCatalogue, S100_DatasetDiscoveryMetadata, S100_CatalogueDiscoveryMetadata and S100_SupportFileDiscoveryMetadata. Moreover, the S100_DatasetDiscoveryMetadata is further restricted to remove attributes that are not relevant to a navigational warning service.
+The S-412 metadata description is a subset of the metadata described in S-100 Part 17, which is a profile of the ISO 19115 standard. The S-412 metadata model restricts the S-100 metadata model to its core elements; S100_ExchangeCatalogue, S100_DatasetDiscoveryMetadata, S100_CatalogueDiscoveryMetadata and S100_SupportFileDiscoveryMetadata. Moreover, the S100_DatasetDiscoveryMetadata is further restricted to remove attributes that are not relevant to a Marine Weather Warning service.
 
-=== S100_DatasetDiscoveryMetadata
-_Dataset discovery metadata in S-412 restricts certain attributes and roles as described in <<tab-s100-datasetDiscoveryMetadata-params>>. Optional S-100 attributes which are mandatory in S-412 are indicated in the Remarks column._
+==== S100_DatasetDiscoveryMetadata
+
+Dataset discovery metadata for datasets is described in this table.
 
 [[tab-s100-datasetDiscoveryMetadata-params]]
 .S100_DatasetDiscoveryMetadata parameters
-[cols="a,a,a,^a,a,a",options="header"]
+[cols="a,a,a,a,a,a",options="header"]
 |===
 |Role name |Name |Description |Mult |Type |Remarks
 
@@ -80,23 +76,21 @@ _Dataset discovery metadata in S-412 restricts certain attributes and roles as d
 |-
 |-
 |*The optional S-100 attributes _verticalDatum_, _soundingDatum_, _optimumDisplayScale_ and _minimumDisplayScale_ are not used in S-412.* +
-_*References to support file discovery metadata are not permitted because S-412 does not use support files.*_
+#_References to support file discovery metadata are not permitted because S-412 does not use support files._#
 
 |Attribute
 |fileName
 |Dataset file name
 |1
 |URI
-|See <<iho-s100,part=1,clause=4.6>> +
-*Format: file:/S-412/DATASET_FILES/<dsname>* +
-*Dataset file name <dsname> must be according to format defined in <<subsec-dataset-file-naming>>.*
+|See 11.6.3
 
 |Attribute
 |description
 |Short description giving the area of location covered by the dataset
 |0..1
 |CharacterString
-|Short description of the area covered by dataset, e.g., area, harbour, or port name, between two named locations etc.
+|Short description of the area covered by dataset. For example, a harbour or port name between two named locations.
 
 |Attribute
 |datasetID
@@ -104,23 +98,23 @@ _*References to support file discovery metadata are not permitted because S-412 
 |0..1
 |URN
 |The URN must be an MRN. +
-*See <<iho-s100,part=3,clause=10>>*
+#See <<iho-s100,part=3,clause=10>>#
 
 |Attribute
 |compressionFlag
 |Indicates if the resource is compressed
 |1
 |Boolean
-|TRUE: Encrypted; indicates a compressed dataset +
-FALSE: Unencrypted; indicates an uncompressed dataset
+|True: indicates a compressed dataset resouce +
+False: indicates an uncompressed dataset resource
 
 |Attribute
 |dataProtection
-|Indicates if the resource is compressed
+|Indicates if the resource is encrypted
 |1
 |Boolean
-|TRUE: Encrypted; indicates a compressed dataset +
-FALSE: Unencrypted; indicates an uncompressed dataset
+|True: indicates an encrypted dataset resource +
+False: indicates an uncompressed dataset
 
 |Attribute
 |protectionScheme
@@ -153,7 +147,6 @@ Implemented as the digital signature format specified in Part 15
 |Boolean
 |True indicates the resource is copyrighted +
 False indicates that the source is not copyrighted +
-Old Doc: “copyright” for copyrighted datasets, omitted otherwise
 
 |Attribute
 |classification
@@ -176,9 +169,8 @@ ISO 19115-1
 |purpose
 |The purpose for which the dataset has been chosen
 |0..1
-|S100_purpose
-|1.	New dataset +
-2.	New edition
+|S100_Purpose
+|
 
 |Attribute
 |notForNavigation
@@ -193,15 +185,15 @@ False indicates the dataset is intended to be used for navigation
 |The use for which the is intended
 |0..1
 |MD_USAGE>specificUsage (character string) +
-MD_USAGE>userContactInfo (CI_Responsibility)
-|brief description of the resource and/or resource series usage
+|
 
 |Attribute
 |editionNumber
-|The edition number of the dataset
+|The Edition number of the dataset
 |0..1
 |Integer
-|When a dataset is initially created, the edition number “1” is assigned to it. The edition number is increased by one with each new edition.
+|When a dataset is initially created, the edition number 1 is assigned to it. The edition number is increased by 1 at each new Edition +
+#Further discussion is needed on whether or not updated datasets should be allowed#
 
 |Attribute
 |updateNumber
@@ -217,28 +209,29 @@ Mandatory only for updating datasets.
 |0..1
 |Date
 |Date of update +
-Mandatory  only for updating datasets.
+Mandatory  only for updating datasets. +
+#Further discussion is needed on whether or not updated datasets should be allowed#
 
 |Attribute
 |issueDate
 |Date in which the data was made available by the Data Producer
 |0..1
 |Date
-|Date on which the dataset was generated
+|
 
 |Attribute
 |issueTime
 |Time of day at which the data was made available by the Data Producer
 |0..1
 |Time
-|Encoded only if time of issue is significant
+|The S-100 datatype Time
 
 |Attribute
 |boundingBox
 |The extent of the dataset limits
 |0..1
 |EX_GeographicBounding Box
-|-
+|
 
 |Attribute
 |temporalExtent
@@ -253,9 +246,16 @@ This attribute is encoded if and only if at least one of the start and end of th
 |Attribute
 |productSpecification
 |The product specification used to make this dataset
-|1..1
+|1
 |S100_ProductSpecification
-|See Notes below this table for constraints on values
+|
+
+|Attribute
+|producingAgency
+|Agency responsible for producing the data
+|1
+|CI_Responsibility>CI_Organisation
+|See S-100 Table 17-3
 
 |Attribute
 |producerCode
@@ -265,46 +265,54 @@ This attribute is encoded if and only if at least one of the start and end of th
 |
 
 |Attribute
+|encodingFormat
+|The encoding format of the dataset
+|1
+|S100_EncodingFormat
+|
+
+|Attribute
 |dataCoverage
 |Provides information about data coverages within the dataset
 |0..*
 |S100_DataCoverage
-|See Figure 11 and S-100 Appendix 4a-D. A new or new-edition S-412 dataset must have at least one coverage
+|#See Figure 11 and S-100 Appendix 4a-D. A new or new-edition S-412 dataset must have at least one coverage# +
+#TBC if S-412 uses Data Coverage feature#
 
 |Attribute
 |comment
 |Any additional information
 |0..1
 |CharacterString
-|Any additional Information
+|
 
 |Attribute
 |defaultLocale
 |Default language and character set used in the dataset
 |0..1
 |PT_Locale
-|See Figure 11 and S-100 Appendix 4a-D
+|In absence of defaultLocale the language is English, UTF-8
 
 |Attribute
 |otherLocale
 |Other languages and character sets used in the dataset
 |0..*
 |PT_Locale
-|See Figure 11 and S-100 Appendix 4a-D
+|
 
 |Attribute
 |metadataPointOfContact
 |Point of contact for metadata
 |0..1
-|CI_Responsibility>CI_Individual or CI_Responsibility>CI_Organization
-|See S-100 Part 4a Tables 4a-2 and 4a-3
+|CI_Responsibility>CI_Individual or CI_Responsibility>CI_Organisation
+|Only if metadataPointOfContact is different to producingAgency
 
 |Attribute
 |metadataDateStamp
 |Date stamp for metadata
 |0..1
 |Date
-|Metadata creation date, which may or may not be the dataset creation date
+|May or may not be the issue date
 
 |Attribute
 |replacedData
@@ -336,12 +344,15 @@ See Note
 |S-100 restricts the multiplicity to 0..1 and adds specific restrictions on the ISO 19115 structure and content. See clause MD_MaintenaceInformation later in this Part +
 Format: PnYnMnDTnHnMnS (XML built-in type for ISO 8601 duration). See clause 17-4.9
 
+NOTE:: replacedData and dataReplacement: The intended use of the attributes replacedData and dataReplacement could be, for example, to provide a mechanism for service providers to build automation when providing replacement data sets to customers within existing subscription periods.
+
 |
 |--
 |
 |0..*
-|Aggregation S100_SupportFileDiscoveryMetadata
-|One for each support file linked to this dataset and present in the exchange set
+|#Aggregation S100_SupportFileDiscoveryMetadata#
+|#One for each support file linked to this dataset and present in the exchange set# +
+#TBC - Not in S-100 5.2.0#
 
 |===
 
@@ -355,19 +366,26 @@ NOTES:: Attribute productSpecification: The values of sub-attributes name and ve
 |===
 |Role name |Name |Description |Mult |Type |Remarks
 
+|Class
+|S100_DataCoverage
+|A spatial extent where data is provided; and the display scale information for the provided data
+|-
+|-
+|This field is used by user systems as part of the data loading and unloading algorithms and it is strongly encouraged that Product Specifications mandate the use of one or more of the displayScale provided as part of S100_DataCoverage
+
 |Attribute
 |boundingPolygon
 |A polygon which defines the actual data limit
-|1..*
+|1..1
 |EX_BoundingPolygon
-|The extent of the dataset limits
+|(See Note 1)
 
 |Attribute
 |temporalExtent
 |Specification of the temporal extent of the coverage
 |0..1
-|Integer
-|A polygon which defines the actual data limit
+|S100_TemporalExtent
+|The remarks for temporalExtent in the dataset discovery block (S100_DatasetDiscoveryMetadata) apply, except that their scope is the individual coverage and not the dataset as a whole
 
 |Attribute
 |optimumDisplayScale
@@ -378,8 +396,8 @@ NOTES:: Attribute productSpecification: The values of sub-attributes name and ve
 
 |Attribute
 |maximumDisplayScale
-|The maximum scale with which the data is optimally displayed
-|1..1
+|The maximum scale with which the data is displayed
+|0..1
 |Integer
 |Mandatory in S-412 +
 Value 700000 means that S-412 data cannot be viewed at a larger scale than 1:700001 (i.e. at 1:700000 it is turned off).
@@ -391,6 +409,8 @@ Value 700000 means that S-412 data cannot be viewed at a larger scale than 1:700
 |Integer
 |
 
+#Scale policy on scales to be considered by WMO#
+
 |Attribute
 |approximateGridResolution
 |The resolution of gridded or georeferenced data (in metres)
@@ -401,6 +421,8 @@ For multiple value provision, use axis order as specified in dataset +
 May be approximate for ungeorectified data +
 For example, for 5 metre resolution, the value 5 must be encoded
 (See Note 2)
+
+#Suggest adding info saying that grid resolution is of no interest (not populated) for S-412#
 
 |===
 
@@ -418,7 +440,9 @@ NOTE 4:: Bounding polygons for multipoint features (DCF 1 and 8) may be one or m
 
 NOTE 5:: A boundingPolygon is restricted to a single GML Polygon with one exterior and 0 or more interiors expressed as Linear Rings using SRS EPSG:4326. The exterior and optional interiors shall be composed of a closed sequence of >=4 coordinate positions expressed individually or as a list (posList). The GML polygon shall have a valid GML identifier.
 
-NOTE 6: For approximateGridResolution, if the grid cell size varies over the extent of the grid, an approximated value based on model parameters or production metadata should be used. 
+NOTE 6: For approximateGridResolution, if the grid cell size varies over the extent of the grid, an approximated value based on model parameters or production metadata should be used.
+
+#Notes above come from S-411. WMO to consider what is needed for S-412#
 
 ==== S100_EncodingFormat
 
@@ -431,14 +455,14 @@ NOTE 6: For approximateGridResolution, if the grid cell size varies over the ext
 |Enumeration
 |S100_DataFormat
 |The encoding format
-|-
+|
 |The S-100 values ISO/IEC 8211, HDF5 and undefined are not allowed in S-412 datasets
 
 |Value
 |ISO/IEC 8211
 |The ISO 8211 data format as defined in Part 10a
 |1
-|-
+|
 
 |Value
 |GML
@@ -450,7 +474,7 @@ NOTE 6: For approximateGridResolution, if the grid cell size varies over the ext
 |HDF5
 |The HDF5 data format as defined in Part 10c
 |3
-|*
+|
 
 |Value
 |undefined
@@ -462,13 +486,15 @@ NOTE 6: For approximateGridResolution, if the grid cell size varies over the ext
 
 *Support file Metadata*
 
+#To be reviewed by WMO if Support Files are not used in S-412#
+
 Support file metadata is intended to describe information about a data resource. It facilitates the management and exploitation of data and is an important requirement for understanding the characteristics of a data resource. If it is required to generate support file metadata in another language than English, an additional instance per language is created. The language is defined in the language attribute of the PT_Locale class.
 
 ==== S100_SupportFileDiscoveryMetadata
 
 [[tab-S100_SupportFileDiscoveryMetadata]]
 .S100_SupportFileDiscoveryMetadata
-[cols="a,a,a,^a,a,a",options="header"]
+[cols="a,a,a,a,a,a",options="header"]
 |===
 |Role name |Name |Description |Mult |Type |Remarks
 
@@ -477,35 +503,35 @@ Support file metadata is intended to describe information about a data resource.
 |Metadata about the individual support files in the Exchange Catalogue
 |-
 |URI
-|The S-100 attribute otherDataTypedescription is not used in S-412
+|
 
 |Attribute
 |fileName
 |Name of the support file
-|1..1
+|1
 |CharacterString
-|-
+|
 
 |Attribute
 |revisonSatus
 |The purpose for which the support file has been issued
-|1..1
+|1
 |S100_SupportFileRevisionStatus
 |For example new, replacement, etc.
 
 |Attribute
 |editionNumber
 |The Edition of the support file
-|1..1
+|1
 |Integer
-|When a dataset is initially created, the edition number 1 is assigned to it. The edition number is increased by 1 at each new edition. Edition number remains the same for a re-issue
+|When a dataset is initially created, the Edition number 1 is assigned to it. The Edition number is increased by 1 at each new edition. Edition number remains the same for a re-issue
 
 |Attribute
 |issueDate
 |Date on which the data was made available by the Data Producer
 |0..1
-|date
-|-
+|Date
+|
 
 |Attribute
 |supportFileSpecification
@@ -517,19 +543,18 @@ Support file metadata is intended to describe information about a data resource.
 |Attribute
 |dataType
 |The format of the support file
-|1..1
+|1
 |S100_SupportFileFormat
 |The only values allowed for support files referenced in datasets is TIFF +
 Values XML, XSLT, and LUA are reserved for portrayal catalogue files +
 The value ASCII can only be used for portrayal catalogue files that do not fit into one of the other types.
-
 
 |Attribute
 |otherDataDescription
 |Support file format other than those listed
 |0..1
 |CharacterString
-|-
+|The S-100 attribute otherDataTypedescription is not used in S-412
 
 |Attribute
 |comment
