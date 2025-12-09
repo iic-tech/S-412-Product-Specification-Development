@@ -54,7 +54,11 @@ The following are required elements within an exchange set:
 
 === Optional Elements
 
-●	Supplementary files – These are contained within the exchange set as files and the mapping from the name included within the dataset and the physical location on the media is defined within the Exchange catalogue. An example of a supplementary file could be an image.
+●	[[s11_start_review1]]Supplementary files – These are contained within the exchange set as files and the mapping from the name included within the dataset and the physical location on the media is defined within the Exchange catalogue. An example of a supplementary file could be an image.[[s11_end_review1]]
+[reviewer="IIC",date=2025-12-09,from=s11_start_review1,to=s11_end_review1]
+****
+Potential use of Supplementary files (image or text) to be considered by WMO. If not, suggest removing this part.
+****
 
 ●	S-412 Feature catalogue – If it is necessary to deliver the latest feature catalogue to the end user it may be done using the S-412 exchange set mechanism for datasets.
 
@@ -68,15 +72,19 @@ One type of dataset file may be produced and contained within an exchange set:
 
 ●	New dataset: Each new edition of a data set must follow the format defined in 11.6.2 and replace a previously loaded dataset within an ECS. If multiple files exist on a charting system, the system shall have the capacity to verify the most recent file is loaded and visualised for the end user.
 
-●	Update dataset: In some situations an update dataset will be required. This may occur if issuing an entirely new dataset is not appropriate. The GML update format should be whole-object replacements with an updated issuedDateTime attribution. If a significant number of objects or portions of the dataset needs updating, a dataset should follow the guidelines of a new dataset.
+[[s11_start_review2]]●	Update dataset: In some situations an update dataset will be required. This may occur if issuing an entirely new dataset is not appropriate. The GML update format should be whole-object replacements with an updated issuedDateTime attribution. If a significant number of objects or portions of the dataset needs updating, a dataset should follow the guidelines of a new dataset.
 
-●	Re-issue: In the event that a dataset must be reissued, it will be re-issued following the guidelines of a new dataset.
+●	Re-issue: In the event that a dataset must be reissued, it will be re-issued following the guidelines of a new dataset.[[s11_end_review2]]
+[reviewer="IIC",date=2025-12-09,from=s11_start_review2,to=s11_end_review2]
+****
+Suggest removing this part if S-412 only uses New datasets.
+****
 
 ==== Dataset size
 
 < < Exact data size restrictions and recommendations will be determined during testing > >
 
-Datasets may be as large as necessary, provided that the entire exchange set before compression does not exceed 10MB.
+Datasets may be as large as necessary in terms of extent, provided that the entire exchange set before compression does not exceed 10MB.
 
 ==== Dataset file naming
 Dataset naming must follow a standard pattern to give implementers greater predictability of incoming datasets (see <<iho-s100,part=17,clause=4.3>>). S-412 dataset naming conventions must follow these rules and no further restrictions are made in this product specification.
@@ -100,7 +108,7 @@ File Types	 Extensions	Comment 	XML	Additional Language Information
 
 ==== Support File Naming
 
-< < This information is provided as a placeholder for now. OEM input is needed before a determination can be made. > >
+#< < This information is provided as a placeholder for now. OEM input is needed before a determination can be made. > >#
 
 Support file names are subject to the same naming rules as dataset file names (clause 11.6.3), except that the extension is determined by the support file format.
 
@@ -166,4 +174,5 @@ The digital signature information is encoded in the corresponding discovery bloc
 S-412 datasets are typically intended to be overlays to S-101 ENC and displayed with S-101 ENC data in the background. Systems that support the display of S-412 datasets should provide the user with simple functions to turn the display of S-412 datasets on and off.
 
 Optionally, S-412 datasets can be viewed as overlays to a combination of S-101 ENC and S-102 (Bathymetric Surface) datasets, with S-413 (Marine Weather and Wave Conditions) and S-414 (Marine Weather Observations) datasets incorporated where applicable. The same requirements to allow the user to easily toggle the S-412 dataset on/off persist.
+
 
