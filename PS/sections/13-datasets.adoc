@@ -2,6 +2,11 @@
 [[sec-datasets]]
 == Dataset Encoding
 
+#WMO to consider if this section should be removed:#
+
+*  #Dataset Coverage and Display Scale Range rules may not apply if Data Coverage feature is not used in S-412.#
+*  #Geometry is already detailled in section 4.#
+
 === Introduction
 
 A dataset is a grouping of features, attributes, geometry and metadata which comprises a specific coverage.
