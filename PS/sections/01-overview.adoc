@@ -192,12 +192,12 @@ Some definitions are slighty different to the ones in S-411, S-100, etc.).
 ****
 
 The S-100 framework is based on the ISO 19100 series of geographic standards. The terms and definitions provided here are used to standardise the relevant nomenclature found within that framework, whenever possible. Additional definitions specific to S-412 are provided in this section as well. Features, attributes and associations that may be realised in an S-412 compliant dataset are defined in [[s1_start_review6]]Annex A, B and C.[[s1_end_review6]]
-
-=== [[s1_start_review7]]References[[s1_end_review7]]
-[reviewer="IIC",date=2025-12-04,from=s1_start_review7,to=s1_end_review7]
+[reviewer="IIC",date=2025-12-04,from=s1_start_review6,to=s1_end_review6]
 ****
 References to Annexes to be confirmed.
 ****
+
+=== References
 
 *Abstract Class*
 An object class which cannot be instantiated, or is designated in an information model as not allowed  to be instantiated [ISO 19107].
@@ -589,6 +589,7 @@ XSL::		eXtensible Stylesheet Language
 *Spatial Extent*::
 
 *Description*: Maritime zones and terrestrial locations within proximity of navigable waters. +
+
 *East Bounding Longitude*: 180° +
 *West Bounding Longitude*: -180° +
 *North Bounding Latitude*: 90° +
@@ -603,8 +604,8 @@ An S-412 product can be used as an overlay for electronic navigational charts wi
 
 *Title*:: S-412 Marine Weather Warnings Product Specification
 *S-100 Version*:: 5.2.0
-*S-412 Version*:: 1.0.1
-*Date*:: 12 December 2025
+*S-412 Version*:: 1.1.0
+*Date*:: 9 December 2025
 *Language*:: English _(optional additional)_
 *Classification*:: Unclassified
 *Contact*::  World Meteorological Organization +
@@ -619,14 +620,7 @@ Email: mailto:publications@wmo.int[] +
 
 *Identifier*::  S-412 +
 *Maintenance*::  Changes to the Product Specification S-412 are coordinated by the JCOMM, and must be made available via the IHO web site. When a new version of the product spec is ready for approval it must follow through several bodies of the WMO; including: ET-MS and SC-MMO while keeping WWMIWS aware of changes for METAREAS. Once approved by the WMO, the WMO’s Domain Control Body Member will submit the document to IHO for approval into the GI Registry. +
---
-World Meteorological Organization (WMO) +
-7 bis, avenue de la Paix +
-P.O. Box 2300 +
-CH-1211 Geneva 2, Switzerland +
-Telephone: +41 (0) 22 730 84 03 +
-Email: mailto:publications@wmo.int[] +
---
+
 *URL*:: link:http://www.wmo.int/[www.wmo.int]
 *Identifier*:: S-412
 
@@ -658,3 +652,4 @@ New Editions denoted as **n**.0.0
 Revisions denoted as n.**n**.0
 
 Clarifications denoted as n.n.**n**
+
