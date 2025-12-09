@@ -87,12 +87,6 @@ YYYY::: the fourth to seventh characters identify the producer code according to
 ØØØØ::: the eighth to the maximum nineteenth characters are optional and may be used in any way by the producer to provide the unique file name. The following characters are allowed in the dataset name: A to Z, 0 to 9 and the special character _ (underscore); +
 GML::: denotes a GML file (according to <<iho-s100,part=10b>>).
 
-_The following is present in current S-412 PS:_
-
-_### is an identifier that represents either a new dataset (000), a re-issued dataset (999) or an updated dataset (001-998)._
-
-_Note: ### are placed befor .GML_
-
 ==== New Datasets and Cancellations
 
 < < This section defines the sequencing of Marine Weather Warnings datasets for New Editions. > > 
