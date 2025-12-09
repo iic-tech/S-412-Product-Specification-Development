@@ -1,10 +1,28 @@
 
 [[annex-validation-checks]]
 [appendix]
-== Validation
+== Validation Checks
 
 === Introduction
-The following checks are intended for production systems designed to produce S-102 datasets. The checks can be administered at any time during the production phase. They can also be applied downstream in the distribution and end user systems to test the conformance of a dataset to the format rules specified in S-100 Part 10c and the S-412 Product Specification.
+The following checks are intended for production systems designed to produce S-412 datasets. The checks can be administered at any time during the production phase. They can also be applied downstream in the distribution and end user systems to test the conformance of a dataset to the format rules specified in S-100 Part 10c and the S-412 Product Specification.
+
+==== References
+
+===== Normative references
+
+*  CLE92:: _ClementinI, E., Di Felice, P., Van Oostrom, P. A Small Set of Formal Topological Relationships Suitable for End-User Interaction, in D. Abel and B. C. Ooi (Ed.), Advances in Spatial Databases — Third International Symposium. SSD 1993. LNCS 692, pp. 277-295._ Springer Verlag. Singapore (1993).
+*  ISO 19107:2003:: _Geographic Information – Spatial Schema_.
+*  ISO 19125-1:2004:: _OpenGIS Simple Features Specification for SQL, Revision 1.1 (OpenGIS Project Document 99-049,_ Release Date: May 5, 1999).
+*  S-100:: _IHO Universal Hydrographic Data Model,_ Edition 5.2.0, June 2024
+
+===== Informative references
+*  ISO 19157:2013:: _Geographic information – Data Quality._ As amended by Amendment 1, 2018
+
+==== Terms, definitions and abbreviations
+
+===== Terms and definitions
+
+Definitions hereafter complete the list provided in Section 1-
 
 === Check Classification
 Checks are classified as Critical, Error, or Warning checks as described in the Table below.
@@ -150,5 +168,6 @@ Additional "S-100 level" checks will be defined in a separate document (under pr
 === Test cases and methods
 
 (To be defined.)
+
 
 
