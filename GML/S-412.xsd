@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns="http://www.iho.int/S412/1.1"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:S100="http://www.iho.int/s100gml/5.0"
+    xmlns:gml="http://www.opengis.net/gml/3.2"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    targetNamespace="http://www.iho.int/S412/1.1"
+    elementFormDefault="qualified"
+    version="1.0.0-20220818">
+    <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="https://schemas.s100dev.net/schemas/S100/5.0.0/S100GML/20220620/S100_gmlProfile.xsd"/>
+    <xs:import namespace="http://www.iho.int/s100gml/5.0" schemaLocation="https://schemas.s100dev.net/schemas/S100/5.0.0/S100GML/20220620/s100gmlbase.xsd"/>
+    <xs:complexType name="beaufortForceType">
+        <xs:annotation>
+            <xs:documentation></xs:documentation>
+        </xs:annotation>
+        <xs:simpleContent>
+            <xs:extension base="beaufortForceLabel">
+                <xs:attribute name="code" type="beaufortForceCode" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>    <xs:simpleType name="beaufortForceLabel">
+        <xs:annotation>
+            <xs:documentation></xs:documentation>
+        </xs:annotation>        <xs:restriction base="xs:string"><xs:enumeration value="calm"><xs:annotation><xs:documentation>calm</xs:documentation></xs:annotation></xs:enumeration>
+<xs:enumeration value="light air"><xs:annotation><xs:documentation>light air</xs:documentation></xs:annotation></xs:enumeration>
+<xs:enumeration value="ligth breeze"><xs:annotation><xs:documentation>ligth breeze</xs:documentation></xs:annotation></xs:enumeration>
+<xs:enumeration value="gentle breeze"><xs:annotation><xs:documentation>gentle breeze</xs:documentation></xs:annotation></xs:enumeration>
+<xs:enumeration value="moderate breeze"><xs:annotation><xs:documentation>moderate breeze</xs:documentation></xs:annotation></xs:enumeration>
+<xs:enumeration value="fresh breeze"><xs:annotation><xs:documentation>fresh breeze</xs:documentation></xs:annotation></xs:enumeration>
+<xs:enumeration value="strong breeze"><xs:annotation><xs:documentation>strong breeze</xs:documentation></xs:annotation></xs:enumeration>
+<xs:enumeration value="near gale"><xs:annotation><xs:documentation>near gale</xs:documentation></xs:annotation></xs:enumeration>
+<xs:enumeration value="gale"><xs:annotation><xs:documentation>gale</xs:documentation></xs:annotation></xs:enumeration>
+<xs:enumeration value="strong glae"><xs:annotation><xs:documentation>strong glae</xs:documentation></xs:annotation></xs:enumeration>
+<xs:enumeration value="storm"><xs:annotation><xs:documentation>storm</xs:documentation></xs:annotation></xs:enumeration>
+<xs:enumeration value="violent storm"><xs:annotation><xs:documentation>violent storm</xs:documentation></xs:annotation></xs:enumeration>
+<xs:enumeration value="hurricane"><xs:annotation><xs:documentation>hurricane</xs:documentation></xs:annotation></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>    <xs:simpleType name="beaufortForceCode">
+        <xs:annotation>
+            <xs:documentation></xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:integer">            <xs:enumeration value="99">            </xs:enumeration>
+            <xs:enumeration value="1">            </xs:enumeration>
+            <xs:enumeration value="2">            </xs:enumeration>
+            <xs:enumeration value="3">            </xs:enumeration>
+            <xs:enumeration value="4">            </xs:enumeration>
+            <xs:enumeration value="5">            </xs:enumeration>
+            <xs:enumeration value="6">            </xs:enumeration>
+            <xs:enumeration value="7">            </xs:enumeration>
+            <xs:enumeration value="8">            </xs:enumeration>
+            <xs:enumeration value="9">            </xs:enumeration>
+            <xs:enumeration value="10">            </xs:enumeration>
+            <xs:enumeration value="11">            </xs:enumeration>
+            <xs:enumeration value="12">            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>    <xs:complexType name="iceAccretionRateType">
+        <xs:annotation>
+            <xs:documentation></xs:documentation>
+        </xs:annotation>
+        <xs:simpleContent>
+            <xs:extension base="iceAccretionRateLabel">
+                <xs:attribute name="code" type="iceAccretionRateCode" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>    <xs:simpleType name="iceAccretionRateLabel">
+        <xs:annotation>
+            <xs:documentation></xs:documentation>
+        </xs:annotation>        <xs:restriction base="xs:string"><xs:enumeration value="moderateIcing"><xs:annotation><xs:documentation>moderateIcing</xs:documentation></xs:annotation></xs:enumeration>
+<xs:enumeration value="severeIcing"><xs:annotation><xs:documentation>severeIcing</xs:documentation></xs:annotation></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>    <xs:simpleType name="iceAccretionRateCode">
+        <xs:annotation>
+            <xs:documentation></xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:integer">            <xs:enumeration value="1">            </xs:enumeration>
+            <xs:enumeration value="2">            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>    <xs:complexType name="metareaNameType">
+        <xs:annotation>
+            <xs:documentation></xs:documentation>
+        </xs:annotation>
+        <xs:simpleContent>
+            <xs:extension base="metareaNameLabel">
+                <xs:attribute name="code" type="metareaNameCode" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>    <xs:simpleType name="metareaNameLabel">
+        <xs:annotation>
+            <xs:documentation></xs:documentation>
+        </xs:annotation>        <xs:restriction base="xs:string"><xs:enumeration value="METAREA I"><xs:annotation><xs:documentation>METAREA I</xs:documentation></xs:annotation></xs:enumeration>
+<xs:enumeration value="METAREA II"><xs:annotation><xs:documentation>METAREA II</xs:documentation></xs:annotation></xs:enumeration>
+<xs:enumeration value="METAREA III"><xs:annotation><xs:documentation>METAREA III</xs:documentation></xs:annotation></xs:enumeration>
+<xs:enumeration value="METAREA IV"><xs:annotation><xs:documentation>METAREA IV</xs:documentation></xs:annotation></xs:enumeration>
+<xs:enumeration value="METAREA V"><xs:annotation><xs:documentation>METAREA V</xs:documentation></xs:annotation></xs:enumeration>
+<xs:enumeration value="METAREA VI"><xs:annotation><xs:documentation>METAREA VI</xs:documentation></xs:annotation></xs:enumeration>
+<xs:enumeration value="METAREA VII"><xs:annotation><xs:documentation>METAREA VII</xs:documentation></xs:annotation></xs:enumeration>
+<xs:enumeration value="METAREA VIII"><xs:annotation><xs:documentation>METAREA VIII</xs:documentation></xs:annotation></xs:enumeration>
+<xs:enumeration value="METAREA IX"><xs:annotation><xs:documentation>METAREA IX</xs:documentation></xs:annotation></xs:enumeration>
+<xs:enumeration value="METAREA X"><xs:annotation><xs:documentation>METAREA X</xs:documentation></xs:annotation></xs:enumeration>
+<xs:enumeration value="METAREA XI"><xs:annotation><xs:documentation>METAREA XI</xs:documentation></xs:annotation></xs:enumeration>
+<xs:enumeration value="METAREA XII"><xs:annotation><xs:documentation>METAREA XII</xs:documentation></xs:annotation></xs:enumeration>
+<xs:enumeration value="METAREA XIII"><xs:annotation><xs:documentation>METAREA XIII</xs:documentation></xs:annotation></xs:enumeration>
+<xs:enumeration value="METAREA XIV"><xs:annotation><xs:documentation>METAREA XIV</xs:documentation></xs:annotation></xs:enumeration>
+<xs:enumeration value="METAREA XV"><xs:annotation><xs:documentation>METAREA XV</xs:documentation></xs:annotation></xs:enumeration>
+<xs:enumeration value="METAREA XVI"><xs:annotation><xs:documentation>METAREA XVI</xs:documentation></xs:annotation></xs:enumeration>
+<xs:enumeration value="METAREA XVII"><xs:annotation><xs:documentation>METAREA XVII</xs:documentation></xs:annotation></xs:enumeration>
+<xs:enumeration value="METAREA XVIII"><xs:annotation><xs:documentation>METAREA XVIII</xs:documentation></xs:annotation></xs:enumeration>
+<xs:enumeration value="METAREA XIX"><xs:annotation><xs:documentation>METAREA XIX</xs:documentation></xs:annotation></xs:enumeration>
+<xs:enumeration value="METAREA XX"><xs:annotation><xs:documentation>METAREA XX</xs:documentation></xs:annotation></xs:enumeration>
+<xs:enumeration value="METAREA XXI"><xs:annotation><xs:documentation>METAREA XXI</xs:documentation></xs:annotation></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>    <xs:simpleType name="metareaNameCode">
+        <xs:annotation>
+            <xs:documentation></xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:integer">            <xs:enumeration value="1">            </xs:enumeration>
+            <xs:enumeration value="2">            </xs:enumeration>
+            <xs:enumeration value="3">            </xs:enumeration>
+            <xs:enumeration value="4">            </xs:enumeration>
+            <xs:enumeration value="5">            </xs:enumeration>
+            <xs:enumeration value="6">            </xs:enumeration>
+            <xs:enumeration value="7">            </xs:enumeration>
+            <xs:enumeration value="8">            </xs:enumeration>
+            <xs:enumeration value="9">            </xs:enumeration>
+            <xs:enumeration value="10">            </xs:enumeration>
+            <xs:enumeration value="11">            </xs:enumeration>
+            <xs:enumeration value="12">            </xs:enumeration>
+            <xs:enumeration value="13">            </xs:enumeration>
+            <xs:enumeration value="14">            </xs:enumeration>
+            <xs:enumeration value="15">            </xs:enumeration>
+            <xs:enumeration value="16">            </xs:enumeration>
+            <xs:enumeration value="17">            </xs:enumeration>
+            <xs:enumeration value="18">            </xs:enumeration>
+            <xs:enumeration value="19">            </xs:enumeration>
+            <xs:enumeration value="20">            </xs:enumeration>
+            <xs:enumeration value="21">            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>    <xs:complexType name="significantWaveHeightWarningThresholdType">
+        <xs:annotation>
+            <xs:documentation></xs:documentation>
+        </xs:annotation>
+        <xs:simpleContent>
+            <xs:extension base="significantWaveHeightWarningThresholdLabel">
+                <xs:attribute name="code" type="significantWaveHeightWarningThresholdCode" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>    <xs:simpleType name="significantWaveHeightWarningThresholdLabel">
+        <xs:annotation>
+            <xs:documentation></xs:documentation>
+        </xs:annotation>        <xs:restriction base="xs:string"><xs:enumeration value="two and a half to four metres"><xs:annotation><xs:documentation>two and a half to four metres</xs:documentation></xs:annotation></xs:enumeration>
+<xs:enumeration value="four to six metres"><xs:annotation><xs:documentation>four to six metres</xs:documentation></xs:annotation></xs:enumeration>
+<xs:enumeration value="six to nine metres"><xs:annotation><xs:documentation>six to nine metres</xs:documentation></xs:annotation></xs:enumeration>
+<xs:enumeration value="nine to fourteen metres"><xs:annotation><xs:documentation>nine to fourteen metres</xs:documentation></xs:annotation></xs:enumeration>
+<xs:enumeration value="greater than fourteen metres"><xs:annotation><xs:documentation>greater than fourteen metres</xs:documentation></xs:annotation></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>    <xs:simpleType name="significantWaveHeightWarningThresholdCode">
+        <xs:annotation>
+            <xs:documentation></xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:integer">            <xs:enumeration value="1">            </xs:enumeration>
+            <xs:enumeration value="2">            </xs:enumeration>
+            <xs:enumeration value="3">            </xs:enumeration>
+            <xs:enumeration value="4">            </xs:enumeration>
+            <xs:enumeration value="5">            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>    <xs:simpleType name="textType">
+        <xs:annotation>
+            <xs:documentation>text</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:simpleType name="languageType">
+        <xs:annotation>
+            <xs:documentation>language</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:simpleType name="agencyNameType">
+        <xs:annotation>
+            <xs:documentation>agencyName</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:simpleType name="mailingAddressType">
+        <xs:annotation>
+            <xs:documentation>mailingAddress</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:simpleType name="telephoneNumberType">
+        <xs:annotation>
+            <xs:documentation>telephoneNumber</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:simpleType name="emailAddressType">
+        <xs:annotation>
+            <xs:documentation>emailAddress</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:simpleType name="webAddressType">
+        <xs:annotation>
+            <xs:documentation>webAddress</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:simpleType name="countryNameType">
+        <xs:annotation>
+            <xs:documentation>countryName</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:complexType name="dateStartType">
+        <xs:annotation>
+            <xs:documentation>dateStart</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="S100:S100_TruncatedDate"/>
+        </xs:complexContent>
+    </xs:complexType>    <xs:complexType name="dateEndType">
+        <xs:annotation>
+            <xs:documentation>dateEnd</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="S100:S100_TruncatedDate"/>
+        </xs:complexContent>
+    </xs:complexType>    <xs:simpleType name="issueDateType">
+        <xs:annotation>
+            <xs:documentation>issueDate</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:dateTime"/>
+    </xs:simpleType>
+    <xs:simpleType name="weatherWarningNumberType">
+        <xs:annotation>
+            <xs:documentation>weatherWarningNumber</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:simpleType name="cancellationDateType">
+        <xs:annotation>
+            <xs:documentation>cancellationDate</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:dateTime"/>
+    </xs:simpleType>
+    <xs:simpleType name="nextUpdateDateTimeType">
+        <xs:annotation>
+            <xs:documentation>nextUpdateDateTime</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:dateTime"/>
+    </xs:simpleType>
+    <xs:simpleType name="interoperabilityIdentifierType">
+        <xs:annotation>
+            <xs:documentation>interoperabilityIdentifier</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:anyURI"/>
+    </xs:simpleType>
+    <xs:simpleType name="timeOfDayStartType">
+        <xs:annotation>
+            <xs:documentation>timeOfDayStart</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:dateTime"/>
+    </xs:simpleType>
+    <xs:simpleType name="timeOfDayEndType">
+        <xs:annotation>
+            <xs:documentation>timeOfDayEnd</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:dateTime"/>
+    </xs:simpleType>
+    <xs:complexType name="sourceOfIcingType">
+        <xs:annotation>
+            <xs:documentation></xs:documentation>
+        </xs:annotation>
+        <xs:simpleContent>
+            <xs:extension base="sourceOfIcingLabel">
+                <xs:attribute name="code" type="sourceOfIcingCode" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>    <xs:simpleType name="sourceOfIcingLabel">
+        <xs:annotation>
+            <xs:documentation></xs:documentation>
+        </xs:annotation>        <xs:restriction base="xs:string"><xs:enumeration value="freezingSpray"><xs:annotation><xs:documentation>freezingSpray</xs:documentation></xs:annotation></xs:enumeration>
+<xs:enumeration value="freezingRain"><xs:annotation><xs:documentation>freezingRain</xs:documentation></xs:annotation></xs:enumeration>
+<xs:enumeration value="freezingFog"><xs:annotation><xs:documentation>freezingFog</xs:documentation></xs:annotation></xs:enumeration>
+<xs:enumeration value="otherIcingSource"><xs:annotation><xs:documentation>otherIcingSource</xs:documentation></xs:annotation></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>    <xs:simpleType name="sourceOfIcingCode">
+        <xs:annotation>
+            <xs:documentation></xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:integer">            <xs:enumeration value="1">            </xs:enumeration>
+            <xs:enumeration value="2">            </xs:enumeration>
+            <xs:enumeration value="3">            </xs:enumeration>
+            <xs:enumeration value="4">            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>    <xs:complexType name="windWarningThresholdType">
+        <xs:annotation>
+            <xs:documentation></xs:documentation>
+        </xs:annotation>
+        <xs:simpleContent>
+            <xs:extension base="windWarningThresholdLabel">
+                <xs:attribute name="code" type="windWarningThresholdCode" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>    <xs:simpleType name="windWarningThresholdLabel">
+        <xs:annotation>
+            <xs:documentation></xs:documentation>
+        </xs:annotation>        <xs:restriction base="xs:string"><xs:enumeration value="near gale force"><xs:annotation><xs:documentation>near gale force</xs:documentation></xs:annotation></xs:enumeration>
+<xs:enumeration value="gale force"><xs:annotation><xs:documentation>gale force</xs:documentation></xs:annotation></xs:enumeration>
+<xs:enumeration value="storm force"><xs:annotation><xs:documentation>storm force</xs:documentation></xs:annotation></xs:enumeration>
+<xs:enumeration value="hurricane force"><xs:annotation><xs:documentation>hurricane force</xs:documentation></xs:annotation></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>    <xs:simpleType name="windWarningThresholdCode">
+        <xs:annotation>
+            <xs:documentation></xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:integer">            <xs:enumeration value="1">            </xs:enumeration>
+            <xs:enumeration value="2">            </xs:enumeration>
+            <xs:enumeration value="3">            </xs:enumeration>
+            <xs:enumeration value="4">            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>    <xs:complexType name="contactInformationType">
+        <xs:annotation>
+            <xs:documentation>No definition set for contactInformation</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <!-- subattributes -->            <xs:element name="agencyName" type="agencyNameType" minOccurs="1" maxOccurs="1"/>            <xs:element name="mailingAddress" type="mailingAddressType" minOccurs="0" maxOccurs="1"/>            <xs:element name="telephoneNumber" type="telephoneNumberType" minOccurs="0" maxOccurs="1"/>            <xs:element name="emailAddress" type="emailAddressType" minOccurs="0" maxOccurs="1"/>            <xs:element name="webAddress" type="webAddressType" minOccurs="0" maxOccurs="1"/>        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="fixedDateRangeType">
+        <xs:annotation>
+            <xs:documentation>No definition set for fixedDateRange</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <!-- subattributes -->            <xs:element name="dateStart" type="dateStartType" minOccurs="1" maxOccurs="1"/>            <xs:element name="dateEnd" type="dateEndType" minOccurs="1" maxOccurs="1"/>            <xs:element name="timeOfDayStart" type="timeOfDayStartType" minOccurs="1" maxOccurs="1"/>            <xs:element name="timeOfDayEnd" type="timeOfDayEndType" minOccurs="1" maxOccurs="1"/>        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="informationType">
+        <xs:annotation>
+            <xs:documentation>No definition set for information</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <!-- subattributes -->            <xs:element name="language" type="languageType" minOccurs="0" maxOccurs="1"/>            <xs:element name="text" type="textType" minOccurs="0" maxOccurs="1"/>        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="issuingServiceType">
+        <xs:annotation>
+            <xs:documentation>No definition set for issuingService</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <!-- subattributes -->            <xs:element name="metareaName" type="metareaNameType" minOccurs="1" maxOccurs="1"/>            <xs:element name="countryName" type="countryNameType" minOccurs="0" maxOccurs="1"/>            <xs:element name="issuingServiceName" type="issuingServiceNameType" minOccurs="1" maxOccurs="1"/>        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="issuingServiceNameType">
+        <xs:annotation>
+            <xs:documentation>No definition set for issuingServiceName</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <!-- subattributes -->            <xs:element name="information" type="informationType" minOccurs="1" maxOccurs="unbounded"/>        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="maximumWindSpeedType">
+        <xs:annotation>
+            <xs:documentation>No definition set for maximumWindSpeed</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <!-- subattributes -->            <xs:element name="information" type="informationType" minOccurs="1" maxOccurs="unbounded"/>        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="preparationServiceType">
+        <xs:annotation>
+            <xs:documentation>No definition set for preparationService</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <!-- subattributes -->            <xs:element name="issuingServiceName" type="issuingServiceNameType" minOccurs="1" maxOccurs="1"/>            <xs:element name="countryName" type="countryNameType" minOccurs="0" maxOccurs="1"/>        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="weatherWarningMessageType">
+        <xs:annotation>
+            <xs:documentation>No definition set for weatherWarningMessage</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <!-- subattributes -->            <xs:element name="information" type="informationType" minOccurs="1" maxOccurs="unbounded"/>        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="DataProviderType" abstract="false">
+        <xs:annotation>
+            <xs:documentation>No definition set for DataProvider</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="S100:AbstractInformationType">
+                <xs:sequence>
+                    <!-- attributes -->
+<!--0-->     <xs:element name="issuingService" type="issuingServiceType" minOccurs="1" maxOccurs="1"/>
+<!--1-->     <xs:element name="contactInformation" type="contactInformationType" minOccurs="1" maxOccurs="1"/>
+<!--2-->     <xs:element name="preparationService" type="preparationServiceType" minOccurs="1" maxOccurs="1"/>
+ </xs:sequence>
+            </xs:extension>        </xs:complexContent>
+    </xs:complexType>
+    <xs:element name="DataProvider" type="DataProviderType"/>
+    <xs:complexType name="WeatherWarningType" abstract="true">
+        <xs:annotation>
+            <xs:documentation>No definition set for WeatherWarning</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="S100:AbstractFeatureType">
+                <xs:sequence>
+                    <!-- attributes -->
+<!--0-->  <xs:element name="fixedDateRange" type="fixedDateRangeType" minOccurs="1" maxOccurs="1"/>
+<!--1-->  <xs:element name="weatherWarningMessage" type="weatherWarningMessageType" minOccurs="0" maxOccurs="1"/>
+<!--2-->  <xs:element name="issueDate" type="issueDateType" minOccurs="1" maxOccurs="1"/>
+<!--3-->  <xs:element name="weatherWarningNumber" type="weatherWarningNumberType" minOccurs="1" maxOccurs="1"/>
+<!--4-->  <xs:element name="cancellationDate" type="cancellationDateType" minOccurs="1" maxOccurs="1"/>
+<!--5-->  <xs:element name="nextUpdateDateTime" type="nextUpdateDateTimeType" minOccurs="1" maxOccurs="1"/>
+<!--6-->  <xs:element name="interoperabilityIdentifier" type="interoperabilityIdentifierType" minOccurs="0" maxOccurs="1"/>
+<!--7-->  <xs:element name="dataProviderInformation" type="gml:ReferenceType" minOccurs="0" maxOccurs="1"/>
+ </xs:sequence>
+            </xs:extension>        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="IceAccretionWarningType" abstract="false">
+        <xs:annotation>
+            <xs:documentation>No definition set for IceAccretionWarning</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="WeatherWarningType">
+                <xs:sequence>
+                    <!-- attributes -->
+<!--0-->  <xs:element name="iceAccretionRate" type="iceAccretionRateType" minOccurs="1" maxOccurs="1"/>
+<!--1-->  <xs:element name="sourceOfIcing" type="sourceOfIcingType" minOccurs="0" maxOccurs="1"/>
+                    <xs:element name="geometry" maxOccurs="unbounded">
+                        <xs:complexType>
+                            <xs:choice>
+                                <xs:element ref="S100:surfaceProperty"/>
+                            </xs:choice>
+                        </xs:complexType>
+                    </xs:element>
+ </xs:sequence>
+            </xs:extension>        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="RestrictedVisibilityWarningType" abstract="false">
+        <xs:annotation>
+            <xs:documentation>No definition set for RestrictedVisibilityWarning</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="WeatherWarningType">
+                <xs:sequence>
+                    <!-- attributes -->
+                    <xs:element name="geometry" maxOccurs="unbounded">
+                        <xs:complexType>
+                            <xs:choice>
+                                <xs:element ref="S100:surfaceProperty"/>
+                            </xs:choice>
+                        </xs:complexType>
+                    </xs:element>
+ </xs:sequence>
+            </xs:extension>        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="SignificantWaveHeightWarningType" abstract="false">
+        <xs:annotation>
+            <xs:documentation>No definition set for SignificantWaveHeightWarning</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="WeatherWarningType">
+                <xs:sequence>
+                    <!-- attributes -->
+<!--0-->  <xs:element name="significantWaveHeightWarningThreshold" type="significantWaveHeightWarningThresholdType" minOccurs="1" maxOccurs="1"/>
+                    <xs:element name="geometry" maxOccurs="unbounded">
+                        <xs:complexType>
+                            <xs:choice>
+                                <xs:element ref="S100:surfaceProperty"/>
+                            </xs:choice>
+                        </xs:complexType>
+                    </xs:element>
+ </xs:sequence>
+            </xs:extension>        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="ThunderstormWarningType" abstract="false">
+        <xs:annotation>
+            <xs:documentation>No definition set for ThunderstormWarning</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="WeatherWarningType">
+                <xs:sequence>
+                    <!-- attributes -->
+                    <xs:element name="geometry" maxOccurs="unbounded">
+                        <xs:complexType>
+                            <xs:choice>
+                                <xs:element ref="S100:surfaceProperty"/>
+                            </xs:choice>
+                        </xs:complexType>
+                    </xs:element>
+ </xs:sequence>
+            </xs:extension>        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="WindWarningType" abstract="false">
+        <xs:annotation>
+            <xs:documentation>No definition set for WindWarning</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="WeatherWarningType">
+                <xs:sequence>
+                    <!-- attributes -->
+<!--0-->  <xs:element name="windWarningThreshold" type="windWarningThresholdType" minOccurs="1" maxOccurs="1"/>
+<!--1-->  <xs:element name="beaufortForce" type="beaufortForceType" minOccurs="0" maxOccurs="1"/>
+                    <xs:element name="geometry" maxOccurs="unbounded">
+                        <xs:complexType>
+                            <xs:choice>
+                                <xs:element ref="S100:surfaceProperty"/>
+                            </xs:choice>
+                        </xs:complexType>
+                    </xs:element>
+ </xs:sequence>
+            </xs:extension>        </xs:complexContent>
+    </xs:complexType>
+    <xs:element name="IceAccretionWarning" type="IceAccretionWarningType"/>
+    <xs:element name="RestrictedVisibilityWarning" type="RestrictedVisibilityWarningType"/>
+    <xs:element name="SignificantWaveHeightWarning" type="SignificantWaveHeightWarningType"/>
+    <xs:element name="ThunderstormWarning" type="ThunderstormWarningType"/>
+    <xs:element name="WindWarning" type="WindWarningType"/>
+    <xs:group name="MemberObjects">
+        <xs:annotation>
+            <xs:documentation>group of informtion, feature and meta objects, all GML members</xs:documentation>
+        </xs:annotation>
+        <xs:choice>
+<xs:element ref="IceAccretionWarning"/><xs:element ref="RestrictedVisibilityWarning"/><xs:element ref="SignificantWaveHeightWarning"/><xs:element ref="ThunderstormWarning"/><xs:element ref="WindWarning"/><xs:element ref="DataProvider"/>        </xs:choice>
+    </xs:group>
+    <xs:complexType name="ThisDatasetType">
+        <xs:complexContent>
+            <xs:extension base="S100:DatasetType">
+                <xs:sequence>
+                    <xs:element name="members">
+                        <xs:complexType>
+                            <xs:complexContent>
+                                <xs:extension base="gml:AbstractFeatureMemberType">
+                                    <xs:sequence>
+                                        <xs:group ref="MemberObjects" minOccurs="0" maxOccurs="unbounded"/>
+                                    </xs:sequence>
+                                </xs:extension>
+                            </xs:complexContent>
+                        </xs:complexType>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element name="Dataset" type="ThisDatasetType"/>
+</xs:schema>
