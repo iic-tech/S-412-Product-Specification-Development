@@ -220,7 +220,12 @@ Various time attributes are carried by various features to ensure the end user i
 
 Additionally, other time attributes are included to validate time across a dataset. For example, the issuedDateTime carried by Weather Warning is also carried by Wind Warning. If these two attributes are not the same, the dataset should not validate. Each category of Weather Warnings (Wind, Significant Wave Height, Thunderstorm, etc) also has dateTimeRange attributes showing the start and end times for the warning periods. These measures are included to ensure the most current and spatially accurate datasets are available to the end user. Further information on these validation measures can be found in Annex F. Additional time attributes such as cancellationDate and nextUpdateDateTime are discussed in section 4.4.2.
 
-=== Dataset Types
+=== [[s4_start_review4]]Dataset Types[[s4_end_review4]]
+[reviewer="IIC",date=2025-12-09,from=s4_start_review4,to=s4_end_review4]
+****
+The concept of Dataset types in S-100 generally distinguishes between New Dataset, New Edition and Update. The subject in this clause is different.
+Suggest renaming the clause or moving (preferred option) the information in existant clauses (ex. attributes). 
+****
 
 ==== Introduction
 
@@ -276,7 +281,11 @@ S-412 further constraints Level 3a with the following:
 
 Examples illustrating the variety of ways geometry may be represented in an S-412 GML data file are provided in Annex E.
 
-==== Feature Types Summary
+==== [[s4_start_review5]]Feature Types Summary[[s4_end_review5]]
+[reviewer="IIC",date=2025-12-09,from=s4_start_review5,to=s4_end_review5]
+****
+To be completed when the final Data Model is approved, but not sure this clause is needed as the DCEG will list all features.
+****
 
 . Summary of implemented features
 [width=50%,cols="1,1,5",options="headers"]
