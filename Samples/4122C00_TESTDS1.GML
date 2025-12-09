@@ -48,10 +48,16 @@
         </S412:DataProvider>
         <S412:WindWarning gml:id="ID1">
             <S412:fixedDateRange>
-                <S412:dateStart>20250101</S412:dateStart>
+                <S412:dateStart>
+                    <S100:date>2025-01-01</S100:date>
+                </S412:dateStart>
+                
                 <S412:dateEnd>20250101</S412:dateEnd>
+                
                 <S412:timeOfDayStart>0600</S412:timeOfDayStart>
+                
                 <S412:timeOfDayEnd>1800</S412:timeOfDayEnd>
+            
             </S412:fixedDateRange>
             <S412:issueDate>2025-01-01</S412:issueDate>
             <S412:weatherWarningNumber>stuff</S412:weatherWarningNumber>

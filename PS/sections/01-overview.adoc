@@ -19,8 +19,12 @@ This product specification does not include recommended changes to or requiremen
 === [[s1_start_review1]]References[[s1_end_review1]]
 [reviewer="IIC",date=2025-12-04,from=s1_start_review1,to=s1_end_review1]
 ****
-Suggest to conduct a global review of the references for harmonization and concistency with ISO 690. At this stage, references from S-411 have been added in their original form for comparison.
+Suggest to conduct a global review of the references for harmonization and consistency with ISO 690. At this stage, references from S-411 have been added in their original form for comparison.
 ****
+
+
+==== Normative
+* Test Section
 
 ==== Normative references
 * GML OpenGIS®:: _Geography Markup Language (GML) Encoding Standard_ (Version 3.2.1).
