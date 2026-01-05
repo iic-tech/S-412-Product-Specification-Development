@@ -178,7 +178,7 @@ Complex attributes are aggregations of other attributes that are either simple o
 
 [[fig-s412-complex-attributes]]
 .S-412 Complex Attributes
-image::../images/figure-s412-complex-attributes.png[UML diagram depicting the S-412 Complex Attributes.]
+image::../images/S-412-Complex-Attributes.png[UML diagram depicting the S-412 Complex Attributes.]
 
 ==== Associations
 
