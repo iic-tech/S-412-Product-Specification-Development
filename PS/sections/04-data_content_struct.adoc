@@ -37,7 +37,7 @@ and one is an Information Type:
 
 These feature types are derived from the S-100_GF_FeatureType metaclass. Feature and Information Type descriptions can be found in Annex A.
 
-S-412 conforms to the General Feature Model (GFM) from S-100 Part 3. This document describes the Application Schema expressed in the UML diagram. This document contains only an overview of the S-412 application schema. The S-412 Application Schema types are realised in the Feature Catalogue. The Feature Catalogue can be found in the WMO Domain of the IHO Registry, and provides a full specification of all types including feature and information types, their attributes, allowed values, and the relationships between types in the data product.
+S-412 conforms to the General Feature Model (GFM) from S-100 Part 3. This section describes the Application Schema as expressed in the UML diagrams included. This document contains an overview of the S-412 application schema. The S-412 Application Schema types are then realised in the Feature Catalogue. The Feature Catalogue can be found in the WMO Domain of the IHO Registry, and provides a full specification of all types including feature and information types, their attributes, allowed values, and the relationships between types in the data product.
 
 The following conventions are used in the UML diagrams depicting the application schema:
 
@@ -46,16 +46,16 @@ The following conventions are used in the UML diagrams depicting the application
 *	Abstract Feature Classes are depicted with a blue background. +
 *	Ordinary (non-abstract) feature classes are depicted with a green background. +
 *	Information type classes are depicted with a grey background. There are no abstract information type classes in S-412. +
-*	Association Classes are depicted with a white background. +
+*	Association Classes are depicted with a white background. There are no association classes in S-412+
 *	Complex attributes are depicted with a salmon background. +
-*	Simple attributes use a purple background. +
-*	Enumeration lists are depicted with a yellow background. The numeric code corresponding to each listed value is shown to its right following an ‘=’ sign. +
-*	Codelists are depicted with an orange background. +
+*	Enumeration lists are depicted with a brown background. The numeric code corresponding to each listed value is shown to its right following an ‘=’ sign. +
 *	No significance is attached to the colour of associations. (Complex diagrams may use different colours to distinguish associations that cross one another.). +
 *	Where the association role or name is not explicitly shown, the default rules for the roles and names apply: +
   ** The role name is ‘the<CLASSNAME>’ where <CLASSNAME> is the name of the class to which that association end is linked. +
   ** The association name is ‘<CLASSNAME1>_<CLASSNAME2>’ where <CLASSNAME1> is the source and <CLASSNAME2> the target. In the case of a feature/information association, the feature is the source. For feature/feature or information/information associations without explicit names, the source/target are indicated by an arrowhead. +
 *	Subclasses inherit the attributes and associations of their superclasses at all levels, unless such inheritance is explicitly overridden in the subclass.
+
+Types for simple attributes are listed on the right hand side in the UML diagrams, e.g *issueDate* has the S-100 type *dateTime*. In order to simplfy the appearance of the diagrams, no types are stated for complex attributes or enumerations.
 
 === Feature Catalogue
 
@@ -63,7 +63,7 @@ The following conventions are used in the UML diagrams depicting the application
 
 The S-412 Feature Catalogue describes real-world meteorological and oceanographic concepts in one or more sets of geographic data as Feature Types, Information Types, Attributes, Attribute Values, Associations and Roles. These are bound together in the .XML Feature Catalogue.
 
-Definitions of each feature type, information type, attribute, including enumerated value definitions, and Associations are provided in the Data Classification and Encoding Guide (Annex A) and represent concepts that may be modelled in an S-412 dataset. These definitions are drawn from a Feature Concept Dictionary managed by the IHO through execution of the IHO Geospatial Information Registry . 
+Definitions of each feature type, information type, attribute, including enumerated value definitions, and Associations are also provided in the Data Classification and Encoding Guide (Annex A) and represent concepts that may be encoded in an S-412 dataset. These definitions are drawn from the Feature Concept Dictionary managed by the IHO in the IHO Geospatial Information Registry .
 
 ==== Feature Types
 
@@ -73,11 +73,14 @@ Feature types are the basic level of classification in the Feature Catalogue, an
 .S-412 Features
 image::../images/figure-s412-features.png[UML diagram depicting the S-412 Features]
 
+As can be seen in the diagram, a single Abstract Feature *WeatherWarning* is used as a template from which the concrete features of S-412 are derived.
+
+
 ===== [[s4_start_review1]]Meta Features[[s4_end_review1]]
 
-Meta Features contain information about other features within a data set. Information defined by Meta Features override the default metadata values defined by the dataset descriptive records.
+Meta Features contain information about other features within a data set. Information defined by Meta Features may also override  default metadata values defined by the dataset descriptive records. S-412 does not make use of any Meta Features
 
-S-412 provides a single meta-feature, DataCoverage. DataCoverage is for describing areas in the dataset that are populated with data. The dataset may include multiple DataCoverage features to describe different contiguous (i.e. non-overlapping) areas.
+// [Was] S-412 provides a single meta-feature, DataCoverage. DataCoverage is for describing areas in the dataset that are populated with data. The dataset may include multiple DataCoverage features to describe different contiguous (i.e. non-overlapping) areas.
 
 [reviewer="IIC",date=2025-12-05,from=s4_start_review1,to=s4_end_review1]
 ****
