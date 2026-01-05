@@ -249,11 +249,11 @@ The dateTimeRange is a complex attribute consisting of simple attributes, dateTi
 
 Three other simple dateTime attributes (issuedDateTime, nextUpdateDateTime, and cancellationDate) are mandatory for each WeatherWarning and inherited into the sub-feature types. The issuedDateTime attribute provides a timestamp for when the WeatherWarning has been issued. The nextUpdateDateTime attribute provides the time information for the next expected WeatherWarning to be issued. The cancellationDate {is used to mark when a WeatherWarning is set to expire, or be cancelled}. More information about cancellationDate can be found in section {insert section}.
 
-Every time attribute is associated with the abstract WeatherWarning feature type. These attributes are inherited by all sub-types of WeatherWarning (windWarning, significantWaveHeightWarning, iceAccretionWarning, restrictedVisibilityWarning, and thunderstormWarning). This is demonstrated in Figure 7.
+Every time attribute is associated with the abstract WeatherWarning feature type. These attributes are inherited by all sub-types of WeatherWarning (windWarning, significantWaveHeightWarning, iceAccretionWarning, restrictedVisibilityWarning, and thunderstormWarning). This is shown in the following UML diagram.
 
 [[fig-time-attributes-associated-with-weather-warning]]
 .S-412 weatherWarning Time Attributes
-image::../images/figure-time-attributes-associated-with-weather-warning.png[UML diagram depicting the S-412 Time attributes associated with weatherWarnings.]
+image::../images/S-412-Time-Attributes.png[UML diagram depicting the S-412 Time attributes associated with weatherWarnings.]
 
 ==== Multiple datasets
 
