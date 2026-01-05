@@ -89,11 +89,11 @@ If DataCoverage Meta Feature is not used in S-412, suggest replacing the text by
 
 ===== Geographic Features
 
-Geographic (geo) feature types form the principal content in S-412 and are fully defined by their associated attributes and Information Types.
+Geographic (geo) feature types form the principal content in S-412 and are defined by their associated attributes and Information Types.
 
-feature types may be associated to other feature types or to Information Types.
+Feature types may be associated to other feature types or to Information Types.
 
-As an example, the realisation of a Wind Warning concept is provided by an UML diagram in Figure 2. The diagram shows the Wind Warning feature’s inheritance from the abstract Weather Warning feature and its connection to various complex and simple attributes. The windWarningThreshold attribute is used to determine the category and [[s4_start_review2]]portrayal[[s4_end_review2]] colour of Wind Warning polygons based on wind speeds. The optional beaufortForce attribute is used to indicate more specific wind speed bins that the feature represents, based on the Beaufort Wind Scale. The dateTimeRange attribute provides the start and end times that are valid for the Wind Warning. The weatherWarningNumber attribute provides an identification number to track warnings issued with each new dataset. The optional weatherWarningMessage attribute provides a short message with added context or information about a Weather Warning.
+As an example, the realisation of a Wind Warning concept is provided by the UML diagram below. The diagram shows the Wind Warning feature’s inheritance from the abstract Weather Warning feature and its connection to various complex and simple attributes. The windWarningThreshold attribute is used to determine the category and [[s4_start_review2]]portrayal[[s4_end_review2]] colour of Wind Warning polygons based on wind speeds. The optional beaufortForce attribute is used to indicate more specific wind speed bins that the feature represents, based on the international Beaufort Wind Scale. The dateTimeRange attribute provides the start and end times that are valid for the Wind Warning. The weatherWarningNumber attribute provides an identification number to track warnings issued with each new dataset. The optional weatherWarningMessage attribute provides a short message with added context or information about a Weather Warning.
 
 [reviewer="IIC",date=2025-12-05,from=s4_start_review2,to=s4_end_review2]
 ****
@@ -106,7 +106,7 @@ image::../images/S-412_Wind_Warning.png[UML diagram depicting the S-412 Wind War
 
 ==== Information Types
 
-Information Types define identifiable pieces of information in a dataset that can be shared between other features or information types. Information Types have attributes but have no relationship to any geometry; Information Types may reference other information types.
+Information Types define identifiable pieces of information in a dataset that can be shared between other features or information types. Information Types have attributes but have no relationship to any geometry; Information Types may also reference other information types if defined in the Feature Catalogue.
 
 Figure 3 shows the realisation of the single Information Type used in S-412: *DataProvider*.
 
@@ -116,15 +116,17 @@ image::../images/S-412_Information_Types.png[UML diagram depicting the S-412 Dat
 
 ==== Feature Relationship
 
-A feature relationship links one or more instances of one feature type with one or more instances of the same or a different feature type. There are three common types of feature relationships: Association, Aggregation, and Composition.
+A feature relationship links one or more instances of one feature type with one or more instances of the same or a different feature type. There are three common types of feature relationships: Association, Aggregation, and Composition. S-412 does not make use of any feature relationships.
 
-Associations are described in more detail in section 4.3.6. An Aggregation Association is a relationship between two classes, in which one of the classes plays the role of container and the other plays the role of a containee. The Aggregation Association shall be used when the containee objects (that represent the parts of a container object) can exist without the container object.
+Associations are described in more detail in section 4.3.6.
 
-A Composition Association is a strong aggregation, where the containee object cannot exist without the container object. If a container object is deleted then all of its containee objects are deleted as well. 
+// An Aggregation Association is a relationship between two classes, in which one of the classes plays the role of container and the other plays the role of a containee. The Aggregation Association shall be used when the containee objects (that represent the parts of a container object) can exist without the container object.
+//
+// A Composition Association is a strong aggregation, where the containee object cannot exist without the container object. If a container object is deleted then all of its containee objects are deleted as well.
 
 ==== Attributes
 
-Attributes define the characteristics of a Feature or Information Type. Attribute Types can be either complex or simple. Simple attributes carry the value itself, and complex attributes are aggregations of other simple and/or complex attributes that create a hierarchical data structure to describe a feature. Unlike Information Types, an attribute instance belongs to one and only one Feature or Information Type.
+Attributes define the characteristics of a Feature or Information Type. Attribute Types can be either complex or simple. Simple attributes carry the value itself, and complex attributes are aggregations of other simple and/or complex attributes that create a hierarchical data structure to describe a feature. An attribute instance belongs to one and only one Feature or Information Type.
 
 ===== [[s4_start_review3]]Simple attributes[[s4_end_review3]]
 
@@ -163,10 +165,13 @@ Example: 19850412T101530.
 
 |===
 
-Simple attributes for the Wind Warning feature type are shown in Figure 2 and the DataProvider Information Type in Figure 3. Each attribute type is listed next to their camel case encoding value. Enumerated attributes are referenced by their defined data type and values are listed. Enumerated attributes, represented in UML are shown in Figure 4. The complete list of all attributes and their properties approved for use in S-412 are provided in Annex A.
+Simple attributes for the Wind Warning feature type are shown in <<fig-wind-warning-feature>> and the DataProvider Information Type in <<fig-data-provider-information-type>>. Each S-100 attribute type is listed next to their camel case encoding value. Enumerated attributes are referenced by their defined data type and values are listed.
+
+Enumerated attributes, represented in UML are shown in Figure 4. The complete list of all attributes and their properties approved for use in S-412 are provided in Annex A. the diagram below shows the enumerations defined for S-412
 
 [[fig-s412-enumerated-attributes]]
 .S-412 Enumerated Attributes
+
 image::../images/S-412_Enumerations.png[UML diagram depicting the S-412 Enumerated Attributes.]
 
 ===== Code Lists
@@ -177,7 +182,9 @@ Codelist Types are not utilised in this version of S-412.
 
 ===== Complex Attributes
 
-Complex attributes are aggregations of other attributes that are either simple or complex. The aggregation is defined by means of attribute bindings. Figure 5 shows the complex attribute dateTimeRange utilised by many features, including the Wind Warning feature type shown in Figure 2. This attribute is an aggregation of 2 simple dateTime attributes. A full list of complex attributes approved for use in an S-412 dataset are defined in Annex A as well as represented in UML in Figure 6.
+Complex attributes are aggregations of other attributes that are either simple or complex. The aggregation is defined by means of attribute bindings. The diagram below shows the complex attributes defined in S-412. By way of example, dateTimeRange is utilised by  the Wind Warning feature type shown in <<fig-wind-warning-feature>>. This attribute is an aggregation of 2 simple Time attributes and 2 simple S100_TruncatedDAte attributes. In the diagram, attributes with no type defined are either enumerations or complex attributes.
+
+A full list of complex attributes approved for use in an S-412 dataset are defined in Annex A.
 
 [[fig-s412-complex-attributes]]
 .S-412 Complex Attributes
@@ -187,13 +194,13 @@ image::../images/S-412-Complex-Attributes.png[UML diagram depicting the S-412 Co
 
 Associations are used to describe a relationship between instances of one feature or information type with instances of the same or a different feature or information type. Unless otherwise noted, associations are bi-directional in S-412. If an association is unidirectional, source and target roles are defined.
 
-Figure 7 shows an example of the association between the WeatherWarning feature type and the DataProvider information type called DataProviderAssociation. The real world relationship between these concepts is that a weather warning has additional information about the service(s) issuing the warning.
+The diagram below shows an example of the association between the WeatherWarning feature type and the DataProvider information type called DataProviderAssociation. The real world relationship between these concepts is that a weather warning has additional information about the service(s) issuing the warning.
 
 [[fig-s412-data-provider-association]]
 .S-412 Data Provider Association
 image::../images/figure-s412-data-provider-association.png[UML diagram depicting the S-412 Data Provider Association between a Weather Warning and a Data Provider.]
 
-Figure 6 shows the real world relationship between a weather warning and its supplemental information for where it came from. A complete list of associations and roles used in S-412 can be found in Annex A.
+the diagram shows the real world relationship between a weather warning and its supplemental information for where it came from. A complete list of associations and roles used in S-412 can be found in Annex A.
 
 ===== Camel Case Rules
 
@@ -203,13 +210,13 @@ Example: The Wind Warning feature type is encoded as WindWarning. The Date Time 
 
 ==== Multiplicity Rules
 
-In UML, all attributes are mandatory by default. Multiplicity rules are used for attributes and association role names to provide a way of describing optional and conditional attributes. In these rules, the first number represents the minimum number of instances that may exist; the second number represents the maximum number of instances that may exist. For example, 0..* means many, optional, zero or more; 1..* means at least one.
+In UML, all attributes are mandatory by default. Multiplicity rules are used for attributes and association role names to provide a way of describing optional and conditional attributes. In these rules, the first number represents the minimum number of instances that may exist; the second number represents the maximum number of instances that may exist. For example, 0..* means many, optional, zero or more; 1..* means at least one. So, in the UML diagrams unless an attribute (complex or simple) has a specific multiplicity shown it can be assumed to be mandatory.
 
 ==== Inheritance
 
 A hierarchical structure among S-412 feature types and Information Types exists in order to group similar concepts by definition, use cases or attribute sets. The base level of the hierarchy is commonly called the Super-type and represents a generic concept. More specific concepts are the next level in the hierarchy and these are called Sub-types. All Sub-types inherit the properties of the Super-type within the same hierarchical structure unless otherwise specified. Within S-412, inheritance creates flexibility for a data producer to utilise the appropriate feature based on their user’s needs.
 
-In the WindWarning feature shown in Figure 2, WindWarning inherits all attributes and associations from the WeatherWarning abstract feature type.
+In the WindWarning feature shown in <<fig-wind-warning-feature>>, WindWarning inherits all attributes and associations from the WeatherWarning abstract feature type.
 
 ==== Spatial Quality
 
