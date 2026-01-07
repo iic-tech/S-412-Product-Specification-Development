@@ -37,7 +37,7 @@ include::sections/09-portrayal.adoc[]
 
 include::sections/10-data_product_format.adoc[]
 
-include::sections/11-data_product_delivery.adoc[]
+include::sections/11-data-product-delivery-new.adoc[]
 
 include::sections/12-metadata-new.adoc[]
 
