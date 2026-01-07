@@ -149,38 +149,18 @@ or feature types).
 [[sec_11.3.2]]
 ==== Dataset file naming
 
-All dataset files will have unique world-wide file identifiers.
-The file identifier of the dataset should not be used to describe
-the physical content of the file. The dataset file metadata that accompanies
+Dataset naming must follow a standard pattern to give implementers greater predictability of incoming datasets (see <<iho-s100,part=17,clause=4.3>>). S-412 dataset naming conventions must follow these rules and no further restrictions are made in this product specification. The dataset file metadata that accompanies
 the file will inform the user of the name and purpose of the file
 (<<sec_11.3.1>>).
 
 S-412 dataset files for new, reissue, new editions, and cancellation
 datasets are named according to the specifications given below:
 
-412CCCCXXXXXXXXXX.GML
-
-The main part forms an identifier where:
-
-* The first three characters are always "131" and identify the dataset as an S-412 dataset.
-
-* The next four characters identify the issuing agency by its four-character alphanumeric
-agency code in the IHO producer code register in the IHO GI Registry.
-
-Suffixing zeros is a temporary expedient pending conversion of the
-IHO producer code registry to 4-character codes. When 4-character
-IHO producer codes are published, they must be used.
-
-* The subsequent characters can be used in any way by the producer
-to provide a unique file name for the dataset. The following characters
-are allowed in the dataset name, A to Z, 0 to 9 and the special character
-++_++ (underscore).
-
-* The ninth and subsequent characters are optional (i.e., at least
-one character must be used after the producer code).
-
-* The maximum length of the file name must be 64 characters including
-the extension and its preceding '." character.
+*412YYYYØØØØØØØØØØØØ.GML*::
+412::: the first 3 characters identify the dataset as an S-412 dataset (mandatory); +
+YYYY::: the fourth to seventh characters identify the producer code according to the Producer Code Register; +
+ØØØØØØØØØØØ::: the eighth to the maximum nineteenth characters are optional and may be used in any way by the producer to provide the unique file name. The following characters are allowed in the dataset name: A to Z, 0 to 9 and the special character _ (underscore); +
+GML::: denotes a GML file (according to <<iho-s100,part=10b>>).
 
 [[sec_11.3.3]]
 ==== New Editions, re-issues, and cancellations
@@ -305,12 +285,7 @@ The main part forms an identifier where:
 * 412 -- the first 3 characters identify the support file as applicable
 to an S-412 dataset (mandatory).
 
-* CCCC -- the fourth to seventh characters identify the Producer Code
-of the issuing agency (mandatory). Where the Producer Code is derived
-from a 2 or 3 character format (for instance when converting S-57
-ENCs), the missing characters of the Producer Code must be populated
-with zeros ("00" or "0" respectively) for the sixth and seventh characters
-of the support file name, as required.
+* CCCC -- the fourth to seventh characters identify the producer code according to the Producer Code Register; +
 
 * ØØØØØØØØØØ -- the eighth and following characters are optional and
 can be used in any way by the Producer to provide the unique support
