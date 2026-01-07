@@ -19,7 +19,7 @@ components.
 
 [[fig_11.1]]
 .Components and associated metadata for the S-412 exchange set (S-100 Figure 17-2)
-image::../images/S-412 ExchangeSet.png[]
+image::../images/S-412-ExchangeSet.png[]
 
 The rules governing the presence and roles of the exchange set components
 depicted in <<fig_11.1>> are given below.
