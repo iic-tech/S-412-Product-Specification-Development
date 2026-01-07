@@ -1,5 +1,6 @@
 
 [[sec_11]]
+[[sec-data-product-delivery]]
 == Data Product Delivery
 
 Data which conforms to this Product Specification must be delivered
@@ -11,7 +12,7 @@ by means of an Exchange Set.
 S-412 uses the same exchange set components and metadata as S-100.
 <<fig_11.1>> depicts the exchange set components (datasets and feature/portrayal
 catalogues) and exchange set metadata. This figure is derived from
-Figure 17-2 in S-100 Edition 5.0.0. Note also that the link between
+Figure 17-2 in S-100 Edition 5.2.0. Note also that the link between
 S100_Dataset and S100_CatalogueMetadata is implicit by means of the
 S-412 version to which the feature catalogue, portrayal catalogue,
 and dataset conform, which must have the same edition and revision
@@ -235,7 +236,7 @@ within their corresponding resource metadata records in CATALOG.XML.
 . Dataset and catalogue file and/or folder names should be such as
 to avoid inadvertent overwriting of files.
 
-. Digital signatures for exchange sets conforming to Edition 1.0.0
+. Digital signatures for exchange sets conforming to Edition 1.2.0
 of S-412 may be dummy values (values that conform to the format requirements
 but are not actual signatures). Proper digital signatures will be
 mandatory when S-412 reaches Readiness Level 3 (cf. S-97 1.1.0 Clause A-5).

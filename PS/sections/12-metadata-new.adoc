@@ -1,5 +1,6 @@
 
 [[sec_12]]
+[[sec-metadata]]
 == Metadata
 
 [[sec_12.1]]
@@ -589,7 +590,7 @@ value of the locale
 
 The class PT_Locale is defined in <<ISO_19115_1>>. LanguageCode, CountryCode,
 and MD_CharacterSetCode are ISO codelists which are defined in a resource
-file in the S-100 5.0 schemas distribution.
+file in the S-100 5.2.0 schemas distribution.
 
 [[sec_12.2.5.4]]
 ===== EX_GeographicBoundingBox

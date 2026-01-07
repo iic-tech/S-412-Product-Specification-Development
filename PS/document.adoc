@@ -2,10 +2,10 @@
 :series: S
 :docnumber: 412
 :doctype: standard
-:edition: 2.0.0
+:edition: 1.2.0
 :language: en
-:published-date: 2025-01-31
-:copyright-year: 2025
+:published-date: 2026-01-31
+:copyright-year: 2026
 :committee: WMO
 :workgroup: XXXX
 :toclevels: 3
