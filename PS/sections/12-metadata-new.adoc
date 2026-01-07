@@ -40,8 +40,7 @@ of metadata in languages other than English.
 
 An outline of the overall concept of an S-412 exchange set for the
 interchange of geospatial data and its relevant metadata is explained
-in <<sec_13>>. The place of metadata in the exchange set is summarised
-in <<sec_13.1>>.
+in <<sec-data-product-delivery>>.
 
 <<fig_12.1>> depicts the structure of the exchange catalogue and its
 component discovery metadata blocks.
