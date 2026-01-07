@@ -10,13 +10,13 @@ thead th { font-weight: bold; background-color: aqua; }
 </head><body><h1>local/document.err.html errors</h1>
 <ul><li><p><b><a href="#AsciiDoc_Input">AsciiDoc Input</a></b>: Severity 1: <b>1</b> error; Severity 2: <b>1</b> error</p></li>
 
-<li><p><b><a href="#Anchors">Anchors</a></b>: Severity 1: <b>19</b> errors</p></li>
+<li><p><b><a href="#Anchors">Anchors</a></b>: Severity 1: <b>20</b> errors</p></li>
 
-<li><p><b><a href="#Style">Style</a></b>: Severity 2: <b>29</b> errors</p></li>
+<li><p><b><a href="#Style">Style</a></b>: Severity 2: <b>46</b> errors</p></li>
 
 <li><p><b><a href="#Metanorma_XML_Syntax">Metanorma XML Syntax</a></b>: Severity 2: <b>1</b> error</p></li>
 
-<li><p><b><a href="#Crossreferences">Crossreferences</a></b>: Severity 1: <b>38</b> errors</p></li>
+<li><p><b><a href="#Crossreferences">Crossreferences</a></b>: Severity 1: <b>40</b> errors</p></li>
 </ul>
 <h2 id="AsciiDoc_Input">AsciiDoc Input</h2>
 <table border="1">
@@ -46,6 +46,9 @@ https://www.metanorma.org/author/iso/topics/markup/#bibliographies : Test Sectio
 <td>Crossreference target iso-8601 is undefined</td><td><pre>&lt;xref target=&quot;iso-8601&quot;&gt;
   &lt;display-text&gt;clause=5.4.4&lt;/display-text&gt;
 &lt;/xref&gt;</pre></td><td>1</td></tr>
+<tr class="severity1">
+<td>001810</td><th><code><a href='local/document.html#_f1be0167-a427-55d5-dedb-beb864e98222'>_f1be0167-a427-55d5-dedb-beb864e98222</a></code></th><td>STANDOC_38</td>
+<td>Crossreference target sec-metadata is undefined</td><td><pre>&lt;xref target=&quot;sec-metadata&quot;/&gt;</pre></td><td>1</td></tr>
 <tr class="severity1">
 <td>001859</td><th><code><a href='local/document.html#_d71ff0e0-89b1-00d6-333d-b82d30bcc5cb'>_d71ff0e0-89b1-00d6-333d-b82d30bcc5cb</a></code></th><td>STANDOC_38</td>
 <td>Crossreference target iho-s100 is undefined</td><td><pre>&lt;xref target=&quot;iho-s100&quot;&gt;
@@ -77,58 +80,38 @@ https://www.metanorma.org/author/iso/topics/markup/#bibliographies : Test Sectio
   &lt;display-text&gt;part=17&lt;/display-text&gt;
 &lt;/xref&gt;</pre></td><td>1</td></tr>
 <tr class="severity1">
-<td>002129</td><th><code><a href='local/document.html#_4e361fe3-a5ef-a4bc-ecd1-b5825a42ed29'>_4e361fe3-a5ef-a4bc-ecd1-b5825a42ed29</a></code></th><td>STANDOC_38</td>
-<td>Crossreference target iho-s100 is undefined</td><td><pre>&lt;xref target=&quot;iho-s100&quot;&gt;
-  &lt;display-text&gt;part=3,clause=10&lt;/display-text&gt;
-&lt;/xref&gt;</pre></td><td>1</td></tr>
+<td>002008</td><th><code><a href='local/document.html#_3626c8cc-4315-78f7-e414-ce9e25ccd717'>_3626c8cc-4315-78f7-e414-ce9e25ccd717</a></code></th><td>STANDOC_38</td>
+<td>Crossreference target sec_13 is undefined</td><td><pre>&lt;xref target=&quot;sec_13&quot;/&gt;</pre></td><td>1</td></tr>
 <tr class="severity1">
-<td>003877</td><th><code><a href='local/document.html#_1859e7d0-7110-abfb-f491-3c37733a03ef'>_1859e7d0-7110-abfb-f491-3c37733a03ef</a></code></th><td>STANDOC_38</td>
-<td>Crossreference target iho-s100 is undefined</td><td><pre>&lt;xref target=&quot;iho-s100&quot;&gt;
-  &lt;display-text&gt;part=17&lt;/display-text&gt;
-&lt;/xref&gt;</pre></td><td>1</td></tr>
+<td>002008</td><th><code><a href='local/document.html#_3626c8cc-4315-78f7-e414-ce9e25ccd717'>_3626c8cc-4315-78f7-e414-ce9e25ccd717</a></code></th><td>STANDOC_38</td>
+<td>Crossreference target sec_13.1 is undefined</td><td><pre>&lt;xref target=&quot;sec_13.1&quot;/&gt;</pre></td><td>1</td></tr>
 <tr class="severity1">
-<td>004085</td><th><code><a href='local/document.html#_e776a9ba-93b1-daef-2e72-947a69deaa50'>_e776a9ba-93b1-daef-2e72-947a69deaa50</a></code></th><td>STANDOC_38</td>
-<td>Crossreference target iho-s100 is undefined</td><td><pre>&lt;xref target=&quot;iho-s100&quot;&gt;
-  &lt;display-text&gt;part=10b&lt;/display-text&gt;
-&lt;/xref&gt;</pre></td><td>1</td></tr>
+<td>003714</td><th><code><a href='local/document.html#_b6058f87-b264-b41f-3218-5a4d6c7988e2'>_b6058f87-b264-b41f-3218-5a4d6c7988e2</a></code></th><td>STANDOC_38</td>
+<td>Crossreference target ISO_​19115_1 is undefined</td><td><pre>&lt;xref target=&quot;ISO_19115_1&quot;/&gt;</pre></td><td>1</td></tr>
 <tr class="severity1">
-<td>004201</td><th><code><a href='local/document.html#_c0fe1cf3-1074-e2cf-2fcd-fc89389eeb66'>_c0fe1cf3-1074-e2cf-2fcd-fc89389eeb66</a></code></th><td>STANDOC_38</td>
-<td>Crossreference target iso-19115-1 is undefined</td><td><pre>&lt;xref target=&quot;iso-19115-1&quot;/&gt;</pre></td><td>1</td></tr>
+<td>003730</td><th><code><a href='local/document.html#_2b8bba7b-2c73-2674-9d3c-edf76d107789'>_2b8bba7b-2c73-2674-9d3c-edf76d107789</a></code></th><td>STANDOC_38</td>
+<td>Crossreference target ISO_​19115_1 is undefined</td><td><pre>&lt;xref target=&quot;ISO_19115_1&quot;/&gt;</pre></td><td>1</td></tr>
 <tr class="severity1">
-<td>004207</td><th><code><a href='local/document.html#_11d0dff8-fc21-9d3f-7e3f-896cef24721d'>_11d0dff8-fc21-9d3f-7e3f-896cef24721d</a></code></th><td>STANDOC_38</td>
-<td>Crossreference target iho-s100 is undefined</td><td><pre>&lt;xref target=&quot;iho-s100&quot;&gt;
-  &lt;display-text&gt;part=15,clause=8.11.1&lt;/display-text&gt;
-&lt;/xref&gt;</pre></td><td>1</td></tr>
+<td>003775</td><th><code><a href='local/document.html#_6a871356-fcb1-834f-c995-4909c454812f'>_6a871356-fcb1-834f-c995-4909c454812f</a></code></th><td>STANDOC_38</td>
+<td>Crossreference target ISO_​19115_1 is undefined</td><td><pre>&lt;xref target=&quot;ISO_19115_1&quot;/&gt;</pre></td><td>1</td></tr>
 <tr class="severity1">
-<td>004207</td><th><code><a href='local/document.html#_11d0dff8-fc21-9d3f-7e3f-896cef24721d'>_11d0dff8-fc21-9d3f-7e3f-896cef24721d</a></code></th><td>STANDOC_38</td>
-<td>Crossreference target iho-s100 is undefined</td><td><pre>&lt;xref target=&quot;iho-s100&quot;&gt;
-  &lt;display-text&gt;part=15,clause=8.11.7&lt;/display-text&gt;
-&lt;/xref&gt;</pre></td><td>1</td></tr>
+<td>003816</td><th><code><a href='local/document.html#_3204e312-accb-6a69-2c27-7d12a003f44b'>_3204e312-accb-6a69-2c27-7d12a003f44b</a></code></th><td>STANDOC_38</td>
+<td>Crossreference target ISO_​19115_1 is undefined</td><td><pre>&lt;xref target=&quot;ISO_19115_1&quot;/&gt;</pre></td><td>1</td></tr>
 <tr class="severity1">
-<td>004207</td><th><code><a href='local/document.html#_11d0dff8-fc21-9d3f-7e3f-896cef24721d'>_11d0dff8-fc21-9d3f-7e3f-896cef24721d</a></code></th><td>STANDOC_38</td>
-<td>Crossreference target iho-s100 is undefined</td><td><pre>&lt;xref target=&quot;iho-s100&quot;&gt;
-  &lt;display-text&gt;part=15&lt;/display-text&gt;
-&lt;/xref&gt;</pre></td><td>1</td></tr>
+<td>003821</td><th><code><a href='local/document.html#_ae5416ac-16ac-7ace-76b3-5392faf6dc68'>_ae5416ac-16ac-7ace-76b3-5392faf6dc68</a></code></th><td>STANDOC_38</td>
+<td>Crossreference target ISO_​19115_1 is undefined</td><td><pre>&lt;xref target=&quot;ISO_19115_1&quot;/&gt;</pre></td><td>1</td></tr>
 <tr class="severity1">
-<td>004209</td><th><code><a href='local/document.html#_4a055d29-f3f8-2521-27af-c9b14e379880'>_4a055d29-f3f8-2521-27af-c9b14e379880</a></code></th><td>STANDOC_38</td>
-<td>Crossreference target iho-s100 is undefined</td><td><pre>&lt;xref target=&quot;iho-s100&quot;&gt;
-  &lt;display-text&gt;part=15&lt;/display-text&gt;
-&lt;/xref&gt;</pre></td><td>1</td></tr>
+<td>003840</td><th><code><a href='local/document.html#_fea45ef9-10f6-c981-7d02-fc303828d7a8'>_fea45ef9-10f6-c981-7d02-fc303828d7a8</a></code></th><td>STANDOC_38</td>
+<td>Crossreference target ISO_​19115_1 is undefined</td><td><pre>&lt;xref target=&quot;ISO_19115_1&quot;/&gt;</pre></td><td>1</td></tr>
 <tr class="severity1">
-<td>004211</td><th><code><a href='local/document.html#_9c7beb06-d613-1cfb-f132-3458207a8db2'>_9c7beb06-d613-1cfb-f132-3458207a8db2</a></code></th><td>STANDOC_38</td>
-<td>Crossreference target iho-s100 is undefined</td><td><pre>&lt;xref target=&quot;iho-s100&quot;&gt;
-  &lt;display-text&gt;part=15,clause=15-8.11.3&lt;/display-text&gt;
-&lt;/xref&gt;</pre></td><td>1</td></tr>
+<td>003896</td><th><code><a href='local/document.html#_1a29bead-79a4-b6a7-e15b-ed297e17da64'>_1a29bead-79a4-b6a7-e15b-ed297e17da64</a></code></th><td>STANDOC_38</td>
+<td>Crossreference target ISO_​19115_1 is undefined</td><td><pre>&lt;xref target=&quot;ISO_19115_1&quot;/&gt;</pre></td><td>1</td></tr>
 <tr class="severity1">
-<td>004213</td><th><code><a href='local/document.html#_7917500c-fad1-8365-aaa2-0894c39eb0ae'>_7917500c-fad1-8365-aaa2-0894c39eb0ae</a></code></th><td>STANDOC_38</td>
-<td>Crossreference target iho-s100 is undefined</td><td><pre>&lt;xref target=&quot;iho-s100&quot;&gt;
-  &lt;display-text&gt;part=15,clause=8.8&lt;/display-text&gt;
-&lt;/xref&gt;</pre></td><td>1</td></tr>
+<td>003915</td><th><code><a href='local/document.html#_6a9c81cc-5162-254a-48b2-ded476474b18'>_6a9c81cc-5162-254a-48b2-ded476474b18</a></code></th><td>STANDOC_38</td>
+<td>Crossreference target ISO_​19115_1 is undefined</td><td><pre>&lt;xref target=&quot;ISO_19115_1&quot;/&gt;</pre></td><td>1</td></tr>
 <tr class="severity1">
-<td>004213</td><th><code><a href='local/document.html#_7917500c-fad1-8365-aaa2-0894c39eb0ae'>_7917500c-fad1-8365-aaa2-0894c39eb0ae</a></code></th><td>STANDOC_38</td>
-<td>Crossreference target iho-s100 is undefined</td><td><pre>&lt;xref target=&quot;iho-s100&quot;&gt;
-  &lt;display-text&gt;part=17&lt;/display-text&gt;
-&lt;/xref&gt;</pre></td><td>1</td></tr>
+<td>003960</td><th><code><a href='local/document.html#_0224e220-029c-bac2-4d31-aa92a4a2c31a'>_0224e220-029c-bac2-4d31-aa92a4a2c31a</a></code></th><td>STANDOC_38</td>
+<td>Crossreference target ISO_​10646_1 is undefined</td><td><pre>&lt;xref target=&quot;ISO_10646_1&quot;/&gt;</pre></td><td>1</td></tr>
 </tbody></table>
 <h2 id="Style">Style</h2>
 <table border="1">
@@ -255,84 +238,203 @@ https://www.metanorma.org/author/iso/topics/markup/#bibliographies : Test Sectio
 
 &lt;clause id=&quot;_8c09020f-0640-4dec-9f80-b95cfdc2adb3&quot; obligation=&quot;normative&quot;&gt;</pre></td><td>2</td></tr>
 <tr class="severity2">
-<td>002018</td><th><code><a href='local/document.html#_84c21bbf-0bfd-aad5-6e8b-7eda166d144a'>_84c21bbf-0bfd-aad5-6e8b-7eda166d144a</a></code></th><td>STANDOC_48</td>
-<td>(generic warning) Hanging paragraph in clause</td><td><pre>&lt;clause id=&quot;_84c21bbf-0bfd-aad5-6e8b-7eda166d144a&quot; obligation=&quot;normative&quot;&gt;
-&lt;title id=&quot;_19c8956c-9ce3-d5d0-1c7f-4253c061765b&quot;&gt;Metadata for Datasets&lt;/title&gt;
-&lt;p id=&quot;_431d1e38-f0b6-ff28-ff13-ba2e502929e6&quot;&gt;S-412 uses the following tables as detailed in S-100 Part 17, Clause 17-4.5, without modification:&lt;/p&gt;
+<td>002006</td><th><code><a href='local/document.html#sec_12.2'>sec_12.2</a></code></th><td>STANDOC_48</td>
+<td>(generic warning) Hanging paragraph in clause</td><td><pre>&lt;clause id=&quot;_7957f0e9-73ab-2e34-0db9-5c0f9b5ed90c&quot; anchor=&quot;sec_12.2&quot; obligation=&quot;normative&quot;&gt;
+&lt;title id=&quot;_722ef0c7-f83e-bcb3-6c2c-9389b8171187&quot;&gt;Discovery metadata&lt;/title&gt;
+&lt;p id=&quot;_3626c8cc-4315-78f7-e414-ce9e25ccd717&quot;&gt;An outline of the overall concept of an S-412 exchange set for the interchange of geospatial data and its relevant metadata is explained in  &lt;xref target=&quot;sec_13&quot;/&gt;. The place of metadata in the exchange set is summarised in  &lt;xref target=&quot;sec_13.1&quot;/&gt;.&lt;/p&gt;
 
-&lt;ul id=&quot;_ab9198e8-79d0-b5ca-fd90-fb4f0fef4499&quot;&gt; &lt;li&gt; &lt;p id=&quot;_3d2c685c-c1ec-e90f-ac67-719dd6c172d2&quot;&gt;S100_ExchangeCatalogue&lt;br/&gt; &lt;/p&gt;</pre></td><td>2</td></tr>
+&lt;p id=&quot;_94630b54-4264-4a05-5b9c-088f81bf746c&quot;&gt; &lt;xref target=&quot;fig_12.1&quot;/&gt; depicts the structure of the exchange catalogue and its component discovery metadata blocks.&lt;/p&gt;</pre></td><td>2</td></tr>
 <tr class="severity2">
-<td>003298</td><th><code><a href='local/document.html#_27d4b15b-0f87-7370-e4ad-d0ebaa4b1e6d'>_27d4b15b-0f87-7370-e4ad-d0ebaa4b1e6d</a></code></th><td>STANDOC_48</td>
-<td>(generic warning) Hanging paragraph in clause</td><td><pre>&lt;clause id=&quot;_27d4b15b-0f87-7370-e4ad-d0ebaa4b1e6d&quot; obligation=&quot;normative&quot;&gt;
-&lt;title id=&quot;_9cc5bfce-3f36-a85f-d2a3-c039f70b76fd&quot;&gt;language&lt;/title&gt;
-&lt;p id=&quot;_630a4dce-0794-eb93-97f1-ed418b475899&quot;&gt;The exchange language must be English. Other languages may be used as a supplementary option. National geographic names can be left in their original national language in the international attributes, or transliterated or transcribed and used in the international attributes. Character strings must be encoded using the character set defined in ISO 10646-1, in Unicode Transformation Format-8 (UTF-8). A BOM (byte order mark) must not be used.&lt;/p&gt;
+<td>002031</td><th><code><a href='local/document.html#sec_12.2.1'>sec_​12.2.1</a></code></th><td>STANDOC_48</td>
+<td>(generic warning) Hanging paragraph in clause</td><td><pre>&lt;clause id=&quot;_6d81cd87-15ab-1d74-2165-c3fec36fa7d6&quot; anchor=&quot;sec_12.2.1&quot; obligation=&quot;normative&quot;&gt;
+&lt;title id=&quot;_41ba6dd3-e8b4-f829-f87c-d2b18f243d26&quot;&gt;S100_ExchangeCatalogue&lt;/title&gt;
+&lt;p id=&quot;_f8d172b3-a721-a98c-fbb0-894dabe7b8d6&quot;&gt;The Catalogue file is defined in XML Schema language. The Exchange Catalogue inherits the dataset discovery metadata and support file discovery metadata from S-100 with additional S-412-specific restrictions.&lt;/p&gt;
 
-&lt;p id=&quot;_79255eaa-cbc6-80ce-c464-f5e4fcbafc64&quot;&gt;|Attribute |replacedData | |0..1 |Boolean |&lt;/p&gt;</pre></td><td>2</td></tr>
+&lt;table id=&quot;_546725ac-267d-3dc7-0e0c-60757cb1b4c5&quot; unnumbered=&quot;true&quot;&gt; &lt;thead&gt; &lt;tr id=&quot;_ce71524e-0636-7c80-1348-cd0454571369&quot;&gt; &lt;th id=&quot;_7f119dd0-ea2e-aeb6-3957-750c56992077&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Role Name&lt;/th&gt;</pre></td><td>2</td></tr>
 <tr class="severity2">
-<td>003308</td><th><code><a href='local/document.html#_276911d0-da09-c6f8-098f-64595681785f'>_276911d0-da09-c6f8-098f-64595681785f</a></code></th><td>STANDOC_48</td>
-<td>(generic warning) Table should have title</td><td><pre>&lt;table id=&quot;_276911d0-da09-c6f8-098f-64595681785f&quot;&gt; &lt;thead&gt; &lt;tr id=&quot;_52f724bd-c3cc-6d8d-26c3-a46319099b56&quot;&gt; &lt;th id=&quot;_4ddb2733-9a0b-883d-020d-35d702dd69a2&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Element Name&lt;/th&gt;
-&lt;th id=&quot;_9a944920-a0db-8377-a58c-c20f7f5dc630&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Description&lt;/th&gt;
-&lt;th id=&quot;_d56c6d6f-a71b-19b3-426f-614fa464c933&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Namespace&lt;/th&gt;
-&lt;/tr&gt; &lt;/thead&gt;
-&lt;tbody&gt; &lt;tr id=&quot;_cf5d524f-96b3-7fd6-f926-5c9a0cd9f6b7&quot;&gt; &lt;td id=&quot;_29d2af04-befe-8020-4337-6cd10dc2c8ac&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt; &lt;p id=&quot;_aceae56d-0b33-33ca-4ed2-d8337ac94f10&quot;&gt;MD_Metadata&lt;/p&gt;</pre></td><td>2</td></tr>
+<td>002035</td><th><code><a href='local/document.html#_546725ac-267d-3dc7-0e0c-60757cb1b4c5'>_546725ac-267d-3dc7-0e0c-60757cb1b4c5</a></code></th><td>STANDOC_48</td>
+<td>(generic warning) Table should have title</td><td><pre>&lt;table id=&quot;_546725ac-267d-3dc7-0e0c-60757cb1b4c5&quot; unnumbered=&quot;true&quot;&gt; &lt;thead&gt; &lt;tr id=&quot;_ce71524e-0636-7c80-1348-cd0454571369&quot;&gt; &lt;th id=&quot;_7f119dd0-ea2e-aeb6-3957-750c56992077&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Role Name&lt;/th&gt;
+&lt;th id=&quot;_a3b8c7fa-fb36-c431-952d-f07a5543dfc0&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Name&lt;/th&gt;
+&lt;th id=&quot;_ffdc7322-c5b7-b4e8-eb5b-8c9e60336baa&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Description&lt;/th&gt;
+&lt;th id=&quot;_edcc71e9-0eaf-fe45-4b7a-5f190a0e040e&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Mult&lt;/th&gt;
+&lt;th id=&quot;_ab6ebd0c-97e0-b6cc-5880-51e700cfc103&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Type&lt;/th&gt;</pre></td><td>2</td></tr>
 <tr class="severity2">
-<td>003372</td><th><code><a href='local/document.html#_5309ba77-5a05-eb1a-a7d0-80859afcff82'>_5309ba77-5a05-eb1a-a7d0-80859afcff82</a></code></th><td>STANDOC_48</td>
-<td>(generic warning) Table should have title</td><td><pre>&lt;table id=&quot;_5309ba77-5a05-eb1a-a7d0-80859afcff82&quot;&gt; &lt;thead&gt; &lt;tr id=&quot;_1bdb3389-8fa7-1c58-c4c8-88c5b41efd12&quot;&gt; &lt;th id=&quot;_b3c33416-9435-49c5-1509-957c2f29b1d1&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Element Name&lt;/th&gt;
-&lt;th id=&quot;_8b3b24fa-dd12-e4ac-5149-321786a56dbd&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Description&lt;/th&gt;
-&lt;th id=&quot;_2f997e99-8f65-912f-d8b7-5bacc2e36557&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Namespace&lt;/th&gt;
-&lt;/tr&gt; &lt;/thead&gt;
-&lt;tbody&gt; &lt;tr id=&quot;_14cbca7c-9eac-0b1c-a573-de6de9831d2a&quot;&gt; &lt;td id=&quot;_e4f7bb77-2ecb-eb94-7d4a-0fe5848f97f3&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt; &lt;p id=&quot;_5aefb11c-fbbd-1f11-4f19-cfc73a740ebe&quot;&gt;fileIdentifier&lt;/p&gt;</pre></td><td>2</td></tr>
+<td>002193</td><th><code><a href='local/document.html#_3d183075-9c5c-ac35-211a-84f49fdb3dca'>_3d183075-9c5c-ac35-211a-84f49fdb3dca</a></code></th><td>STANDOC_48</td>
+<td>(generic warning) Table should have title</td><td><pre>&lt;table id=&quot;_3d183075-9c5c-ac35-211a-84f49fdb3dca&quot; unnumbered=&quot;true&quot;&gt; &lt;thead&gt; &lt;tr id=&quot;_4300ed27-edd6-8128-4f98-0fd4d6171d0f&quot;&gt; &lt;th id=&quot;_0e66ecb4-3fe8-defe-918b-a6a179a4b8d1&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Role Name&lt;/th&gt;
+&lt;th id=&quot;_f48de6e3-13ae-f7a9-b826-ea2631d3dd2b&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Name&lt;/th&gt;
+&lt;th id=&quot;_fb1220c1-1051-269c-0f41-00d86265ddba&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Description&lt;/th&gt;
+&lt;th id=&quot;_1c1fb913-fb0a-63e6-e45a-ee52a0677cf8&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Mult&lt;/th&gt;
+&lt;th id=&quot;_27e95d0e-c59f-f2ac-3a70-984a1a77c2e8&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Type&lt;/th&gt;</pre></td><td>2</td></tr>
 <tr class="severity2">
-<td>003394</td><th><code><a href='local/document.html#_dffb5f8b-b962-0d4c-59d1-5194f9c4c032'>_dffb5f8b-b962-0d4c-59d1-5194f9c4c032</a></code></th><td>STANDOC_48</td>
-<td>(generic warning) Table should have title</td><td><pre>&lt;table id=&quot;_dffb5f8b-b962-0d4c-59d1-5194f9c4c032&quot;&gt; &lt;thead&gt; &lt;tr id=&quot;_a4877cbe-570d-f078-b86b-61ee4da29b50&quot;&gt; &lt;th id=&quot;_70b55ff3-346d-48b5-8eee-c9f613a1e87a&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Element Name&lt;/th&gt;
-&lt;th id=&quot;_041075dc-7840-d14b-a8a1-bf568961212e&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Description&lt;/th&gt;
-&lt;th id=&quot;_55eb5ade-749c-461f-2ec5-863168bea8b3&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Namespace&lt;/th&gt;
-&lt;/tr&gt; &lt;/thead&gt;
-&lt;tbody&gt; &lt;tr id=&quot;_a0c9eee5-41d0-b922-5738-adb9bfde28fc&quot;&gt; &lt;td id=&quot;_e19abd21-014b-9c2c-3ace-d51f9fa3b440&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt; &lt;p id=&quot;_a480c63b-fd2b-2d90-2be4-ede7e3264bab&quot;&gt;language&lt;/p&gt;</pre></td><td>2</td></tr>
+<td>002224</td><th><code><a href='local/document.html#_c3a67553-5db4-437a-45d2-a05761b742c8'>_c3a67553-5db4-437a-45d2-a05761b742c8</a></code></th><td>STANDOC_48</td>
+<td>(generic warning) Table should have title</td><td><pre>&lt;table id=&quot;_c3a67553-5db4-437a-45d2-a05761b742c8&quot; unnumbered=&quot;true&quot;&gt; &lt;thead&gt; &lt;tr id=&quot;_24ce35d4-96b4-3c09-5196-8f255815edf7&quot;&gt; &lt;th id=&quot;_8508f104-8431-4e36-a99a-94a2a17acf52&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Role Name&lt;/th&gt;
+&lt;th id=&quot;_927c1d7f-9597-eee7-88c7-5c2d1fd40f59&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Name&lt;/th&gt;
+&lt;th id=&quot;_76cd3e14-3fb1-acdb-d31e-e4cf538e3f97&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Description&lt;/th&gt;
+&lt;th id=&quot;_398a8c35-5281-3780-2bdd-a732859ca059&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Mult&lt;/th&gt;
+&lt;th id=&quot;_541fa3e0-e424-47ce-bbe3-77326542ad30&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Type&lt;/th&gt;</pre></td><td>2</td></tr>
 <tr class="severity2">
-<td>003424</td><th><code><a href='local/document.html#_4feabed5-16d5-ef78-1446-59c3c2d5b978'>_4feabed5-16d5-ef78-1446-59c3c2d5b978</a></code></th><td>STANDOC_48</td>
-<td>(generic warning) Table should have title</td><td><pre>&lt;table id=&quot;_4feabed5-16d5-ef78-1446-59c3c2d5b978&quot;&gt; &lt;thead&gt; &lt;tr id=&quot;_a4e455c1-b7c8-654b-9876-c1cd92fa3da9&quot;&gt; &lt;th id=&quot;_8da62ea3-9ac0-ae95-0cff-0ad17aace4e7&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Element Name&lt;/th&gt;
-&lt;th id=&quot;_37ae70eb-1c42-512c-8356-783751173724&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Description&lt;/th&gt;
-&lt;th id=&quot;_eebd22be-66d1-358a-d64e-528aff5e40ef&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Namespace&lt;/th&gt;
-&lt;/tr&gt; &lt;/thead&gt;
-&lt;tbody&gt; &lt;tr id=&quot;_34646699-06d4-eebb-2a6a-9aca056a0f38&quot;&gt; &lt;td id=&quot;_653690ae-2cdc-74a5-e186-5be2ecb4f258&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt; &lt;p id=&quot;_4547a5ee-441b-5e25-fe88-ae52fc7da0b9&quot;&gt;characterSet&lt;/p&gt;</pre></td><td>2</td></tr>
+<td>002258</td><th><code><a href='local/document.html#sec_12.2.2'>sec_​12.2.2</a></code></th><td>STANDOC_48</td>
+<td>(generic warning) Hanging paragraph in clause</td><td><pre>&lt;clause id=&quot;_9447c0e9-708c-9713-30cb-47544f2ca180&quot; anchor=&quot;sec_12.2.2&quot; obligation=&quot;normative&quot;&gt;
+&lt;title id=&quot;_50141e79-7d9e-544d-aabc-014b9a4f8dc1&quot;&gt;S100_DatasetDiscoveryMetadata&lt;/title&gt;
+&lt;table id=&quot;_6c547760-3942-cc09-ab6c-cbd9a7dbdfac&quot; unnumbered=&quot;true&quot;&gt; &lt;thead&gt; &lt;tr id=&quot;_b41bf19c-c116-1971-14b1-8baa13526c62&quot;&gt; &lt;th id=&quot;_7096d70c-47fc-697c-1942-a78b31b71cc4&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Role Name&lt;/th&gt;
+&lt;th id=&quot;_8c2ed1ad-56ab-4282-42b5-8f1b5d721c81&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Name&lt;/th&gt;
+&lt;th id=&quot;_d85820b3-8b2b-2800-8217-5571ebd738ab&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Description&lt;/th&gt;</pre></td><td>2</td></tr>
 <tr class="severity2">
-<td>003462</td><th><code><a href='local/document.html#_9996a211-9b9e-bff0-8e1b-fe70021884c0'>_9996a211-9b9e-bff0-8e1b-fe70021884c0</a></code></th><td>STANDOC_48</td>
-<td>(generic warning) Table should have title</td><td><pre>&lt;table id=&quot;_9996a211-9b9e-bff0-8e1b-fe70021884c0&quot;&gt; &lt;thead&gt; &lt;tr id=&quot;_e7bcab68-84c9-2dc1-3bb8-c3275d9441d5&quot;&gt; &lt;th id=&quot;_dc6be829-48cc-0445-58f7-3c9a39889b42&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Element Name&lt;/th&gt;
-&lt;th id=&quot;_48111498-1f9f-a01c-67bd-35fa72e7269a&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Description&lt;/th&gt;
-&lt;th id=&quot;_370600e3-fced-e3ea-77c2-6f4d05127761&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Namespace&lt;/th&gt;
-&lt;/tr&gt; &lt;/thead&gt;
-&lt;tbody&gt; &lt;tr id=&quot;_50712731-2014-9c39-0102-e4eb7d910594&quot;&gt; &lt;td id=&quot;_15f3c8bf-b4b2-00c7-4647-5ffe7bf58b93&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt; &lt;p id=&quot;_5f0aa064-93eb-3b30-2817-8e10ec70445d&quot;&gt;contact&lt;/p&gt;</pre></td><td>2</td></tr>
+<td>002260</td><th><code><a href='local/document.html#_6c547760-3942-cc09-ab6c-cbd9a7dbdfac'>_6c547760-3942-cc09-ab6c-cbd9a7dbdfac</a></code></th><td>STANDOC_48</td>
+<td>(generic warning) Table should have title</td><td><pre>&lt;table id=&quot;_6c547760-3942-cc09-ab6c-cbd9a7dbdfac&quot; unnumbered=&quot;true&quot;&gt; &lt;thead&gt; &lt;tr id=&quot;_b41bf19c-c116-1971-14b1-8baa13526c62&quot;&gt; &lt;th id=&quot;_7096d70c-47fc-697c-1942-a78b31b71cc4&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Role Name&lt;/th&gt;
+&lt;th id=&quot;_8c2ed1ad-56ab-4282-42b5-8f1b5d721c81&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Name&lt;/th&gt;
+&lt;th id=&quot;_d85820b3-8b2b-2800-8217-5571ebd738ab&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Description&lt;/th&gt;
+&lt;th id=&quot;_cbd69977-824f-df46-c293-a2d2822995f4&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Mult&lt;/th&gt;
+&lt;th id=&quot;_3c636f0a-f716-2278-34f7-a0fb23048b4b&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Type&lt;/th&gt;</pre></td><td>2</td></tr>
 <tr class="severity2">
-<td>003664</td><th><code><a href='local/document.html#_99ef6ccf-024c-2ee3-2efd-cb7a944aff0e'>_99ef6ccf-024c-2ee3-2efd-cb7a944aff0e</a></code></th><td>STANDOC_48</td>
-<td>(generic warning) Table should have title</td><td><pre>&lt;table id=&quot;_99ef6ccf-024c-2ee3-2efd-cb7a944aff0e&quot;&gt; &lt;thead&gt; &lt;tr id=&quot;_a51bb85c-0814-183a-06eb-9f7f35c45370&quot;&gt; &lt;th id=&quot;_15521378-a116-072a-d7f9-ca7ee3016eb5&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Element Name&lt;/th&gt;
-&lt;th id=&quot;_b574b54d-85ba-873d-d6ad-adb147852711&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Description&lt;/th&gt;
-&lt;th id=&quot;_ca6f11e1-7183-d95b-bd6f-7f262bb0aa42&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Namespace&lt;/th&gt;
-&lt;/tr&gt; &lt;/thead&gt;
-&lt;tbody&gt; &lt;tr id=&quot;_031d690a-6278-2a64-69e6-e90b44079555&quot;&gt; &lt;td id=&quot;_6e2d4823-375b-187a-c15f-07bf2bf34f81&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt; &lt;p id=&quot;_0a946675-8a9b-97f6-6a7e-91374689d838&quot;&gt;dataStamp&lt;/p&gt;</pre></td><td>2</td></tr>
+<td>002710</td><th><code><a href='local/document.html#_b7590b8b-5c97-0d10-22df-72fdcf8c454e'>_b7590b8b-5c97-0d10-22df-72fdcf8c454e</a></code></th><td>STANDOC_48</td>
+<td>(generic warning) Table should have title</td><td><pre>&lt;table id=&quot;_b7590b8b-5c97-0d10-22df-72fdcf8c454e&quot; unnumbered=&quot;true&quot;&gt; &lt;thead&gt; &lt;tr id=&quot;_18420e8f-491b-8353-1c0f-54a701cec887&quot;&gt; &lt;th id=&quot;_f499ce8c-8bb7-54f5-a924-6b27cce52fc5&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Role Name&lt;/th&gt;
+&lt;th id=&quot;_29b85d40-755f-23f9-a334-6c2106b8ae11&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Name&lt;/th&gt;
+&lt;th id=&quot;_17ebdecd-ce61-6dbe-bacb-f055403f36bd&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Description&lt;/th&gt;
+&lt;th id=&quot;_dd69f21b-2b44-4475-c6ef-cd5cae08b6a2&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Code&lt;/th&gt;
+&lt;th id=&quot;_6d09194d-0fad-0aeb-924b-f4973885acff&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Remarks&lt;/th&gt;</pre></td><td>2</td></tr>
 <tr class="severity2">
-<td>003693</td><th><code><a href='local/document.html#_d53d5d43-fe01-517d-4155-9f5dd6ac80ac'>_d53d5d43-fe01-517d-4155-9f5dd6ac80ac</a></code></th><td>STANDOC_48</td>
-<td>(generic warning) Table should have title</td><td><pre>&lt;table id=&quot;_d53d5d43-fe01-517d-4155-9f5dd6ac80ac&quot;&gt; &lt;thead&gt; &lt;tr id=&quot;_6084e94b-cd96-e7a0-1305-816b06ae970a&quot;&gt; &lt;th id=&quot;_21177dad-d505-5409-936e-fe313895dc2c&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Element Name&lt;/th&gt;
-&lt;th id=&quot;_f5aee39b-d19f-e0c6-7115-6f6bde92934c&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Description&lt;/th&gt;
-&lt;th id=&quot;_0f20527a-0f9d-2bc8-25e2-5e4e2d85ea27&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Namespace&lt;/th&gt;
-&lt;/tr&gt; &lt;/thead&gt;
-&lt;tbody&gt; &lt;tr id=&quot;_9da1f415-ab66-56a6-5e74-34df0e21d964&quot;&gt; &lt;td id=&quot;_262d9763-cfdc-2def-790c-c93927d8252a&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt; &lt;p id=&quot;_d109a4c5-7f6e-5b7e-b84d-52d3b0e878ce&quot;&gt;identificationInfo&lt;/p&gt;</pre></td><td>2</td></tr>
+<td>002760</td><th><code><a href='local/document.html#_d7d95fb0-8cfc-6fa9-c572-f50ed46445e8'>_d7d95fb0-8cfc-6fa9-c572-f50ed46445e8</a></code></th><td>STANDOC_48</td>
+<td>(generic warning) Table should have title</td><td><pre>&lt;table id=&quot;_d7d95fb0-8cfc-6fa9-c572-f50ed46445e8&quot; unnumbered=&quot;true&quot;&gt; &lt;thead&gt; &lt;tr id=&quot;_e3f4295d-9d38-7b84-d4d2-455d4d419f28&quot;&gt; &lt;th id=&quot;_bcf7a71f-fff6-0ee8-7c9c-95b7ca88f85b&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Name&lt;/th&gt;
+&lt;th id=&quot;_cafd54c5-0904-f92e-e530-9c1584cb19cb&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Description&lt;/th&gt;
+&lt;th id=&quot;_858f1ab5-1d9f-62f7-e40d-0519efeccab1&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Multiplicity&lt;/th&gt;
+&lt;th id=&quot;_fae43e46-1c96-5d6a-0634-f5ab4de8c56f&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Type&lt;/th&gt;
+&lt;th id=&quot;_4c07a899-f1a2-9bb9-6107-8b403fd0d649&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Remarks&lt;/th&gt;</pre></td><td>2</td></tr>
 <tr class="severity2">
-<td>003894</td><th><code><a href='local/document.html#subsec-s100_exchangecatalogue'>subsec-s100_​exchangecatalo­gue</a></code></th><td>STANDOC_48</td>
-<td>(generic warning) Hanging paragraph in clause</td><td><pre>&lt;clause id=&quot;_8df4acaa-e6e2-74e6-33a9-31de82501566&quot; anchor=&quot;subsec-s100_exchangecatalogue&quot; obligation=&quot;normative&quot;&gt;
-&lt;title id=&quot;_1f53be8f-4827-584c-6f2f-dcf91a9514ca&quot;&gt;S100_ExchangeCatalogue&lt;/title&gt;
-&lt;p id=&quot;_00d24e26-6525-c98e-1844-eceaef9e1f6b&quot;&gt;Each Exchange Set has a single S100_ExchangeCatalogue which contains meta information for the data in the Exchange Set.&lt;/p&gt;
+<td>002824</td><th><code><a href='local/document.html#_d8da8f9d-eb49-4c60-ab63-d2c10cfa4959'>_d8da8f9d-eb49-4c60-ab63-d2c10cfa4959</a></code></th><td>STANDOC_48</td>
+<td>(generic warning) Table should have title</td><td><pre>&lt;table id=&quot;_d8da8f9d-eb49-4c60-ab63-d2c10cfa4959&quot; unnumbered=&quot;true&quot;&gt; &lt;thead&gt; &lt;tr id=&quot;_644d4d0c-9856-9284-e70e-1a801c897f1d&quot;&gt; &lt;th id=&quot;_cb484502-0615-1d89-99e2-2a7705a1130f&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Role Name&lt;/th&gt;
+&lt;th id=&quot;_2c36502e-6d77-b557-eef8-384913104582&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Name&lt;/th&gt;
+&lt;th id=&quot;_9e5598ea-7f2a-4a3c-6b5b-e2d101108206&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Description&lt;/th&gt;
+&lt;th id=&quot;_38ffe630-278a-a00d-cd69-91ffc5a64caf&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Code&lt;/th&gt;
+&lt;th id=&quot;_b03de290-f53a-1d8f-724a-65a5c878b297&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Remarks&lt;/th&gt;</pre></td><td>2</td></tr>
+<tr class="severity2">
+<td>002896</td><th><code><a href='local/document.html#_041d7aad-41b1-c1b4-4e58-af1d506ca9e5'>_041d7aad-41b1-c1b4-4e58-af1d506ca9e5</a></code></th><td>STANDOC_48</td>
+<td>(generic warning) Table should have title</td><td><pre>&lt;table id=&quot;_041d7aad-41b1-c1b4-4e58-af1d506ca9e5&quot; unnumbered=&quot;true&quot;&gt; &lt;thead&gt; &lt;tr id=&quot;_3c77c54f-5f03-f425-af68-d512b144286b&quot;&gt; &lt;th id=&quot;_6996f1a0-26a2-f85b-583c-e02cd1982ea8&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Role Name&lt;/th&gt;
+&lt;th id=&quot;_f48cee14-440d-a857-72b2-0ab8658ef5a8&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Name&lt;/th&gt;
+&lt;th id=&quot;_9bcd8a2d-a9f8-d5d6-91c1-389228a21996&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Description&lt;/th&gt;
+&lt;th id=&quot;_0aa12397-9cd6-a3b3-f111-75a27688b06b&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Code&lt;/th&gt;
+&lt;th id=&quot;_b1e34a15-0f2f-c0d7-ea89-9a3b3e463473&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Remarks&lt;/th&gt;</pre></td><td>2</td></tr>
+<tr class="severity2">
+<td>002924</td><th><code><a href='local/document.html#_91e38608-be54-baa7-48d1-610c5419ca44'>_91e38608-be54-baa7-48d1-610c5419ca44</a></code></th><td>STANDOC_48</td>
+<td>(generic warning) Table should have title</td><td><pre>&lt;table id=&quot;_91e38608-be54-baa7-48d1-610c5419ca44&quot; unnumbered=&quot;true&quot;&gt; &lt;thead&gt; &lt;tr id=&quot;_bf730428-5451-d2f0-013a-f9f9d1f562ca&quot;&gt; &lt;th id=&quot;_564fdec3-f3ca-1682-c8a6-5a835a1b8db7&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Role Name&lt;/th&gt;
+&lt;th id=&quot;_65517653-9af8-c15b-98c6-9db07dcd7e2b&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Name&lt;/th&gt;
+&lt;th id=&quot;_e3c287f2-3a6c-bbda-424c-c223245dfb89&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Description&lt;/th&gt;
+&lt;th id=&quot;_6b97d16a-63bd-160c-de96-97511b900790&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Mult&lt;/th&gt;
+&lt;th id=&quot;_c4d19545-6f4a-6523-97de-32ffd6cea93c&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Type&lt;/th&gt;</pre></td><td>2</td></tr>
+<tr class="severity2">
+<td>003019</td><th><code><a href='local/document.html#_e1a0a530-130f-f9ed-8cc1-f48cc7fbeae3'>_e1a0a530-130f-f9ed-8cc1-f48cc7fbeae3</a></code></th><td>STANDOC_48</td>
+<td>(generic warning) Table should have title</td><td><pre>&lt;table id=&quot;_e1a0a530-130f-f9ed-8cc1-f48cc7fbeae3&quot; unnumbered=&quot;true&quot;&gt; &lt;thead&gt; &lt;tr id=&quot;_b19f1cb7-5332-1e61-1fc8-237b589b062e&quot;&gt; &lt;th id=&quot;_38ffa16c-300e-f763-2762-e12018750838&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Role Name&lt;/th&gt;
+&lt;th id=&quot;_70493117-33dd-5432-ad99-076e7ab0e197&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Name&lt;/th&gt;
+&lt;th id=&quot;_b8bbd3ba-9cd0-bbd3-a4e0-124896bc6d06&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Description&lt;/th&gt;
+&lt;th id=&quot;_a24b0c81-8937-a8f9-6e73-72afa7cea86e&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Code&lt;/th&gt;
+&lt;th id=&quot;_dca6e3ce-ff61-7527-9036-18786e58267e&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Remarks&lt;/th&gt;</pre></td><td>2</td></tr>
+<tr class="severity2">
+<td>003045</td><th><code><a href='local/document.html#_2282fae5-33d5-04a4-afd1-bbee7753bbac'>_2282fae5-33d5-04a4-afd1-bbee7753bbac</a></code></th><td>STANDOC_48</td>
+<td>(generic warning) Table should have title</td><td><pre>&lt;table id=&quot;_2282fae5-33d5-04a4-afd1-bbee7753bbac&quot; unnumbered=&quot;true&quot;&gt; &lt;thead&gt; &lt;tr id=&quot;_a38731ae-a9f9-463d-eadd-3f05e971bf53&quot;&gt; &lt;th id=&quot;_3db5c441-b64c-e9fc-81ec-1f660faa5551&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Role Name&lt;/th&gt;
+&lt;th id=&quot;_b9fa9151-5fab-07f7-8507-093c8c18dd37&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Name&lt;/th&gt;
+&lt;th id=&quot;_d72a4cdd-5f19-6168-9010-d16b6d586941&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Description&lt;/th&gt;
+&lt;th id=&quot;_702fa3f5-e4ed-03aa-1113-7af551e789d8&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Code&lt;/th&gt;
+&lt;th id=&quot;_2c813dd5-0a20-1594-c90f-e65d74738f73&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Remarks&lt;/th&gt;</pre></td><td>2</td></tr>
+<tr class="severity2">
+<td>003076</td><th><code><a href='local/document.html#sec_12.2.3'>sec_​12.2.3</a></code></th><td>STANDOC_48</td>
+<td>(generic warning) Hanging paragraph in clause</td><td><pre>&lt;clause id=&quot;_6c41f320-ca38-891f-0597-e5a7058cf3be&quot; anchor=&quot;sec_12.2.3&quot; obligation=&quot;normative&quot;&gt;
+&lt;title id=&quot;_bd598642-2ef5-fc24-2fe7-e6ad456f5e3d&quot;&gt;S100_SupportFileDiscoveryMetadata&lt;/title&gt;
+&lt;table id=&quot;_517c213f-023c-1dd4-d00d-5c725b5624f2&quot; unnumbered=&quot;true&quot;&gt; &lt;thead&gt; &lt;tr id=&quot;_e1350c75-e429-be26-5b17-add0814a7484&quot;&gt; &lt;th id=&quot;_2faae5a5-5ada-fc6f-7a83-78c0e104d628&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Role Name&lt;/th&gt;
+&lt;th id=&quot;_a2ae03d2-9005-8fb2-aacc-a236a161e7d4&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Name&lt;/th&gt;
+&lt;th id=&quot;_052e978a-f822-de8a-92fb-e3b4369f7e47&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Description&lt;/th&gt;</pre></td><td>2</td></tr>
+<tr class="severity2">
+<td>003078</td><th><code><a href='local/document.html#_517c213f-023c-1dd4-d00d-5c725b5624f2'>_517c213f-023c-1dd4-d00d-5c725b5624f2</a></code></th><td>STANDOC_48</td>
+<td>(generic warning) Table should have title</td><td><pre>&lt;table id=&quot;_517c213f-023c-1dd4-d00d-5c725b5624f2&quot; unnumbered=&quot;true&quot;&gt; &lt;thead&gt; &lt;tr id=&quot;_e1350c75-e429-be26-5b17-add0814a7484&quot;&gt; &lt;th id=&quot;_2faae5a5-5ada-fc6f-7a83-78c0e104d628&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Role Name&lt;/th&gt;
+&lt;th id=&quot;_a2ae03d2-9005-8fb2-aacc-a236a161e7d4&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Name&lt;/th&gt;
+&lt;th id=&quot;_052e978a-f822-de8a-92fb-e3b4369f7e47&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Description&lt;/th&gt;
+&lt;th id=&quot;_93611efc-cd9e-a671-fec8-649c3a2877c7&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Mult.&lt;/th&gt;
+&lt;th id=&quot;_2f60f838-5ca6-8da0-7795-7aff5db78850&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Type&lt;/th&gt;</pre></td><td>2</td></tr>
+<tr class="severity2">
+<td>003260</td><th><code><a href='local/document.html#_044f63eb-0372-d6f9-a4f7-bc949823c9d5'>_044f63eb-0372-d6f9-a4f7-bc949823c9d5</a></code></th><td>STANDOC_48</td>
+<td>(generic warning) Table should have title</td><td><pre>&lt;table id=&quot;_044f63eb-0372-d6f9-a4f7-bc949823c9d5&quot; unnumbered=&quot;true&quot;&gt; &lt;thead&gt; &lt;tr id=&quot;_0b5b90db-48bd-3bfe-280f-3b79bb43efa3&quot;&gt; &lt;th id=&quot;_09906372-0bbf-a2b9-eee5-c689839dc702&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Role Name&lt;/th&gt;
+&lt;th id=&quot;_6d9a72c7-2357-0a30-9be2-a45903439d0c&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Name&lt;/th&gt;
+&lt;th id=&quot;_6a218614-a271-cc01-fdba-feae6b3e36b8&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Description&lt;/th&gt;
+&lt;th id=&quot;_83025017-659b-2c96-d660-8d3a34ca3c3b&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Code&lt;/th&gt;
+&lt;th id=&quot;_f43f9ef0-7866-e9bf-4685-f3c60c968968&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Remarks&lt;/th&gt;</pre></td><td>2</td></tr>
+<tr class="severity2">
+<td>003292</td><th><code><a href='local/document.html#_ce2bd723-3c6b-b1b2-775b-2d46a2fd8977'>_ce2bd723-3c6b-b1b2-775b-2d46a2fd8977</a></code></th><td>STANDOC_48</td>
+<td>(generic warning) Table should have title</td><td><pre>&lt;table id=&quot;_ce2bd723-3c6b-b1b2-775b-2d46a2fd8977&quot; unnumbered=&quot;true&quot;&gt; &lt;thead&gt; &lt;tr id=&quot;_310c6f81-74e2-5f37-65aa-de5bdfa0eb5d&quot;&gt; &lt;th id=&quot;_22e79661-2b0e-418b-74e1-a6ed6042b9a7&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Role Name&lt;/th&gt;
+&lt;th id=&quot;_3377eb96-8b27-8728-b470-6b3b5e1df25b&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Name&lt;/th&gt;
+&lt;th id=&quot;_c52c7ad6-0902-c540-a5c5-65a5d0a378a4&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Description&lt;/th&gt;
+&lt;th id=&quot;_e592629d-2367-4378-b1b2-06ba97577ec1&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Code&lt;/th&gt;
+&lt;th id=&quot;_b3f54edf-d9b8-4cd5-e50b-1eb6b8e470fc&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Remarks&lt;/th&gt;</pre></td><td>2</td></tr>
+<tr class="severity2">
+<td>003344</td><th><code><a href='local/document.html#_0d0e9f40-1ac3-ec31-c139-fe172db9eeaa'>_0d0e9f40-1ac3-ec31-c139-fe172db9eeaa</a></code></th><td>STANDOC_48</td>
+<td>(generic warning) Table should have title</td><td><pre>&lt;table id=&quot;_0d0e9f40-1ac3-ec31-c139-fe172db9eeaa&quot; unnumbered=&quot;true&quot;&gt; &lt;thead&gt; &lt;tr id=&quot;_c95a325e-506f-ff89-7f74-189c5edc30bc&quot;&gt; &lt;th id=&quot;_4adf37fb-6ed2-fb30-a775-d25163f5d9e8&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Role Name&lt;/th&gt;
+&lt;th id=&quot;_d55fa99a-cd04-e754-492e-dbde19787f10&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Name&lt;/th&gt;
+&lt;th id=&quot;_9a5444a6-80b9-4389-25b9-c925854b7e30&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Description&lt;/th&gt;
+&lt;th id=&quot;_38ded4c2-b530-3aba-f6e3-4bd03dfd1d19&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Mult&lt;/th&gt;
+&lt;th id=&quot;_494f4b1e-b5db-8f92-597c-28c626483fab&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Type&lt;/th&gt;</pre></td><td>2</td></tr>
+<tr class="severity2">
+<td>003399</td><th><code><a href='local/document.html#_f11dfd01-8793-b7d1-c5a3-dd21a944dc43'>_f11dfd01-8793-b7d1-c5a3-dd21a944dc43</a></code></th><td>STANDOC_48</td>
+<td>(generic warning) Table should have title</td><td><pre>&lt;table id=&quot;_f11dfd01-8793-b7d1-c5a3-dd21a944dc43&quot; unnumbered=&quot;true&quot;&gt; &lt;thead&gt; &lt;tr id=&quot;_f420bdc7-b3ea-e5f2-e9a2-a8a87dbf0e50&quot;&gt; &lt;th id=&quot;_dbc04a12-e8f5-e681-d24b-4068b8c92330&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Role Name&lt;/th&gt;
+&lt;th id=&quot;_fd16e179-26ec-f21d-8efa-a7ce973d6663&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Name&lt;/th&gt;
+&lt;th id=&quot;_495aa8bc-5e8d-27e3-f393-b7b0522b077d&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Description&lt;/th&gt;
+&lt;th id=&quot;_8e0a466f-d75e-4932-a3fb-7d8a1aa1d5f5&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Code&lt;/th&gt;
+&lt;th id=&quot;_0787ebb8-480d-89dd-cc33-39b7201bb613&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Remarks&lt;/th&gt;</pre></td><td>2</td></tr>
+<tr class="severity2">
+<td>003444</td><th><code><a href='local/document.html#sec_12.2.4'>sec_​12.2.4</a></code></th><td>STANDOC_48</td>
+<td>(generic warning) Hanging paragraph in clause</td><td><pre>&lt;clause id=&quot;_4d10d401-c552-db50-1e50-1ab329d8dcfa&quot; anchor=&quot;sec_12.2.4&quot; obligation=&quot;normative&quot;&gt;
+&lt;title id=&quot;_6bd11fb0-507b-4038-54e6-57dc490ec485&quot;&gt;S100_CatalogueDiscoveryMetadata&lt;/title&gt;
+&lt;p id=&quot;_12454f1c-7d2d-6908-2f77-ec669c50c614&quot;&gt;This is an optional element that allows for the delivery of S-412 Feature and Portrayal Catalogues within the Exchange Set.&lt;/p&gt;
 
-&lt;p id=&quot;_95dd35ba-0367-a13c-f8fe-7517b6eddfc5&quot;&gt;S-412 uses S100_ExchangeCatalogue without modification.&lt;/p&gt;</pre></td><td>2</td></tr>
+&lt;table id=&quot;_f9a8db93-4c74-d28a-9f61-92ddd406e006&quot; unnumbered=&quot;true&quot;&gt; &lt;thead&gt; &lt;tr id=&quot;_e53e9f61-e0bd-7b3b-5721-ad8ce515b291&quot;&gt; &lt;th id=&quot;_92d16c87-8b9b-96d9-1f83-70d76242f4cc&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Role Name&lt;/th&gt;</pre></td><td>2</td></tr>
 <tr class="severity2">
-<td>004190</td><th><code><a href='local/document.html#_8eda35b4-dc84-a32c-fba4-aa6496925816'>_8eda35b4-dc84-a32c-fba4-aa6496925816</a></code></th><td>STANDOC_48</td>
-<td>(generic warning) Hanging paragraph in clause</td><td><pre>&lt;clause id=&quot;_8eda35b4-dc84-a32c-fba4-aa6496925816&quot; obligation=&quot;normative&quot;&gt;
-&lt;title id=&quot;_73f5ba54-9e4d-8bf7-8270-b3bb7aaf0bb7&quot;&gt;S100_CatalogueDiscoveryMetadata&lt;/title&gt;
-&lt;p id=&quot;_a6240a8d-bbd1-809f-1aeb-31a3d1263375&quot;&gt;S-412 uses S100_CatalogueDiscoveryMetadata without modification.&lt;/p&gt;
-
-&lt;clause id=&quot;_c791d662-8f4f-0ce2-a0b4-e76fce6723f6&quot; obligation=&quot;normative&quot;&gt;</pre></td><td>2</td></tr>
+<td>003448</td><th><code><a href='local/document.html#_f9a8db93-4c74-d28a-9f61-92ddd406e006'>_f9a8db93-4c74-d28a-9f61-92ddd406e006</a></code></th><td>STANDOC_48</td>
+<td>(generic warning) Table should have title</td><td><pre>&lt;table id=&quot;_f9a8db93-4c74-d28a-9f61-92ddd406e006&quot; unnumbered=&quot;true&quot;&gt; &lt;thead&gt; &lt;tr id=&quot;_e53e9f61-e0bd-7b3b-5721-ad8ce515b291&quot;&gt; &lt;th id=&quot;_92d16c87-8b9b-96d9-1f83-70d76242f4cc&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Role Name&lt;/th&gt;
+&lt;th id=&quot;_77eccc84-e70f-d323-a414-f819e5239aee&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Name&lt;/th&gt;
+&lt;th id=&quot;_e50d40fe-2f3c-93a7-410b-75cd695f554e&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Description&lt;/th&gt;
+&lt;th id=&quot;_805a92e2-c4f8-5a7d-ab61-6c6f9e228582&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Mult&lt;/th&gt;
+&lt;th id=&quot;_511b9554-35c8-deb5-6ab3-c630ce94edde&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Type&lt;/th&gt;</pre></td><td>2</td></tr>
 <tr class="severity2">
-<td>004217</td><th><code><a href='local/document.html#sec-datasets'>sec-datasets</a></code></th><td>STANDOC_48</td>
+<td>003606</td><th><code><a href='local/document.html#_d98544cd-e266-dcba-ede5-65579b46e7ce'>_d98544cd-e266-dcba-ede5-65579b46e7ce</a></code></th><td>STANDOC_48</td>
+<td>(generic warning) Table should have title</td><td><pre>&lt;table id=&quot;_d98544cd-e266-dcba-ede5-65579b46e7ce&quot; unnumbered=&quot;true&quot;&gt; &lt;thead&gt; &lt;tr id=&quot;_8399a534-4cf5-cb8d-28e8-94e64af44255&quot;&gt; &lt;th id=&quot;_bfe2a9c3-afc4-a0aa-3c07-987fecfca076&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Role Name&lt;/th&gt;
+&lt;th id=&quot;_670a99e0-faef-7d06-f3bc-7d4c6c51f7ff&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Name&lt;/th&gt;
+&lt;th id=&quot;_8205b343-9d96-5cb7-13fd-e4ebcdf5b742&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Description&lt;/th&gt;
+&lt;th id=&quot;_e90b8dd6-ab73-abd2-5df8-d94d9a1adb56&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Code&lt;/th&gt;
+&lt;th id=&quot;_037b51e1-02fa-0897-ac8b-8985dd5707d3&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Remarks&lt;/th&gt;</pre></td><td>2</td></tr>
+<tr class="severity2">
+<td>003647</td><th><code><a href='local/document.html#_654385bd-bcd3-2250-9c4a-697b53303773'>_654385bd-bcd3-2250-9c4a-697b53303773</a></code></th><td>STANDOC_48</td>
+<td>(generic warning) Table should have title</td><td><pre>&lt;table id=&quot;_654385bd-bcd3-2250-9c4a-697b53303773&quot; unnumbered=&quot;true&quot;&gt; &lt;thead&gt; &lt;tr id=&quot;_ffa0ee32-9705-bdbc-e47e-48ffb85e3750&quot;&gt; &lt;th id=&quot;_0a79ed70-7675-4350-9b01-975ee1def9ee&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Role Name&lt;/th&gt;
+&lt;th id=&quot;_9fdab622-93ee-6f59-f809-a3d4e09aa1f3&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Name&lt;/th&gt;
+&lt;th id=&quot;_db854400-b915-a7be-41e8-f9779379bd7e&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Description&lt;/th&gt;
+&lt;th id=&quot;_dbae91e7-7c5c-358d-67d0-3b2c1e6fd52b&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Mult&lt;/th&gt;
+&lt;th id=&quot;_1d5d9ea5-01e0-b67f-79b8-519c3446fbbc&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Type&lt;/th&gt;</pre></td><td>2</td></tr>
+<tr class="severity2">
+<td>003716</td><th><code><a href='local/document.html#_ddf2d331-c241-f1fa-f93e-1d064c20a546'>_ddf2d331-c241-f1fa-f93e-1d064c20a546</a></code></th><td>STANDOC_48</td>
+<td>(generic warning) Table should have title</td><td><pre>&lt;table id=&quot;_ddf2d331-c241-f1fa-f93e-1d064c20a546&quot; unnumbered=&quot;true&quot;&gt; &lt;thead&gt; &lt;tr id=&quot;_369e3693-7a24-6c8c-d8d7-c1dba76ef36d&quot;&gt; &lt;th id=&quot;_69c4a721-77c2-1865-ba6c-970fae3e4bc8&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Role Name&lt;/th&gt;
+&lt;th id=&quot;_766c00c1-4e41-f8fb-4efe-cff60619d2a7&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Name&lt;/th&gt;
+&lt;th id=&quot;_cdf1ebfc-dcfc-91e2-7416-78622b0eabea&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Description&lt;/th&gt;
+&lt;th id=&quot;_6160957e-d6f8-fd7e-c9b1-1db0a95f5ef5&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Code&lt;/th&gt;
+&lt;th id=&quot;_dbda5656-2af7-3610-dcbe-284b3fab4fc2&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Remarks&lt;/th&gt;</pre></td><td>2</td></tr>
+<tr class="severity2">
+<td>003758</td><th><code><a href='local/document.html#_9786387d-de68-c240-7154-a4d959993065'>_9786387d-de68-c240-7154-a4d959993065</a></code></th><td>STANDOC_48</td>
+<td>(generic warning) Table should have title</td><td><pre>&lt;table id=&quot;_9786387d-de68-c240-7154-a4d959993065&quot; unnumbered=&quot;true&quot;&gt; &lt;thead&gt; &lt;tr id=&quot;_ce31a166-bc13-1bc8-7863-a963f7f29235&quot;&gt; &lt;th id=&quot;_b285aac6-5192-d6f3-cc1b-04f077e628aa&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Role Name&lt;/th&gt;
+&lt;th id=&quot;_8db5d598-a691-c10b-e3b6-6df8b1575786&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Name&lt;/th&gt;
+&lt;th id=&quot;_f27dfdd1-db6b-fd83-db91-40ecc220ec24&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Description&lt;/th&gt;
+&lt;th id=&quot;_5cd460ec-ce27-76d5-e228-594202301405&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Mult&lt;/th&gt;
+&lt;th id=&quot;_bdc1e77e-4128-02b7-88b5-1bc0547f4df2&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Type&lt;/th&gt;</pre></td><td>2</td></tr>
+<tr class="severity2">
+<td>003823</td><th><code><a href='local/document.html#_68877d38-26ee-4338-4d43-2aaf887dff2d'>_68877d38-26ee-4338-4d43-2aaf887dff2d</a></code></th><td>STANDOC_48</td>
+<td>(generic warning) Table should have title</td><td><pre>&lt;table id=&quot;_68877d38-26ee-4338-4d43-2aaf887dff2d&quot; unnumbered=&quot;true&quot;&gt; &lt;thead&gt; &lt;tr id=&quot;_dd16f68d-41d6-23d3-0206-e92af1060a50&quot;&gt; &lt;th id=&quot;_42beb951-bf6a-3960-7265-8de35a925350&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Role Name&lt;/th&gt;
+&lt;th id=&quot;_97a46058-0fa6-f355-56cc-2f3499fbd598&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Name&lt;/th&gt;
+&lt;th id=&quot;_9ee798a1-af33-22a5-5fee-736de68742c1&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Description&lt;/th&gt;
+&lt;th id=&quot;_0f845eb2-d4c8-a5ab-cd6c-84964f986ea6&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Mult&lt;/th&gt;
+&lt;th id=&quot;_dec9c08d-4edd-11a2-a0a4-e4fed410e921&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Type&lt;/th&gt;</pre></td><td>2</td></tr>
+<tr class="severity2">
+<td>003898</td><th><code><a href='local/document.html#_7bf43eae-d6ba-53db-3da3-9b93eb37404b'>_7bf43eae-d6ba-53db-3da3-9b93eb37404b</a></code></th><td>STANDOC_48</td>
+<td>(generic warning) Table should have title</td><td><pre>&lt;table id=&quot;_7bf43eae-d6ba-53db-3da3-9b93eb37404b&quot; unnumbered=&quot;true&quot;&gt; &lt;thead&gt; &lt;tr id=&quot;_3cc89b78-915e-0a67-f853-2fcbad0d33a8&quot;&gt; &lt;th id=&quot;_d651e2c5-5bd9-7f7e-8b2a-eb1ef87d8a4b&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Role Name&lt;/th&gt;
+&lt;th id=&quot;_1c1adf0e-4f85-c3ff-cd76-ef0b44e4fe84&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Name&lt;/th&gt;
+&lt;th id=&quot;_816f53e6-d5e2-76d3-89ce-a99749e352d7&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Description&lt;/th&gt;
+&lt;th id=&quot;_948d8818-ab9d-cbbf-8567-7e58a284171a&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Mult&lt;/th&gt;
+&lt;th id=&quot;_d46a4734-17c0-8b86-edd0-cdbf3b193bc0&quot; valign=&quot;top&quot; align=&quot;left&quot;&gt;Type&lt;/th&gt;</pre></td><td>2</td></tr>
+<tr class="severity2">
+<td>003964</td><th><code><a href='local/document.html#sec-datasets'>sec-datasets</a></code></th><td>STANDOC_48</td>
 <td>(generic warning) Hanging paragraph in clause</td><td><pre>&lt;clause id=&quot;_9f9bff80-f41b-50d8-3d24-f018a7fe13cf&quot; anchor=&quot;sec-datasets&quot; obligation=&quot;normative&quot;&gt;
 &lt;title id=&quot;_6fc203cd-78c3-541f-3dca-800ccf921ced&quot;&gt;Dataset Encoding&lt;/title&gt;
 &lt;p id=&quot;_0035638b-75dd-04ef-bbe3-5cf8724f3c6c&quot;&gt; &lt;span class=&quot;fmt-hi&quot;&gt;WMO to consider if this section should be removed:&lt;/span&gt; &lt;/p&gt;
@@ -354,29 +456,35 @@ https://www.metanorma.org/author/iso/topics/markup/#bibliographies : Test Sectio
 <th width="20%">Message</th><th width="40%">Context</th><th width="5%">Severity</th></thead>
 <tbody>
 <tr class="severity1">
+<td></td><th><code><a href='local/document.html#_0224e220-029c-bac2-4d31-aa92a4a2c31a'>_0224e220-029c-bac2-4d31-aa92a4a2c31a</a></code></th><td>ISODOC_1</td>
+<td>Anchor ISO_​10646_1 pointed to by fmt-xref is not defined in the document</td><td><pre>&lt;fmt-xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;ISO_10646_1&quot;&gt;[ISO_10646_1]&lt;/fmt-xref&gt;</pre></td><td>1</td></tr>
+<tr class="severity1">
 <td></td><th><code><a href='local/document.html#_0a8c3060-f7be-d680-23f4-86e33fa46505'>_0a8c3060-f7be-d680-23f4-86e33fa46505</a></code></th><td>ISODOC_1</td>
 <td>Anchor iho-s100 pointed to by fmt-xref is not defined in the document</td><td><pre>&lt;fmt-xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iho-s100&quot;&gt;part=17&lt;/fmt-xref&gt;</pre></td><td>1</td></tr>
 <tr class="severity1">
-<td></td><th><code><a href='local/document.html#_11d0dff8-fc21-9d3f-7e3f-896cef24721d'>_11d0dff8-fc21-9d3f-7e3f-896cef24721d</a></code></th><td>ISODOC_1</td>
-<td>Anchor iho-s100 pointed to by fmt-xref is not defined in the document</td><td><pre>&lt;fmt-xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iho-s100&quot;&gt;part=15,clause=8.11.1&lt;/fmt-xref&gt;</pre></td><td>1</td></tr>
+<td></td><th><code><a href='local/document.html#_1a29bead-79a4-b6a7-e15b-ed297e17da64'>_1a29bead-79a4-b6a7-e15b-ed297e17da64</a></code></th><td>ISODOC_1</td>
+<td>Anchor ISO_​19115_1 pointed to by fmt-xref is not defined in the document</td><td><pre>&lt;fmt-xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;ISO_19115_1&quot;&gt;[ISO_19115_1]&lt;/fmt-xref&gt;</pre></td><td>1</td></tr>
 <tr class="severity1">
-<td></td><th><code><a href='local/document.html#_11d0dff8-fc21-9d3f-7e3f-896cef24721d'>_11d0dff8-fc21-9d3f-7e3f-896cef24721d</a></code></th><td>ISODOC_1</td>
-<td>Anchor iho-s100 pointed to by fmt-xref is not defined in the document</td><td><pre>&lt;fmt-xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iho-s100&quot;&gt;part=15,clause=8.11.7&lt;/fmt-xref&gt;</pre></td><td>1</td></tr>
+<td></td><th><code><a href='local/document.html#_2b8bba7b-2c73-2674-9d3c-edf76d107789'>_2b8bba7b-2c73-2674-9d3c-edf76d107789</a></code></th><td>ISODOC_1</td>
+<td>Anchor ISO_​19115_1 pointed to by fmt-xref is not defined in the document</td><td><pre>&lt;fmt-xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;ISO_19115_1&quot;&gt;[ISO_19115_1]&lt;/fmt-xref&gt;</pre></td><td>1</td></tr>
 <tr class="severity1">
-<td></td><th><code><a href='local/document.html#_11d0dff8-fc21-9d3f-7e3f-896cef24721d'>_11d0dff8-fc21-9d3f-7e3f-896cef24721d</a></code></th><td>ISODOC_1</td>
-<td>Anchor iho-s100 pointed to by fmt-xref is not defined in the document</td><td><pre>&lt;fmt-xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iho-s100&quot;&gt;part=15&lt;/fmt-xref&gt;</pre></td><td>1</td></tr>
+<td></td><th><code><a href='local/document.html#_3204e312-accb-6a69-2c27-7d12a003f44b'>_3204e312-accb-6a69-2c27-7d12a003f44b</a></code></th><td>ISODOC_1</td>
+<td>Anchor ISO_​19115_1 pointed to by fmt-xref is not defined in the document</td><td><pre>&lt;fmt-xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;ISO_19115_1&quot;&gt;[ISO_19115_1]&lt;/fmt-xref&gt;</pre></td><td>1</td></tr>
 <tr class="severity1">
-<td></td><th><code><a href='local/document.html#_1859e7d0-7110-abfb-f491-3c37733a03ef'>_1859e7d0-7110-abfb-f491-3c37733a03ef</a></code></th><td>ISODOC_1</td>
-<td>Anchor iho-s100 pointed to by fmt-xref is not defined in the document</td><td><pre>&lt;fmt-xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iho-s100&quot;&gt;part=17&lt;/fmt-xref&gt;</pre></td><td>1</td></tr>
+<td></td><th><code><a href='local/document.html#_3626c8cc-4315-78f7-e414-ce9e25ccd717'>_3626c8cc-4315-78f7-e414-ce9e25ccd717</a></code></th><td>ISODOC_1</td>
+<td>Anchor sec_13 pointed to by fmt-xref is not defined in the document</td><td><pre>&lt;fmt-xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;sec_13&quot;&gt;[sec_13]&lt;/fmt-xref&gt;</pre></td><td>1</td></tr>
 <tr class="severity1">
-<td></td><th><code><a href='local/document.html#_4a055d29-f3f8-2521-27af-c9b14e379880'>_4a055d29-f3f8-2521-27af-c9b14e379880</a></code></th><td>ISODOC_1</td>
-<td>Anchor iho-s100 pointed to by fmt-xref is not defined in the document</td><td><pre>&lt;fmt-xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iho-s100&quot;&gt;part=15&lt;/fmt-xref&gt;</pre></td><td>1</td></tr>
+<td></td><th><code><a href='local/document.html#_3626c8cc-4315-78f7-e414-ce9e25ccd717'>_3626c8cc-4315-78f7-e414-ce9e25ccd717</a></code></th><td>ISODOC_1</td>
+<td>Anchor sec_13.1 pointed to by fmt-xref is not defined in the document</td><td><pre>&lt;fmt-xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;sec_13.1&quot;&gt;[sec_13.1]&lt;/fmt-xref&gt;</pre></td><td>1</td></tr>
 <tr class="severity1">
 <td></td><th><code><a href='local/document.html#_4a08dafc-8d93-4033-0432-8f2f01b69075'>_4a08dafc-8d93-4033-0432-8f2f01b69075</a></code></th><td>ISODOC_1</td>
 <td>Anchor iso-19115-1 pointed to by fmt-xref is not defined in the document</td><td><pre>&lt;fmt-xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iso-19115-1&quot;&gt;[iso-19115-1]&lt;/fmt-xref&gt;</pre></td><td>1</td></tr>
 <tr class="severity1">
-<td></td><th><code><a href='local/document.html#_4e361fe3-a5ef-a4bc-ecd1-b5825a42ed29'>_4e361fe3-a5ef-a4bc-ecd1-b5825a42ed29</a></code></th><td>ISODOC_1</td>
-<td>Anchor iho-s100 pointed to by fmt-xref is not defined in the document</td><td><pre>&lt;fmt-xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iho-s100&quot;&gt;part=3,clause=10&lt;/fmt-xref&gt;</pre></td><td>1</td></tr>
+<td></td><th><code><a href='local/document.html#_6a871356-fcb1-834f-c995-4909c454812f'>_6a871356-fcb1-834f-c995-4909c454812f</a></code></th><td>ISODOC_1</td>
+<td>Anchor ISO_​19115_1 pointed to by fmt-xref is not defined in the document</td><td><pre>&lt;fmt-xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;ISO_19115_1&quot;&gt;[ISO_19115_1]&lt;/fmt-xref&gt;</pre></td><td>1</td></tr>
+<tr class="severity1">
+<td></td><th><code><a href='local/document.html#_6a9c81cc-5162-254a-48b2-ded476474b18'>_6a9c81cc-5162-254a-48b2-ded476474b18</a></code></th><td>ISODOC_1</td>
+<td>Anchor ISO_​19115_1 pointed to by fmt-xref is not defined in the document</td><td><pre>&lt;fmt-xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;ISO_19115_1&quot;&gt;[ISO_19115_1]&lt;/fmt-xref&gt;</pre></td><td>1</td></tr>
 <tr class="severity1">
 <td></td><th><code><a href='local/document.html#_6af691b6-ceca-468c-a6e3-2bffaabdfd52'>_6af691b6-ceca-468c-a6e3-2bffaabdfd52</a></code></th><td>ISODOC_1</td>
 <td>Anchor iho-s100 pointed to by fmt-xref is not defined in the document</td><td><pre>&lt;fmt-xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iho-s100&quot;&gt;part=10b&lt;/fmt-xref&gt;</pre></td><td>1</td></tr>
@@ -384,88 +492,88 @@ https://www.metanorma.org/author/iso/topics/markup/#bibliographies : Test Sectio
 <td></td><th><code><a href='local/document.html#_708d85c3-bfed-afd7-18fd-c82246fdb182'>_708d85c3-bfed-afd7-18fd-c82246fdb182</a></code></th><td>ISODOC_1</td>
 <td>Anchor iso-8601 pointed to by fmt-xref is not defined in the document</td><td><pre>&lt;fmt-xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iso-8601&quot;&gt;clause=5.4.4&lt;/fmt-xref&gt;</pre></td><td>1</td></tr>
 <tr class="severity1">
-<td></td><th><code><a href='local/document.html#_7917500c-fad1-8365-aaa2-0894c39eb0ae'>_7917500c-fad1-8365-aaa2-0894c39eb0ae</a></code></th><td>ISODOC_1</td>
-<td>Anchor iho-s100 pointed to by fmt-xref is not defined in the document</td><td><pre>&lt;fmt-xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iho-s100&quot;&gt;part=15,clause=8.8&lt;/fmt-xref&gt;</pre></td><td>1</td></tr>
-<tr class="severity1">
-<td></td><th><code><a href='local/document.html#_7917500c-fad1-8365-aaa2-0894c39eb0ae'>_7917500c-fad1-8365-aaa2-0894c39eb0ae</a></code></th><td>ISODOC_1</td>
-<td>Anchor iho-s100 pointed to by fmt-xref is not defined in the document</td><td><pre>&lt;fmt-xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iho-s100&quot;&gt;part=17&lt;/fmt-xref&gt;</pre></td><td>1</td></tr>
-<tr class="severity1">
-<td></td><th><code><a href='local/document.html#_9c7beb06-d613-1cfb-f132-3458207a8db2'>_9c7beb06-d613-1cfb-f132-3458207a8db2</a></code></th><td>ISODOC_1</td>
-<td>Anchor iho-s100 pointed to by fmt-xref is not defined in the document</td><td><pre>&lt;fmt-xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iho-s100&quot;&gt;part=15,clause=15-8.11.3&lt;/fmt-xref&gt;</pre></td><td>1</td></tr>
+<td></td><th><code><a href='local/document.html#_ae5416ac-16ac-7ace-76b3-5392faf6dc68'>_ae5416ac-16ac-7ace-76b3-5392faf6dc68</a></code></th><td>ISODOC_1</td>
+<td>Anchor ISO_​19115_1 pointed to by fmt-xref is not defined in the document</td><td><pre>&lt;fmt-xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;ISO_19115_1&quot;&gt;[ISO_19115_1]&lt;/fmt-xref&gt;</pre></td><td>1</td></tr>
 <tr class="severity1">
 <td></td><th><code><a href='local/document.html#_b45be86e-c4ea-559f-ad56-28384eda6613'>_b45be86e-c4ea-559f-ad56-28384eda6613</a></code></th><td>ISODOC_1</td>
 <td>Anchor iho-s100 pointed to by fmt-xref is not defined in the document</td><td><pre>&lt;fmt-xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iho-s100&quot;&gt;part=15&lt;/fmt-xref&gt;</pre></td><td>1</td></tr>
 <tr class="severity1">
+<td></td><th><code><a href='local/document.html#_b6058f87-b264-b41f-3218-5a4d6c7988e2'>_b6058f87-b264-b41f-3218-5a4d6c7988e2</a></code></th><td>ISODOC_1</td>
+<td>Anchor ISO_​19115_1 pointed to by fmt-xref is not defined in the document</td><td><pre>&lt;fmt-xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;ISO_19115_1&quot;&gt;[ISO_19115_1]&lt;/fmt-xref&gt;</pre></td><td>1</td></tr>
+<tr class="severity1">
 <td></td><th><code><a href='local/document.html#_b6aa7438-38fa-118b-8daf-2e846a9b17de'>_b6aa7438-38fa-118b-8daf-2e846a9b17de</a></code></th><td>ISODOC_1</td>
 <td>Anchor iho-s100 pointed to by fmt-xref is not defined in the document</td><td><pre>&lt;fmt-xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iho-s100&quot;&gt;part=15&lt;/fmt-xref&gt;</pre></td><td>1</td></tr>
-<tr class="severity1">
-<td></td><th><code><a href='local/document.html#_c0fe1cf3-1074-e2cf-2fcd-fc89389eeb66'>_c0fe1cf3-1074-e2cf-2fcd-fc89389eeb66</a></code></th><td>ISODOC_1</td>
-<td>Anchor iso-19115-1 pointed to by fmt-xref is not defined in the document</td><td><pre>&lt;fmt-xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iso-19115-1&quot;&gt;[iso-19115-1]&lt;/fmt-xref&gt;</pre></td><td>1</td></tr>
 <tr class="severity1">
 <td></td><th><code><a href='local/document.html#_d71ff0e0-89b1-00d6-333d-b82d30bcc5cb'>_d71ff0e0-89b1-00d6-333d-b82d30bcc5cb</a></code></th><td>ISODOC_1</td>
 <td>Anchor iho-s100 pointed to by fmt-xref is not defined in the document</td><td><pre>&lt;fmt-xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iho-s100&quot;&gt;part=17,clause=4.3&lt;/fmt-xref&gt;</pre></td><td>1</td></tr>
 <tr class="severity1">
-<td></td><th><code><a href='local/document.html#_e776a9ba-93b1-daef-2e72-947a69deaa50'>_e776a9ba-93b1-daef-2e72-947a69deaa50</a></code></th><td>ISODOC_1</td>
-<td>Anchor iho-s100 pointed to by fmt-xref is not defined in the document</td><td><pre>&lt;fmt-xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iho-s100&quot;&gt;part=10b&lt;/fmt-xref&gt;</pre></td><td>1</td></tr>
-<tr class="severity1">
 <td></td><th><code><a href='local/document.html#_eebe4f38-6dd6-2f8b-64c2-617b1921a9f6'>_eebe4f38-6dd6-2f8b-64c2-617b1921a9f6</a></code></th><td>ISODOC_1</td>
 <td>Anchor iho-s100 pointed to by fmt-xref is not defined in the document</td><td><pre>&lt;fmt-xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iho-s100&quot;&gt;part=15,clause=5.2&lt;/fmt-xref&gt;</pre></td><td>1</td></tr>
 <tr class="severity1">
-<td>001420</td><th><code><a href='local/document.html#_cc30c362-0ad0-48fe-8e9d-e2ff436cf5a8'>_cc30c362-0ad0-48fe-8e9d-e2ff436cf5a8</a></code></th><td>ISODOC_1</td>
-<td>Anchor iso-19115-1 pointed to by xref is not defined in the document</td><td><pre>&lt;xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iso-19115-1&quot; id=&quot;_cc30c362-0ad0-48fe-8e9d-e2ff436cf5a8&quot;/&gt;</pre></td><td>1</td></tr>
+<td></td><th><code><a href='local/document.html#_f1be0167-a427-55d5-dedb-beb864e98222'>_f1be0167-a427-55d5-dedb-beb864e98222</a></code></th><td>ISODOC_1</td>
+<td>Anchor sec-metadata pointed to by fmt-xref is not defined in the document</td><td><pre>&lt;fmt-xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;sec-metadata&quot;&gt;[sec-metadata]&lt;/fmt-xref&gt;</pre></td><td>1</td></tr>
 <tr class="severity1">
-<td>001443</td><th><code><a href='local/document.html#_8fe4d507-0b31-4509-b37b-721d3f7342ae'>_8fe4d507-0b31-4509-b37b-721d3f7342ae</a></code></th><td>ISODOC_1</td>
-<td>Anchor iso-8601 pointed to by xref is not defined in the document</td><td><pre>&lt;xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iso-8601&quot; id=&quot;_8fe4d507-0b31-4509-b37b-721d3f7342ae&quot;&gt;clause=5.4.4&lt;/xref&gt;</pre></td><td>1</td></tr>
+<td></td><th><code><a href='local/document.html#_fea45ef9-10f6-c981-7d02-fc303828d7a8'>_fea45ef9-10f6-c981-7d02-fc303828d7a8</a></code></th><td>ISODOC_1</td>
+<td>Anchor ISO_​19115_1 pointed to by fmt-xref is not defined in the document</td><td><pre>&lt;fmt-xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;ISO_19115_1&quot;&gt;[ISO_19115_1]&lt;/fmt-xref&gt;</pre></td><td>1</td></tr>
 <tr class="severity1">
-<td>001859</td><th><code><a href='local/document.html#_ad4fcedd-cc9f-461e-9284-9dbf68470eaa'>_ad4fcedd-cc9f-461e-9284-9dbf68470eaa</a></code></th><td>ISODOC_1</td>
-<td>Anchor iho-s100 pointed to by xref is not defined in the document</td><td><pre>&lt;xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iho-s100&quot; id=&quot;_ad4fcedd-cc9f-461e-9284-9dbf68470eaa&quot;&gt;part=17,clause=4.3&lt;/xref&gt;</pre></td><td>1</td></tr>
+<td>001420</td><th><code><a href='local/document.html#_4edd3445-c191-4b59-91b5-182ffdd685ba'>_4edd3445-c191-4b59-91b5-182ffdd685ba</a></code></th><td>ISODOC_1</td>
+<td>Anchor iso-19115-1 pointed to by xref is not defined in the document</td><td><pre>&lt;xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iso-19115-1&quot; id=&quot;_4edd3445-c191-4b59-91b5-182ffdd685ba&quot;/&gt;</pre></td><td>1</td></tr>
 <tr class="severity1">
-<td>001872</td><th><code><a href='local/document.html#_b9f6bf1b-0951-4bce-99d7-15671009bed9'>_b9f6bf1b-0951-4bce-99d7-15671009bed9</a></code></th><td>ISODOC_1</td>
-<td>Anchor iho-s100 pointed to by xref is not defined in the document</td><td><pre>&lt;xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iho-s100&quot; id=&quot;_b9f6bf1b-0951-4bce-99d7-15671009bed9&quot;&gt;part=10b&lt;/xref&gt;</pre></td><td>1</td></tr>
+<td>001443</td><th><code><a href='local/document.html#_533158d9-41e5-41ae-8c05-0ad68739641d'>_533158d9-41e5-41ae-8c05-0ad68739641d</a></code></th><td>ISODOC_1</td>
+<td>Anchor iso-8601 pointed to by xref is not defined in the document</td><td><pre>&lt;xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iso-8601&quot; id=&quot;_533158d9-41e5-41ae-8c05-0ad68739641d&quot;&gt;clause=5.4.4&lt;/xref&gt;</pre></td><td>1</td></tr>
 <tr class="severity1">
-<td>001930</td><th><code><a href='local/document.html#_b519c05f-1f03-42eb-b45d-8efd5760fc1f'>_b519c05f-1f03-42eb-b45d-8efd5760fc1f</a></code></th><td>ISODOC_1</td>
-<td>Anchor iho-s100 pointed to by xref is not defined in the document</td><td><pre>&lt;xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iho-s100&quot; id=&quot;_b519c05f-1f03-42eb-b45d-8efd5760fc1f&quot;&gt;part=15&lt;/xref&gt;</pre></td><td>1</td></tr>
+<td>001810</td><th><code><a href='local/document.html#_f48d5992-76aa-4371-a3d2-d0f75cc57342'>_f48d5992-76aa-4371-a3d2-d0f75cc57342</a></code></th><td>ISODOC_1</td>
+<td>Anchor sec-metadata pointed to by xref is not defined in the document</td><td><pre>&lt;xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;sec-metadata&quot; id=&quot;_f48d5992-76aa-4371-a3d2-d0f75cc57342&quot;/&gt;</pre></td><td>1</td></tr>
 <tr class="severity1">
-<td>001964</td><th><code><a href='local/document.html#_8948bb51-44c0-469c-bb0e-4dbb303e24d5'>_8948bb51-44c0-469c-bb0e-4dbb303e24d5</a></code></th><td>ISODOC_1</td>
-<td>Anchor iho-s100 pointed to by xref is not defined in the document</td><td><pre>&lt;xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iho-s100&quot; id=&quot;_8948bb51-44c0-469c-bb0e-4dbb303e24d5&quot;&gt;part=15,clause=5.2&lt;/xref&gt;</pre></td><td>1</td></tr>
+<td>001859</td><th><code><a href='local/document.html#_789edafc-54b9-4d41-a20c-8f536fb8d75f'>_789edafc-54b9-4d41-a20c-8f536fb8d75f</a></code></th><td>ISODOC_1</td>
+<td>Anchor iho-s100 pointed to by xref is not defined in the document</td><td><pre>&lt;xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iho-s100&quot; id=&quot;_789edafc-54b9-4d41-a20c-8f536fb8d75f&quot;&gt;part=17,clause=4.3&lt;/xref&gt;</pre></td><td>1</td></tr>
 <tr class="severity1">
-<td>001969</td><th><code><a href='local/document.html#_65077228-57f9-4138-abd5-178872d7e7d0'>_65077228-57f9-4138-abd5-178872d7e7d0</a></code></th><td>ISODOC_1</td>
-<td>Anchor iho-s100 pointed to by xref is not defined in the document</td><td><pre>&lt;xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iho-s100&quot; id=&quot;_65077228-57f9-4138-abd5-178872d7e7d0&quot;&gt;part=15&lt;/xref&gt;</pre></td><td>1</td></tr>
+<td>001872</td><th><code><a href='local/document.html#_14d55667-2160-47d8-8fd9-c3907e9868cc'>_14d55667-2160-47d8-8fd9-c3907e9868cc</a></code></th><td>ISODOC_1</td>
+<td>Anchor iho-s100 pointed to by xref is not defined in the document</td><td><pre>&lt;xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iho-s100&quot; id=&quot;_14d55667-2160-47d8-8fd9-c3907e9868cc&quot;&gt;part=10b&lt;/xref&gt;</pre></td><td>1</td></tr>
 <tr class="severity1">
-<td>001971</td><th><code><a href='local/document.html#_bc39d49b-1493-4517-b22f-82dcf0fcff80'>_bc39d49b-1493-4517-b22f-82dcf0fcff80</a></code></th><td>ISODOC_1</td>
-<td>Anchor iho-s100 pointed to by xref is not defined in the document</td><td><pre>&lt;xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iho-s100&quot; id=&quot;_bc39d49b-1493-4517-b22f-82dcf0fcff80&quot;&gt;part=17&lt;/xref&gt;</pre></td><td>1</td></tr>
+<td>001930</td><th><code><a href='local/document.html#_aa5355ef-f148-43f8-aea9-d5ee4f0636f6'>_aa5355ef-f148-43f8-aea9-d5ee4f0636f6</a></code></th><td>ISODOC_1</td>
+<td>Anchor iho-s100 pointed to by xref is not defined in the document</td><td><pre>&lt;xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iho-s100&quot; id=&quot;_aa5355ef-f148-43f8-aea9-d5ee4f0636f6&quot;&gt;part=15&lt;/xref&gt;</pre></td><td>1</td></tr>
 <tr class="severity1">
-<td>002129</td><th><code><a href='local/document.html#_00a540e3-8207-457d-8a02-dea01b365482'>_00a540e3-8207-457d-8a02-dea01b365482</a></code></th><td>ISODOC_1</td>
-<td>Anchor iho-s100 pointed to by xref is not defined in the document</td><td><pre>&lt;xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iho-s100&quot; id=&quot;_00a540e3-8207-457d-8a02-dea01b365482&quot;&gt;part=3,clause=10&lt;/xref&gt;</pre></td><td>1</td></tr>
+<td>001964</td><th><code><a href='local/document.html#_55fa6288-39e4-4367-a9ad-1cc2864bf78e'>_55fa6288-39e4-4367-a9ad-1cc2864bf78e</a></code></th><td>ISODOC_1</td>
+<td>Anchor iho-s100 pointed to by xref is not defined in the document</td><td><pre>&lt;xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iho-s100&quot; id=&quot;_55fa6288-39e4-4367-a9ad-1cc2864bf78e&quot;&gt;part=15,clause=5.2&lt;/xref&gt;</pre></td><td>1</td></tr>
 <tr class="severity1">
-<td>003877</td><th><code><a href='local/document.html#_6d13631e-bc0b-49b7-8094-65abf97e0474'>_6d13631e-bc0b-49b7-8094-65abf97e0474</a></code></th><td>ISODOC_1</td>
-<td>Anchor iho-s100 pointed to by xref is not defined in the document</td><td><pre>&lt;xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iho-s100&quot; id=&quot;_6d13631e-bc0b-49b7-8094-65abf97e0474&quot;&gt;part=17&lt;/xref&gt;</pre></td><td>1</td></tr>
+<td>001969</td><th><code><a href='local/document.html#_df7e3ee4-d44e-48a2-b64d-410c0182973c'>_df7e3ee4-d44e-48a2-b64d-410c0182973c</a></code></th><td>ISODOC_1</td>
+<td>Anchor iho-s100 pointed to by xref is not defined in the document</td><td><pre>&lt;xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iho-s100&quot; id=&quot;_df7e3ee4-d44e-48a2-b64d-410c0182973c&quot;&gt;part=15&lt;/xref&gt;</pre></td><td>1</td></tr>
 <tr class="severity1">
-<td>004085</td><th><code><a href='local/document.html#_0b54674b-dbd8-48c1-8abe-f5675713d456'>_0b54674b-dbd8-48c1-8abe-f5675713d456</a></code></th><td>ISODOC_1</td>
-<td>Anchor iho-s100 pointed to by xref is not defined in the document</td><td><pre>&lt;xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iho-s100&quot; id=&quot;_0b54674b-dbd8-48c1-8abe-f5675713d456&quot;&gt;part=10b&lt;/xref&gt;</pre></td><td>1</td></tr>
+<td>001971</td><th><code><a href='local/document.html#_a731efeb-bfc6-4ee7-bf5d-8d6dd6ea81ed'>_a731efeb-bfc6-4ee7-bf5d-8d6dd6ea81ed</a></code></th><td>ISODOC_1</td>
+<td>Anchor iho-s100 pointed to by xref is not defined in the document</td><td><pre>&lt;xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iho-s100&quot; id=&quot;_a731efeb-bfc6-4ee7-bf5d-8d6dd6ea81ed&quot;&gt;part=17&lt;/xref&gt;</pre></td><td>1</td></tr>
 <tr class="severity1">
-<td>004201</td><th><code><a href='local/document.html#_68e77073-f0a2-41bd-8bc6-f81166c5d024'>_68e77073-f0a2-41bd-8bc6-f81166c5d024</a></code></th><td>ISODOC_1</td>
-<td>Anchor iso-19115-1 pointed to by xref is not defined in the document</td><td><pre>&lt;xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iso-19115-1&quot; id=&quot;_68e77073-f0a2-41bd-8bc6-f81166c5d024&quot;/&gt;</pre></td><td>1</td></tr>
+<td>002008</td><th><code><a href='local/document.html#_86ce0f2e-9427-4921-a6aa-b3f36fc25692'>_86ce0f2e-9427-4921-a6aa-b3f36fc25692</a></code></th><td>ISODOC_1</td>
+<td>Anchor sec_13.1 pointed to by xref is not defined in the document</td><td><pre>&lt;xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;sec_13.1&quot; id=&quot;_86ce0f2e-9427-4921-a6aa-b3f36fc25692&quot;/&gt;</pre></td><td>1</td></tr>
 <tr class="severity1">
-<td>004207</td><th><code><a href='local/document.html#_209b9b7d-93ee-4a5c-a95d-e2120578ad0d'>_209b9b7d-93ee-4a5c-a95d-e2120578ad0d</a></code></th><td>ISODOC_1</td>
-<td>Anchor iho-s100 pointed to by xref is not defined in the document</td><td><pre>&lt;xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iho-s100&quot; id=&quot;_209b9b7d-93ee-4a5c-a95d-e2120578ad0d&quot;&gt;part=15,clause=8.11.1&lt;/xref&gt;</pre></td><td>1</td></tr>
+<td>002008</td><th><code><a href='local/document.html#_dbbee9f5-8b2a-463f-8d55-edd511572e55'>_dbbee9f5-8b2a-463f-8d55-edd511572e55</a></code></th><td>ISODOC_1</td>
+<td>Anchor sec_13 pointed to by xref is not defined in the document</td><td><pre>&lt;xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;sec_13&quot; id=&quot;_dbbee9f5-8b2a-463f-8d55-edd511572e55&quot;/&gt;</pre></td><td>1</td></tr>
 <tr class="severity1">
-<td>004207</td><th><code><a href='local/document.html#_90e2636a-e8a0-4e0d-952b-5dd0093567ac'>_90e2636a-e8a0-4e0d-952b-5dd0093567ac</a></code></th><td>ISODOC_1</td>
-<td>Anchor iho-s100 pointed to by xref is not defined in the document</td><td><pre>&lt;xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iho-s100&quot; id=&quot;_90e2636a-e8a0-4e0d-952b-5dd0093567ac&quot;&gt;part=15,clause=8.11.7&lt;/xref&gt;</pre></td><td>1</td></tr>
+<td>003714</td><th><code><a href='local/document.html#_5ba0ed32-7078-4da0-b3e8-089f6c29d111'>_5ba0ed32-7078-4da0-b3e8-089f6c29d111</a></code></th><td>ISODOC_1</td>
+<td>Anchor ISO_​19115_1 pointed to by xref is not defined in the document</td><td><pre>&lt;xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;ISO_19115_1&quot; id=&quot;_5ba0ed32-7078-4da0-b3e8-089f6c29d111&quot;/&gt;</pre></td><td>1</td></tr>
 <tr class="severity1">
-<td>004207</td><th><code><a href='local/document.html#_c1ec98a7-4b27-4085-a43d-c737672d43d4'>_c1ec98a7-4b27-4085-a43d-c737672d43d4</a></code></th><td>ISODOC_1</td>
-<td>Anchor iho-s100 pointed to by xref is not defined in the document</td><td><pre>&lt;xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iho-s100&quot; id=&quot;_c1ec98a7-4b27-4085-a43d-c737672d43d4&quot;&gt;part=15&lt;/xref&gt;</pre></td><td>1</td></tr>
+<td>003730</td><th><code><a href='local/document.html#_0d662621-48d4-4ec1-962e-09d5896a9e8f'>_0d662621-48d4-4ec1-962e-09d5896a9e8f</a></code></th><td>ISODOC_1</td>
+<td>Anchor ISO_​19115_1 pointed to by xref is not defined in the document</td><td><pre>&lt;xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;ISO_19115_1&quot; id=&quot;_0d662621-48d4-4ec1-962e-09d5896a9e8f&quot;/&gt;</pre></td><td>1</td></tr>
 <tr class="severity1">
-<td>004209</td><th><code><a href='local/document.html#_f2b82030-6ce8-413c-ab5e-8c08d41f006d'>_f2b82030-6ce8-413c-ab5e-8c08d41f006d</a></code></th><td>ISODOC_1</td>
-<td>Anchor iho-s100 pointed to by xref is not defined in the document</td><td><pre>&lt;xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iho-s100&quot; id=&quot;_f2b82030-6ce8-413c-ab5e-8c08d41f006d&quot;&gt;part=15&lt;/xref&gt;</pre></td><td>1</td></tr>
+<td>003775</td><th><code><a href='local/document.html#_dd3bfcb9-6e6b-4d87-aa89-1453c31ff8df'>_dd3bfcb9-6e6b-4d87-aa89-1453c31ff8df</a></code></th><td>ISODOC_1</td>
+<td>Anchor ISO_​19115_1 pointed to by xref is not defined in the document</td><td><pre>&lt;xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;ISO_19115_1&quot; id=&quot;_dd3bfcb9-6e6b-4d87-aa89-1453c31ff8df&quot;/&gt;</pre></td><td>1</td></tr>
 <tr class="severity1">
-<td>004211</td><th><code><a href='local/document.html#_f721e705-cc58-4c74-b231-d6d725007c0e'>_f721e705-cc58-4c74-b231-d6d725007c0e</a></code></th><td>ISODOC_1</td>
-<td>Anchor iho-s100 pointed to by xref is not defined in the document</td><td><pre>&lt;xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iho-s100&quot; id=&quot;_f721e705-cc58-4c74-b231-d6d725007c0e&quot;&gt;part=15,clause=15-8.11.3&lt;/xref&gt;</pre></td><td>1</td></tr>
+<td>003816</td><th><code><a href='local/document.html#_87a1dc7d-6b69-4f2b-8de8-92ed2a5b5c0f'>_87a1dc7d-6b69-4f2b-8de8-92ed2a5b5c0f</a></code></th><td>ISODOC_1</td>
+<td>Anchor ISO_​19115_1 pointed to by xref is not defined in the document</td><td><pre>&lt;xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;ISO_19115_1&quot; id=&quot;_87a1dc7d-6b69-4f2b-8de8-92ed2a5b5c0f&quot;/&gt;</pre></td><td>1</td></tr>
 <tr class="severity1">
-<td>004213</td><th><code><a href='local/document.html#_94422d0f-9fa9-4e3d-939b-f58d67a13a99'>_94422d0f-9fa9-4e3d-939b-f58d67a13a99</a></code></th><td>ISODOC_1</td>
-<td>Anchor iho-s100 pointed to by xref is not defined in the document</td><td><pre>&lt;xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iho-s100&quot; id=&quot;_94422d0f-9fa9-4e3d-939b-f58d67a13a99&quot;&gt;part=17&lt;/xref&gt;</pre></td><td>1</td></tr>
+<td>003821</td><th><code><a href='local/document.html#_a21f1aae-f1fa-4439-9a68-d7231b424fe1'>_a21f1aae-f1fa-4439-9a68-d7231b424fe1</a></code></th><td>ISODOC_1</td>
+<td>Anchor ISO_​19115_1 pointed to by xref is not defined in the document</td><td><pre>&lt;xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;ISO_19115_1&quot; id=&quot;_a21f1aae-f1fa-4439-9a68-d7231b424fe1&quot;/&gt;</pre></td><td>1</td></tr>
 <tr class="severity1">
-<td>004213</td><th><code><a href='local/document.html#_cc13a858-1071-42a1-8164-f3575d3e30e4'>_cc13a858-1071-42a1-8164-f3575d3e30e4</a></code></th><td>ISODOC_1</td>
-<td>Anchor iho-s100 pointed to by xref is not defined in the document</td><td><pre>&lt;xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;iho-s100&quot; id=&quot;_cc13a858-1071-42a1-8164-f3575d3e30e4&quot;&gt;part=15,clause=8.8&lt;/xref&gt;</pre></td><td>1</td></tr>
+<td>003840</td><th><code><a href='local/document.html#_82b040e3-01cd-404b-8a48-519dd9aa9fe1'>_82b040e3-01cd-404b-8a48-519dd9aa9fe1</a></code></th><td>ISODOC_1</td>
+<td>Anchor ISO_​19115_1 pointed to by xref is not defined in the document</td><td><pre>&lt;xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;ISO_19115_1&quot; id=&quot;_82b040e3-01cd-404b-8a48-519dd9aa9fe1&quot;/&gt;</pre></td><td>1</td></tr>
+<tr class="severity1">
+<td>003896</td><th><code><a href='local/document.html#_b78c59f5-d6b2-41a8-98d5-2c2257603287'>_b78c59f5-d6b2-41a8-98d5-2c2257603287</a></code></th><td>ISODOC_1</td>
+<td>Anchor ISO_​19115_1 pointed to by xref is not defined in the document</td><td><pre>&lt;xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;ISO_19115_1&quot; id=&quot;_b78c59f5-d6b2-41a8-98d5-2c2257603287&quot;/&gt;</pre></td><td>1</td></tr>
+<tr class="severity1">
+<td>003915</td><th><code><a href='local/document.html#_f7da279d-e6ff-4f9b-a517-551b3a189709'>_f7da279d-e6ff-4f9b-a517-551b3a189709</a></code></th><td>ISODOC_1</td>
+<td>Anchor ISO_​19115_1 pointed to by xref is not defined in the document</td><td><pre>&lt;xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;ISO_19115_1&quot; id=&quot;_f7da279d-e6ff-4f9b-a517-551b3a189709&quot;/&gt;</pre></td><td>1</td></tr>
+<tr class="severity1">
+<td>003960</td><th><code><a href='local/document.html#_872b08d8-f7cd-426d-8e3e-bf2169ec4d76'>_872b08d8-f7cd-426d-8e3e-bf2169ec4d76</a></code></th><td>ISODOC_1</td>
+<td>Anchor ISO_​10646_1 pointed to by xref is not defined in the document</td><td><pre>&lt;xref xmlns=&quot;https://www.metanorma.org/ns/standoc&quot; target=&quot;ISO_10646_1&quot; id=&quot;_872b08d8-f7cd-426d-8e3e-bf2169ec4d76&quot;/&gt;</pre></td><td>1</td></tr>
 </tbody></table>
 </body></html>
