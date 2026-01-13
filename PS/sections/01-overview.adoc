@@ -2,7 +2,7 @@
 [[sec-overview]]
 == Overview
 === Introduction
-This document has been produced by the National Oceanic and Atmospheric Administration (NOAA) National Weather Service (NWS) Ocean Prediction Center (OPC) on behalf of the Joint World Meteorological Organization – Intergovernmental Oceanographic Commission (WMO-IOC) Technical Commission for Oceanography and Marine Meteorology (JCOMM), now WMO Commission for Weather, Climate, Hydrological, Marine, and Related Environmental Services and Applications (SERCOM), and the Worldwide Met-Ocean Information and Warning Service (WWMIWS) to define a data product that can be used as a Nautical Publication Information Overlay (NPIO) within electronic charting systems (ECS), including Electronic Chart Display and Information Systems (ECDIS). It has been developed within the framework specification defined by the International Hydrographic Organization (IHO) S-100 Universal Hydrographic Data Model and the International Standards Organization (ISO) 19100 series of standards. This product specification, S-412, is primarily intended for encoding maritime weather and wave warnings. These warnings include polygon portrayals of different hazardous weather conditions forecasted during the warning period to enhance situational awareness, route planning, and route monitoring.
+This document has been produced by the National Oceanic and Atmospheric Administration (NOAA) National Weather Service (NWS) Ocean Prediction Center (OPC) on behalf of the Joint World Meteorological Organization – Intergovernmental Oceanographic Commission (WMO-IOC) Technical Commission for Oceanography and Marine Meteorology (JCOMM), now WMO Commission for Weather, Climate, Hydrological, Marine, and Related Environmental Services and Applications (SERCOM), and the Worldwide Met-Ocean Information and Warning Service (WWMIWS) to define a data product that can be used as a Nautical Publication Information Overlay (NPIO) within electronic charting systems (ECS), including Electronic Chart Display and Information Systems (ECDIS). It has been developed within the framework specification defined by the International Hydrographic Organization (IHO) S-100 Universal Hydrographic Data Model and the International Standards Organization (ISO) 19100 series of standards. This product specification, S-412, is primarily intended for encoding marine weather warnings. These warnings include polygon portrayals of different hazardous weather conditions forecasted during the warning period to enhance situational awareness, route planning, and route monitoring.
 
 === Information
 This product specification, S-412, is a vector graphic product specification that is primarily intended for encoding information on meteorological and oceanographic warnings that are used by mariners for route-planning, hazard avoidance, and risk mitigation. S-412 defines meteorological and oceanographic features, attributes and relationships, as well as their mapping to a dataset.
@@ -12,7 +12,7 @@ This document is maintained by the World Meteorological Organization (WMO) and d
 
 In addition to acting as an overlay for S-101 Electronic Navigation Charts, this product specification outlines the capacity to interoperate with other S-100 compliant product specifications in accordance with the IHO S-98 Interoperability Specification.
 
-This product specification does not include recommended changes to or requirements for services by National Meteorological Services.
+This product specification does not include recommended changes to or requirements for services by National Meteorological and Hydrological Services.
 
 [bibliography]
 
@@ -656,4 +656,5 @@ New Editions denoted as **n**.0.0
 Revisions denoted as n.**n**.0
 
 Clarifications denoted as n.n.**n**
+
 
