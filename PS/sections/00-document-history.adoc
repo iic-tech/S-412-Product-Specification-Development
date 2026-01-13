@@ -2,7 +2,7 @@
 [.preface]
 == Document History
 
-Changes to this Specification are coordinated by WMO/IOC Joint Technical Commission for Oceanography and Marine Meteorology (JCOMM). New editions will be made available via the IHO web site. 
+Changes to this Specification are coordinated by WMO Commission for Weather, Climate, Hydrological, Marine, and related-Environmental Services and Applications (SERCOM), formely (JCOMM). New editions will be made available via the IHO web site. 
 
 [%unnumbered]
 [[tab-document-history]]
@@ -34,12 +34,12 @@ Changes to this Specification are coordinated by WMO/IOC Joint Technical Commiss
 |0.1.0
 |10 December 2018
 |J. Phillips
-|Updated multiple sections updated including new scope, DCEG and FC.
+|Updated multiple sections including new scope, DCEG and FC.
 
 |0.1.1
 |30 April 2025
 |T. Cervone-Richards, D. Spindler, S. Stevenson, S. Williamson
-|Updated multiple sections updated including new scope, DCEG and FC.
+|Updated multiple sections including new scope, DCEG and FC.
 
 |1.0.1
 |25 October 2025
@@ -47,7 +47,7 @@ Changes to this Specification are coordinated by WMO/IOC Joint Technical Commiss
 |Initial Population of document skeleton.
 
 |1.1.0
-|9 December 2025
+|xx January 2026
 |IIC Technologies
 |Review and alignment of the PS with the Feature Catalogue.
 
