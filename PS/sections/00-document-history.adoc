@@ -47,8 +47,14 @@ Changes to this Specification are coordinated by WMO Commission for Weather, Cli
 |Initial Population of document skeleton.
 
 |1.1.0
-|xx January 2026
+|9 December 2025
 |IIC Technologies
 |Review and alignment of the PS with the Feature Catalogue.
+
+|1.2.0
+|23 January 2026
+|IIC Technologies
+|Updated based on WMO review of edition 1.1.0. Metadata and Product delivery sections reviewed based on recent versions of S-127 and S-131 PS.
+
 
 |===
