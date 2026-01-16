@@ -16,7 +16,7 @@ Compliant datasets of Marine Weather Warnings contain polygons of hazardous mete
 
 *Spatial Resolution*:: 
 The spatial resolution varies by weather forecasting agency and is largely determined by their forecasting and analysis domain and file size of each data file. +
-Each Data Coverage feature of an _WEATHER_ dataset must indicate a value for an optimum viewing scale. Recommended values for scales can be found in the S-101 ENC Product Specification. Producers should note that at the smaller scales, geographic details will have no perceptible visual separation on a graphic display, and are therefore encouraged to determine display scales taking into account the content and intended navigation purpose of the dataset.
+Producers should note that at the smaller scales, geographic details will have no perceptible visual separation on a graphic display, and are therefore encouraged to determine display scales taking into account the content and intended navigation purpose of the dataset.
 
 *Purpose*:: Navigation in all regions. The Marine Weather Warnings dataset is primarily intended to be used in electronic navigation systems as an overlay to an ENC.
 
@@ -36,6 +36,6 @@ Each Data Coverage feature of an _WEATHER_ dataset must indicate a value for an 
 
 *Spatial Representation Type*:: Vector
 
-*Point of Contact*:: Producing Agency
+*Point of Contact*:: Dataset Producing Agency
 
 *Use Limitation*:: Must be used with an ENC. An S-412 dataset is not intended to be used for land-based or aviation weather forecasting purposes.
