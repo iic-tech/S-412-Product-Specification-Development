@@ -17,7 +17,11 @@
 
 
 include::00-document-history.adoc[]
+
 include::01-overview.adoc[]
+
 include::02-general.adoc[]
+
 include::04-geo-features.adoc[]
+
 include::05-attributes.adoc[]
