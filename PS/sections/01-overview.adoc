@@ -15,167 +15,86 @@ In addition to acting as an overlay for S-101 Electronic Navigation Charts, this
 This product specification does not include recommended changes to or requirements for services by National Meteorological and Hydrological Services.
 
 [bibliography]
-
-=== [[s1_start_review1]]References[[s1_end_review1]]
-[reviewer="IIC",date=2025-12-04,from=s1_start_review1,to=s1_end_review1]
-****
-Suggest to conduct a global review of the references for harmonization and consistency with ISO 690. At this stage, references from S-411 have been added in their original form for comparison.
-****
-
-
-==== Normative
-* Test Section
+=== References
 
 ==== Normative references
-* GML OpenGIS®:: _Geography Markup Language (GML) Encoding Standard_ (Version 3.2.1).
+GML OpenGIS®:: _Geography Markup Language (GML) Encoding Standard_ (Version 3.2.1).
+NOAA National Weather Service Glossary:: _https://forecast.weather.gov/glossary.php._
+National Weather Service Instruction 10-315:: _Marine Weather Message_, 2020 Edition.
+National Weather Service Instruction 10-303:: _Marine and Coastal Services Standards and Guidelines_, 2022 Edition.
+National Weather Service Instruction 10-604:: _Tropical Cyclone Names and Definitions_, 2021 Edition.
+National Weather Service Instruction 10-811:: _Enroute Forecasts and Advisories_, 2022 Edition.
+National Weather Service Policy Directive 10-6:: _Tropical Cyclone Weather Services Program_, 2020 Edition.
+S-32:: _IHO Hydrographic Dictionary_, 2023 Edition.
+S-53:: _Joint IHO/IMO/WMO Manual on Maritime Safety Information (MSI)_, January 2016 Edition.
+S-98:: _Interoperability Specification_, 2022 Edition.
+S-100:: _IHO Universal Hydrographic Data Model_, 2024 Edition._
+S-101:: _IHO Electronic Navigation Chart Product Specification_, 2024 Edition._
+WMO 8:: _Guide to Meteorological Instruments and Methods of Observation_, 2023 Edition.
+WMO 182:: _International Meteorological Vocabular_, 1992 Edition.
+WMO 306:: _Manual on Codes_, 2024 Edition.
+WMO 386:: _Manual on the Global Telecommunication System_, 2020 Edition.
+WMO 471:: _Guide to Marine Meteorological Services_, 2024 Edition.
+WMO 485:: _Manual on the Global Data-processing and Forecasting System_, 2023 Edition.
+WMO 558:: _Manual on Marine Meteorological Services_, 2024 Edition.
+WMO 702:: _Guide to Wave Analysis and Forecasting_, 2020 Edition.
+WMO/TD 850:: , 1998 Edition.
+Global Maritime Distress and Safety System, GMDSS (weather.gov).
+_IHO Geospatial Information Registry._
+S-97:: _IHO Guidelines for Creating S-100 Product Specifications_, Edition 1.1.0, June 2020.
+S-100:: _IHO Universal Hydrographic Data Model_, Edition 5.2.0, June 2024.
 
-* NOAA National Weather Service Glossary:: _https://forecast.weather.gov/glossary.php._
-
-* National Weather Service Instruction 10-315:: _Marine Weather Message_, 2020 Edition.
-
-* National Weather Service Instruction 10-303:: _Marine and Coastal Services Standards and Guidelines_, 2022 Edition.
-
-* National Weather Service Instruction 10-604:: _Tropical Cyclone Names and Definitions_, 2021 Edition.
-
-* National Weather Service Instruction 10-811:: _Enroute Forecasts and Advisories_, 2022 Edition.
-
-* National Weather Service Policy Directive 10-6:: _Tropical Cyclone Weather Services Program_, 2020 Edition.
-
-* S-32:: _IHO Hydrographic Dictionary_, 2023 Edition.
-
-* S-53:: _Joint IHO/IMO/WMO Manual on Maritime Safety Information (MSI)_, January 2016 Edition.
-
-* S-98:: _Interoperability Specification_, 2022 Edition.
-
-* S-100:: _IHO Universal Hydrographic Data Model_, 2024 Edition._
-
-* S-101:: _IHO Electronic Navigation Chart Product Specification_, 2024 Edition._
-
-* WMO 8:: _Guide to Meteorological Instruments and Methods of Observation_, 2023 Edition.
-
-* WMO 182:: _International Meteorological Vocabular_, 1992 Edition.
-
-* WMO 306:: _Manual on Codes_, 2024 Edition.
-
-* WMO 386:: _Manual on the Global Telecommunication System_, 2020 Edition.
-
-* WMO 471:: _Guide to Marine Meteorological Services_, 2024 Edition.
-
-* WMO 485:: _Manual on the Global Data-processing and Forecasting System_, 2023 Edition.
-
-* WMO 558:: _Manual on Marine Meteorological Services_, 2024 Edition.
-
-* WMO 702:: _Guide to Wave Analysis and Forecasting_, 2020 Edition.
-
-* WMO/TD 850:: , 1998 Edition.
-
-* Global Maritime Distress and Safety System, GMDSS (weather.gov).
-
-* _IHO Geospatial Information Registry._
-
-* S-97:: _IHO Guidelines for Creating S-100 Product Specifications_, Edition 1.1.0, June 2020.
-
-* S-100:: _IHO Universal Hydrographic Data Model_, Edition 5.2.0, June 2024.
-
-* ISO 8601. 2004:: _Data elements and interchange formats – Information interchange – Representation of dates and times_. 2004.
-
-* ISO 3166-1. 2020:: _Country Codes_. 2020.
-
-* ISO 639-2/T. 1998:: _Language Codes_. 1998.
-
-* ISO/TS 19103. 2024:: _Geographic information – Conceptual schema language_. 2024.
-
-* ISO 19111. 2019:: _Geographic Information – Spatial referencing by coordinates_. 2019.
-
-* ISO 19115. 2003:: _Geographic Information – Metadata_. 2003.
-
-* ISO 19115-1. 2014:: _Geographic information - Metadata - Part 1: Fundamentals_. 2014.
-
-* ISO 19115-2.2019:: _Geographic Information – Metadata – Part 2: Extension for imagery and gridded data_. 2019.
-
-* ISO/TS 19123. 2005:: _Geographic information – Schema for coverage geometry and functions_. 2005.
-
-* ISO/TS 19123-1. 2023:: _Geographic information – Schema for coverage geometry and functions. Part 1: Fundamentals_. 2023.
-
-* ISO 19129. 2009:: _Geographic information – Imagery, gridded and coverage data framework_. 2009.
-
-* ISO 19131. 2022:: _Geographic information – Data product specifications_. 2022.
-
-* ISO 19136:2007:: _Geographic Information – Geographic Markup Language (GML)_. 2007.
-
-* ISO 19136-1:2020:: _Geographic Information – Geographic Markup Language (GML). Part 1: Fundamentals_. 2020.
-
-* ISO/IEC 19501. 2005:: _Information technology – Unified Modeling Language (UML) Version 1.4.2_. 2005
-
+[bibliography]
 ==== Informative references
-* IMO A27/Res. 1051, IMO/WMO Worldwide Met-Ocean Information and Warning Service, 2011 Edition.
-
-* ISO 19101:2002. Geographic information – Reference model. 2002.
-
-* ISO 19101-1:2014. Geographic information – Reference model. Part 1: Fundamentals. 2014.
-
-* ISO 19103: 2024. Geographic information – Conceptual schema language – 2024.
-
-* ISO 19105: 2022. Geographic information – Conformance and testing. 2022.
-
-* ISO 19107:2019. Geographic information – Spatial schema. 2019.
-
-* ISO 19108:2002. Geographic information – Temporal schema. 2002.
-
-* ISO 19109:2015. Geographic information – Rules for application schema. 2015.
-
-* ISO 19110: 2016. Geographic information – Methodology for feature cataloguing. 2016.
-
-* ISO 19113: 2005. Geographic information – Quality principles. 2005
-
-* ISO 19116: 2019. Geographic information – Positioning services. 2019.
-
-* ISO 19117:2012. Geographic information – Portrayal. 2012.
-
-* ISO 19118: 2011. Geographic information – Encoding. 2011.
-
-* ISO 19128:2005. Geographic information – Web Map Server interface. 2005.
-
-* 19132: 2007. Geographic information – Location-based services – Reference model. 2007.
-
-* ISO 19133:2005. Geographic information – Location-based services – Tracking and navigation. 2005.
-
-* ISO 19138:2006. Geographic information – Data quality measures. 2006.
-
-* ISO 19142:2010. Geographic information – Web Feature Service. 2010.
-
-* ISO 19144-1:2009. Geographic information – Classification systems – Part 1: Classification system structure. 2009.
-
-* ISO 19145:2013. Geographic information – Registry of representations of geographic point location. 2013.
-
-* ISO 19153:2014. Geographic information – Geospatial Digital Rights Management Reference Model (GeoDRM RM) 1). 2014.
-
-* ISO 19156:2023. Geographic information – Observations and measurements. 2011.
-
-* ISO 19157:2023. Geographic information – Data quality. 2013.
-
-* ISO/TS 19158:2012. Geographic information – Quality assurance of data supply. 2010.
-
+IMO A27/Res. 1051:: IMO/WMO Worldwide Met-Ocean Information and Warning Service, 2011 Edition.
+ISO 8601. 2004:: _Data elements and interchange formats – Information interchange – Representation of dates and times_. 2004.
+ISO 3166-1. 2020:: _Country Codes_. 2020.
+ISO 639-2/T. 1998:: _Language Codes_. 1998.
+ISO/TS 19103. 2024:: _Geographic information – Conceptual schema language_. 2024.
+ISO 19111. 2019:: _Geographic Information – Spatial referencing by coordinates_. 2019.
+ISO 19115. 2003:: _Geographic Information – Metadata_. 2003.
+ISO 19115-1. 2014:: _Geographic information - Metadata - Part 1: Fundamentals_. 2014.
+ISO 19115-2.2019:: _Geographic Information – Metadata – Part 2: Extension for imagery and gridded data_. 2019.
+ISO/TS 19123. 2005:: _Geographic information – Schema for coverage geometry and functions_. 2005.
+ISO/TS 19123-1. 2023:: _Geographic information – Schema for coverage geometry and functions. Part 1: Fundamentals_. 2023.
+ISO 19129. 2009:: _Geographic information – Imagery, gridded and coverage data framework_. 2009.
+ISO 19131. 2022:: _Geographic information – Data product specifications_. 2022.
+ISO 19136:2007:: _Geographic Information – Geographic Markup Language (GML)_. 2007.
+ISO 19136-1:2020:: _Geographic Information – Geographic Markup Language (GML). Part 1: Fundamentals_. 2020.
+ISO/IEC 19501. 2005:: _Information technology – Unified Modeling Language (UML) Version 1.4.2_. 2005
+ISO 19101:2002:: _Geographic information – Reference model_. 2002.
+ISO 19101-1:2014:: _Geographic information – Reference model. Part 1: Fundamentals_. 2014.
+ISO 19103: 2024:: _Geographic information – Conceptual schema language_. 2024.
+ISO 19105: 2022:: _Geographic information – Conformance and testing_. 2022.
+ISO 19107:2019:: _Geographic information – Spatial schema_. 2019.
+ISO 19108:2002:: _Geographic information – Temporal schema_. 2002.
+ISO 19109:2015:: _Geographic information – Rules for application schema_. 2015.
+ISO 19110: 2016:: _Geographic information – Methodology for feature cataloguing_. 2016.
+ISO 19113: 2005:: _Geographic information – Quality principles_. 2005
+ISO 19116: 2019:: _Geographic information – Positioning services_. 2019.
+ISO 19117:2012: _Geographic information – Portrayal_. 2012.
+ISO 19118: 2011:: _Geographic information – Encoding_. 2011.
+ISO 19128:2005:: _Geographic information – Web Map Server interface_. 2005.
+19132: 2007:: _Geographic information – Location-based services – Reference model_. 2007.
+ISO 19133:2005:: _Geographic information – Location-based services – Tracking and navigation_. 2005.
+ISO 19138:2006:: _Geographic information – Data quality measures_. 2006.
+ISO 19142:2010:: _Geographic information – Web Feature Service_. 2010.
+ISO 19144-1:2009:: _Geographic information – Classification systems – Part 1: Classification system structure_. 2009.
+ISO 19145:2013:: _Geographic information – Registry of representations of geographic point location_. 2013.
+ISO 19153:2014:: _Geographic information – Geospatial Digital Rights Management Reference Model (GeoDRM RM) 1)_. 2014.
+ISO 19156:2023:: _Geographic information – Observations and measurements_. 2011.
+ISO 19157:2023:: _Geographic information – Data quality_. 2013.
+ISO/TS 19158:2012:: _Geographic information – Quality assurance of data supply_. 2010.
 ISO 19101:: _Geographic Information – Reference Model_, 2003.
-
 ISO 19103:: _Geographic Information – Conceptual Schema Language_, 2005.
-
 ISO 19103-2:: _Geographic Information – Conceptual Schema Language – Part 2_, 2005.
-
 ISO 19109:: _Geographic Information – Rules for Application Schema_, 2005.
-
 ISO 19110:: _Geographic Information – Methodology for Feature Cataloguing_, 2005.
-
 ISO 19111:: _Geographic Information – Spatial Referencing by Coordinates_, 2007.
-
 ISO 19115-1:: _Geographic information - Metadata - Part 1: Fundamentals_ - 2014/Amd 1: 2018.
-
 ISO 19115-3:: _Geographic information - Metadata - Part 3: XML Schema implementation for fundamental concepts_ - 2016.
-
 ISO 19117:: _Geographic Information – Portrayal_, 2012.
-
 ISO 19131:: _Geographic Information – Data Product Specifications_, 2008.
-
 ISO 19139-1:: _Geographic information - XML schema implementation - Part 1: Encoding rules_ - 2019
 
 === Terms, definitions and abbreviations
@@ -188,20 +107,9 @@ Within this document:
 * "`Should`" indicates an optional requirement, that is the recommended process to be followed, but is not mandatory.
 * "`May`" means "`allowed to`" or "`could possibly`" and is not mandatory.
 
-==== [[s1_start_review2]]Terms and definitions [[s1_end_review2]]
-[reviewer="IIC",date=2025-12-04,from=s1_start_review2,to=s1_end_review2]
-****
-Definitions in italic have been added from S-411 PS, S-100, etc. They seem useful in S-411 PS. TBC.
-Some definitions are slighty different to the ones in S-411, S-100, etc.).
-****
+The S-100 framework is based on the ISO 19100 series of geographic standards. The terms and definitions provided here are used to standardise the relevant nomenclature found within that framework, whenever possible. Additional definitions specific to S-412 are provided in this section as well. Features, attributes and associations that may be realised in an S-412 compliant dataset are defined in Annex A, B and C.
 
-The S-100 framework is based on the ISO 19100 series of geographic standards. The terms and definitions provided here are used to standardise the relevant nomenclature found within that framework, whenever possible. Additional definitions specific to S-412 are provided in this section as well. Features, attributes and associations that may be realised in an S-412 compliant dataset are defined in [[s1_start_review6]]Annex A, B and C.[[s1_end_review6]]
-[reviewer="IIC",date=2025-12-04,from=s1_start_review6,to=s1_end_review6]
-****
-References to Annexes to be confirmed.
-****
-
-=== References
+==== Terms and definitions
 
 *Abstract Class*
 An object class which cannot be instantiated, or is designated in an information model as not allowed  to be instantiated [ISO 19107].
@@ -210,11 +118,11 @@ NOTE:: subclasses of an abstract class may be either abstract or non-abstract.
 
 *Aggregation*
 
-_Special form of association that specifies a whole-part relationship between the aggregate (whole) and a component part (see composition) [ISO 19103]._
+Special form of association that specifies a whole-part relationship between the aggregate (whole) and a component part (see composition) [ISO 19103].
 
-*_Application_*
+*Application*
 
-_Manipulation and processing of data in support of user requirements [ISO 19101-1:2014]._
+Manipulation and processing of data in support of user requirements [ISO 19101-1:2014].
 
 *Application Schema*
 
@@ -232,21 +140,17 @@ NOTE:: A binary association is an association among exactly two classifiers (inc
 
 NOTE:: Describes a geometrical, topological, thematic, or other characteristic of an entity.
 
-_(2) Feature within a classifier that describes a range of values that instances of the classifier may hold._
+(2) Feature within a classifier that describes a range of values that instances of the classifier may hold.
 
-NOTE:: _An attribute is semantically equivalent to a composition association; however, the intent and usage is normally different._
+NOTE:: An attribute is semantically equivalent to a composition association; however, the intent and usage is normally different.
 
-NOTE:: _“Feature” used in this definition is the UML meaning of the term._
+NOTE:: “Feature” used in this definition is the UML meaning of the term.
 
-*_Boundary_*
+*Boundary*
 
-_Set that represents the limit of an entity._
+Set that represents the limit of an entity.
 
-NOTE:: _Boundary is most commonly used in the context of geometry, where the set is a collection of points or a collection of objects that represent those points._
-
-*Cartesian Coordinate System*
-
-Coordinate system which gives the position of points relative to n mutually perpendicular axes. [ISO 19111].
+NOTE:: Boundary is most commonly used in the context of geometry, where the set is a collection of points or a collection of objects that represent those points.
 
 *Class*
 
@@ -276,10 +180,6 @@ Feature that acts as a function to return values from its range for any directio
 
 Example: Examples include a raster image, polygon overlay, or digital elevation matrix type.
 
-*Coverage Geometry*
-
-Configuration of the domain of a coverage described in terms of coordinates [ISO 19123].
-
 *Curve*
 
 1-dimensional geometric primitive, representing the continuous image of a line[ISO 19107].
@@ -296,9 +196,9 @@ Identifiable collection of data [ISO 19115].
 
 NOTE:: A dataset may be a smaller grouping of data which, though limited by some constraint such as spatial extent or feature type, is located physically within a larger dataset. Theoretically, a dataset may be as small as a single feature or feature attribute contained within a larger dataset. A hardcopy map or chart may be considered a dataset.
 
-*_Data Quality_*
+*Data Quality*
 
-_A set of elements describing aspects of quality, including a measure of quality, an evaluation procedure, a quality result, and a scope._
+A set of elements describing aspects of quality, including a measure of quality, an evaluation procedure, a quality result, and a scope.
 
 *Data Type*
 
@@ -306,25 +206,25 @@ Specification of a value domain with operations allowed on values in this domain
 
 Example: Integer, Real, Boolean, String, Date
 
-NOTE:: _Data types include primitive predefined types and user-definable types._
+NOTE:: Data types include primitive predefined types and user-definable types.
 
-NOTE:: _A data type is identified by a term, for example Integer._
+NOTE:: A data type is identified by a term, for example Integer.
 
-*_Datum_*
+*Datum*
 
 _Parameter or set of parameters that define the position of the origin, the scale, and the orientation of a *coordinate* system._
 
-*_ECDIS_*
+*ECDIS*
 
-A navigation information system which with adequate back-up arrangements can be accepted as complying with the up-to-date chart required by regulations V/19 and V/27 of the 1974 SOLAS Convention, as amended, by displaying selected information from a System Electronic Navigational Chart (System Database) with positional information from navigation sensors to assist the Mariner in route planning and route monitoring, and if required display additional navigation-related information.
+"Electronic Chart Display and Information System". A navigation information system which with adequate back-up arrangements can be accepted as complying with the up-to-date chart required by regulations V/19 and V/27 of the 1974 SOLAS Convention, as amended, by displaying selected information from a System Electronic Navigational Chart (System Database) with positional information from navigation sensors to assist the Mariner in route planning and route monitoring, and if required display additional navigation-related information.
 
 *Direct Position*
 
 Position described by a single set of coordinates within a coordinate reference system [ISO 19107].
 
-*_Enumeration_*
+*Enumeration*
 
-_A fixed list of valid identifiers of named literal values. Attributes of an enumerated type may only take values from this list._
+A fixed list of valid identifiers of named literal values. Attributes of an enumerated type may only take values from this list.
 
 *Feature*
 
@@ -332,7 +232,7 @@ Abstraction of real-world phenomena [ISO 19101:2003].
 
 Example: The phenomenon truck may be classified with other similar phenomena into a feature type named automobile.
 
-NOTE:: _A feature may occur as a type or an instance. Feature type or feature instance should be used when only one is meant._
+NOTE:: A feature may occur as a type or an instance. Feature type or feature instance should be used when only one is meant.
 
 *Feature Attribute*
 
@@ -345,23 +245,6 @@ Example: A feature attribute named ‘colour’ may have an attribute value ‘g
 *Feature Catalogue*
 
 A catalogue containing definitions and descriptions of the *feature* types, *feature attributes* and occurring in one or more sets of geographic data [ISO 19110].
-
-[[s1_start_review4]] *Feature Portrayal Function*[[s1_end_review4]]
-[reviewer="IIC",date=2025-12-04,from=s1_start_review4,to=s1_end_review4]
-****
-Not sure this definition is valid for S-100 PS series.
-****
-
-Function that maps a geographic feature to a symbol [ISO 19117:2012 (E), 4.10].
-
-[[s1_start_review5]]*Function*[[s1_end_review5]]
-[reviewer="IIC",date=2025-12-04,from=s1_start_review5,to=s1_end_review5]
-****
-Not sure this definition is valid for S-100 PS series.
-****
-Rule that associates each element from a domain (source, or domain of the function) to a unique element in another domain (target, co-domain, or range) [ISO 19107].
-
-NOTE:: The range is defined by another domain.
 
 *Geometric Object*
 
@@ -433,12 +316,6 @@ Collection of defined portrayals for a feature catalogue.
 
 NOTE:: Content of a portrayal catalogue includes portrayal functions, symbols, and portrayal context [ISO 19117:2012 (E), 4.21].
 
-*Portrayal Function*
-
-Function that maps geographic features to symbols.
-
-NOTE:: Portrayal functions can also include parameters and other computations that are not dependent on geographic feature properties. [ISO 19117:2012 (E), 4.23].
-
 *Portrayal Rule*
 
 Specific type of portrayal function expressed in a declarative language.
@@ -482,15 +359,7 @@ Information system on which a register is maintained. [ISO 19135].
 *Schema*
 Formal description of a model [S-100].
 
-*Sea Surface*
-
-A two-dimensional (in the horizontal plane) field representing the air-sea interface, with high frequency fluctuations such as wind waves and swell, but not astronomical tides, filtered out. [S-111].
-
-Example: sea surface, river surface, and lake surface.
-
-NOTE:: This implies marine water, lakes, waterways, navigation rivers, etc.
-
-*Significant Wave Height*
+Applied.*Significant Wave Height*
 
 The average trough-to-crest height of the highest one third of the wave heights (sea and swell) occurring in a particular time period [WMO Glossary].
 
@@ -542,12 +411,10 @@ ECDIS:: Electronic Chart Display and Information System
 ECS:: 	Electronic Chart System (Non SOLAS) 
 ENC::  Electronic Navigational Chart
 EPSG::  European Petroleum Survey Group
-ETSI::	Expert Team on Sea Ice
 ET-MS::  Expert Team on Maritime Safety
 FCD::		Feature Concept Dictionary
-FDIS::  Final Draft International Standard
 GFM::		General Feature Model
-GI::  Registry	Geospatial Information Registry
+GI::  Geospatial Information
 GMDSS:: 	Global Maritime Distress and Safety System
 GML:: Geography Markup Language
 HDF5::		Hierarchical Data Format (HDF5 is the fifth release)
@@ -558,27 +425,22 @@ IOC::		Intergovernmental Oceanographic Commission
 ISO:: International Organization for Standardization
 JCOMM:: Joint Technical Commission for Oceanography and Marine Meteorology
 METAREA::  METeorological AREA
-MSI::  Maritime Safety Information
-NetCDF:: 	Network Common Data Form
 OEM::		Original Equipment Manufacturer 
 S-100WG:: 	S-100 Working Group
 SC-MMO::  Standing Committee on Marine Meteorological and Oceanographic Services 
 SERCOM::  Commission for Weather, Climate, Hydrological, Marine, and Related Environmental Services and Applications
 SOLAS::		International Convention for Safety of Life at Sea
 SVG::		Scalable Vector Graphics
-UML::		Unified Modeling Language
+UML::		Unified Modelling Language
 URI::		Uniform Resource Identifier
 URL::		Universal Resource Locator
 UTC::		Coordinated Universal Time
 UTF-8::  Unicode Transformation Format-8
 WMO::  World Meteorological Organization
 WWMIWS::	Worldwide Met-Ocean Information and Warning Service
-WXO::		Weather Overlay
-XLink::		XML Linking Language
-XMI::		XML Metamodel Interchange
 XML::		Extensible Mark-up Language
 XSD::		World Wide Web Consortium XML Schema Definition
-XSL::		eXtensible Stylesheet Language
+XSLT::		eXtensible Stylesheet Language Transformations
 
 === General Marine Weather Warnings Data Product Description
 
@@ -608,9 +470,9 @@ An S-412 product can be used as an overlay for electronic navigational charts wi
 
 *Title*:: S-412 Marine Weather Warnings Product Specification
 *S-100 Version*:: 5.2.0
-*S-412 Version*:: 1.1.0
-*Date*:: 9 December 2025
-*Language*:: English _(optional additional)_
+*S-412 Version*:: 1.2.0
+*Date*:: 23 January 2026
+*Language*:: English (optional additional)
 *Classification*:: Unclassified
 *Contact*::  World Meteorological Organization +
 7bis, avenue de la Paix +
@@ -623,7 +485,7 @@ Email: mailto:publications@wmo.int[] +
 *URL*:: link:http://www.wmo.int/[www.wmo.int]
 
 *Identifier*::  S-412 +
-*Maintenance*::  Changes to the Product Specification S-412 are coordinated by the JCOMM, and must be made available via the IHO web site. When a new version of the product spec is ready for approval it must follow through several bodies of the WMO; including: ET-MS and SC-MMO while keeping WWMIWS aware of changes for METAREAS. Once approved by the WMO, the WMO’s Domain Control Body Member will submit the document to IHO for approval into the GI Registry. +
+*Maintenance*::  Changes to the Product Specification S-412 are coordinated by the SERCOM, formely JCOMM, and must be made available via the IHO web site. When a new version of the product spec is ready for approval it must follow through several bodies of the WMO; including: ET-MS and SC-MMO while keeping WWMIWS aware of changes for METAREAS. Once approved by the WMO, the WMO’s Domain Control Body Member will submit the document to IHO for approval into the GI Registry. +
 
 *URL*:: link:http://www.wmo.int/[www.wmo.int]
 *Identifier*:: S-412
@@ -656,5 +518,6 @@ New Editions denoted as **n**.0.0
 Revisions denoted as n.**n**.0
 
 Clarifications denoted as n.n.**n**
+
 
 
