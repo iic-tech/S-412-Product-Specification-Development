@@ -5,14 +5,14 @@ This clause describes the maintenance process for datasets, source, production p
 
 === Dataset Maintenance and Update Frequency
 
-Atmospheric and oceanographic conditions can change rapidly and constant revision or updating of warning datasets is essential. Datasets may be available at scheduled times or available for immediate dissemination and promulgation. Forecast data are often updated multiple times per day according to the internal policies and practices of issuing offices and the WMO. New issues of S-412 data should contain the latest information, and replace the previously issued dataset. S-412 does not currently allow for delta changes to a GML dataset. Amendments and corrections will be produced as necessary to address any errors discovered in a dataset or reflect new updates to the conditions.
+Atmospheric and oceanographic conditions can change rapidly and constant revision or updating of warning datasets is essential. Datasets may be available at scheduled times or available for immediate dissemination and promulgation. Forecast data are often updated multiple times per day according to the internal policies and practices of issuing offices and the WMO. New issues of S-412 data should contain the latest information, and replace the previously issued dataset. Marine Weather Warning datasets should be maintained if a new dataset of region and provider is available. There is no updating mechanism used, with datasets being re-issued as appropriate. Future editions may use the updating mechanism for GML datasets contained in S-100, Part 10b.
 
 === Feature and Portrayal Catalogue Management
 
-Each new version of the Marine Weather Warnings Product Specification will include a cumulative feature and portrayal catalogue. This provides charting systems with a single set of catalogues to verify datasets against. Refer to Annex D (Feature Catalogue) and Annex G (Portrayal Catalogue).
+Each new version of the Marine Weather Warnings Product Specification will include a cumulative feature and portrayal catalogue. This provides charting systems with a single set of catalogues to verify datasets against. Refer to the Feature Catalogue and Portrayal Catalogue.
 
-New versions of the feature and portrayal catalogues will follow a similar approval process as the main product specification documentation. This process is described in Section 1 Product Specification Maintenance. The latest versions of these catalogues should be included in a package with the main product specification document when submitted for approval. Both new and old versions of the catalogues can be found in the IHO GI Registry.
+New versions of the feature and portrayal catalogues will follow a similar approval process as the main product specification documentation. This process is described in Section 1 Product Specification Maintenance. The latest versions of these catalogues should be included in a package with the main product specification document when submitted for approval and will be available in the IHO GI Registry.
 
 === GML Encoding Management
 
-All S-412 datasets are in Geography Markup Language (GML) format. Any updates or changes to features and attributes will be reflected in the GML Schema File (.XSD), which is used for validating the GML files. Refer to Annex E (GML Data Product Format (encoding)).
+All S-412 datasets are in Geography Markup Language (GML) format. Any updates or changes to features and attributes will be reflected in the GML Schema File (.XSD), which is used for validating the GML files. Refer to Annex C (GML Data Product Format (encoding)).
