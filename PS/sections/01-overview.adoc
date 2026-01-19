@@ -42,7 +42,7 @@ WMO/TD 850:: , 1998 Edition.
 Global Maritime Distress and Safety System, GMDSS (weather.gov).
 _IHO Geospatial Information Registry._
 S-97:: _IHO Guidelines for Creating S-100 Product Specifications_, Edition 1.1.0, June 2020.
-S-100:: _IHO Universal Hydrographic Data Model_, Edition 5.2.0, June 2024.
+S-100:: _IHO Universal Hydrographic Data Model_, Edition 5.2.1, December 2025.
 
 [bibliography]
 ==== Informative references
@@ -410,7 +410,7 @@ DCEG::  Data Classification and Encoding Guide
 ECDIS:: Electronic Chart Display and Information System
 ECS:: 	Electronic Chart System (Non SOLAS) 
 ENC::  Electronic Navigational Chart
-EPSG::  European Petroleum Survey Group
+EPSG::  European Petroleum Survey Group [https://epsg.org/]
 ET-MS::  Expert Team on Maritime Safety
 FCD::		Feature Concept Dictionary
 GFM::		General Feature Model
@@ -518,6 +518,7 @@ New Editions denoted as **n**.0.0
 Revisions denoted as n.**n**.0
 
 Clarifications denoted as n.n.**n**
+
 
 
 
