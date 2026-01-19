@@ -11,11 +11,9 @@ Data sources can vary across METAREAs, however, primarily comes from three sourc
 
 Nearly all meteorological and oceanographic information from a forecasting agency will need to be reformatted to meet the standards of this Product Specification. This means:
 
-*  Populating the appropriate metadata, and
+*  Populating the appropriate dataset metadata, and
 
 *  Reorganising the data in accordance with the GML and DCEG requirements of this standard.
-
-==== Metadata
 
 ==== Meteorological and Oceanographic Data
 
@@ -23,17 +21,4 @@ Marine weather warning data must be reformatted to be compliant with this standa
 
 Descriptions of the nature of warning polygons use the following units of measurement:
 
-* 	Wind is given in knots (kt);
-
-* 	Wave Height is given in metres (m);
-
-* 	Ice accumulation is given in centimetres per hour (cm/hr);
-
-* 	Distance is given in nautical miles (NM);
-
-* 	Latitudes and Longitudes are given in decimal degrees [[s7_start_review1]]up to [[s7_end_review1]]7 decimal numbers.
-
-[reviewer="IIC",date=2025-12-07,from=s7_start_review1,to=s7_end_review1]
-****
-Is it 3up to 7 decimal numbers", or "with 7 decimal numbers?. TBC
-****
+* 	Latitudes and Longitudes are given in decimal degrees, with up to 7 decimal numbers.
