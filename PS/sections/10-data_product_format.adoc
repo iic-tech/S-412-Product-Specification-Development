@@ -10,27 +10,11 @@ The XML Schema for the S-412 GML application schema is available at the GI Regis
 
 === Encoding of Latitude and Longitude
 
-==== GML Latitude and Longitude
-
-_Longitude and latitude must be encoded in decimal degrees, e.g.: 12.567 56.765_
-
-_Number of decimals is not specified._
-
-In S-412 GML files, latitude and longitude must be encoded in decimal degrees, e.g. for a:multiple point feature:
-
-^<gml:posList>24.700001 9.95 24.48 15.23 26.629999 22.02</gml:posList>^
-
-As modern GIS clients will likely be “axis-aware”, the order of the latitude/longitude pairs matters and should be latitude first, longitude second (YX), as in the examples above. To indicate the WGS84 horizontal coordinate reference system for the YX latitude/longitude pairs, in the GML file use:
-
-^srsName=”urn:ogc:def:crs:epsg::4326”^
-
-Also, the order of latitude-longitude pairs matters in a multiple point feature. For a curve feature, this order shall be listed in a west to east (W->E) order, as in westernmost point first and easternmost point last, or increasingly positive longitude values (see multiple point feature example above). For a surface feature, this order shall be listed in a clockwise order. Numeric Attribute Encoding.
-
-Floating point or integer attribute values must not be padded by non-significant zeros. 
+Values of latitude and longitude can be accurate up to 7 decimal places. Coordinate values should be coded as decimal numbers with 7 or fewer digits after the decimal. The normative encoding is in degrees, with an accuracy of 10-7 degrees; that is, up to 7 digits after the decimal point.
 
 === Text Attribute Values
 
-Character strings must be encoded using the character set defined in ISO 10646-1, in Unicode Transformation Format-8 (UTF-8). A BOM (byte order mark) must not be used.
+Character strings must be encoded using the character set defined in ISO 10646:2020, in Unicode Transformation Format-8 (UTF-8). A BOM (byte order mark) must not be used.
 
 === Temporal Attribute Encoding
 
