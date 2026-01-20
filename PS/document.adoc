@@ -1,8 +1,8 @@
-= Marine Weather Warning Product Specification
+= Wind and Weather Warning Product Specification
 :series: S
 :docnumber: 412
 :doctype: standard
-:edition: 1.1.0
+:edition: 1.2.0
 :language: en
 :published-date: 2026-01-31
 :copyright-year: 2026
@@ -44,4 +44,3 @@ include::sections/12-metadata-new.adoc[]
 include::sections/13-datasets.adoc[]
 
 include::sections/14-list_of_annexes.adoc[]
-
