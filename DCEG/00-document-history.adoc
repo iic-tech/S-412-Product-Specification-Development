@@ -1,16 +1,16 @@
 [.preface]
 == Document History
 
-Changes to this Specification are coordinated by WMO/IOC Joint Technical Commission for Oceanography and Marine Meteorology (JCOMM). New editions will be made available via the IHO web site. 
+Changes to the Product Specification S-412 are coordinated by the SERCOM, formely JCOMM.
 
 [cols="a,a,a,a",options="headers"]
 |===
 |Version Number |Date |Approved By |Purpose
 
 
-|1.9.0
-|December 2025
+|1.2.0
+|January 2026
 |WMO
-|Document creation. Version number in line with the PS.
+|Initial document creation by IIC Technologies. Version number in line with the PS.
 
 |===
