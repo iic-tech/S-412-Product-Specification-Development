@@ -357,7 +357,7 @@ of the S-412 Exchange Catalogue are described in <<sec_12>>.
 
 S-412 datasets are typically intended to be overlays to S-101 ENC and displayed with S-101 ENC data in the background. Systems that support the display of S-412 datasets should provide the user with simple functions to turn the display of S-412 datasets on and off.
 
-Optionally, S-412 datasets can be viewed as overlays to a combination of S-101 ENC and S-102 (Bathymetric Surface) datasets, with S-413 (Marine Weather and Wave Conditions) and S-414 (Marine Weather Observations) datasets incorporated where applicable. The same requirements to allow the user to easily toggle the S-412 dataset on/off persist.
+Optionally, S-412 datasets can be viewed as overlays to a combination of S-101 ENC and S-102 (Bathymetric Surface) datasets, with S-413 (Weather and Wave Conditions), S-414 (Weather and Waves Observations) datasets incorporated where applicable. The same requirements to allow the user to easily toggle the S-412 dataset on/off persist.
 
 When a new edition of a dataset is received, the system must replace the previous edition with the new edition of the dataset.
 
