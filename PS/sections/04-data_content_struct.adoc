@@ -257,7 +257,6 @@ S-412 further constraints Level 3a with the following:
 *	Curve interpolation may be utilised to represent a variety of curve types. Curve interpolation may also be utilised for inner and outer boundaries for polygons. 
 *	Curves, including interpolations, and areas should avoid crossing the 180° longitude.
 
-Examples illustrating the variety of ways geometry may be represented in an S-412 GML data file are provided in Annex C.
 
-|===
+
 
