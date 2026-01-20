@@ -18,14 +18,14 @@ Character strings must be encoded using the character set defined in ISO 10646:2
 
 === Temporal Attribute Encoding
 
-Times must be in UTC and follow the following 25-character format: yyyymmddThhmmss (ISO 8601).
+Times must be in UTC and follow the following 16-character format: _yyyymmddThhmmssZ._
 
 === Mandatory Attribute Values
 
 There are five reasons why attribute values may be considered mandatory: +
-●	They determine whether a feature is in the display base; +
+●	They determine whether a feature is to be displayed; +
 ●	Certain features make no logical sense without specific attributes; +
-●	Some attributes are necessary to determine which symbol is to be displayed; +
+●	Some attributes are necessary to determine portrayal elements; +
 ●	Certain attributes are used to verify data quality; +
 ●	Some attributes are required for safety of navigation.
 
@@ -37,21 +37,7 @@ Missing or unknown values are not permitted in S-412. Mandatory attributes must 
 
 === Encoding Datasets Across 180° Longitude
 
-Datasets must not cross the 180° meridian of longitude.
-
-=== Structure of Dataset Files
-
-< < A description of the order of data objects in each dataset > >
-
-10.9	Object Identifiers
-
-< < MRN guidance is being developed by the S-100 WG. Once completed, this section will contain guidance for completing an MRN similar to urn:mrn:WMO:S412. > >
-
-< < Additional guidance needed about the use of gml:id for objects and geometries. > >
-
-=== Data Scale
-
-< < Data may be scale independent. This will be determined during testing. > >
+Datasets must not cross the 180° meridian of longitude; this includes the bounding box for the dataset.
 
 === Message Filtering Along Routes
 
