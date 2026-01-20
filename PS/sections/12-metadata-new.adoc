@@ -64,6 +64,7 @@ image::../images/fig-exchange-catalogue-classes.png[]
 
 The following clauses define the mandatory and optional metadata needed
 for S-412. In some cases the metadata may be repeated in a national
+for S-412. In some cases the metadata may be repeated in a national
 language. If this is the case it is noted in the Remarks column.
 
 In the following clauses, wherever S-412 makes an optional S-100 metadata

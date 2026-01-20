@@ -38,7 +38,3 @@ Missing or unknown values are not permitted in S-412. Mandatory attributes must 
 === Encoding Datasets Across 180° Longitude
 
 Datasets must not cross the 180° meridian of longitude; this includes the bounding box for the dataset.
-
-=== Message Filtering Along Routes
-
-< < Statement regarding systems ability to filter information along a route by date, time, and conditions > >
