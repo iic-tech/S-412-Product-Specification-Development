@@ -51,6 +51,7 @@ ISO 8601. 2004:: _Data elements and interchange formats – Information intercha
 ISO 3166-1. 2020:: _Country Codes_. 2020.
 ISO 639-2/T. 1998:: _Language Codes_. 1998.
 ISO/TS 19103. 2024:: _Geographic information – Conceptual schema language_. 2024.
+ISO/IEC 10646:2020:: _Information technology — Universal coded character set (UCS)_
 ISO 19111. 2019:: _Geographic Information – Spatial referencing by coordinates_. 2019.
 ISO 19115. 2003:: _Geographic Information – Metadata_. 2003.
 ISO 19115-1. 2014:: _Geographic information - Metadata - Part 1: Fundamentals_. 2014.
@@ -518,6 +519,7 @@ New Editions denoted as **n**.0.0
 Revisions denoted as n.**n**.0
 
 Clarifications denoted as n.n.**n**
+
 
 
 
