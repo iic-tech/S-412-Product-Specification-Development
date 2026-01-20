@@ -1,4 +1,4 @@
-= Wind and Weather Warning Product Specification
+= Marine Weather Warnings Product Specification
 :series: S
 :docnumber: 412
 :doctype: standard
