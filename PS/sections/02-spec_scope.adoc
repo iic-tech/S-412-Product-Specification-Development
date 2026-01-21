@@ -9,4 +9,4 @@ This product specification outlines the development of data from inception to th
 
 *Extent*:: EX_GeographicExtent - Global coverage of maritime areas. +
 EX_TemporalExtent - Not defined for this product specification. +
-EX_VerticalExtent  -Not defined for this product specification.
+EX_VerticalExtent - Not defined for this product specification.
