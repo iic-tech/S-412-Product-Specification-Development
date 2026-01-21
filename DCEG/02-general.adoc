@@ -14,6 +14,12 @@ This clause of the DCEG contains general information needed to understand the en
 
 Within this document the features and attributes appear in bold text or italic text, to distinguish them from surrounding words.
 
+=== Multiple Datasets
+
+In order to facilitate the efficient processing and exchange of S-412 data, S-412 data files will be split by the time and date in which the file data is valid.
+
+_Guidance to be enhanced by WMO._
+
 === Descriptive characteristics
 
 ==== Feature
@@ -55,3 +61,4 @@ The dateTimeRange is a complex attribute consisting of simple attributes, dateTi
 Three other simple dateTime attributes (issuedDateTime, nextUpdateDateTime, and cancellationDate) are mandatory for each WeatherWarning and inherited into the sub-feature types. The issuedDateTime attribute provides a timestamp for when the WeatherWarning has been issued. The nextUpdateDateTime attribute provides the time information for the next expected WeatherWarning to be issued. The cancellationDate {is used to mark when a WeatherWarning is set to expire, or be cancelled}.
 
 Every time attribute is associated with the abstract WeatherWarning feature type. These attributes are then inherited by all sub-types of WeatherWarning (windWarning, significantWaveHeightWarning, iceAccretionWarning, restrictedVisibilityWarning, and thunderstormWarning). This is shown in <<fig-time-attributes-associated-with-weather-warning>>.
+
