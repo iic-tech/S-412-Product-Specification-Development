@@ -14,13 +14,13 @@ The Marine Weather Warnings Overlay is a feature-based vector product that conta
 
 === Application Schema
 
-S-412 conforms to the General Feature Model (GFM) outlined in S-100 Part 3 and is realised in Figure 1. The GFM is the conceptual model for feature and information types.
+S-412 conforms to the General Feature Model (GFM) outlined in S-100 Part 3 and is realised in Figure 4.1. The GFM is the conceptual model for feature and information types.
 
 [[fig-general-feature-model]]
 .S-412 General Feature Model
-image::../images/S-412-GFM.png[UML diagram depicting the S-412 General Feature Model]
+image::../images/S-412-General_Feature_Model.png[UML diagram depicting the S-412 General Feature Model]
 
-*The complete application schema is expressed in UML and is provided in Annex A.*
+The complete application schema is expressed in UML and is provided in Annex A (DCEG).
 
 The data model consists of:
 
@@ -38,7 +38,7 @@ and,
 
 ** *DataProvider*.
 
-These feature types are derived from the S-100_GF_FeatureType metaclass. Feature and information Ttype descriptions can be found in Annex A.
+These feature types are derived from the S-100_GF_FeatureType metaclass. Feature and information type descriptions can be found in Annex A.
 
 This section describes the Application Schema as expressed in the UML diagrams included. This document contains an overview of the S-412 application schema. The S-412 Application Schema types are then realised in the Feature Catalogue. The Feature Catalogue can be found in the WMO Domain of the IHO Registry, and provides a full specification of all types including feature and information types, their attributes, allowed values, and the relationships between types in the data product.
 
@@ -66,7 +66,7 @@ Types for simple attributes are listed on the right hand side in the UML diagram
 
 The S-412 Feature Catalogue describes real-world meteorological and oceanographic concepts in one or more sets of geographic data as feature types, information types, attributes, attribute values, associations and roles. These are bound together in the .XML Feature Catalogue.
 
-Definitions of each feature type, information type, attribute, including enumerated value definitions, and Associations are also provided in the Data Classification and Encoding Guide (Annex A) and represent concepts that may be encoded in an S-412 dataset. These definitions are drawn from the Feature Concept Dictionary managed by the IHO in the IHO Geospatial Information Registry .
+Definitions of each feature type, information type, attribute, including enumerated value definitions, and associations are also provided in the Data Classification and Encoding Guide (Annex A) and represent concepts that may be encoded in an S-412 dataset. These definitions are drawn from the Feature Concept Dictionary managed by the IHO in the IHO Geospatial Information Registry .
 
 ==== Feature Types
 
@@ -78,7 +78,7 @@ image::../images/figure-s412-features.png[UML diagram depicting the S-412 Featur
 
 As can be seen in the diagram, a single abstract feature *WeatherWarning* is used as a template from which the concrete features of S-412 are derived.
 
-===== Meta features
+===== Meta Features
 
 S-412 does not make use of any meta feature.
 
@@ -92,11 +92,11 @@ As an example, the realisation of a Wind Warning concept is provided by the UML 
 .Wind Warning feature
 image::../images/S-412_Wind_Warning.png[UML diagram depicting the S-412 Wind Warning Feature with its attributes and associations.]
 
-==== Information types
+==== Information Types
 
-Information types define identifiable pieces of information in a dataset that can be shared between other features or information types. Information types have attributes but have no relationship to any geometry; Information types may also reference other information types if defined in the Feature Catalogue.
+Information types define identifiable pieces of information in a dataset that can be shared between other features or information types. Information types have attributes but have no relationship to any geometry; information types may also reference other information types if defined in the Feature Catalogue.
 
-Figure 3 shows the realisation of the single Information Type used in S-412: *DataProvider*.
+Figure 4.4 shows the realisation of the single information type used in S-412: *DataProvider*.
 
 [[fig-data-provider-information-type]]
 .Data Provider information type
@@ -114,7 +114,7 @@ Associations are described in more detail in <<sect-Associations>>.
 
 ==== Attributes
 
-Attributes define the characteristics of a feature or information type. Attribute types can be either complex or simple. Simple attributes carry the value itself, and complex attributes are aggregations of other simple and/or complex attributes that create a hierarchical data structure to describe a feature. An attribute instance belongs to one and only one Feature or information type.
+Attributes define the characteristics of a feature or information type. Attribute types can be either complex or simple. Simple attributes carry the value itself, and complex attributes are aggregations of other simple and/or complex attributes that create a hierarchical data structure to describe a feature. An attribute instance belongs to one and only one feature or information type.
 
 ===== Simple Attributes
 
@@ -166,7 +166,7 @@ image::../images/S-412-Complex-Attributes.png[UML diagram depicting the S-412 Co
 
 Associations are used to describe a relationship between instances of one feature or information type with instances of the same or a different feature or information type. Unless otherwise noted, associations are bi-directional in S-412. If an association is unidirectional, source and target roles are defined.
 
-The diagram below shows an example of the association between the WeatherWarning feature type and the DataProvider information type called DataProviderAssociation. The real world relationship between these concepts is that a weather warning has additional information about the service(s) issuing the warning.
+The diagram below shows an example of the association between the WeatherWarning feature type and the *DataProvider* information type called *DataProviderAssociation*. The real world relationship between these concepts is that a weather warning has additional information about the service(s) issuing the warning.
 
 The diagram shows the real world relationship between a weather warning and its supplemental information for where it came from. A complete list of associations and roles used in S-412 can be found in the DCEG (Annex A).
 
@@ -174,13 +174,11 @@ The diagram shows the real world relationship between a weather warning and its 
 .S-412 Data Provider association
 image::../images/figure-s412-data-provider-association.png[UML diagram depicting the S-412 Data Provider Association between a Weather Warning and a Data Provider.]
 
-
-
 ===== Camel Case Rules
 
 All names in S-412 are unique in order to distinguish one from another. Further, camel case rules are applied in order to distinguish encoding values. Each class, package, type-specification and association name are concatenated and start with an uppercase letter with each subsequent word starting with a capital letter. Attribute and association role names are concatenated and start with a lower-case letter; subsequent words start with a capital letter.
 
-Example: The Wind Warning feature type is encoded as WindWarning. The Fixed Date Range complex attribute type is encoded as fixedDateRange.
+Example: The *Wind Warning* feature type is encoded as *WindWarning*. The *Fixed Date Range* complex attribute type is encoded as *fixedDateRange*.
 
 ==== Multiplicity Rules
 
@@ -190,7 +188,7 @@ In UML, all attributes are mandatory by default. Multiplicity rules are used for
 
 A hierarchical structure among S-412 feature types and information types exists in order to group similar concepts by definition, use cases or attribute sets. The base level of the hierarchy is commonly called the super-type and represents a generic concept. More specific concepts are the next level in the hierarchy and these are called sub-types. All sub-types inherit the properties of the super-type within the same hierarchical structure unless otherwise specified. Within S-412, inheritance creates flexibility for a data producer to utilise the appropriate feature based on their user’s needs.
 
-In the WindWarning feature shown in <<fig-wind-warning-feature>>, WindWarning inherits all attributes and associations from the WeatherWarning abstract feature type.
+In the *WindWarning* feature shown in <<fig-wind-warning-feature>>, *WindWarning* inherits all attributes and associations from the *WeatherWarning* abstract feature type.
 
 ==== Spatial Quality
 
@@ -202,6 +200,8 @@ There is a direct relationship between temporal quality and spatial quality with
 
 Various time attributes are carried by various features to ensure the end user is aware of when the dataset is published as well as when the data is valid. Together, these attributes in the data ensure the user is aware of the temporal quality of the data.
 
+Refer to Annex A (DCEG) for more information regarding time-related attributes in S-412.
+
 === [[s4_start_review4]]Dataset Types[[s4_end_review4]]
 [reviewer="IIC",date=2025-12-09,from=s4_start_review4,to=s4_end_review4]
 ****
@@ -212,20 +212,6 @@ Suggest renaming the clause or moving (preferred option) the information in exis
 ==== Introduction
 
 A dataset is a grouping of features, attributes, geometry, and metadata which comprises a specific geographic coverage. Only one type of S-412 dataset is supported: 1) GML encoding for surface geometric primitive feature collections.
-
-==== Time
-
-S-412 datasets can represent real-world phenomena in the present or future. Because of the unique nature of atmospheric and oceanographic concepts and their geographical changes in time, a variety of time attributes are included in S-412 to ensure instances of features are attributed correctly through time. Features or information types outside of the temporal range of a dataset shall not be included in a dataset. Time shall always be provided in Coordinated Universal Time (UTC).
-
-The dateTimeRange is a complex attribute consisting of simple attributes, dateTimeStart and dateTimeEnd, to allow certain features to define a specific temporal range. The dateTimeRange attribute is mandatory for each feature. This attribute provides data producers the flexibility to manage the temporal resolution of their datasets at the feature level and to concatenate data files in a manner which best suits their workflow and customer’s needs. In order for features to be portrayed, the user’s system must clearly indicate the dateTimeRange of a feature or a group of features if the values are the same. Instances of this attribute may be used for data validation and to ensure temporal quality.
-
-Three other simple dateTime attributes (issuedDateTime, nextUpdateDateTime, and cancellationDate) are mandatory for each WeatherWarning and inherited into the sub-feature types. The issuedDateTime attribute provides a timestamp for when the WeatherWarning has been issued. The nextUpdateDateTime attribute provides the time information for the next expected WeatherWarning to be issued. The cancellationDate {is used to mark when a WeatherWarning is set to expire, or be cancelled}.
-
-Every time attribute is associated with the abstract WeatherWarning feature type. These attributes are then inherited by all sub-types of WeatherWarning (windWarning, significantWaveHeightWarning, iceAccretionWarning, restrictedVisibilityWarning, and thunderstormWarning). This is shown in <<fig-time-attributes-associated-with-weather-warning>>.
-
-[[fig-time-attributes-associated-with-weather-warning]]
-.S-412 weatherWarning Time Attributes
-image::../images/S-412-Time-Attributes.png[UML diagram depicting the S-412 Time attributes associated with weatherWarnings.]
 
 ==== Multiple datasets
 
