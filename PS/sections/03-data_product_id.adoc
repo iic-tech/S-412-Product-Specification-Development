@@ -36,6 +36,7 @@ Producers should note that at the smaller scales, geographic details will have n
 
 *Spatial Representation Type*:: Vector
 
-*Point of Contact*:: Dataset Producing Agency
+*Point of Contact*:: Dataset Producing Agency (Data Provider)
 
 *Use Limitation*:: Must be used with an ENC. An S-412 dataset is not intended to be used for land-based or aviation weather forecasting purposes.
+
