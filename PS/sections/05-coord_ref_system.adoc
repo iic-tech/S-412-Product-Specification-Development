@@ -15,7 +15,7 @@ The horizontal coordinate reference system used for this product specification m
 *Projection*:: NONE
 *Temporal reference system*:: Gregorian Calendar
 *Coordinate Reference System registry*:: https://epsg.org/[EPSG Geodetic Parameter Dataset]
-*Date type (according to <<iso-19115-1>>)*:: 002 - publication
+*Date type (according to ISO 19115-1)*:: 002 - publication
 *Responsible party*:: International Association of Oil and Gas Producers (IOGP)
 *URL*:: http://www.iogp.org/
 
@@ -24,6 +24,7 @@ This product specification does not apply to meteorological or oceanographic fea
 
 _In this product there are no direct vertical coordinates which require the use of a vertical coordinate reference system._
 
-=== Temporal reference system
+=== Temporal Reference System
 
 The Marine Weather Warnings Product Specification applies to meteorological features valid at specific times. The temporal reference system used is the Gregorian calendar for date and UTC for time. Time is measured by reference to Calendar dates and Clock time in accordance with ISO 19108:2002 Temporal Schema clause 5.4.4. Times must be in UTC and follow the following 15-character format: yyyymmddThhmmss.
+
