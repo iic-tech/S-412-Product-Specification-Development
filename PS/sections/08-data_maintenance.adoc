@@ -5,7 +5,9 @@ This clause describes the maintenance process for datasets, source, production p
 
 === Dataset Maintenance and Update Frequency
 
-Atmospheric and oceanographic conditions can change rapidly and constant revision or updating of warning datasets is essential. Datasets may be available at scheduled times or available for immediate dissemination and promulgation. Forecast data are often updated multiple times per day according to the internal policies and practices of issuing offices and the WMO. New issues of S-412 data should contain the latest information, and replace the previously issued dataset. Marine Weather Warning datasets should be maintained if a new dataset of region and provider is available. There is no updating mechanism used, with datasets being re-issued as appropriate. Future editions may use the updating mechanism for GML datasets contained in S-100, Part 10b.
+Atmospheric and oceanographic conditions can change rapidly and constant revision or updating of warning datasets is essential. Datasets may be available at scheduled times or available for immediate dissemination and promulgation. Forecast data are often updated multiple times per day according to the internal policies and practices of issuing offices and the WMO. New issues of S-412 data should contain the latest information, and replace the previously issued dataset. 
+
+Marine Weather Warning datasets should be maintained if a new dataset of region and provider is available. There is no updating mechanism used, with datasets being re-issued as appropriate. Future editions may use the updating mechanism for GML datasets contained in S-100, Part 10b.
 
 === Feature and Portrayal Catalogue Management
 
@@ -15,4 +17,4 @@ New versions of the feature and portrayal catalogues will follow a similar appro
 
 === GML Encoding Management
 
-All S-412 datasets are in Geography Markup Language (GML) format. Any updates or changes to features and attributes will be reflected in the GML Schema File (.XSD), which is used for validating the GML files. Refer to Annex C (GML Data Product Format (encoding)).
+All S-412 datasets are in Geography Markup Language (GML) format. Any updates or changes to features and attributes will be reflected in the GML Schema File (.XSD), which is used for validating the GML files. Refer to Sample Datasets for details on GML Data Product Format (encoding).
