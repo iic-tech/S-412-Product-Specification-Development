@@ -453,7 +453,8 @@ XSLT::		eXtensible Stylesheet Language Transformations
 
 *Content*:: The Product Specification defines all requirements to which Marine Weather Warnings data products must conform. Specifically it defines the data product content in terms of features and attributes within the feature catalogue. The display of polygons is defined by the features and rule sets contained in the portrayal catalogue. The Data Classification and Encoding Guide (DCEG) provide guidance on how data product content must be captured.
 
-*Spatial Extent*:: Maritime zones and terrestrial locations within proximity of navigable waters. +
+*Spatial Extent*:: 
+*Description*: Maritime zones and terrestrial locations within proximity of navigable waters. +
 *East Bounding Longitude*: 180° +
 *West Bounding Longitude*: -180° +
 *North Bounding Latitude*: 90° +
@@ -515,6 +516,7 @@ New Editions denoted as **n**.0.0
 Revisions denoted as n.**n**.0
 
 Clarifications denoted as n.n.**n**
+
 
 
 
