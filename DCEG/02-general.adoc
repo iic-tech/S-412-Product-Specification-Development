@@ -46,3 +46,12 @@ The allowable geometric primitive for each feature type is defined in the Featur
 
 Each spatial value must be referenced by at least one feature instance.
 
+==== Time
+
+S-412 datasets can represent real-world phenomena in the present or future. Because of the unique nature of atmospheric and oceanographic concepts and their geographical changes in time, a variety of time attributes are included in S-412 to ensure instances of features are attributed correctly through time. Features or information types outside of the temporal range of a dataset shall not be included in a dataset. Time shall always be provided in Coordinated Universal Time (UTC).
+
+The dateTimeRange is a complex attribute consisting of simple attributes, dateTimeStart and dateTimeEnd, to allow certain features to define a specific temporal range. The dateTimeRange attribute is mandatory for each feature. This attribute provides data producers the flexibility to manage the temporal resolution of their datasets at the feature level and to concatenate data files in a manner which best suits their workflow and customer’s needs. In order for features to be portrayed, the user’s system must clearly indicate the dateTimeRange of a feature or a group of features if the values are the same. Instances of this attribute may be used for data validation and to ensure temporal quality.
+
+Three other simple dateTime attributes (issuedDateTime, nextUpdateDateTime, and cancellationDate) are mandatory for each WeatherWarning and inherited into the sub-feature types. The issuedDateTime attribute provides a timestamp for when the WeatherWarning has been issued. The nextUpdateDateTime attribute provides the time information for the next expected WeatherWarning to be issued. The cancellationDate {is used to mark when a WeatherWarning is set to expire, or be cancelled}.
+
+Every time attribute is associated with the abstract WeatherWarning feature type. These attributes are then inherited by all sub-types of WeatherWarning (windWarning, significantWaveHeightWarning, iceAccretionWarning, restrictedVisibilityWarning, and thunderstormWarning). This is shown in <<fig-time-attributes-associated-with-weather-warning>>.
