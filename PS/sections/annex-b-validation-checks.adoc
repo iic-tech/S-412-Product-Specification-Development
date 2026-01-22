@@ -8,17 +8,15 @@
 === Introduction
 The following checks are intended for production systems designed to produce S-412 datasets. The checks can be administered at any time during the production phase. They can also be applied downstream in the distribution and end user systems to test the conformance of a dataset to the format rules specified in S-100 Part 10c and the S-412 Product Specification.
 
+[bibliography]
 ==== References
 
+NOTE:: The following references are mentionned in addition to the list provided in Section 1 - Overview.
+
 ===== Normative references
-
-*  CLE92:: _ClementinI, E., Di Felice, P., Van Oostrom, P. A Small Set of Formal Topological Relationships Suitable for End-User Interaction, in D. Abel and B. C. Ooi (Ed.), Advances in Spatial Databases — Third International Symposium. SSD 1993. LNCS 692, pp. 277-295._ Springer Verlag. Singapore (1993).
-*  ISO 19107:2003:: _Geographic Information – Spatial Schema_.
-*  ISO 19125-1:2004:: _OpenGIS Simple Features Specification for SQL, Revision 1.1 (OpenGIS Project Document 99-049,_ Release Date: May 5, 1999).
-*  S-100:: _IHO Universal Hydrographic Data Model,_ Edition 5.2.0, June 2024
-
-===== Informative references
-*  ISO 19157:2013:: _Geographic information – Data Quality._ As amended by Amendment 1, 2018
+CLE92:: _ClementinI, E., Di Felice, P., Van Oostrom, P. A Small Set of Formal Topological Relationships Suitable for End-User Interaction, in D. Abel and B. C. Ooi (Ed.), Advances in Spatial Databases — Third International Symposium. SSD 1993. LNCS 692, pp. 277-295._ Springer Verlag. Singapore (1993).
+ISO 19125-1:2004:: _OpenGIS Simple Features Specification for SQL, Revision 1.1 (OpenGIS Project Document 99-049,_ Release Date: May 5, 1999).
+IHO S-158:: _Validation Checks – Introduction and Structure,_ Edition 1.0.0, February 2025
 
 ==== Terms, definitions and abbreviations
 
@@ -167,6 +165,7 @@ Comparisons of names in the GML dataset, exchange catalogue, and exchange set (f
 
 Additional "S-100 level" checks will be defined in a separate document (under preparation by the S-100 WG). 
 #NOTE S-100 GML generic checks will probablyha ot be included in this Annex.#
+
 
 
 
