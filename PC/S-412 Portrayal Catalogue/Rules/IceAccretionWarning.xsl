@@ -6,7 +6,7 @@
   xmlns:gml="http://www.opengis.net/gml/3.2">
   <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
 
-  <xsl:template match="IceAccretionWarning[@primitive='Surface' and iceAccretionWarningThreshold=1]" priority="2">
+  <xsl:template match="IceAccretionWarning[@primitive='Surface' and iceAccretionRate=1]" priority="2">
   <!-- <xsl:template match="*[local-name()='IceAccretionWarning'][*[local-name()='geometry']/*[local-name()='surfaceProperty'] and *[local-name()='iceAccretionWarningThreshold'][@code='1']]" priority="2"> -->
     <xsl:variable name="id" select="@gml:id|@id"/>
     <lineInstruction>
@@ -19,7 +19,7 @@
       <xsl:call-template name="simpleLineStyle">
         <xsl:with-param name="style">solid</xsl:with-param>
         <xsl:with-param name="width">0.64</xsl:with-param>
-        <xsl:with-param name="colour">WXDCY</xsl:with-param>
+        <xsl:with-param name="colour">WXLPN</xsl:with-param>
       </xsl:call-template>
     </lineInstruction>
     <areaInstruction>
@@ -30,12 +30,12 @@
       <displayPlane>OVERRADAR</displayPlane>
       <drawingPriority>15</drawingPriority>
       <colorFill>
-        <color transparency="0.5">WXLCY</color>
+        <color transparency="0.5">WXLPN</color>
       </colorFill>
     </areaInstruction>
   </xsl:template>
 
-  <xsl:template match="IceAccretionWarning[@primitive='Surface' and iceAccretionWarningThreshold=2]" priority="2">
+  <xsl:template match="IceAccretionWarning[@primitive='Surface' and iceAccretionRate=2]" priority="2">
   <!-- <xsl:template match="*[local-name()='IceAccretionWarning'][*[local-name()='geometry']/*[local-name()='surfaceProperty'] and *[local-name()='iceAccretionWarningThreshold'][@code='2']]" priority="3"> -->
     <xsl:variable name="id" select="@gml:id|@id"/>
     <lineInstruction>
@@ -48,7 +48,7 @@
       <xsl:call-template name="simpleLineStyle">
         <xsl:with-param name="style">solid</xsl:with-param>
         <xsl:with-param name="width">0.64</xsl:with-param>
-        <xsl:with-param name="colour">WXDKC</xsl:with-param>
+        <xsl:with-param name="colour">WXHPK</xsl:with-param>
       </xsl:call-template>
     </lineInstruction>
     <areaInstruction>
@@ -59,7 +59,7 @@
       <displayPlane>OVERRADAR</displayPlane>
       <drawingPriority>15</drawingPriority>
       <colorFill>
-        <color transparency="0.6">WXCYN</color>
+        <color transparency="0.5">WXHPK</color>
       </colorFill>
     </areaInstruction>
   </xsl:template>

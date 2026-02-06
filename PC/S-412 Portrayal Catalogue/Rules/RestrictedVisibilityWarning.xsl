@@ -6,7 +6,7 @@
   xmlns:gml="http://www.opengis.net/gml/3.2">
   <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
 
-  <xsl:template match="RestrictedVisibilityWarning[@primitive='Surface' and restrictedVisibilityWarningThreshold=1]" priority="2">
+  <xsl:template match="RestrictedVisibilityWarning[@primitive='Surface']" priority="1">
   <!-- <xsl:template match="*[local-name()='RestrictedVisibilityWarning'][*[local-name()='geometry']/*[local-name()='surfaceProperty'] and *[local-name()='restrictedVisibilityWarningThreshold'][@code='1']]" priority="2"> -->
     <xsl:variable name="id" select="@gml:id|@id"/>
     <lineInstruction>
@@ -19,7 +19,7 @@
       <xsl:call-template name="simpleLineStyle">
         <xsl:with-param name="style">solid</xsl:with-param>
         <xsl:with-param name="width">0.64</xsl:with-param>
-        <xsl:with-param name="colour">WXDGR</xsl:with-param>
+        <xsl:with-param name="colour">WXGRY</xsl:with-param>
       </xsl:call-template>
     </lineInstruction>
     <areaInstruction>
@@ -30,7 +30,7 @@
       <displayPlane>OVERRADAR</displayPlane>
       <drawingPriority>15</drawingPriority>
       <colorFill>
-        <color transparency="0.7">WXLGR</color>
+        <color transparency="0.7">WXGRY</color>
       </colorFill>
     </areaInstruction>
   </xsl:template>

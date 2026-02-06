@@ -7,7 +7,7 @@
   <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
 
 
-  <xsl:template match="ThunderstormWarning[@primitive='Surface' and thunderstormWarningThreshold=1]" priority="2">
+  <xsl:template match="ThunderstormWarning[@primitive='Surface']" priority="1">
   <!-- <xsl:template match="*[local-name()='ThunderstormWarning'][*[local-name()='geometry']/*[local-name()='surfaceProperty'] and *[local-name()='thunderstormWarningThreshold'][@code='1']]" priority="2"> -->
     <xsl:variable name="id" select="@gml:id|@id"/>
     <lineInstruction>
@@ -20,7 +20,7 @@
       <xsl:call-template name="simpleLineStyle">
         <xsl:with-param name="style">solid</xsl:with-param>
         <xsl:with-param name="width">0.64</xsl:with-param>
-        <xsl:with-param name="colour">WXDKY</xsl:with-param>
+        <xsl:with-param name="colour">WXBRN</xsl:with-param>
       </xsl:call-template>
     </lineInstruction>
     <areaInstruction>
@@ -31,7 +31,7 @@
       <displayPlane>OVERRADAR</displayPlane>
       <drawingPriority>15</drawingPriority>
       <colorFill>
-        <color transparency="0.5">WXLYL</color>
+        <color transparency="0.5">WXBRN</color>
       </colorFill>
     </areaInstruction>
   </xsl:template>

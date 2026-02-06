@@ -125,10 +125,10 @@
 		</ruleFile>
 		<ruleFile id="9">
 			<description>
-				<name>WaveHeightWarning</name>
-				<description>WaveHeightWarning</description>
+				<name>SignificantWaveHeightWarning</name>
+				<description>SignificantWaveHeightWarning</description>
 			</description>
-			<fileName>WaveHeightWarning.xsl</fileName>
+			<fileName>SignificantWaveHeightWarning.xsl</fileName>
 			<fileType>Rule</fileType>
 			<fileFormat>XSLT</fileFormat>
 			<ruleType>SubTemplate</ruleType>
@@ -139,16 +139,6 @@
 				<description>WindWarning</description>
 			</description>
 			<fileName>WindWarning.xsl</fileName>
-			<fileType>Rule</fileType>
-			<fileFormat>XSLT</fileFormat>
-			<ruleType>SubTemplate</ruleType>
-		</ruleFile>
-		<ruleFile id="11">
-			<description>
-				<name>WindWarnings</name>
-				<description>WindWarnings</description>
-			</description>
-			<fileName>WindWarnings.xsl</fileName>
 			<fileType>Rule</fileType>
 			<fileFormat>XSLT</fileFormat>
 			<ruleType>SubTemplate</ruleType>
