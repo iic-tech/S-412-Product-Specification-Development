@@ -2,17 +2,17 @@
 <metanorma xmlns="https://www.metanorma.org/ns/standoc" type="presentation" version="1.2.9" schema-version="v2.1.4" flavor="iho">
 <bibdata type="standard">
 <title language="en" type="main">Weather Warnings Data Classification and Encoding Guide</title>
-<docidentifier primary="true" type="IHO">S-412</docidentifier><docnumber>412</docnumber><date type="published"><on>2025-12-01</on></date><contributor><role type="author"/><organization>
+<docidentifier primary="true" type="IHO">S-412</docidentifier><docnumber>412</docnumber><date type="published"><on>2026-02-01</on></date><contributor><role type="author"/><organization>
 <name>International Hydrographic Organization</name>
 <abbreviation>IHO</abbreviation></organization></contributor><contributor><role type="author"><description>committee</description></role><organization>
 <name>International Hydrographic Organization</name>
 <subdivision type="Committee">
-<name>WMO-JCOMM</name>
+<name>WMO</name>
 </subdivision><subdivision type="Workgroup">
 <name>ETSI</name>
 </subdivision></organization></contributor><contributor><role type="publisher"/><organization>
 <name>International Hydrographic Organization</name>
-<abbreviation>IHO</abbreviation></organization></contributor><edition>1.9.0</edition><language current="true">en</language><script current="true">Latn</script><status><stage>draft-development</stage></status><copyright><from>2025</from><owner><organization>
+<abbreviation>IHO</abbreviation></organization></contributor><edition>2.1.0</edition><language current="true">en</language><script current="true">Latn</script><status><stage>draft-development</stage></status><copyright><from>2026</from><owner><organization>
 <name>International Hydrographic Organization</name>
 <abbreviation>IHO</abbreviation></organization></owner></copyright><series type="main">
 <title>Standards and Specifications</title>
@@ -63,7 +63,7 @@ sourcecode .nt {
 </source-highlighter-css></metanorma-extension>
 <boilerplate><copyright-statement>
 
-<clause id="_09789875-72a0-2277-b6be-01db406c6844" obligation="normative" semx-id="_09789875-72a0-2277-b6be-01db406c6844"><p id="_1a5f7aeb-fd12-3334-3c92-6057e361189a" align="center" semx-id="_1a5f7aeb-fd12-3334-3c92-6057e361189a">© Copyright International Hydrographic Organization 2025</p>
+<clause id="_526074f2-afa9-f5c5-e62a-03b2e9c1637b" obligation="normative" semx-id="_526074f2-afa9-f5c5-e62a-03b2e9c1637b"><p id="_cf784678-7102-5e1b-3ab7-7467dc9cd1f8" align="center" semx-id="_cf784678-7102-5e1b-3ab7-7467dc9cd1f8">© Copyright International Hydrographic Organization 2026</p>
 
 <p id="_35726360-327e-c49d-2f7e-c50beded05fd" semx-id="_35726360-327e-c49d-2f7e-c50beded05fd">This work is copyright. Apart from any use permitted in accordance with the Berne Convention for the Protection of Literary and Artistic Works (1886), and except in the circumstances described below, no part may be translated, reproduced by any process, adapted, communicated or commercially exploited without prior written permission from the International Hydrographic Organization (IHO). Copyright in some of the material in this publication may be owned by another party and permission for the translation and/or reproduction of that material must be obtained from the owner.</p>
 </clause>
