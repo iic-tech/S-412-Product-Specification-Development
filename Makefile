@@ -23,6 +23,6 @@ tst:
 dcegdoc:
 	DT=`date`
 	echo $(DT) " is the date"
-	cd src/Documents/1.2.1/DCEG && metanorma compile document.adoc -o build
+	cd DCEG && metanorma compile document.adoc -o build
 	git commit -a -m "DCEG Build $(DT)"
 	git push
