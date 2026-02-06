@@ -2,11 +2,11 @@
 :series: S
 :docnumber: 412
 :doctype: standard
-:edition: 1.9.0
+:edition: 2.1.0
 :language: en
-:published-date: 2025-12-01
-:copyright-year: 2025
-:committee: WMO-JCOMM
+:published-date: 2026-02-01
+:copyright-year: 2026
+:committee: WMO
 :workgroup: ETSI
 :toclevels: 3
 :mn-document-class: iho
