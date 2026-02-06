@@ -1,7 +1,7 @@
 == Attributes and Enumerates Descriptions
 
 
-include::attributes/all.adoc
+include::attributes/all.adoc[]
 
 include::attributes/agencyName.adoc[]
 

@@ -20,5 +20,40 @@ a|**S-412Attribute** |**Acronym** |**Allowable Encoding Value** |**Type** | **Mu
 |
 |EN
 |0,1
+| fixedDateRange
+| ()
+|
+|C
+|1,1
+| weatherWarningMessage
+| ()
+|
+|C
+|0,1
+| issueDate
+| ()
+|
+|DT
+|1,1
+| weatherWarningNumber
+| ()
+|
+|TE
+|1,1
+| cancellationDate
+| ()
+|
+|DT
+|1,1
+| nextUpdateDateTime
+| ()
+|
+|DT
+|1,1
+| interoperabilityIdentifier
+| ()
+|
+|URN
+|0,1
 |===
 
