@@ -1,0 +1,362 @@
+[[sec-beaufortForce]]
+=== beaufortForce
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# Wind force scale, originally based on the state of the sea, expressed in numbers from 0 to 12, as defined by WMO (WMO 306 Manual on Codes, Volume I.1 - International Codes). + 
+[underline]#** Attribute Type :**# enumeration + 
+99) calm + 
+[underline]#**IHO Definition**# :Absence of air motion or wind with a speed of less than 1 knot (Beaufort scale wind force 0). + 
+1) light air + 
+[underline]#**IHO Definition**# :Wind with a speed between 1 and 3 knots (Beaufort scale wind force 1) + 
+2) ligth breeze + 
+[underline]#**IHO Definition**# :Wind with a speed between 4 and 6 knots (Beaufort scale wind force 2). + 
+3) gentle breeze + 
+[underline]#**IHO Definition**# :Wind with a speed between 7 and 10 knots (Beaufort scale wind force 3). + 
+4) moderate breeze + 
+[underline]#**IHO Definition**# :Wind with a speed between 11 and 16 knots (Beaufort scale wind force 4). + 
+5) fresh breeze + 
+[underline]#**IHO Definition**# :Wind with a speed between 17 and 21 knots (Beaufort scale wind force 5). + 
+6) strong breeze + 
+[underline]#**IHO Definition**# :Wind with a speed between 22 and 27 knots (Beaufort scale wind force 6). + 
+7) near gale + 
+[underline]#**IHO Definition**# :Wind with a speed between 28 and 33 knots (Beaufort scale wind force 7). + 
+8) gale + 
+[underline]#**IHO Definition**# :Wind with a speed between 34 and 40 knots (Beaufort scale wind force 8). + 
+9) strong glae + 
+[underline]#**IHO Definition**# :Wind with a speed between 41 and 47 knots (Beaufort scale wind force 9). + 
+10) storm + 
+[underline]#**IHO Definition**# :Wind with a speed between 48 and 55 knots (Beaufort scale wind force 10). + 
+11) violent storm + 
+[underline]#**IHO Definition**# :Wind with a speed between 56 and 63 knots (Beaufort scale wind force 11). + 
+12) hurricane + 
+[underline]#**IHO Definition**# :(1) Term, derived from a Caribbean word, first applied to tropical cyclones of the Caribbean Sea. (2) Wind with a speed 64 knots or higher (Beaufort scale wind force 12). + 
+ 
+[underline]#** Remarks :**# Note: for S-412, we will limit the attribute to enumeration values 7-12. + 
+|===
+
+
+[[sec-iceAccretionRate]]
+=== iceAccretionRate
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# Represents the ice accretion warning that has been exceeded or forecast to be exceeded based on ice accumulation rates. + 
+[underline]#** Attribute Type :**# enumeration + 
+1) moderateIcing + 
+[underline]#**IHO Definition**# :Ice accumulation rates between 0.7 and 2 centimeters per hour are forecast or occurring. + 
+2) severeIcing + 
+[underline]#**IHO Definition**# :Ice accumulation rates greater than or equal to 2 centimeters per hour are forecast or occurring. + 
+ 
+[underline]#** Remarks :**#  + 
+|===
+
+
+[[sec-metareaName]]
+=== metareaName
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# A name referencing a defined geographical area of the ocean used to coordinate the transmission of meteorological information and services to mariners. + 
+[underline]#** Attribute Type :**# enumeration + 
+1) METAREA I + 
+[underline]#**IHO Definition**# :METAREA 1. + 
+2) METAREA II + 
+[underline]#**IHO Definition**# :METAREA 2. + 
+3) METAREA III + 
+[underline]#**IHO Definition**# :METAREA 3. + 
+4) METAREA IV + 
+[underline]#**IHO Definition**# :METAREA 4. + 
+5) METAREA V + 
+[underline]#**IHO Definition**# :METAREA 5. + 
+6) METAREA VI + 
+[underline]#**IHO Definition**# :METAREA 6. + 
+7) METAREA VII + 
+[underline]#**IHO Definition**# :METAREA 7. + 
+8) METAREA VIII + 
+[underline]#**IHO Definition**# :METAREA 8. + 
+9) METAREA IX + 
+[underline]#**IHO Definition**# :METAREA 9. + 
+10) METAREA X + 
+[underline]#**IHO Definition**# :METAREA 10. + 
+11) METAREA XI + 
+[underline]#**IHO Definition**# :METAREA 11. + 
+12) METAREA XII + 
+[underline]#**IHO Definition**# :METAREA 12. + 
+13) METAREA XIII + 
+[underline]#**IHO Definition**# :METAREA 13. + 
+14) METAREA XIV + 
+[underline]#**IHO Definition**# :METAREA 14. + 
+15) METAREA XV + 
+[underline]#**IHO Definition**# :METAREA 15. + 
+16) METAREA XVI + 
+[underline]#**IHO Definition**# :METAREA 16. + 
+17) METAREA XVII + 
+[underline]#**IHO Definition**# :METAREA 17. + 
+18) METAREA XVIII + 
+[underline]#**IHO Definition**# :METAREA 18. + 
+19) METAREA XIX + 
+[underline]#**IHO Definition**# :METAREA 19. + 
+20) METAREA XX + 
+[underline]#**IHO Definition**# :METAREA 20. + 
+21) METAREA XXI + 
+[underline]#**IHO Definition**# :METAREA 21. + 
+ 
+[underline]#** Remarks :**#  + 
+|===
+
+
+[[sec-significantWaveHeightWarningThreshold]]
+=== significantWaveHeightWarningThreshold
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# Represents the significant wave height warning that has been exceeded or is forecast to be exceeded based on predetermined bins of significant wave height values. + 
+[underline]#** Attribute Type :**# enumeration + 
+1) two and a half to four metres + 
+[underline]#**IHO Definition**# :Significant wave heights between 2.5 and 4 metres (8-13 feet) are forecast or occurring. + 
+2) four to six metres + 
+[underline]#**IHO Definition**# :Significant wave heights between 4 and 6 metres (13-20 feet) are forecast or occurring. + 
+3) six to nine metres + 
+[underline]#**IHO Definition**# :Significant wave heights between 6 and 9 metres (20-30 feet) are forecast or occurring. + 
+4) nine to fourteen metres + 
+[underline]#**IHO Definition**# :Significant wave heights between 9 and 14 metres (30-45 feet) are forecast or occurring. + 
+5) greater than fourteen metres + 
+[underline]#**IHO Definition**# :Significant wave heights greater than 14 metres (>45 feet) are forecast or occurring. + 
+ 
+[underline]#** Remarks :**#  + 
+|===
+
+
+[[sec-text]]
+=== text
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# A non-formatted digital text string. + 
+[underline]#** Attribute Type :**# text + 
+ 
+[underline]#** Remarks :**# Should be used, for example, to hold the information that is for short cautionary or explanatory notes. Therefore, text populated in text must not exceed 300 characters.  Text may be in English, or in a national language.  No formatting of text is possible within text. If formatted text, or text strings exceeding 300 characters, is required, then an alternate concept should be used. + 
+|===
+
+
+[[sec-language]]
+=== language
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# The method of human communication, either spoken or written, consisting of the use of words in a structured and conventional way. + 
+[underline]#** Attribute Type :**# text + 
+ 
+[underline]#** Remarks :**# The language is encoded by a 3 character code following ISO 639-2/T. + 
+|===
+
+
+[[sec-agencyName]]
+=== agencyName
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# The name of an agency, entity or organization. + 
+[underline]#** Attribute Type :**# text + 
+ 
+[underline]#** Remarks :**#  + 
+|===
+
+
+[[sec-mailingAddress]]
+=== mailingAddress
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# The physical address a parcel may be sent to. + 
+[underline]#** Attribute Type :**# text + 
+ 
+[underline]#** Remarks :**#  + 
+|===
+
+
+[[sec-telephoneNumber]]
+=== telephoneNumber
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# The telephone number of an entity. + 
+[underline]#** Attribute Type :**# text + 
+ 
+[underline]#** Remarks :**#  + 
+|===
+
+
+[[sec-emailAddress]]
+=== emailAddress
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# Identifies an email box to which email messages are delivered. + 
+[underline]#** Attribute Type :**# text + 
+ 
+[underline]#** Remarks :**#  + 
+|===
+
+
+[[sec-webAddress]]
+=== webAddress
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# A reference to a web resource that specifies its location on a computer network and a mechanism for retrieving it. + 
+[underline]#** Attribute Type :**# text + 
+ 
+[underline]#** Remarks :**#  + 
+|===
+
+
+[[sec-countryName]]
+=== countryName
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# The name of a nation. + 
+[underline]#** Attribute Type :**# text + 
+ 
+[underline]#** Remarks :**#  + 
+|===
+
+
+[[sec-dateStart]]
+=== dateStart
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# dateStart + 
+[underline]#** Attribute Type :**# S100_TruncatedDate + 
+ 
+[underline]#** Remarks :**#  + 
+|===
+
+
+[[sec-dateEnd]]
+=== dateEnd
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# dateEnd + 
+[underline]#** Attribute Type :**# S100_TruncatedDate + 
+ 
+[underline]#** Remarks :**#  + 
+|===
+
+
+[[sec-issueDate]]
+=== issueDate
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# The time, expressed in Universal Time Coordinated (UTC) at which an object and its attributes are issued from an agency. + 
+[underline]#** Attribute Type :**# dateTime + 
+ 
+[underline]#** Remarks :**# 19850412T183059 denotes 18 hours, 30 minutes, and 59 seconds on 12 April 1985. + 
+|===
+
+
+[[sec-weatherWarningNumber]]
+=== weatherWarningNumber
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# Identification number given to a specifc weather warning. + 
+[underline]#** Attribute Type :**# text + 
+ 
+[underline]#** Remarks :**#  + 
+|===
+
+
+[[sec-cancellationDate]]
+=== cancellationDate
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# Date and time of cancelling a notice or warning. + 
+[underline]#** Attribute Type :**# dateTime + 
+ 
+[underline]#** Remarks :**#  + 
+|===
+
+
+[[sec-nextUpdateDateTime]]
+=== nextUpdateDateTime
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# The time, expressed in Universal Time Coordinated (UTC) an object and its attributes are scheduled to be updated. + 
+[underline]#** Attribute Type :**# dateTime + 
+ 
+[underline]#** Remarks :**# Unit: Years, months, days, hours, minutes, secondsResolution:1 secondFormat: YYYYMMDDTHHMMSS, where Y is year, M is month, D is day, H is hour, M is minute, and S is secondExample: 19850412T183059 denotes 18 hours, 30 minutes, 59 seconds on 12 April 1985. + 
+|===
+
+
+[[sec-interoperabilityIdentifier]]
+=== interoperabilityIdentifier
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# interoperabilityIdentifier + 
+[underline]#** Attribute Type :**# URN + 
+ 
+[underline]#** Remarks :**#  + 
+|===
+
+
+[[sec-timeOfDayStart]]
+=== timeOfDayStart
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# timeOfDayStart + 
+[underline]#** Attribute Type :**# dateTime + 
+ 
+[underline]#** Remarks :**#  + 
+|===
+
+
+[[sec-timeOfDayEnd]]
+=== timeOfDayEnd
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# timeOfDayEnd + 
+[underline]#** Attribute Type :**# dateTime + 
+ 
+[underline]#** Remarks :**#  + 
+|===
+
+
+[[sec-fileReference]]
+=== fileReference
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# fileReference + 
+[underline]#** Attribute Type :**# text + 
+ 
+[underline]#** Remarks :**#  + 
+|===
+
+
+[[sec-sourceOfIcing]]
+=== sourceOfIcing
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# The type of weather phenomenon causing hazardous ice accretion. + 
+[underline]#** Attribute Type :**# enumeration + 
+1) freezingSpray + 
+[underline]#**IHO Definition**# :Sea spray transported through air at temperatures below 0C. + 
+2) freezingRain + 
+[underline]#**IHO Definition**# :Precipitation drops freezing on impact to form a coating of clear ice (glaze) on the ground and on exposed objects. + 
+3) freezingFog + 
+[underline]#**IHO Definition**# :Tiny, supercooled liquid water droplets in fog can freeze instantly on exposed surfaces when surface temperatures are at or below freezing. + 
+4) otherIcingSource + 
+[underline]#**IHO Definition**# :Source of icing is unknown or is different from other types of icing sources. + 
+ 
+[underline]#** Remarks :**#  + 
+|===
+
+
+[[sec-windWarningThreshold]]
+=== windWarningThreshold
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# Represents the wind warning that has been exceeded or forecast to be exceeded. + 
+[underline]#** Attribute Type :**# enumeration + 
+1) near gale force + 
+[underline]#**IHO Definition**# :Wind speeds between 28 and 33 knots (Beaufort scale wind force 7) are forecast or occurring. + 
+2) gale force + 
+[underline]#**IHO Definition**# :Wind speeds between 34 and 47 knots (Beaufort scale wind force 8 and 9) are forecast or occurring. + 
+3) storm force + 
+[underline]#**IHO Definition**# :Wind speeds between 48 and 63 knots (Beaufort scale wind force 10 or 11) are forecast or occurring. + 
+4) hurricane force + 
+[underline]#**IHO Definition**# :Sustained wind speeds 64 knots or higher (Beaufort scale wind force 12) are forecast or occurring. + 
+ 
+[underline]#** Remarks :**#  + 
+|===
+
+

@@ -6,7 +6,7 @@
 :language: en
 :published-date: 2025-12-01
 :copyright-year: 2025
-:committee: WMO- JCOMM
+:committee: WMO-JCOMM
 :workgroup: ETSI
 :toclevels: 3
 :mn-document-class: iho
