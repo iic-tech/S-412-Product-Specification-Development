@@ -1,1 +1,24 @@
+[[sec-IceAccretionWarning]]
+=== IceAccretionWarning
+
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# A product issued by a national authority when ice accumulation rates pose a hazard to vessels.
+a|[underline]#**S-412 Geo Feature:**# IceAccretionWarning
+a|[underline]#**Primitives**: surface#
+|===
+[cols="a,a,a,a,a",options="headers"]
+|===
+a|**S-412Attribute** |**Acronym** |**Allowable Encoding Value** |**Type** | **Multiplicity**
+| iceAccretionRate
+| ()
+|
+|EN
+|1,1
+| sourceOfIcing
+| ()
+|
+|EN
+|0,1
+|===
 

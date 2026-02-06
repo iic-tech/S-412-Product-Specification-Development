@@ -1,1 +1,19 @@
+[[sec-SignificantWaveHeightWarning]]
+=== SignificantWaveHeightWarning
+
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# A product issued by a national authority when sea state conditions pose a hazard or are life-threatening.
+a|[underline]#**S-412 Geo Feature:**# SignificantWaveHeightWarning
+a|[underline]#**Primitives**: surface#
+|===
+[cols="a,a,a,a,a",options="headers"]
+|===
+a|**S-412Attribute** |**Acronym** |**Allowable Encoding Value** |**Type** | **Multiplicity**
+| significantWaveHeightWarningThreshold
+| ()
+|
+|EN
+|1,1
+|===
 

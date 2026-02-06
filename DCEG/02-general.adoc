@@ -38,7 +38,7 @@ Geographic (Geo) feature types carry the descriptive characteristics of a real w
 
 ==== Meta feature class
 
-S-412 does not make use of meta feature.
+S-412 does not make use of meta features.
 
 ==== Charted background feature
 

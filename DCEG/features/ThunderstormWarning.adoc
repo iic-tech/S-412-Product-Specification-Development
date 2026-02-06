@@ -1,1 +1,14 @@
+[[sec-ThunderstormWarning]]
+=== ThunderstormWarning
+
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# A product issued by a national authority when an area of thunderstorms or squalls poses a hazard. Conditions could include strong winds, locally higher waves, potentially heavy precipitation, hail, and dangerous lightning strikes.
+a|[underline]#**S-412 Geo Feature:**# ThunderstormWarning
+a|[underline]#**Primitives**: surface#
+|===
+[cols="a,a,a,a,a",options="headers"]
+|===
+a|**S-412Attribute** |**Acronym** |**Allowable Encoding Value** |**Type** | **Multiplicity**
+|===
 
