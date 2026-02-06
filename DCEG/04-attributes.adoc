@@ -1,5 +1,8 @@
 == Attributes and Enumerates Descriptions
 
+
+include::attributes/all.adoc
+
 include::attributes/agencyName.adoc[]
 
 include::attributes/beaufortForce.adoc[]
