@@ -2,7 +2,7 @@
 :series: S
 :docnumber: 412
 :doctype: standard
-:edition: 2.1.0
+:edition: 1.2.0
 :language: en
 :published-date: 2026-02-01
 :copyright-year: 2026
