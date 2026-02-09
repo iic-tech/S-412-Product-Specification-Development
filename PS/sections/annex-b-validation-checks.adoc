@@ -3,7 +3,7 @@
 [appendix]
 == Validation Checks
 
-#This annex has been initiated based on S-158 and S-102 Validation Checks Annex. It is still to be amended to fit with S-412 specificities and completed with S-412 validation checks.#
+This annex has been initiated based on S-158 and S-102 Validation Checks Annex. It is still to be amended to fit with S-412 specificities and completed with S-412 validation checks.
 
 === Introduction
 The following checks are intended for production systems designed to produce S-412 datasets. The checks can be administered at any time during the production phase. They can also be applied downstream in the distribution and end user systems to test the conformance of a dataset to the format rules specified in S-100 Part 10c and the S-412 Product Specification.
@@ -36,13 +36,9 @@ NOTE Information about the purpose, usage and lineage of a dataset is non-quanti
 *measurement*:: the (detailed) dimensions of a physical quantity [S-32].
 *record*:: finite, named collection of related items (objects or values).
 
-===== Abbreviations
-
-#Not sure this section is needed.#
-
 ===== Symbols
 
-#To be completed based on equivalent section in S-158.#
+*To be completed based on equivalent section in S-158.*
 
 === Check Classification
 Checks are classified as Critical, Error, or Warning checks as described in the Table below.
@@ -163,8 +159,10 @@ The individual checks are given in a spreadsheet file accompanying this Product 
 
 Comparisons of names in the GML dataset, exchange catalogue, and exchange set (features, attributes, GML datasets, etc.) to the Product Specification and feature catalogue should be case-sensitive.
 
-Additional "S-100 level" checks will be defined in a separate document (under preparation by the S-100 WG). 
-#NOTE S-100 GML generic checks will probablyha ot be included in this Annex.#
+Additional "S-100 level" checks will be defined in a separate document (under preparation by the S-100 WG).
+
+NOTE:: S-100 GML generic checks will probablyha ot be included in this Annex.
+
 
 
 
