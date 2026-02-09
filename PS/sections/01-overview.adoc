@@ -73,13 +73,53 @@ Within this document:
 * "`Should`" indicates an optional requirement, that is the recommended process to be followed, but is not mandatory.
 * "`May`" means "`allowed to`" or "`could possibly`" and is not mandatory.
 
+==== Abbreviations
+This Product Specification adopts the following convention for presentation purposes:
+
+CRS::  Coordinate Reference System
+DCEG::  Data Classification and Encoding Guide
+ECDIS:: Electronic Chart Display and Information System
+ECS:: 	Electronic Chart System (Non SOLAS) 
+ENC::  Electronic Navigational Chart
+EPSG::  European Petroleum Survey Group [https://epsg.org/]
+ET-MS::  Expert Team on Maritime Safety
+FCD::		Feature Concept Dictionary
+GFM::		General Feature Model
+GI::  Geospatial Information
+GMDSS:: 	Global Maritime Distress and Safety System
+GML:: Geography Markup Language
+HDF5::		Hierarchical Data Format (HDF5 is the fifth release)
+ICC::  International Color Consortium 
+IHO:: International Hydrographic Organization
+IMO::		International Maritime Organization
+IOC::		Intergovernmental Oceanographic Commission
+ISO:: International Organization for Standardization
+JCOMM:: Joint Technical Commission for Oceanography and Marine Meteorology
+METAREA::  METeorological AREA
+OEM::		Original Equipment Manufacturer 
+S-100WG:: 	S-100 Working Group
+SC-MMO::  Standing Committee on Marine Meteorological and Oceanographic Services 
+SERCOM::  Commission for Weather, Climate, Hydrological, Marine, and Related Environmental Services and Applications
+SOLAS::		International Convention for Safety of Life at Sea
+SVG::		Scalable Vector Graphics
+UML::		Unified Modelling Language
+URI::		Uniform Resource Identifier
+URL::		Universal Resource Locator
+UTC::		Coordinated Universal Time
+UTF-8::  Unicode Transformation Format-8
+WMO::  World Meteorological Organization
+WWMIWS::	Worldwide Met-Ocean Information and Warning Service
+XML::		Extensible Mark-up Language
+XSD::		World Wide Web Consortium XML Schema Definition
+XSLT::		eXtensible Stylesheet Language Transformations
+
 ==== Terms and definitions
 The S-100 framework is based on the ISO 19100 series of geographic standards. The terms and definitions provided here are used to standardise the relevant nomenclature found within that framework, whenever possible. Additional definitions specific to S-412 are provided in this section as well. Features, attributes and associations that may be realised in an S-412 compliant dataset are defined in Annex A (DCEG).
 
 *Abstract Class*
 An object class which cannot be instantiated, or is designated in an information model as not allowed  to be instantiated [ISO 19107].
 
-NOTE:: subclasses of an abstract class may be either abstract or non-abstract.
+NOTE:: Subclasses of an abstract class may be either abstract or non-abstract.
 
 *Aggregation*
 
@@ -121,7 +161,7 @@ NOTE:: Boundary is most commonly used in the context of geometry, where the set 
 
 Description of a set of objects that share the same attributes, operations, methods, relationships, and semantics [ISO/TS 19103:2005].
 
-NOTE:: a class represents a concept within the system being modelled. Depending on the kind of model, the concept may be real-world (for an analysis model), or it may also contain algorithmic and computer implementation concepts (for a design model). A classifier is a generalisation of class that includes other class-like elements, such as data type, actor and component.
+NOTE:: A class represents a concept within the system being modelled. Depending on the kind of model, the concept may be real-world (for an analysis model), or it may also contain algorithmic and computer implementation concepts (for a design model). A classifier is a generalisation of class that includes other class-like elements, such as data type, actor and component.
 
 *Code List*
 
@@ -137,7 +177,7 @@ NOTE:: In a *coordinate reference system*, the coordinate numbers are qualified 
 
 A coordinate system that is related to the real world by a datum [ISO 19111].
 
-NOTE:: for geodetic and vertical datums, it will be related to the Earth.
+NOTE:: For geodetic and vertical datums, it will be related to the Earth.
 
 *Coverage*
 
@@ -181,7 +221,7 @@ Parameter or set of parameters that define the position of the origin, the scale
 
 *ECDIS*
 
-"Electronic Chart Display and Information System". A navigation information system which with adequate back-up arrangements can be accepted as complying with the up-to-date chart required by regulations V/19 and V/27 of the 1974 SOLAS Convention, as amended, by displaying selected information from a System Electronic Navigational Chart (System Database) with positional information from navigation sensors to assist the Mariner in route planning and route monitoring, and if required display additional navigation-related information.
+A navigation information system which with adequate back-up arrangements can be accepted as complying with the up-to-date chart required by regulations V/19 and V/27 of the 1974 SOLAS Convention, as amended, by displaying selected information from a System Electronic Navigational Chart (System Database) with positional information from navigation sensors to assist the Mariner in route planning and route monitoring, and if required display additional navigation-related information.
 
 *Direct Position*
 
@@ -247,7 +287,7 @@ Data about data [ISO 19115:2005].
 
 *METAREA*
 
-METAREA is the acronym for METeorological AREA. It means a geographical sea area established for the purpose of co-ordinating the broadcast of marine meteorological information. The term METAREA followed by a roman numeral may be used to identify a particular sea area. [WMO List of METAREAS].
+It means a geographical sea area established for the purpose of co-ordinating the broadcast of marine meteorological information. The term METAREA followed by a roman numeral may be used to identify a particular sea area. [WMO List of METAREAS].
 
 *Multiplicity*
 
@@ -262,7 +302,8 @@ Computer simulations of the atmosphere and/or ocean that use an analysis of the 
 *Object*
 
 Entity with a well-defined boundary and identity that encapsulates state and behavior.
-Note: State is represented by attributes and relationships, behavior is represented by operations, methods, and state machines. An object is an instance of a class. [S-100].
+
+NOTE:: State is represented by attributes and relationships, behavior is represented by operations, methods, and state machines. An object is an instance of a class. [S-100].
 
 *Point*
 
@@ -274,7 +315,7 @@ NOTE:: The boundary of a point is the empty set.
 
 Presentation of information to humans [ISO 19117].
 
-NOTE:: within the scope of this International Standard portrayal is restricted to the portrayal of geographic information. [S-100].
+NOTE:: Within the scope of this International Standard portrayal is restricted to the portrayal of geographic information. [S-100].
 
 *Portrayal Catalogue*
 
@@ -325,7 +366,7 @@ Information system on which a register is maintained. [ISO 19135].
 *Schema*
 Formal description of a model [S-100].
 
-Applied.*Significant Wave Height*
+*Significant Wave Height*
 
 The average trough-to-crest height of the highest one third of the wave heights (sea and swell) occurring in a particular time period [WMO Glossary].
 
@@ -369,45 +410,7 @@ NOTE 1:: A value may be considered a possible state of an object within a class 
 
 NOTE 2:: A data value is an instance of a data type, a value without identity.
 
-==== Abbreviations
-This Product Specification adopts the following convention for presentation purposes:
 
-CRS::  Coordinate Reference System
-DCEG::  Data Classification and Encoding Guide
-ECDIS:: Electronic Chart Display and Information System
-ECS:: 	Electronic Chart System (Non SOLAS) 
-ENC::  Electronic Navigational Chart
-EPSG::  European Petroleum Survey Group [https://epsg.org/]
-ET-MS::  Expert Team on Maritime Safety
-FCD::		Feature Concept Dictionary
-GFM::		General Feature Model
-GI::  Geospatial Information
-GMDSS:: 	Global Maritime Distress and Safety System
-GML:: Geography Markup Language
-HDF5::		Hierarchical Data Format (HDF5 is the fifth release)
-ICC::  International Color Consortium 
-IHO:: International Hydrographic Organization
-IMO::		International Maritime Organization
-IOC::		Intergovernmental Oceanographic Commission
-ISO:: International Organization for Standardization
-JCOMM:: Joint Technical Commission for Oceanography and Marine Meteorology
-METAREA::  METeorological AREA
-OEM::		Original Equipment Manufacturer 
-S-100WG:: 	S-100 Working Group
-SC-MMO::  Standing Committee on Marine Meteorological and Oceanographic Services 
-SERCOM::  Commission for Weather, Climate, Hydrological, Marine, and Related Environmental Services and Applications
-SOLAS::		International Convention for Safety of Life at Sea
-SVG::		Scalable Vector Graphics
-UML::		Unified Modelling Language
-URI::		Uniform Resource Identifier
-URL::		Universal Resource Locator
-UTC::		Coordinated Universal Time
-UTF-8::  Unicode Transformation Format-8
-WMO::  World Meteorological Organization
-WWMIWS::	Worldwide Met-Ocean Information and Warning Service
-XML::		Extensible Mark-up Language
-XSD::		World Wide Web Consortium XML Schema Definition
-XSLT::		eXtensible Stylesheet Language Transformations
 
 === General Marine Weather Warnings Data Product Description
 
@@ -449,7 +452,7 @@ Email: mailto:publications@wmo.int[] +
 *URL*:: link:http://www.wmo.int/[www.wmo.int]
 
 *Identifier*::  S-412 +
-*Maintenance*::  Changes to the Product Specification S-412 are coordinated by the SERCOM, formely JCOMM, and must be made available via the IHO web site. When a new version of the product spec is ready for approval it must follow through several bodies of the WMO; including: ET-MS and SC-MMO while keeping WWMIWS aware of changes for METAREAS. Once approved by the WMO, the WMO’s Domain Control Body Member will submit the document to IHO for approval into the GI Registry. +
+*Maintenance*::  Changes to the Product Specification S-412 are coordinated by the SERCOM, formerly JCOMM, and must be made available via the IHO web site. When a new version of the product spec is ready for approval it must follow through several bodies of the WMO; including: ET-MS and SC-MMO while keeping WWMIWS aware of changes for METAREAS. Once approved by the WMO, the WMO’s Domain Control Body Member will submit the document to IHO for approval into the GI Registry. +
 
 *URL*:: link:http://www.wmo.int/[www.wmo.int]
 *Identifier*:: S-412
@@ -482,6 +485,7 @@ New Editions denoted as **n**.0.0
 Revisions denoted as n.**n**.0
 
 Clarifications denoted as n.n.**n**
+
 
 
 
