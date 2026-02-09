@@ -2,8 +2,6 @@
 [[sec-geo-features]]
 == Geo Features
 
-=== Convergent Boundary
-
 // [width="100%",cols="5,5,5,1,1"]
 // |===
 //
@@ -28,3 +26,6 @@ include::features/RestrictedVisibilityWarning.adoc[]
 include::features/SignificantWaveHeightWarning.adoc[]
 
 include::features/ThunderstormWarning.adoc[]
+
+include::features/WindWarning.adoc[]
+
