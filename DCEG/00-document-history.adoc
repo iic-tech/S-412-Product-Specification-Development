@@ -3,7 +3,7 @@
 
 Changes to the Product Specification S-412 are coordinated by the SERCOM, formely JCOMM.
 
-[cols="a,a,a,a",options="headers"]
+[cols=",,,",options="headers"]
 |===
 |Version Number |Date |Approved By |Purpose
 
@@ -13,4 +13,10 @@ Changes to the Product Specification S-412 are coordinated by the SERCOM, formel
 |WMO
 |Initial document creation by IIC Technologies. Version number in line with the PS.
 
+|1.3.0
+|February 2026
+|WMO
+|Review by IIC Technologies based on the last vesrion on the Feature Catalogue.
+
 |===
+
