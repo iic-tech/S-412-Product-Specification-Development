@@ -19,83 +19,49 @@ This product specification does not include recommended changes to or requiremen
 
 ==== Normative references
 GML OpenGIS®:: _Geography Markup Language (GML) Encoding Standard_ (Version 3.2.1).
-NOAA National Weather Service Glossary:: _https://forecast.weather.gov/glossary.php._
-National Weather Service Instruction 10-315:: _Marine Weather Message_, 2020 Edition.
-National Weather Service Instruction 10-303:: _Marine and Coastal Services Standards and Guidelines_, 2022 Edition.
-National Weather Service Instruction 10-604:: _Tropical Cyclone Names and Definitions_, 2021 Edition.
-National Weather Service Instruction 10-811:: _Enroute Forecasts and Advisories_, 2022 Edition.
-National Weather Service Policy Directive 10-6:: _Tropical Cyclone Weather Services Program_, 2020 Edition.
-IHO Geospatial Information Registry:: https://registry.iho.int/main.do
 S-32:: _IHO Hydrographic Dictionary https://portal.iho.int/iho-ohi/S32/_,
 S-53:: _Joint IHO/IMO/WMO Manual on Maritime Safety Information (MSI)_, January 2016 Edition.
 S-97:: _IHO Guidelines for Creating S-100 Product Specifications_, Edition 1.1.0, June 2020.
 S-98:: _S-100 ECDIS and Interoperability Specification_, Edition 2.0.0, 2026.
 S-100:: _IHO Universal Hydrographic Data Model_, Edition 5.2.1, December 2025.
 S-101:: _IHO Electronic Navigation Chart Product Specification_, Edition 2.0.0, April 2025.
-WMO 8:: _Guide to Meteorological Instruments and Methods of Observation_, 2023 Edition.
-WMO 182:: _International Meteorological Vocabular_, 1992 Edition.
-WMO 306:: _Manual on Codes_, 2024 Edition.
-WMO 386:: _Manual on the Global Telecommunication System_, 2020 Edition.
-WMO 471:: _Guide to Marine Meteorological Services_, 2024 Edition.
-WMO 485:: _Manual on the Global Data-processing and Forecasting System_, 2023 Edition.
-WMO 558:: _Manual on Marine Meteorological Services_, 2024 Edition.
-WMO 702:: _Guide to Wave Analysis and Forecasting_, 2020 Edition.
+IMO A27/Res. 1051:: _IMO/WMO Worldwide Met-Ocean Information and Warning Service_, 2011 Edition.
+WMO-No. 8:: _Guide to Meteorological Instruments and Methods of Observation_, 2023 Edition.
+WM-No. 182:: _International Meteorological Vocabular_, 1992 Edition.
+WMO-No. 306:: _Manual on Codes_, 2024 Edition.
+WMO-No. 386:: _Manual on the Global Telecommunication System_, 2020 Edition.
+WMO-No. 471:: _Guide to Marine Meteorological Services_, 2024 Edition.
+WMO-No. 485:: _Manual on the Global Data-processing and Forecasting System_, 2023 Edition.
+WMO-No. 558:: _Manual on Marine Meteorological Services_, 2024 Edition.
+WMO-No. 702:: _Guide to Wave Analysis and Forecasting_, 2020 Edition.
 WMO/TD 850:: 1998 Edition.
-Global Maritime Distress and Safety System:: GMDSS https://www.weather.gov/marine/gmdss.
+IMO:: _GMDSSmanual: Global Maritime Distress and Safety System_. 2024 Edition.
+IHO GI Registry:: _International Hydrographic Organization_ (https://registry.iho.int/main.do).
+UN database:: United Nations terminology Database.
 
 [bibliography]
 ==== Informative references
-IMO A27/Res. 1051:: _IMO/WMO Worldwide Met-Ocean Information and Warning Service_, 2011 Edition.
-ISO 8601. 2004:: _Data elements and interchange formats – Information interchange – Representation of dates and times_, 2004.
-ISO 3166-1. 2020:: _Country Codes_, 2020.
-ISO 639-2/T. 1998:: _Language Codes_, 1998.
-ISO/TS 19103. 2024:: _Geographic information – Conceptual schema language_, 2024.
-ISO/IEC 10646:2020:: _Information technology — Universal coded character set (UCS)_
-ISO 19111. 2019:: _Geographic Information – Spatial referencing by coordinates_, 2019.
-ISO 19115. 2003:: _Geographic Information – Metadata_, 2003.
-ISO 19115-1. 2014:: _Geographic information - Metadata - Part 1: Fundamentals_, 2014.
-ISO 19115-2.2019:: _Geographic Information – Metadata – Part 2: Extension for imagery and gridded data_, 2019.
-ISO/TS 19123. 2005:: _Geographic information – Schema for coverage geometry and functions_, 2005.
-ISO/TS 19123-1. 2023:: _Geographic information – Schema for coverage geometry and functions. Part 1: Fundamentals_, 2023.
-ISO 19129. 2009:: _Geographic information – Imagery, gridded and coverage data framework_, 2009.
-ISO 19131. 2022:: _Geographic information – Data product specifications_, 2022.
-ISO 19136:2007:: _Geographic Information – Geographic Markup Language (GML)_, 2007.
-ISO 19136-1:2020:: _Geographic Information – Geographic Markup Language (GML). Part 1: Fundamentals_, 2020.
-ISO/IEC 19501. 2005:: _Information technology – Unified Modeling Language (UML)_ Version 1.4.2, 2005
-ISO 19101:2002:: _Geographic information – Reference model_, 2002.
-ISO 19101-1:2014:: _Geographic information – Reference model. Part 1: Fundamentals_, 2014.
-ISO 19103: 2024:: _Geographic information – Conceptual schema language_, 2024.
-ISO 19105: 2022:: _Geographic information – Conformance and testing_, 2022.
-ISO 19107:2019:: _Geographic information – Spatial schema_, 2019.
-ISO 19108:2002:: _Geographic information – Temporal schema_, 2002.
-ISO 19109:2015:: _Geographic information – Rules for application schema_, 2015.
-ISO 19110: 2016:: _Geographic information – Methodology for feature cataloguing_, 2016.
-ISO 19113: 2005:: _Geographic information – Quality principles_, 2005
-ISO 19116: 2019:: _Geographic information – Positioning services_, 2019.
-ISO 19117:2012: _Geographic information – Portrayal_, 2012.
-ISO 19118: 2011:: _Geographic information – Encoding_, 2011.
-ISO 19128:2005:: _Geographic information – Web Map Server interface_, 2005.
-19132: 2007:: _Geographic information – Location-based services – Reference model_, 2007.
-ISO 19133:2005:: _Geographic information – Location-based services – Tracking and navigation_, 2005.
-ISO 19138:2006:: _Geographic information – Data quality measures_, 2006.
-ISO 19142:2010:: _Geographic information – Web Feature Service_, 2010.
-ISO 19144-1:2009:: _Geographic information – Classification systems – Part 1: Classification system structure_, 2009.
-ISO 19145:2013:: _Geographic information – Registry of representations of geographic point location_, 2013.
-ISO 19153:2014:: _Geographic information – Geospatial Digital Rights Management Reference Model (GeoDRM RM) 1)_, 2014.
-ISO 19156:2023:: _Geographic information – Observations and measurements_, 2011.
-ISO 19157:2023:: _Geographic information – Data quality_, 2013.
-ISO/TS 19158:2012:: _Geographic information – Quality assurance of data supply_, 2010.
-ISO 19101:: _Geographic Information – Reference Model_, 2003.
-ISO 19103:: _Geographic Information – Conceptual Schema Language_, 2005.
-ISO 19103-2:: _Geographic Information – Conceptual Schema Language – Part 2_, 2005.
-ISO 19109:: _Geographic Information – Rules for Application Schema_, 2005.
-ISO 19110:: _Geographic Information – Methodology for Feature Cataloguing_, 2005.
-ISO 19111:: _Geographic Information – Spatial Referencing by Coordinates_, 2007.
-ISO 19115-1:: _Geographic information - Metadata - Part 1: Fundamentals_, 2014/Amd 1: 2018.
+ISO 8601-1:: _Information Interchange – Date and Time_, 2019.
+ISO 19101-1:: _Geographic information – Reference model. Part 1: Fundamentals_, 2014.
+ISO 19103:: _Geographic information – Conceptual schema language_, 2024.
+ISO 19107:: _Geographic information – Spatial schema_, 2019.
+ISO 19108:: _Geographic information – Temporal schema_, 2002.
+ISO 19110:: _Geographic information – Methodology for feature cataloguing_, 2016.
+ISO 19111:: _Geographic Information – Spatial referencing by coordinates_, 2019.
+ISO 19115:: _Geographic Information – Metadata_, 2003.
+ISO 19115-1:: _Geographic information - Metadata - Part 1: Fundamentals_, 2014/Amd1: 2018.
 ISO 19115-3:: _Geographic information - Metadata - Part 3: XML Schema implementation for fundamental concepts_, 2016.
-ISO 19117:: _Geographic Information – Portrayal_, 2012.
-ISO 19131:: _Geographic Information – Data Product Specifications_, 2008.
+ISO 19117: _Geographic information – Portrayal_, 2012.
+ISO 19131:: _Geographic information – Data product specifications_, 2008.
 ISO 19139-1:: _Geographic information - XML schema implementation - Part 1: Encoding rules_, 2019
+ISO 3166-1:: _Country Codes_, 2020.
+ISO 639-2/T:: _Language Codes_, 1998.
+ISO/TS 19103:: _Geographic information – Conceptual schema language_, 2024.
+ISO/TS 19123:: _Geographic information – Schema for coverage geometry and functions_, 2005.
+ISO/TS 19123-1:: _Geographic information – Schema for coverage geometry and functions. Part 1: Fundamentals_, 2023.
+ISO 19136:: _Geographic Information – Geographic Markup Language (GML)_, 2007.
+ISO 19136-1:: _Geographic Information – Geographic Markup Language (GML). Part 1: Fundamentals_, 2020.
+ISO/IEC 19501:: _Information technology – Unified Modeling Language (UML)_ Version 1.4.2, 2005
 
 === Terms, definitions and abbreviations
 
@@ -516,6 +482,7 @@ New Editions denoted as **n**.0.0
 Revisions denoted as n.**n**.0
 
 Clarifications denoted as n.n.**n**
+
 
 
 
