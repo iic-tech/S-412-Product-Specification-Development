@@ -1,5 +1,5 @@
 [[sec-beaufortForce]]
-=== beaufortForce
+=== Beaufort Force
 [cols="a",options="headers"]
 |===
 a|[underline]#**IHO Definition** :# Wind force scale, originally based on the state of the sea, expressed in numbers from 0 to 12, as defined by WMO (WMO 306 Manual on Codes, Volume I.1 - International Codes). + 
@@ -8,7 +8,7 @@ a|[underline]#**IHO Definition** :# Wind force scale, originally based on the st
 [underline]#**IHO Definition**# :Absence of air motion or wind with a speed of less than 1 knot (Beaufort scale wind force 0). + 
 1) light air + 
 [underline]#**IHO Definition**# :Wind with a speed between 1 and 3 knots (Beaufort scale wind force 1) + 
-2) ligth breeze + 
+2) light breeze + 
 [underline]#**IHO Definition**# :Wind with a speed between 4 and 6 knots (Beaufort scale wind force 2). + 
 3) gentle breeze + 
 [underline]#**IHO Definition**# :Wind with a speed between 7 and 10 knots (Beaufort scale wind force 3). + 
@@ -22,7 +22,7 @@ a|[underline]#**IHO Definition** :# Wind force scale, originally based on the st
 [underline]#**IHO Definition**# :Wind with a speed between 28 and 33 knots (Beaufort scale wind force 7). + 
 8) gale + 
 [underline]#**IHO Definition**# :Wind with a speed between 34 and 40 knots (Beaufort scale wind force 8). + 
-9) strong glae + 
+9) strong gale + 
 [underline]#**IHO Definition**# :Wind with a speed between 41 and 47 knots (Beaufort scale wind force 9). + 
 10) storm + 
 [underline]#**IHO Definition**# :Wind with a speed between 48 and 55 knots (Beaufort scale wind force 10). + 
@@ -36,7 +36,7 @@ a|[underline]#**IHO Definition** :# Wind force scale, originally based on the st
 
 
 [[sec-iceAccretionRate]]
-=== iceAccretionRate
+=== Ice Accretion Rate
 [cols="a",options="headers"]
 |===
 a|[underline]#**IHO Definition** :# Represents the ice accretion warning that has been exceeded or forecast to be exceeded based on ice accumulation rates. + 
@@ -51,7 +51,7 @@ a|[underline]#**IHO Definition** :# Represents the ice accretion warning that ha
 
 
 [[sec-metareaName]]
-=== metareaName
+=== Metarea Name
 [cols="a",options="headers"]
 |===
 a|[underline]#**IHO Definition** :# A name referencing a defined geographical area of the ocean used to coordinate the transmission of meteorological information and services to mariners. + 
@@ -104,7 +104,7 @@ a|[underline]#**IHO Definition** :# A name referencing a defined geographical ar
 
 
 [[sec-significantWaveHeightWarningThreshold]]
-=== significantWaveHeightWarningThreshold
+=== Significant Wave Height Warning Threshold
 [cols="a",options="headers"]
 |===
 a|[underline]#**IHO Definition** :# Represents the significant wave height warning that has been exceeded or is forecast to be exceeded based on predetermined bins of significant wave height values. + 
@@ -125,7 +125,7 @@ a|[underline]#**IHO Definition** :# Represents the significant wave height warni
 
 
 [[sec-text]]
-=== text
+=== Text
 [cols="a",options="headers"]
 |===
 a|[underline]#**IHO Definition** :# A non-formatted digital text string. + 
@@ -136,7 +136,7 @@ a|[underline]#**IHO Definition** :# A non-formatted digital text string. +
 
 
 [[sec-language]]
-=== language
+=== Language
 [cols="a",options="headers"]
 |===
 a|[underline]#**IHO Definition** :# The method of human communication, either spoken or written, consisting of the use of words in a structured and conventional way. + 
@@ -147,7 +147,7 @@ a|[underline]#**IHO Definition** :# The method of human communication, either sp
 
 
 [[sec-agencyName]]
-=== agencyName
+=== Agency Name
 [cols="a",options="headers"]
 |===
 a|[underline]#**IHO Definition** :# The name of an agency, entity or organization. + 
@@ -158,7 +158,7 @@ a|[underline]#**IHO Definition** :# The name of an agency, entity or organizatio
 
 
 [[sec-mailingAddress]]
-=== mailingAddress
+=== Mailing Address
 [cols="a",options="headers"]
 |===
 a|[underline]#**IHO Definition** :# The physical address a parcel may be sent to. + 
@@ -169,7 +169,7 @@ a|[underline]#**IHO Definition** :# The physical address a parcel may be sent to
 
 
 [[sec-telephoneNumber]]
-=== telephoneNumber
+=== Telephone Number
 [cols="a",options="headers"]
 |===
 a|[underline]#**IHO Definition** :# The telephone number of an entity. + 
@@ -180,7 +180,7 @@ a|[underline]#**IHO Definition** :# The telephone number of an entity. +
 
 
 [[sec-emailAddress]]
-=== emailAddress
+=== Email Address
 [cols="a",options="headers"]
 |===
 a|[underline]#**IHO Definition** :# Identifies an email box to which email messages are delivered. + 
@@ -191,7 +191,7 @@ a|[underline]#**IHO Definition** :# Identifies an email box to which email messa
 
 
 [[sec-webAddress]]
-=== webAddress
+=== Web Address
 [cols="a",options="headers"]
 |===
 a|[underline]#**IHO Definition** :# A reference to a web resource that specifies its location on a computer network and a mechanism for retrieving it. + 
@@ -202,7 +202,7 @@ a|[underline]#**IHO Definition** :# A reference to a web resource that specifies
 
 
 [[sec-countryName]]
-=== countryName
+=== Country Name
 [cols="a",options="headers"]
 |===
 a|[underline]#**IHO Definition** :# The name of a nation. + 
@@ -213,10 +213,10 @@ a|[underline]#**IHO Definition** :# The name of a nation. +
 
 
 [[sec-dateStart]]
-=== dateStart
+=== Date Start
 [cols="a",options="headers"]
 |===
-a|[underline]#**IHO Definition** :# dateStart + 
+a|[underline]#**IHO Definition** :# The earliest date on which an object (for example a buoy) will be present. + 
 [underline]#** Attribute Type :**# S100_TruncatedDate + 
  
 [underline]#** Remarks :**#  + 
@@ -224,10 +224,10 @@ a|[underline]#**IHO Definition** :# dateStart +
 
 
 [[sec-dateEnd]]
-=== dateEnd
+=== Date End
 [cols="a",options="headers"]
 |===
-a|[underline]#**IHO Definition** :# dateEnd + 
+a|[underline]#**IHO Definition** :# The latest date on which an object (for example a buoy) will be present. + 
 [underline]#** Attribute Type :**# S100_TruncatedDate + 
  
 [underline]#** Remarks :**#  + 
@@ -235,7 +235,7 @@ a|[underline]#**IHO Definition** :# dateEnd +
 
 
 [[sec-issueDate]]
-=== issueDate
+=== Issue Date
 [cols="a",options="headers"]
 |===
 a|[underline]#**IHO Definition** :# The time, expressed in Universal Time Coordinated (UTC) at which an object and its attributes are issued from an agency. + 
@@ -246,7 +246,7 @@ a|[underline]#**IHO Definition** :# The time, expressed in Universal Time Coordi
 
 
 [[sec-weatherWarningNumber]]
-=== weatherWarningNumber
+=== Weather Warning Number
 [cols="a",options="headers"]
 |===
 a|[underline]#**IHO Definition** :# Identification number given to a specifc weather warning. + 
@@ -257,7 +257,7 @@ a|[underline]#**IHO Definition** :# Identification number given to a specifc wea
 
 
 [[sec-cancellationDate]]
-=== cancellationDate
+=== Cancellation Date
 [cols="a",options="headers"]
 |===
 a|[underline]#**IHO Definition** :# Date and time of cancelling a notice or warning. + 
@@ -268,7 +268,7 @@ a|[underline]#**IHO Definition** :# Date and time of cancelling a notice or warn
 
 
 [[sec-nextUpdateDateTime]]
-=== nextUpdateDateTime
+=== Next Update Date Time
 [cols="a",options="headers"]
 |===
 a|[underline]#**IHO Definition** :# The time, expressed in Universal Time Coordinated (UTC) an object and its attributes are scheduled to be updated. + 
@@ -279,7 +279,7 @@ a|[underline]#**IHO Definition** :# The time, expressed in Universal Time Coordi
 
 
 [[sec-interoperabilityIdentifier]]
-=== interoperabilityIdentifier
+=== Interoperability Identifier
 [cols="a",options="headers"]
 |===
 a|[underline]#**IHO Definition** :# interoperabilityIdentifier + 
@@ -290,29 +290,29 @@ a|[underline]#**IHO Definition** :# interoperabilityIdentifier +
 
 
 [[sec-timeOfDayStart]]
-=== timeOfDayStart
+=== Time of Day Start
 [cols="a",options="headers"]
 |===
-a|[underline]#**IHO Definition** :# timeOfDayStart + 
-[underline]#** Attribute Type :**# dateTime + 
+a|[underline]#**IHO Definition** :# The time corresponding to the start of an active period. + 
+[underline]#** Attribute Type :**# time + 
  
 [underline]#** Remarks :**#  + 
 |===
 
 
 [[sec-timeOfDayEnd]]
-=== timeOfDayEnd
+=== Time of Day End
 [cols="a",options="headers"]
 |===
-a|[underline]#**IHO Definition** :# timeOfDayEnd + 
-[underline]#** Attribute Type :**# dateTime + 
+a|[underline]#**IHO Definition** :# The time corresponding to the end of an active period. + 
+[underline]#** Attribute Type :**# time + 
  
 [underline]#** Remarks :**#  + 
 |===
 
 
 [[sec-fileReference]]
-=== fileReference
+=== File Reference
 [cols="a",options="headers"]
 |===
 a|[underline]#**IHO Definition** :# fileReference + 
@@ -323,7 +323,7 @@ a|[underline]#**IHO Definition** :# fileReference +
 
 
 [[sec-sourceOfIcing]]
-=== sourceOfIcing
+=== Source Of Icing
 [cols="a",options="headers"]
 |===
 a|[underline]#**IHO Definition** :# The type of weather phenomenon causing hazardous ice accretion. + 
@@ -342,7 +342,7 @@ a|[underline]#**IHO Definition** :# The type of weather phenomenon causing hazar
 
 
 [[sec-windWarningThreshold]]
-=== windWarningThreshold
+=== Wind Warning Threshold
 [cols="a",options="headers"]
 |===
 a|[underline]#**IHO Definition** :# Represents the wind warning that has been exceeded or forecast to be exceeded. + 

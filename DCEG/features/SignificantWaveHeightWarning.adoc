@@ -1,51 +1,51 @@
 [[sec-SignificantWaveHeightWarning]]
-=== SignificantWaveHeightWarning
+=== Significant Wave Height Warning
 
 [cols="a",options="headers"]
 |===
 a|[underline]#**IHO Definition** :# A product issued by a national authority when sea state conditions pose a hazard or are life-threatening.
-a|[underline]#**S-412 Geo Feature:**# SignificantWaveHeightWarning
+a|[underline]#**S-412 Geo Feature:**# Significant Wave Height Warning
 a|[underline]#**Primitives**: surface#
 |===
 [cols="a,a,a,a,a",options="headers"]
 |===
 a|**S-412Attribute** |**Acronym** |**Allowable Encoding Value** |**Type** | **Multiplicity**
-| significantWaveHeightWarningThreshold
+| Significant Wave Height Warning Threshold
 | ()
 |
 |EN
 |1,1
-| fixedDateRange
+| Fixed Date Range
 | ()
 |
 |C
 |1,1
-| weatherWarningMessage
+| Weather Warning Message
 | ()
 |
 |C
 |0,1
-| issueDate
+| Issue Date
 | ()
 |
 |DT
 |1,1
-| weatherWarningNumber
+| Weather Warning Number
 | ()
 |
 |TE
 |1,1
-| cancellationDate
+| Cancellation Date
 | ()
 |
 |DT
 |1,1
-| nextUpdateDateTime
+| Next Update Date Time
 | ()
 |
 |DT
 |1,1
-| interoperabilityIdentifier
+| Interoperability Identifier
 | ()
 |
 |URN

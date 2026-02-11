@@ -1,56 +1,56 @@
 [[sec-IceAccretionWarning]]
-=== IceAccretionWarning
+=== Ice Accretion Warning
 
 [cols="a",options="headers"]
 |===
 a|[underline]#**IHO Definition** :# A product issued by a national authority when ice accumulation rates pose a hazard to vessels.
-a|[underline]#**S-412 Geo Feature:**# IceAccretionWarning
+a|[underline]#**S-412 Geo Feature:**# Ice Accretion Warning
 a|[underline]#**Primitives**: surface#
 |===
 [cols="a,a,a,a,a",options="headers"]
 |===
 a|**S-412Attribute** |**Acronym** |**Allowable Encoding Value** |**Type** | **Multiplicity**
-| iceAccretionRate
+| Ice Accretion Rate
 | ()
 |
 |EN
 |1,1
-| sourceOfIcing
+| Source Of Icing
 | ()
 |
 |EN
 |0,1
-| fixedDateRange
+| Fixed Date Range
 | ()
 |
 |C
 |1,1
-| weatherWarningMessage
+| Weather Warning Message
 | ()
 |
 |C
 |0,1
-| issueDate
+| Issue Date
 | ()
 |
 |DT
 |1,1
-| weatherWarningNumber
+| Weather Warning Number
 | ()
 |
 |TE
 |1,1
-| cancellationDate
+| Cancellation Date
 | ()
 |
 |DT
 |1,1
-| nextUpdateDateTime
+| Next Update Date Time
 | ()
 |
 |DT
 |1,1
-| interoperabilityIdentifier
+| Interoperability Identifier
 | ()
 |
 |URN
