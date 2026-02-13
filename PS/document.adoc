@@ -41,6 +41,5 @@ include::sections/11-data-product-delivery-new.adoc[]
 
 include::sections/12-metadata-new.adoc[]
 
-include::sections/13-datasets.adoc[]
-
 include::sections/14-list_of_annexes.adoc[]
+
