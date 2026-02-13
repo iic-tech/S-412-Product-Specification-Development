@@ -46,12 +46,12 @@ The following conventions are used in the UML diagrams depicting the application
 
 *	Standard UML conventions for classes, associations, inheritance, roles, and multiplicities apply. These conventions are described in Part 1 of S-100. +
 *	Italic font for a class name indicates an Abstract Class. +
-*	Abstract Feature Classes are depicted with a blue background. +
-*	Ordinary (non-abstract) feature classes are depicted with a green background. +
-*	Information type classes are depicted with a grey background. There are no abstract information type classes in S-412. +
-*	Association Classes are depicted with a white background. There are no association classes in S-412+
+*	Abstract Feature Classes are depicted with a bright green background. +
+*	Ordinary (non-abstract) feature classes are depicted with a light green background. +
+*	Information type classes are depicted with a blue background. +
+*	Association Classes are depicted with a white background. There are no association classes in S-412. +
 *	Complex attributes are depicted with a salmon background. +
-*	Enumeration lists are depicted with a brown background. The numeric code corresponding to each listed value is shown to its right following an ‘=’ sign. +
+*	Enumeration lists are depicted with an orange background. The numeric code corresponding to each listed value is shown to its right following an ‘=’ sign. +
 *	No significance is attached to the colour of associations. (Complex diagrams may use different colours to distinguish associations that cross one another.). +
 *	Where the association role or name is not explicitly shown, the default rules for the roles and names apply: +
   ** The role name is ‘the<CLASSNAME>’ where <CLASSNAME> is the name of the class to which that association end is linked. +
@@ -86,7 +86,7 @@ S-412 does not make use of any meta feature.
 
 Geographic (geo) feature types form the principal content in S-412 and are defined by their associated attributes and information types.
 
-As an example, the realisation of a Wind Warning concept is provided by the UML diagram below. The diagram shows the Wind Warning feature’s inheritance from the abstract Weather Warning feature and its connection to various complex and simple attributes. For more information regarding the relationships between WindWarning and its attributes, please refer to the DCEG. The portrayal of a WindWarning is described in the Portrayal Catalogue. For each Marine Weather Warning polygon, the colour is determined by the attribute value of windWarningThreshold. The optional beaufortForce attribute is used to indicate more specific wind speed bins that the feature represents, based on the international Beaufort Wind Scale. The dateTimeRange attribute provides the start and end times that are valid for the Wind Warning. The weatherWarningNumber attribute provides an identification number to track warnings issued with each new dataset. The optional weatherWarningMessage attribute provides a short message with added context or information about a Weather Warning.
+As an example, the realisation of a Wind Warning concept is provided by the UML diagram below. The diagram shows the *WindWarning* feature’s inheritance from the abstract *WeatherWarning* feature and its connection to various complex and simple attributes. For more information regarding the relationships between *WindWarning* and its attributes, please refer to the DCEG. The portrayal of a *WindWarning* is described in the Portrayal Catalogue. For each Marine Weather Warning polygon, the colour is determined by the attribute value of *windWarningThreshold*. The optional *beaufortForce* attribute is used to indicate more specific wind speed bins that the feature represents, based on the international Beaufort Wind Scale. The *dateTimeRange* attribute provides the start and end times that are valid for the Wind Warning. The *weatherWarningNumber* attribute provides an identification number to track warnings issued with each new dataset. The optional *weatherWarningMessage* attribute provides a short message with added context or information about a Weather Warning.
 
 [[fig-wind-warning-feature]]
 .Wind Warning feature
@@ -96,7 +96,7 @@ image::../images/S-412_Wind_Warning.png[UML diagram depicting the S-412 Wind War
 
 Information types define identifiable pieces of information in a dataset that can be shared between other features or information types. Information types have attributes but have no relationship to any geometry; information types may also reference other information types if defined in the Feature Catalogue.
 
-Figure 4.4 shows the realisation of the single information type used in S-412: *DataProvider*.
+Figure <<fig-data-provider-information-type>> shows the realisation of the single information type used in S-412: *DataProvider*.
 
 [[fig-data-provider-information-type]]
 .Data Provider information type
@@ -136,7 +136,7 @@ Example: 19850412T101530.
 
 |===
 
-Simple attributes for the Wind Warning feature type are shown in <<fig-wind-warning-feature>> and the DataProvider information type in <<fig-data-provider-information-type>>. Each S-100 attribute type is listed next to their camel case encoding value. Enumerated attributes are referenced by their defined data type and values are listed.
+Simple attributes for the Wind Warning feature type are shown in <<fig-wind-warning-feature>> and the *DataProvider* information type in <<fig-data-provider-information-type>>. Each S-100 attribute type is listed next to their camel case encoding value. Enumerated attributes are referenced by their defined data type and values are listed.
 
 Enumerated attributes defined for S-412, represented in UML are shown in <<fig-s412-enumerated-attributes>>. The complete list of all attributes and their properties approved for use in S-412 are also provided in the DCEG (Annex A).
 
@@ -153,7 +153,7 @@ Codelist types are not utilised in this version of S-412.
 
 ===== Complex Attributes
 
-Complex attributes are aggregations of other attributes that are either simple or complex. The aggregation is defined by means of attribute bindings. The diagram below shows the complex attributes defined in S-412. By way of example, **fixedDateRange** is utilised by  the Wind Warning feature type shown in <<fig-wind-warning-feature>>. This attribute is an aggregation of 2 simple Time attributes and 2 simple S100_TruncatedDate attributes. In the diagram, attributes with no type defined are either enumerations or complex attributes.
+Complex attributes are aggregations of other attributes that are either simple or complex. The aggregation is defined by means of attribute bindings. The diagram below shows the complex attributes defined in S-412. By way of example, *fixedDateRange* is utilised by  the *WindWarning* feature type shown in <<fig-wind-warning-feature>>. This attribute is an aggregation of 2 simple Time attributes and 2 simple S100_TruncatedDate attributes. In the diagram, attributes with no type defined are either enumerations or complex attributes.
 
 For the full list of complex attributes approved for use in an S-412 dataset, refer to the DCEG (Annex A).
 
@@ -202,21 +202,6 @@ Various time attributes are carried by various features to ensure the end user i
 
 Refer to Annex A (DCEG) for more information regarding time-related attributes in S-412.
 
-=== [[s4_start_review4]]Dataset Types[[s4_end_review4]]
-[reviewer="IIC",date=2025-12-09,from=s4_start_review4,to=s4_end_review4]
-****
-The concept of Dataset types in S-100 generally distinguishes between New Dataset, New Edition and Update. The subject in this clause is different.
-Suggest renaming the clause or moving (preferred option) the information in existant clauses (ex. attributes). 
-****
-
-==== Introduction
-
-A dataset is a grouping of features, attributes, geometry, and metadata which comprises a specific geographic coverage. Only one type of S-412 dataset is supported: 1) GML encoding for surface geometric primitive feature collections.
-
-==== Multiple datasets
-
-In order to facilitate the efficient processing and exchange of S-412 data, S-412 data files will be split by the time and date in which the file’s data is valid.
-
 === Geometry
 
 ==== S-100 Level 3a Geometry
@@ -228,10 +213,10 @@ The underlying geometry of an S-412 dataset is constrained to level 3a which sup
 Level 3a is described by the following constraints:
 
 * Each curve must reference a start and end point (they may be the same).
-*	Curves must not self-intersect. See <<fig-level-3a-geometric-rules>>
+*	Curves must not self-intersect. See <<fig-level-3a-geometric-rules>>.
 *	Areas are represented by a closed loop of curves beginning and ending at a common point.
-*	In the case of areas with holes, all internal boundaries must be completely contained within the external boundary and the internal boundaries must not intersect each other or the external boundary. Internal boundaries may touch tangentially (i.e. at one point). See Figure 9.
-*	The outer boundary of a surface must be in a clockwise direction (surface to the right of the curve) and the curve orientation positive. The inner boundary of a surface must be in a counter-clockwise direction (surface to the right of the curve) and the curve orientation negative. See Figure 9.
+*	In the case of areas with holes, all internal boundaries must be completely contained within the external boundary and the internal boundaries must not intersect each other or the external boundary. Internal boundaries may touch tangentially (i.e. at one point). See Figure <<fig-level-3a-geometric-rules>>.
+*	The outer boundary of a surface must be in a clockwise direction (surface to the right of the curve) and the curve orientation positive. The inner boundary of a surface must be in a counter-clockwise direction (surface to the right of the curve) and the curve orientation negative. See Figure <<fig-level-3a-geometric-rules>>.
 
 [[fig-level-3a-geometric-rules]]
 .Level3a Geometric Rules
@@ -239,10 +224,8 @@ image::../images/figure-level-3a-geometric-rules.png[UML diagram depicting the L
 
 S-412 further constraints Level 3a with the following:
 
-*	Coincident linear geometry must be avoided when there is a dependency between features. 
-*	Curve interpolation may be utilised to represent a variety of curve types. Curve interpolation may also be utilised for inner and outer boundaries for polygons. 
+*	Coincident linear geometry must be avoided when there is a dependency between features.
+*	Curve interpolation may be utilised to represent a variety of curve types. Curve interpolation may also be utilised for inner and outer boundaries for polygons.
+* With the exception of curved interpolations, all multi-geometries must be split into single geometries.
 *	Curves, including interpolations, and areas should avoid crossing the 180° longitude.
-
-
-
 
