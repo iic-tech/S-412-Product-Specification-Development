@@ -64,8 +64,7 @@ image::../images/fig-exchange-catalogue-classes.png[]
 
 The following clauses define the mandatory and optional metadata needed
 for S-412. In some cases the metadata may be repeated in a national
-for S-412. In some cases the metadata may be repeated in a national
-language. If this is the case it is noted in the Remarks column.
+language. If this is the case, it is noted in the Remarks column.
 
 In the following clauses, wherever S-412 makes an optional S-100 metadata
 attribute mandatory (that is, restricts multiplicity from 0.. to 1..),
@@ -74,7 +73,7 @@ given in S-100 Part 17. When this is done, the Remarks column contains
 a note about the restriction. Further, enumerations in the figure
 and the following clauses show only the values allowed in S-412 Exchange
 Catalogues. These differences from the S-100 generic metadata are
-in red bold font.
+in bold font.
 
 [%landscape]
 <<<
