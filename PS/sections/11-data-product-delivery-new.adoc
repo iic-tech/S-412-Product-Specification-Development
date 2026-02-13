@@ -3,99 +3,55 @@
 [[sec-data-product-delivery]]
 == Data Product Delivery
 
-Data which conforms to this Product Specification must be delivered
-by means of an Exchange Set.
+Data which conforms to this Product Specification must be delivered by means of an Exchange Set.
 
 [[sec_11.1]]
 === Exchange set components
 
-S-412 uses the same exchange set components and metadata as S-100.
-<<fig_11.1>> depicts the exchange set components (datasets and feature/portrayal
-catalogues) and exchange set metadata. This figure is derived from
-Figure 17-2 in S-100 Edition 5.2.0. Note also that the link between
-S100_Dataset and S100_CatalogueMetadata is implicit by means of the
-S-412 version to which the feature catalogue, portrayal catalogue,
-and dataset conform, which must have the same edition and revision
-components.
+S-412 uses the same exchange set components and metadata as S-100. <<fig_11.1>> depicts the exchange set components (datasets and feature/portrayal catalogues) and exchange set metadata. This figure is derived from Figure 17-2 in S-100 Edition 5.2.0. Note also that the link between S100_Dataset and S100_CatalogueMetadata is implicit by means of the S-412 version to which the feature catalogue, portrayal catalogue, and dataset conform, which must have the same edition and revision components.
 
 [[fig_11.1]]
-.Components and associated metadata for the S-412 exchange set (S-100 Figure 17-2)
-image::../images/S-412-ExchangeSet.png[]
+.Components and associated metadata for the S-412 exchange set (S-100 Figure 17-2) image::../images/S-412-ExchangeSet.png[]
 
-The rules governing the presence and roles of the exchange set components
-depicted in <<fig_11.1>> are given below.
+The rules governing the presence and roles of the exchange set components depicted in <<fig_11.1>> are given below.
 
-. Every exchange set must contain an Exchange Catalogue, represented
-by *S100_ExchangeCatalogue* in <<fig_11.1>>.
-. Dataset discovery metadata (*S100_DatasetDiscoveryMetadata*) must
-be provided in the exchange catalogue for each S-412 dataset in the
-exchange set.
-. Catalogue metadata (*S100_CatalogueDiscoveryMetadata*) must be provided
-in the exchange catalogue for any feature and portrayal catalogues
-included in the exchange set.
-. S-412 allows exchange sets to include the following types of support
-files:
+. Every exchange set must contain an Exchange Catalogue, represented by *S100_ExchangeCatalogue* in <<fig_11.1>>.
+. Dataset discovery metadata (*S100_DatasetDiscoveryMetadata*) must be provided in the exchange catalogue for each S-412 dataset in the exchange set.
+. Catalogue metadata (*S100_CatalogueDiscoveryMetadata*) must be provided in the exchange catalogue for any feature and portrayal catalogues included in the exchange set.
+. S-412 allows exchange sets to include the following types of support files:
 
 .. Plain text support files referenced by datasets (*S100_SupportFile*).
 .. Language packs (*S100_SupportFile*).
-. Plain text support files referenced in a dataset must be included
-in the exchange set.
-. The inclusion of language packs in exchange
-sets is optional.
-. Language packs are described in S-100 Part 18 and provide translations
-of feature catalogues.
-. A signature file for the exchange catalogue must also be included
-in the exchange set (*S100_CatalogueSignature*).
+. Plain text support files referenced in a dataset must be included in the exchange set.
+. The inclusion of language packs in exchange sets is optional.
+. Language packs are described in S-100 Part 18 and provide translations of feature catalogues.
+. A signature file for the exchange catalogue must also be included in the exchange set (*S100_CatalogueSignature*).
 
-The tangible representations of the structure classes in <<fig_11.1>>
-within actual exchange sets are the digital files or folders containing
-the exchange set, dataset(s), catalogue(s), and support files.
-The tangible representations of their roles as depicted in <<fig_11.1>>
-are the inclusion of the respective components within the exchange
-set. Documentation tables for the structure classes are not provided
-since the exchange set structure is described in this clause.
+The tangible representations of the structure classes in <<fig_11.1>> within actual exchange sets are the digital files or folders containing the exchange set, dataset(s), catalogue(s),  and support files.
+The tangible representations of their roles as depicted in <<fig_11.1>> are the inclusion of the respective components within the exchange set. Documentation tables for the structure classes are not provided since the exchange set structure is described in this clause.
 
-The metadata classes in <<fig_11.1>> are represented by XML files
-or XML blocks and are documented in <<sec_12.2>>.
+The metadata classes in <<fig_11.1>> are represented by XML files or XML blocks and are documented in <<sec_12.2>>.
 
-Each Exchange Set consists of one or more S-412 datasets and a single Exchange Catalogue XML file containing
-metadata. It may also include one or more support files (or no support
-files). The Exchange Set structure is the same as that described in
-S-100 Clause 17-4.2.
+Each Exchange Set consists of one or more S-412 datasets and a single Exchange Catalogue XML file containing metadata. It may also include one or more support files (or no support
+files). The Exchange Set structure is the same as that described in S-100 Clause 17-4.2.
 
 [[sec_11.2]]
 === Encapsulation
 
-Each dataset must be contained in a physically separate, uniquely
-identified file on the transfer medium.
+Each dataset must be contained in a physically separate, uniquely identified file on the transfer medium.
 
-An Exchange Set is encapsulated into a form suitable for transmission
-as packages (such as ZIP archives or files organised within a file
-system folder/directory structure), containing both the exchange catalogue
-and one or more data products (of possibly different S-100 types),
-with each product covering a specific geographic region and specific
-period of time.
+An Exchange Set is encapsulated into a form suitable for transmission as packages (such as ZIP archives or files organised within a file system folder/directory structure), containing  both the exchange catalogue and one or more data products (of possibly different S-100 types), with each product covering a specific geographic region and specific period of time.
 
 The contents of an Exchange Set are :
 
 * Mandatory elements
-** Exchange Catalogue -- the XML encoded description of the content
-of the Exchange Set (discovery metadata).
+** Exchange Catalogue -- the XML encoded description of the content of the Exchange Set (discovery metadata).
 
 * Optional elements
-** S-412 datasets -- Since it is possible for an exchange set to contain
-only a feature or portrayal catalogue, or only a support file which
-is being updated or delivered as a new file, datasets are an optional
-component of S-412 exchange sets.
-** Supplementary files -- These are contained within the Exchange
-Set as files. If the exchange set contains a dataset, the support
-files referenced in the dataset must be included.
-** S-412 Feature Catalogue -- If it is necessary to deliver the latest
-Feature Catalogue to the end user it may be done using the S-412 Exchange
-Set mechanism for datasets.
-** S-412 Portrayal Catalogue -- If it is necessary to deliver the
-latest Portrayal Catalogue to the end user it may be done using the
-S-412 Exchange Set mechanism for datasets.
+** S-412 datasets -- Since it is possible for an exchange set to contain only a feature or portrayal catalogue, or only a support file which is being updated or delivered as a new file, datasets are an optional component of S-412 exchange sets.
+** Supplementary files -- These are contained within the Exchange Set as files. If the exchange set contains a dataset, the support files referenced in the dataset must be included.
+** S-412 Feature Catalogue -- If it is necessary to deliver the latest Feature Catalogue to the end user it may be done using the S-412 Exchange Set mechanism for datasets.
+** S-412 Portrayal Catalogue -- If it is necessary to deliver the latest Portrayal Catalogue to the end user it may be done using the S-412 Exchange Set mechanism for datasets.
 
 [[sec_11.3]]
 === Dataset
@@ -105,9 +61,7 @@ S-412 Exchange Set mechanism for datasets.
 
 EDITOR: Revisit cancellation depending on PT decision.
 
-<<table_11.1>> lists the types of datasets which may be produced and
-contained within an exchange set. The corresponding value of the dataset
-discovery metadata "purpose" field and the format are also described.
+<<table_11.1>> lists the types of datasets which may be produced and contained within an exchange set. The corresponding value of the dataset discovery metadata "purpose" field and the format are also described.
 
 [[table_11.1]]
 .Types of datasets
@@ -115,34 +69,23 @@ discovery metadata "purpose" field and the format are also described.
 |===
 h| Dataset Type h| Explanation h| Encoding Format h| "purpose" field
 
-| New dataset | Data for an area different (in coverage and/or extent)
-from existing datasets.
+| New dataset | Data for an area different (in coverage and/or extent) from existing datasets.
 | <<sec_12>> | _newDataset_
 
 | Re-issue
-| Includes all the updates applied to the original dataset up to the
-date of the reissue. A Re-issue is intended to avoid unnecessary loading
-of the Base cell and all applicable updates individually for new users
-of the dataset, and therefore does not contain any new information
-additional to that previously distributed by updates. A reissue dataset
-can be issued at any time.
+| Includes all the updates applied to the original dataset up to the date of the reissue. A Re-issue is intended to avoid unnecessary loading of the Base cell and all applicable updates individually for new users of the dataset, and therefore does not contain any new information additional to that previously distributed by updates. A reissue dataset can be issued at any time.
 | As for new dataset | _reissue_
 
 | New Edition of a dataset
-| A re-issue plus new information which has not been previously distributed
-by Updates. Each New Edition of a dataset must have the same name
-as the dataset that it replaces and should have the same spatial extents.
-The edition number in the dataset discovery metadata must increment
-up by one from the previous edition.
+| A re-issue plus new information which has not been previously distributed by Updates. Each New Edition of a dataset must have the same name as the dataset that it replaces and should have the same spatial extents.
+The edition number in the dataset discovery metadata must increment up by one from the previous edition.
 | As for new dataset | _newEdition_
 
 | Cancellation
 | Used to cancel a dataset.
 The dataset is cancelled and is deleted from the system.
 
-A cancellation dataset must be a pro-forma dataset containing only
-header information (no instances of spatial objects, information types,
-or feature types).
+A cancellation dataset must be a pro-forma dataset containing only header information (no instances of spatial objects, information types, or feature types).
 | As for new dataset, but containing only header information. | _cancellation_
 
 |===
@@ -154,8 +97,7 @@ Dataset naming must follow a standard pattern to give implementers greater predi
 the file will inform the user of the name and purpose of the file
 (<<sec_11.3.1>>).
 
-S-412 dataset files for new, reissue, new editions, and cancellation
-datasets are named according to the specifications given below:
+S-412 dataset files for new, reissue, new editions, and cancellation datasets are named according to the specifications given below:
 
 *412YYYYØØØØØØØØØØØØ.GML*::
 412::: the first 3 characters identify the dataset as an S-412 dataset (mandatory); +
@@ -166,17 +108,13 @@ GML::: denotes a GML file (according to IHO S-100, Part=10b).
 [[sec_11.3.3]]
 ==== New Editions, re-issues, and cancellations
 
-This section defines the sequencing of S-412 datasets for New Editions
-and re-issues. *S-412 does not support update datasets.*
+This section defines the sequencing of S-412 datasets for New Editions and re-issues. *S-412 does not support update datasets.*
 
-*Edition number*:: When a dataset is initially created (Base dataset),
-the Edition number 1 is assigned to it. The Edition number is increased
-by 1 at each New Edition.
+*Edition number*:: When a dataset is initially created (Base dataset), the Edition number 1 is assigned to it. The Edition number is increased by 1 at each New Edition.
 
 *Update number*:: Update number is always 0 for S-412 datasets.
 
-*Issue date*:: Date up to which the Data Producer has incorporated
-all applicable changes. The issue date must be greater than the previous
+*Issue date*:: Date up to which the Data Producer has incorporated all applicable changes. The issue date must be greater than the previous
 issue date of the dataset.
 
 In order to cancel a dataset, the Edition number must be set to 0.
@@ -347,16 +285,12 @@ removal of obsolete sections within support files.
 [[sec_11.5]]
 === Exchange Catalogue
 
-The Exchange Catalogue acts as the table of contents for the Exchange Set. The Catalogue file of the Exchange Set must be named CATALOG.XML. No other file in the Exchange Set may be named CATALOG.XML. The contents of the S-412 Exchange Catalogue are described in <<sec_12>>.
+The Exchange Catalogue acts as the table of contents for the Exchange Set. The Catalogue file of the Exchange Set must be named CATALOG.XML. No other file in the Exchange Set may be named CATALOG.XML. The contents of the S-412 Exchange Catalogue are described in <<sec-metadata-new>>.
 
 [[sec_11.6]]
 === Dataset Loading and Unloading
 
-S-412 datasets are typically intended to be overlays to S-101 ENC and displayed with S-101 ENC data in the background. Systems that support the display of S-412 datasets should provide the user with simple functions to turn the display of S-412 datasets on and off.
-
-Optionally, S-412 datasets can be viewed as overlays to a combination of S-101 ENC and S-102 (Bathymetric Surface) datasets, with S-413 (Weather and Wave Conditions), S-414 (Weather and Waves Observations) datasets incorporated where applicable. The same requirements to allow the user to easily toggle the S-412 dataset on/off persist.
-
-When a new edition of a dataset is received, the system must replace the previous edition with the new edition of the dataset.
+S-412 datasets are typically intended to be overlays to S-101 ENC and displayed with S-101 ENC data in the background. S-412 can also be overlaid with other S-100 products. Systems that support the display of S-412 datasets should provide the user with simple functions to turn the display of S-412 datasets on and off.
 
 [[sec_11.7]]
 === Dataset size
@@ -367,4 +301,5 @@ S-412 datasets must not exceed 10MB.
 === Data integrity and encryption
 
 Signatures are required for datasets and exchange sets intended for use on ECDIS, as described in S-100 Parts 15 and 17. Datasets may be encrypted or unencrypted as determined by producer policy.
+
 
