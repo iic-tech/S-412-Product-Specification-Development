@@ -28,3 +28,4 @@ _In this product there are no direct vertical coordinates which require the use 
 
 The Marine Weather Warnings Product Specification applies to meteorological features valid at specific times. The temporal reference system used is the Gregorian calendar for date and UTC for time. Time is measured by reference to Calendar dates and Clock time in accordance with ISO 19108:2002 Temporal Schema clause 5.4.4. Times must be in UTC and follow the following 15-character format: yyyymmddThhmmss.
 
+
