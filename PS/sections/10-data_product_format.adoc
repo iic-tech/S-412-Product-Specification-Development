@@ -4,7 +4,7 @@
 
 === Introduction
 
-This clause specifies the encoding for Marine Weather Warning datasets. The principal encoding is the Open Geospatial Consortium (OGC), Geography Markup Language (GML) format as profiled by the S-100 GML schema in Part 10b of S-100. Refer to the sample datasets for complete descriptions and examples of the data records, fiels and subfields defined in GML encoding.
+This clause specifies the encoding for Marine Weather Warning datasets. The principal encoding is the Open Geospatial Consortium (OGC), Geography Markup Language (GML) format as profiled by the S-100 GML schema in Part 10b of S-100. Refer to the sample datasets for complete descriptions and examples of the data records, fields and subfields defined in GML encoding.
 
 The XML Schema for the S-412 GML application schema is available at the GI Registry (http://registry.iho.int). Feature instances must validate against the schema and conform to all other requirements specified in this data product specification including all constraints not captured in the XML Schema document.
 
@@ -38,4 +38,5 @@ Missing or unknown values are not permitted in S-412. Mandatory attributes must 
 === Encoding Datasets Across 180° Longitude
 
 Datasets must not cross the 180° meridian of longitude; this includes the bounding box for the dataset.
+
 
