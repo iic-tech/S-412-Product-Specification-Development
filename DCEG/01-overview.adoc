@@ -8,7 +8,7 @@ The “Data Classification and Encoding Guide” has been developed to provide c
 
 The purpose of the Data Classification and Encoding Guide is to facilitate S-412 encoding to meet WMO SERCOM standards for the proper display of Marine Weather Warning information in an ECDIS. The document describes how to encode marine weather information considered relevant to be displayed on an ECDIS. 
 
-The content of a Marine Weather Warning product is at the discretion of the producing authority, provided that the conventions described within this document are followed. A “producing authority” is a Hydrographic Office (HO) or an organization authorized by a government, HO or other relevant government institution to produce Marine Weather Warning product.
+The content of a Marine Weather Warning product is at the discretion of the producing authority, provided that the conventions described within this document are followed. A “producing authority” is a National Meteorological and Hydrological Service (NMHS) or an organization authorized by a government or other relevant government institution to produce Marine Weather Warning product.
 
 === S-412 Annex A — Data Classification and Encoding Guide — Metadata
 
@@ -16,7 +16,7 @@ NOTE  This information uniquely identifies this Annex to the Product Specificati
 
 *Title*::  The World Meteorological Organization Marine Weather Warning Product Specification, Annex A – Data Classification and Encoding Guide
 *Version*::  1.2.0
-*Date*:: January 2026
+*Date*:: March 2026
 *Language*::  English
 *Classification*::  Unclassified
 *Contact*::  World Meteorological Organization +
@@ -27,7 +27,7 @@ Telephone: +41 (0) 22 730 84 03 +
 Email: publications@wmo.int +
 *URL*::  https://mwo.int/[www.wmo.int] +
 *Identifier*::  S-412 Annex A +
-*Maintenance*::  Changes to S-412 Annex A; Data Classification and Encoding Guide are coordinated by the SERCOM, formely JCOMM and must be made available via the IHO web site.
+*Maintenance*::  Changes to S-412 Annex A; Data Classification and Encoding Guide are coordinated by the SERCOM, formerly JCOMM and must be made available via the IHO web site.
 
 === Terms, definitions and abbreviations
 
@@ -40,7 +40,7 @@ See S-412 Product Specification main document, clause 1.4.
 For a list of abbreviations, see S-412 Product Specification main document, Clause 1.6.1.
 
 === Use of language
-Within this document:
+Within this document: +
 • “Must” indicates a mandatory requirement. +
 • “Should” indicates an optional requirement, that is the recommended process to be followed, but is
 not mandatory. +

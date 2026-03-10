@@ -20,7 +20,7 @@ S-412 uses the portrayal process defined in S-100 Part 9A.
 
 Items included in an S-412 Portrayal Catalogue must be registered in the IHO Geospatial Information (GI) Registry.
 
-The S-412 feature catalogue defines all features requiring portrayal and their geometric primitives. Currently S-412 only defines features which have a Polygon ("Surface" in S-100 terms) geometry. These are encoded using GML Polyons.
+The S-412 feature catalogue defines all features requiring portrayal and their geometric primitives. Currently S-412 only defines features which have a Polygon ("Surface" in S-100 terms) geometry. These are encoded using GML Polygons.
 
 
 === Polygon Features
@@ -32,11 +32,11 @@ Polygon portrayal may be based on values of particular attributes of the individ
 [cols="a,a",options="unnumbered"]
 |===
 h| Feature Name h| Attribute Name
-| Wind Warning | Warning Threshold
+| Wind Warning | Wind Warning Threshold
 | Significant Wave Height Warning      | Significant Wave Height Warning Threshold
 | Ice Accretion Warning | Ice Accretion Rate
 | Thunderstorm Warning | No conditional portrayal
-| Restricted Visbility Warning | No conditional portrayal
+| Restricted Visibility Warning | No conditional portrayal
 |===
 
 === Example portrayal
@@ -44,7 +44,7 @@ h| Feature Name h| Attribute Name
 All polygons are filled with transparent colours taken from the portrayal catalogue pallette. Examples are given in the following diagrams:
 
 [[fig-s412-portrayal-WW]]
-. Wind Warning Portrayal
+.Wind Warning Portrayal
 image::../images/windWarning.png[Significant Wave Height Warning Thresholds]
 
 [[fig-s412-portrayal-SWH]]
@@ -74,7 +74,7 @@ The portrayal catalogue contains the mechanisms for the system to portray inform
 * 	Set of drawing instructions
 * 	Set of symbols, line styles and colours
 
-The portrayal catalogue model is defined in S-100 Part 9. The S-412 Portrayal catalogue is provided in Annex G and will be available in an XML document which conforms to the S-100 XML Portrayal catalogue Schema. It is structured as follows:
+The portrayal catalogue model is defined in S-100 Part 9. The S-412 Portrayal catalogue is provided in Annex E and will be available in an XML document which conforms to the S-100 XML Portrayal catalogue Schema. It is structured as follows:
 
 * Root ---- (contains the catalogue named “portrayal_catalogue.xml”)
 * Pixmaps (contains XML files describing pixmaps)

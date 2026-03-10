@@ -86,7 +86,7 @@ S-412 does not make use of any meta feature.
 
 Geographic (geo) feature types form the principal content in S-412 and are defined by their associated attributes and information types.
 
-As an example, the realisation of a Wind Warning concept is provided by the UML diagram below. The diagram shows the *WindWarning* feature’s inheritance from the abstract *WeatherWarning* feature and its connection to various complex and simple attributes. For more information regarding the relationships between *WindWarning* and its attributes, please refer to the DCEG. The portrayal of a *WindWarning* is described in the Portrayal Catalogue. For each Marine Weather Warning polygon, the colour is determined by the attribute value of *windWarningThreshold*. The optional *beaufortForce* attribute is used to indicate more specific wind speed bins that the feature represents, based on the international Beaufort Wind Scale. The *dateTimeRange* attribute provides the start and end times that are valid for the Wind Warning. The *weatherWarningNumber* attribute provides an identification number to track warnings issued with each new dataset. The optional *weatherWarningMessage* attribute provides a short message with added context or information about a Weather Warning.
+As an example, the realisation of a Wind Warning concept is provided by the UML diagram below. The diagram shows the *WindWarning* feature’s inheritance from the abstract *WeatherWarning* feature and its connection to various complex and simple attributes. For more information regarding the relationships between *WindWarning* and its attributes, please refer to the DCEG. The portrayal of a *WindWarning* is described in the Portrayal Catalogue. For each Marine Weather Warning polygon, the colour is determined by the attribute value of *windWarningThreshold*. The optional *beaufortForce* attribute is used to indicate more specific wind speed bins that the feature represents, based on the international Beaufort Wind Scale. The *fixedDateRange* attribute provides the start and end times that are valid for the Wind Warning. The *weatherWarningNumber* attribute provides an identification number to track warnings issued with each new dataset. The optional *weatherWarningMessage* attribute provides a short message with added context or information about a Weather Warning.
 
 [[fig-wind-warning-feature]]
 .Wind Warning feature
@@ -131,8 +131,7 @@ The following table lists the types of simple attributes used in S-412.
 |A sequence of characters.
 
 |dateTime
-|Character encoding shall follow the format for date and time as specified in ISO 8601. +
-Example: 19850412T101530.
+|A DateTime is a combination of a date and a time type. Character encoding of a DateTime shall follow ISO 8601
 
 |===
 
@@ -166,7 +165,7 @@ image::../images/S-412-Complex-Attributes.png[UML diagram depicting the S-412 Co
 
 Associations are used to describe a relationship between instances of one feature or information type with instances of the same or a different feature or information type. Unless otherwise noted, associations are bi-directional in S-412. If an association is unidirectional, source and target roles are defined.
 
-The diagram below shows an example of the association between the WeatherWarning feature type and the *DataProvider* information type called *DataProviderAssociation*. The real world relationship between these concepts is that a weather warning has additional information about the service(s) issuing the warning.
+The diagram below shows an example of the association between the *WeatherWarning* feature type and the *DataProvider* information type called *DataProviderAssociation*. The real world relationship between these concepts is that a weather warning has additional information about the service(s) issuing the warning.
 
 The diagram shows the real world relationship between a weather warning and its supplemental information for where it came from. A complete list of associations and roles used in S-412 can be found in the DCEG (Annex A).
 

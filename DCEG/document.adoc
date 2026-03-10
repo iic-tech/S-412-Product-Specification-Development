@@ -1,4 +1,4 @@
-= Weather Warnings Data Classification and Encoding Guide
+= Marine Weather Warnings Data Classification and Encoding Guide
 :series: S
 :docnumber: 412
 :doctype: standard

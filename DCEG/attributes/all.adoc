@@ -31,7 +31,7 @@ a|[underline]#**IHO Definition** :# Wind force scale, originally based on the st
 12) hurricane + 
 [underline]#**IHO Definition**# :(1) Term, derived from a Caribbean word, first applied to tropical cyclones of the Caribbean Sea. (2) Wind with a speed 64 knots or higher (Beaufort scale wind force 12). + 
  
-[underline]#** Remarks :**# Note: for S-412, we will limit the attribute to enumeration values 7-12. + 
+[underline]#** Remarks :**# Note: for S-412, enumeration values are limited to values of 7-12. + 
 |===
 
 

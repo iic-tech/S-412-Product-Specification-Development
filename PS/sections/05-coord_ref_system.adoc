@@ -24,6 +24,9 @@ This product specification does not apply to meteorological or oceanographic fea
 
 _In this product there are no direct vertical coordinates which require the use of a vertical coordinate reference system._
 
+=== Coordinate Order
+Coordinate order follows the CRS definition in the GML encoding. Under GML either latitude/longitude or vice versa is possible. IHO S-98 constrains coordinate order to latitude/longitude and CRS definition for datasets designed for use in ECDIS.
+
 === Temporal Reference System
 
 The Marine Weather Warnings Product Specification applies to meteorological features valid at specific times. The temporal reference system used is the Gregorian calendar for date and UTC for time. Time is measured by reference to Calendar dates and Clock time in accordance with ISO 19108:2002 Temporal Schema clause 5.4.4. Times must be in UTC and follow the following 15-character format: yyyymmddThhmmss.

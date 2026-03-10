@@ -99,9 +99,9 @@ the file will inform the user of the name and purpose of the file
 
 S-412 dataset files for new, reissue, new editions, and cancellation datasets are named according to the specifications given below:
 
-*412YYYYØØØØØØØØØØØØ.GML*::
+*412CCCCØØØØØØØØØØØØ.GML*::
 412::: the first 3 characters identify the dataset as an S-412 dataset (mandatory); +
-YYYY::: the fourth to seventh characters identify the producer code according to the Producer Code Register; +
+CCCC::: the fourth to seventh characters identify the producer code according to the Producer Code Register; +
 ØØØØØØØØØØØ::: the eighth to the maximum nineteenth characters are optional and may be used in any way by the producer to provide the unique file name. The following characters are allowed in the dataset name: A to Z, 0 to 9 and the special character _ (underscore); +
 GML::: denotes a GML file (according to IHO S-100, Part=10b).
 
@@ -285,7 +285,7 @@ removal of obsolete sections within support files.
 [[sec_11.5]]
 === Exchange Catalogue
 
-The Exchange Catalogue acts as the table of contents for the Exchange Set. The Catalogue file of the Exchange Set must be named CATALOG.XML. No other file in the Exchange Set may be named CATALOG.XML. The contents of the S-412 Exchange Catalogue are described in <<sec-metadata-new>>.
+The Exchange Catalogue acts as the table of contents for the Exchange Set. The Catalogue file of the Exchange Set must be named CATALOG.XML. No other file in the Exchange Set may be named CATALOG.XML. The contents of the S-412 Exchange Catalogue are described in <<sec-metadata>>.
 
 [[sec_11.6]]
 === Dataset Loading and Unloading

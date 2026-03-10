@@ -1,7 +1,7 @@
 [.preface]
 == Document History
 
-Changes to the Product Specification S-412 are coordinated by the SERCOM, formely JCOMM.
+Changes to the Product Specification S-412 are coordinated by the SERCOM, formerly Joint Technical Commission for Oceanography and Marine Meteorology (JCOMM).
 
 [cols=",,,",options="headers"]
 |===
