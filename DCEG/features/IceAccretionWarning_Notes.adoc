@@ -2,3 +2,4 @@
 ==== Notes
 
 // Notes on Ice Accretion Warning to be added by product specification authors.
+Example notes on encoding Ice Accretion Warnings are included here...
