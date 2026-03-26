@@ -32,6 +32,22 @@ The location of a feature instance on the Earth’s surface is indicated by a re
 
 S-412 makes use of the Geographic (Geo) feature type which carries the descriptive characteristics of a real-world entity and of the Information type feature which carries information associated to one or more geo feature.
 
+==== Attributes
+
+===== Simple attribute types
+Each simple attribute in S-100 is assigned to one of 9 types. In the tables within this document the abbreviation is listed to identify the attribute type:
+
+* Enumeration (EN): A fixed list of valid identifiers of named literal values. Attributes of an enumerated type may only take values from this list. The complete list of allowable values for S-101 enumeration type attributes is included in Sections 27, 28 and 30; these values may be further constrained for the binding of the attribute to specific feature and information types.
+* Boolean (BO): A value representing binary logic. The value can be either True or False.
+* Real (RE): A signed Real (floating point) number consisting of a mantissa and an exponent. The representation of a real is encapsulation and usage dependent.
+* Integer (IN): A signed integer number. The representation of an integer is encapsulation and usage dependent.
+* Text (TE): A CharacterString, that is an arbitrary-length sequence of characters including accents and special characters from a repertoire of one of the adopted character sets.
+* Truncated Date (TD) : Allows a partial date to be encoded as an extension to the ISO 8601 compliant date attribute type values for year, month and day according to the Gregorian Calendar. Character encoding of a date is a string which follows the calendar date format (complete representation, basic format) for date specified by ISO 8601.
+* Time (TI) : A time is given by an hour, minute and second in the 24-hour clock system. Character encoding of a time shall be a complete representation of the basic format as defined in ISO 8601. Complete representation means that hours, minutes and seconds shall be used. Basic format means that separating characters are omitted.
+* Universal Resource Identifier  (URI): A derivation of CharacterString. URI is a uniform resource identifier as defined in RFC 3986. Character encoding of a URI must follow the syntax rules defined in RFC 3986.
+* Universal Resource Name (URN): A derivation of the CharacterString predefined derived type Universal Resource Identifier (URI). URN allows a persistent, location-independent, resource identifier to be encoded that follows the syntax and semantics for URNs specified in RFC 2141.
+
+
 ==== Geographic feature class
 
 Geographic (Geo) feature types carry the descriptive characteristics of a real world entity which is provided by a spatial primitive instance.

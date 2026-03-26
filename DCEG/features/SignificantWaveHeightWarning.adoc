@@ -7,46 +7,46 @@ a|[underline]#**IHO Definition** :# A product issued by a national authority whe
 a|[underline]#**S-412 Geo Feature:**# Significant Wave Height Warning
 a|[underline]#**Primitives**: surface#
 |===
-[cols="a,a,a,a,a",options="headers"]
+[cols="a,a,a,a",options="headers"]
 |===
-a|**S-412Attribute** |**Acronym** |**Allowable Encoding Value** |**Type** | **Multiplicity**
+a|**S-412Attribute** |**Allowable Encoding Value** |**Type** | **Multiplicity**
 | Significant Wave Height Warning Threshold
-| ()
-|
+| 1: two and a half to four metres + 
+2: four to six metres + 
+3: six to nine metres + 
+4: nine to fourteen metres + 
+5: greater than fourteen metres
 |EN
 |1,1
 | Fixed Date Range
-| ()
 |
 |C
 |1,1
 | Weather Warning Message
-| ()
 |
 |C
 |0,1
 | Issue Date
-| ()
 |
 |DT
 |1,1
+| Issue Time
+|
+|TI
+|0,1
 | Weather Warning Number
-| ()
 |
 |TE
 |1,1
 | Cancellation Date
-| ()
 |
 |DT
 |1,1
 | Next Update Date Time
-| ()
 |
 |DT
-|1,1
+|0,1
 | Interoperability Identifier
-| ()
 |
 |URN
 |0,1

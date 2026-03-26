@@ -175,10 +175,21 @@ a|[underline]#**IHO Definition** :# interoperabilityIdentifier +
 === Issue Date
 [cols="a",options="headers"]
 |===
-a|[underline]#**IHO Definition** :# The time, expressed in Universal Time Coordinated (UTC) at which an object and its attributes are issued from an agency. + 
-[underline]#** Attribute Type :**# dateTime + 
+a|[underline]#**IHO Definition** :# Date up to which the data was made available by the Data Producer. + 
+[underline]#** Attribute Type :**# date + 
  
-[underline]#** Remarks :**# 19850412T183059 denotes 18 hours, 30 minutes, and 59 seconds on 12 April 1985. + 
+[underline]#** Remarks :**#  + 
+|===
+
+
+[[sec-issueTime]]
+=== Issue Time
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# The time, expressed in Universal Time Coordinated (UTC), at which the data was made available by the Data Producer. + 
+[underline]#** Attribute Type :**# time + 
+ 
+[underline]#** Remarks :**#  + 
 |===
 
 
