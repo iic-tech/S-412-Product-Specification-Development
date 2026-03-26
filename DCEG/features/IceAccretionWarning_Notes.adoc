@@ -1,0 +1,4 @@
+[[sec-IceAccretionWarning-notes]]
+==== Notes
+
+// Notes on Ice Accretion Warning to be added by product specification authors.

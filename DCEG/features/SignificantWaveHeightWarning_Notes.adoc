@@ -1,0 +1,4 @@
+[[sec-SignificantWaveHeightWarning-notes]]
+==== Notes
+
+// Notes on Significant Wave Height Warning to be added by product specification authors.

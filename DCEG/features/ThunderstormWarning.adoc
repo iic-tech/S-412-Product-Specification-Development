@@ -44,3 +44,4 @@ a|**S-412Attribute** |**Allowable Encoding Value** |**Type** | **Multiplicity**
 |0,1
 |===
 
+include::ThunderstormWarning_Notes.adoc[]

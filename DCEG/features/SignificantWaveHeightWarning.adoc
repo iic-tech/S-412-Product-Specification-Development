@@ -52,3 +52,4 @@ a|**S-412Attribute** |**Allowable Encoding Value** |**Type** | **Multiplicity**
 |0,1
 |===
 
+include::SignificantWaveHeightWarning_Notes.adoc[]

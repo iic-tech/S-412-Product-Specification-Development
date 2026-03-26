@@ -1,0 +1,4 @@
+[[sec-RestrictedVisibilityWarning-notes]]
+==== Notes
+
+// Notes on Restricted Visibility Warning to be added by product specification authors.

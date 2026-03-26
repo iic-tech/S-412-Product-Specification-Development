@@ -1,0 +1,4 @@
+[[sec-ThunderstormWarning-notes]]
+==== Notes
+
+// Notes on Thunderstorm Warning to be added by product specification authors.

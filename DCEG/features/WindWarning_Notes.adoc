@@ -1,0 +1,4 @@
+[[sec-WindWarning-notes]]
+==== Notes
+
+// Notes on Wind Warning to be added by product specification authors.
