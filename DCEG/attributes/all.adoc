@@ -1,3 +1,14 @@
+[[sec-agencyName]]
+=== Agency Name
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# The name of an agency, entity or organization. + 
+[underline]#** Attribute Type :**# text + 
+ 
+[underline]#** Remarks :**#  + 
+|===
+
+
 [[sec-beaufortForce]]
 === Beaufort Force
 [cols="a",options="headers"]
@@ -31,7 +42,95 @@ a|[underline]#**IHO Definition** :# Wind force scale, originally based on the st
 12) hurricane + 
 [underline]#**IHO Definition**# :(1) Term, derived from a Caribbean word, first applied to tropical cyclones of the Caribbean Sea. (2) Wind with a speed 64 knots or higher (Beaufort scale wind force 12). + 
  
-[underline]#** Remarks :**# Note: for S-412, enumeration values are limited to values of 7-12. + 
+[underline]#** Remarks :**# Note: for S-412, we will limit the attribute to enumeration values 7-12. + 
+|===
+
+
+[[sec-cancellationDate]]
+=== Cancellation Date
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# Date and time of cancelling a notice or warning. + 
+[underline]#** Attribute Type :**# dateTime + 
+ 
+[underline]#** Remarks :**#  + 
+|===
+
+
+[[sec-contactInformation]]
+=== Contact Information
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# Information about where inquiries can be sent. + 
+[underline]#** Attribute Type :**# Complex + 
+ 
+[underline]#** Remarks :**#  + 
+|===
+
+
+[[sec-countryName]]
+=== Country Name
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# The name of a nation. + 
+[underline]#** Attribute Type :**# text + 
+ 
+[underline]#** Remarks :**#  + 
+|===
+
+
+[[sec-dateEnd]]
+=== Date End
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# The latest date on which an object (for example a buoy) will be present. + 
+[underline]#** Attribute Type :**# S100_TruncatedDate + 
+ 
+[underline]#** Remarks :**#  + 
+|===
+
+
+[[sec-dateStart]]
+=== Date Start
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# The earliest date on which an object (for example a buoy) will be present. + 
+[underline]#** Attribute Type :**# S100_TruncatedDate + 
+ 
+[underline]#** Remarks :**#  + 
+|===
+
+
+[[sec-emailAddress]]
+=== Email Address
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# Identifies an email box to which email messages are delivered. + 
+[underline]#** Attribute Type :**# text + 
+ 
+[underline]#** Remarks :**#  + 
+|===
+
+
+[[sec-fileReference]]
+=== File Reference
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# fileReference + 
+[underline]#** Attribute Type :**# text + 
+ 
+[underline]#** Remarks :**#  + 
+|===
+
+
+[[sec-fixedDateRange]]
+=== Fixed Date Range
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# An active period of a single fixed event or occurrence, as the date range between discrete start and end dates. + 
+[underline]#** Attribute Type :**# Complex + 
+ 
+[underline]#** Remarks :**# Dates must be encoded in the format YYYYMMDD; using 4 digits for the calendar year (YYYY) and, optionally, 2 digits for the month (MM) (for example April = 04) and 2 digits for the day (DD). When no specific month and/or day is required/known, the values are replaced with dashes (-). The date range of a recurring event or occurrence must be encoded using periodicDateRange. + 
 |===
 
 
@@ -45,6 +144,94 @@ a|[underline]#**IHO Definition** :# Represents the ice accretion warning that ha
 [underline]#**IHO Definition**# :Ice accumulation rates between 0.7 and 2 centimeters per hour are forecast or occurring. + 
 2) severeIcing + 
 [underline]#**IHO Definition**# :Ice accumulation rates greater than or equal to 2 centimeters per hour are forecast or occurring. + 
+ 
+[underline]#** Remarks :**#  + 
+|===
+
+
+[[sec-information]]
+=== Information
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# No definition set for information + 
+[underline]#** Attribute Type :**# Complex + 
+ 
+[underline]#** Remarks :**#  + 
+|===
+
+
+[[sec-interoperabilityIdentifier]]
+=== Interoperability Identifier
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# interoperabilityIdentifier + 
+[underline]#** Attribute Type :**# URN + 
+ 
+[underline]#** Remarks :**#  + 
+|===
+
+
+[[sec-issueDate]]
+=== Issue Date
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# The time, expressed in Universal Time Coordinated (UTC) at which an object and its attributes are issued from an agency. + 
+[underline]#** Attribute Type :**# dateTime + 
+ 
+[underline]#** Remarks :**# 19850412T183059 denotes 18 hours, 30 minutes, and 59 seconds on 12 April 1985. + 
+|===
+
+
+[[sec-issuingService]]
+=== Issuing Service
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# The number of the METAREA, name of the Nation, and the National Meteorological and Hydrological Service (NMHS) or National Authority that broadcast the warning. + 
+[underline]#** Attribute Type :**# Complex + 
+ 
+[underline]#** Remarks :**#  + 
+|===
+
+
+[[sec-issuingServiceName]]
+=== Issuing Service Name
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# The identifier that indicates which organization issued meteorological and oceanographic data. + 
+[underline]#** Attribute Type :**# Complex + 
+ 
+[underline]#** Remarks :**#  + 
+|===
+
+
+[[sec-language]]
+=== Language
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# The method of human communication, either spoken or written, consisting of the use of words in a structured and conventional way. + 
+[underline]#** Attribute Type :**# text + 
+ 
+[underline]#** Remarks :**# The language is encoded by a 3 character code following ISO 639-2/T. + 
+|===
+
+
+[[sec-mailingAddress]]
+=== Mailing Address
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# The physical address a parcel may be sent to. + 
+[underline]#** Attribute Type :**# text + 
+ 
+[underline]#** Remarks :**#  + 
+|===
+
+
+[[sec-maximumWindSpeed]]
+=== Maximum Wind Speed
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# When applied to a warning or forecast polygon, refers to the maximum wind speed or range of wind speeds found within the contour of the polygon. + 
+[underline]#** Attribute Type :**# Complex + 
  
 [underline]#** Remarks :**#  + 
 |===
@@ -103,6 +290,28 @@ a|[underline]#**IHO Definition** :# A name referencing a defined geographical ar
 |===
 
 
+[[sec-nextUpdateDateTime]]
+=== Next Update Date Time
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# The time, expressed in Universal Time Coordinated (UTC) an object and its attributes are scheduled to be updated. + 
+[underline]#** Attribute Type :**# dateTime + 
+ 
+[underline]#** Remarks :**# Unit: Years, months, days, hours, minutes, secondsResolution:1 secondFormat: YYYYMMDDTHHMMSS, where Y is year, M is month, D is day, H is hour, M is minute, and S is secondExample: 19850412T183059 denotes 18 hours, 30 minutes, 59 seconds on 12 April 1985. + 
+|===
+
+
+[[sec-preparationService]]
+=== Preparation Service
+[cols="a",options="headers"]
+|===
+a|[underline]#**IHO Definition** :# The name of the Nation and National Meteorological and Hydrological Service (NMHS) or National Authority that prepared the warning and transferred it to the relevant Issuing Service for broadcast if not the same. + 
+[underline]#** Attribute Type :**# Complex + 
+ 
+[underline]#** Remarks :**#  + 
+|===
+
+
 [[sec-significantWaveHeightWarningThreshold]]
 === Significant Wave Height Warning Threshold
 [cols="a",options="headers"]
@@ -124,45 +333,20 @@ a|[underline]#**IHO Definition** :# Represents the significant wave height warni
 |===
 
 
-[[sec-text]]
-=== Text
+[[sec-sourceOfIcing]]
+=== Source Of Icing
 [cols="a",options="headers"]
 |===
-a|[underline]#**IHO Definition** :# A non-formatted digital text string. + 
-[underline]#** Attribute Type :**# text + 
- 
-[underline]#** Remarks :**# Should be used, for example, to hold the information that is for short cautionary or explanatory notes. Therefore, text populated in text must not exceed 300 characters.  Text may be in English, or in a national language.  No formatting of text is possible within text. If formatted text, or text strings exceeding 300 characters, is required, then an alternate concept should be used. + 
-|===
-
-
-[[sec-language]]
-=== Language
-[cols="a",options="headers"]
-|===
-a|[underline]#**IHO Definition** :# The method of human communication, either spoken or written, consisting of the use of words in a structured and conventional way. + 
-[underline]#** Attribute Type :**# text + 
- 
-[underline]#** Remarks :**# The language is encoded by a 3 character code following ISO 639-2/T. + 
-|===
-
-
-[[sec-agencyName]]
-=== Agency Name
-[cols="a",options="headers"]
-|===
-a|[underline]#**IHO Definition** :# The name of an agency, entity or organization. + 
-[underline]#** Attribute Type :**# text + 
- 
-[underline]#** Remarks :**#  + 
-|===
-
-
-[[sec-mailingAddress]]
-=== Mailing Address
-[cols="a",options="headers"]
-|===
-a|[underline]#**IHO Definition** :# The physical address a parcel may be sent to. + 
-[underline]#** Attribute Type :**# text + 
+a|[underline]#**IHO Definition** :# The type of weather phenomenon causing hazardous ice accretion. + 
+[underline]#** Attribute Type :**# enumeration + 
+1) freezingSpray + 
+[underline]#**IHO Definition**# :Sea spray transported through air at temperatures below 0C. + 
+2) freezingRain + 
+[underline]#**IHO Definition**# :Precipitation drops freezing on impact to form a coating of clear ice (glaze) on the ground and on exposed objects. + 
+3) freezingFog + 
+[underline]#**IHO Definition**# :Tiny, supercooled liquid water droplets in fog can freeze instantly on exposed surfaces when surface temperatures are at or below freezing. + 
+4) otherIcingSource + 
+[underline]#**IHO Definition**# :Source of icing is unknown or is different from other types of icing sources. + 
  
 [underline]#** Remarks :**#  + 
 |===
@@ -179,111 +363,23 @@ a|[underline]#**IHO Definition** :# The telephone number of an entity. +
 |===
 
 
-[[sec-emailAddress]]
-=== Email Address
+[[sec-text]]
+=== Text
 [cols="a",options="headers"]
 |===
-a|[underline]#**IHO Definition** :# Identifies an email box to which email messages are delivered. + 
+a|[underline]#**IHO Definition** :# A non-formatted digital text string. + 
 [underline]#** Attribute Type :**# text + 
  
-[underline]#** Remarks :**#  + 
+[underline]#** Remarks :**# Should be used, for example, to hold the information that is for short cautionary or explanatory notes. Therefore, text populated in text must not exceed 300 characters.  Text may be in English, or in a national language.  No formatting of text is possible within text. If formatted text, or text strings exceeding 300 characters, is required, then an alternate concept should be used. + 
 |===
 
 
-[[sec-webAddress]]
-=== Web Address
+[[sec-timeOfDayEnd]]
+=== Time of Day End
 [cols="a",options="headers"]
 |===
-a|[underline]#**IHO Definition** :# A reference to a web resource that specifies its location on a computer network and a mechanism for retrieving it. + 
-[underline]#** Attribute Type :**# text + 
- 
-[underline]#** Remarks :**#  + 
-|===
-
-
-[[sec-countryName]]
-=== Country Name
-[cols="a",options="headers"]
-|===
-a|[underline]#**IHO Definition** :# The name of a nation. + 
-[underline]#** Attribute Type :**# text + 
- 
-[underline]#** Remarks :**#  + 
-|===
-
-
-[[sec-dateStart]]
-=== Date Start
-[cols="a",options="headers"]
-|===
-a|[underline]#**IHO Definition** :# The earliest date on which an object (for example a buoy) will be present. + 
-[underline]#** Attribute Type :**# S100_TruncatedDate + 
- 
-[underline]#** Remarks :**#  + 
-|===
-
-
-[[sec-dateEnd]]
-=== Date End
-[cols="a",options="headers"]
-|===
-a|[underline]#**IHO Definition** :# The latest date on which an object (for example a buoy) will be present. + 
-[underline]#** Attribute Type :**# S100_TruncatedDate + 
- 
-[underline]#** Remarks :**#  + 
-|===
-
-
-[[sec-issueDate]]
-=== Issue Date
-[cols="a",options="headers"]
-|===
-a|[underline]#**IHO Definition** :# The time, expressed in Universal Time Coordinated (UTC) at which an object and its attributes are issued from an agency. + 
-[underline]#** Attribute Type :**# dateTime + 
- 
-[underline]#** Remarks :**# 19850412T183059 denotes 18 hours, 30 minutes, and 59 seconds on 12 April 1985. + 
-|===
-
-
-[[sec-weatherWarningNumber]]
-=== Weather Warning Number
-[cols="a",options="headers"]
-|===
-a|[underline]#**IHO Definition** :# Identification number given to a specifc weather warning. + 
-[underline]#** Attribute Type :**# text + 
- 
-[underline]#** Remarks :**#  + 
-|===
-
-
-[[sec-cancellationDate]]
-=== Cancellation Date
-[cols="a",options="headers"]
-|===
-a|[underline]#**IHO Definition** :# Date and time of cancelling a notice or warning. + 
-[underline]#** Attribute Type :**# dateTime + 
- 
-[underline]#** Remarks :**#  + 
-|===
-
-
-[[sec-nextUpdateDateTime]]
-=== Next Update Date Time
-[cols="a",options="headers"]
-|===
-a|[underline]#**IHO Definition** :# The time, expressed in Universal Time Coordinated (UTC) an object and its attributes are scheduled to be updated. + 
-[underline]#** Attribute Type :**# dateTime + 
- 
-[underline]#** Remarks :**# Unit: Years, months, days, hours, minutes, secondsResolution:1 secondFormat: YYYYMMDDTHHMMSS, where Y is year, M is month, D is day, H is hour, M is minute, and S is secondExample: 19850412T183059 denotes 18 hours, 30 minutes, 59 seconds on 12 April 1985. + 
-|===
-
-
-[[sec-interoperabilityIdentifier]]
-=== Interoperability Identifier
-[cols="a",options="headers"]
-|===
-a|[underline]#**IHO Definition** :# interoperabilityIdentifier + 
-[underline]#** Attribute Type :**# URN + 
+a|[underline]#**IHO Definition** :# The time corresponding to the end of an active period. + 
+[underline]#** Attribute Type :**# time + 
  
 [underline]#** Remarks :**#  + 
 |===
@@ -300,42 +396,34 @@ a|[underline]#**IHO Definition** :# The time corresponding to the start of an ac
 |===
 
 
-[[sec-timeOfDayEnd]]
-=== Time of Day End
+[[sec-weatherWarningMessage]]
+=== Weather Warning Message
 [cols="a",options="headers"]
 |===
-a|[underline]#**IHO Definition** :# The time corresponding to the end of an active period. + 
-[underline]#** Attribute Type :**# time + 
+a|[underline]#**IHO Definition** :# Text message associated with a weather warning polygon. + 
+[underline]#** Attribute Type :**# Complex + 
  
 [underline]#** Remarks :**#  + 
 |===
 
 
-[[sec-fileReference]]
-=== File Reference
+[[sec-weatherWarningNumber]]
+=== Weather Warning Number
 [cols="a",options="headers"]
 |===
-a|[underline]#**IHO Definition** :# fileReference + 
+a|[underline]#**IHO Definition** :# Identification number given to a specifc weather warning. + 
 [underline]#** Attribute Type :**# text + 
  
 [underline]#** Remarks :**#  + 
 |===
 
 
-[[sec-sourceOfIcing]]
-=== Source Of Icing
+[[sec-webAddress]]
+=== Web Address
 [cols="a",options="headers"]
 |===
-a|[underline]#**IHO Definition** :# The type of weather phenomenon causing hazardous ice accretion. + 
-[underline]#** Attribute Type :**# enumeration + 
-1) freezingSpray + 
-[underline]#**IHO Definition**# :Sea spray transported through air at temperatures below 0C. + 
-2) freezingRain + 
-[underline]#**IHO Definition**# :Precipitation drops freezing on impact to form a coating of clear ice (glaze) on the ground and on exposed objects. + 
-3) freezingFog + 
-[underline]#**IHO Definition**# :Tiny, supercooled liquid water droplets in fog can freeze instantly on exposed surfaces when surface temperatures are at or below freezing. + 
-4) otherIcingSource + 
-[underline]#**IHO Definition**# :Source of icing is unknown or is different from other types of icing sources. + 
+a|[underline]#**IHO Definition** :# A reference to a web resource that specifies its location on a computer network and a mechanism for retrieving it. + 
+[underline]#** Attribute Type :**# text + 
  
 [underline]#** Remarks :**#  + 
 |===
